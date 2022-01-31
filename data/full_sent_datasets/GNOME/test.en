@@ -1,0 +1,2001 @@
+Could not create cache for % s :
+SQLite Error : Multiple tables named ' % s ' , corrupted database ' % s '
+SQLite Error : could not open / create SQLite database ' % s '
+C _ heck for new messages in all folders
+Ch _ eck for new messages in subscribed folders
+Use _ Quick Resync if the server supports it
+Apply _ filters to new messages in all folders
+_ Apply filters to new messages in Inbox on this server
+Only check for Junk messages in the IN _ BOX folder
+For reading and storing mail on Kolab servers .
+This option will connect to the Kolab server using a plaintext password .
+Could not create cache for % s
+Failed to connect to IMAP server % s in secure mode : % s
+Failed to connect to IMAP server % s in secure mode :
+IMAP server % s does not support % s authentication
+You must be working online to complete this operation
+For reading and storing mail on IMAP servers .
+This option will connect to the IMAP server using a plaintext password .
+Fetching summary information for new messages in % s
+Cannot get message with message ID % s : % s
+The folder name " % s " is invalid because it contains the character " % c "
+The parent folder is not allowed to contain subfolders
+A synchronization error occured : Probably someone modified an entry remotely ( i.e. on the server ) , which you have also modified locally ( i.e. on your client ) .
+Please choose how long the " Take option " specified below should remain in effect
+Apply to all conflicts occuring during this Evolution session
+Apply only to this conflict ( ask each time )
+Please choose which of the two entries should be retained
+Take Both ( resulting in two different , parallel entries )
+Folder name ' % s ' is unknown to internal database
+Internal inconsistency detected : Invalid PIM Object handle , cannot get any UID
+Internal inconsistency detected : Invalid PIM Object handle , cannot get foldername , UID ' % s '
+PIM Object not found in internal database , UID ' % s ' , Folder ' % s '
+PIM Object not stored due to selected synchronization strategy , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : PIM Object handle , UID % s , has folder name ' % s ' set , but supplied folder name to delete it from is ' % s '
+No transition function defined from operational mode % i
+No transition function defined from operational mode % i to % i
+PIM Object handle , UID ' % s ' , which has PIM type % i , cannot be stored in folder of mismatching PIM type % i
+Internal inconsistency detected : Cannot get local PIM Object handle
+Internal inconsistency detected : PIM Object handle has inconsistent summary information , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : PIM Object handle has inconsistent folder context information ( expected % i , got % i ) , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : PIM Object handle is incomplete , UID ' % s ' , Folder ' % s '
+Data conversion to Kolab format failed for PIM Object , UID ' % s ' , Folder ' % s '
+JOURNAL data type not supported for PIM Object , UID ' % s ' , Folder ' % s '
+Unknown data type for PIM Object , UID ' % s ' , Folder ' % s '
+Conversion from Kolab calendar type to Evolution failed for PIM Object , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : Corrupt timezone object for PIM Object , UID ' % s ' , Folder ' % s '
+Invalid Kolab mail object ( UID in subject does not match UID in data part ) , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : Invalid summary information for PIM Object , UID ' % s ' , Folder ' % s '
+Cannot get Camel folder for path ' % s '
+Internal inconsistency detected : Folder PIM context not set
+Folder ' % s ' has an invalid PIM type
+Internal inconsistency detected : Folder ' % s ' has a PIM type % i set which does not map to a known folder context
+Moving object to different folder not yet implemented
+Could not get Camel folder for ' % s '
+Could not read-back mail message from server , UID ' % s ' , Folder ' % s '
+Could not get IMAP UID from message , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : Kolab UID not set on PIM Object handle
+Internal inconsistency detected : Folder name not set on PIM Object handle , UID ' % s '
+Internal inconsistency detected : Folder context mismatch , real is % i , stored is % i , UID ' % s ' , Folder ' % s '
+Could not find Kolab mail message , UID ' % s ' , Folder ' % s '
+Folder name not known to internal database : ' % s '
+Folder to be removed does not exist in internal database : ' % s '
+Internal inconsistency detected : Folder without summary information , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : PIM Object has its folder deleted , UID ' % s ' , Folder ' % s '
+Destination folder has been deleted : ' % s '
+Record missing in internal database , UID ' % s ' , Folder ' % s '
+Mail message is not a multipart message , ignoring
+Mail message does not have the expected minimum of % i mime parts , ignoring
+Mail message mime part has no content type set , skipping
+Could not get Camel data wrapper for mime part , skipping
+Internal inconsistency detected : Invalid mail part after Kolab data conversion , no Camel message created
+Internal inconsistency detected : Invalid cache object with zero mail message parts , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : Invalid cache object has % i payload bytes , expected % i bytes , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : PIM Object handle has no Kolab UID set
+Could not find cache object , UID ' % s ' , Folder ' % s '
+Folder not found , neither in internal database as ' % s ' , nor on the server as ' % s '
+Internal inconsistency detected : Could not get a folder name , no info from internal database , write cache , or the IMAP cache
+Internal inconsistency detected , Folder type % i does not map to any known folder context
+Folder does not exist in internal database : ' % s '
+Could not create directory ' % s ' ( ' % s ' )
+Cannot set Camel data directory , it is a read-only resource
+Cannot set Camel configuration directory , it is a read-only resource
+Cannot change folder context after it has initially been set
+Internal inconsistency detected : No settings table exists , no value has previously been set
+Internal inconsistency detected : No settings table with ID ' % i ' exists
+Internal inconsistency detected : No settings value for table ID ' % i ' , key ID ' % s ' , exists
+Could not get Camel storage path for internal database
+XML parser returned null for data part % d
+Kolab mail struct has no Kolab XML data part
+Access to URL ' % s ' failed in libcurl with CURLcode : % u
+Could not create full DB path for database ' % s ' filename ' % s '
+TZID is set , but no timezone is available . Currently this may happen if an object is copied to an empty calendar .
+Putting timezone object into cache failed .
+C _ heck for new messages in all folders
+Ch _ eck for new messages in subscribed folders
+Use _ Quick Resync if the server supports it
+Apply _ filters to new messages in all folders
+_ Apply filters to new messages in Inbox on this server
+Only check for Junk messages in the IN _ BOX folder
+For reading and storing mail on Kolab servers .
+This option will connect to the Kolab server using a plaintext password .
+Could not determine a suitable folder type for a new folder named ' % s '
+Data source ' % s ' does not represent a Kolab folder
+A synchronization error occured : Probably someone modified an entry remotely ( i.e. on the server ) , which you have also modified locally ( i.e. on your client ) .
+Please choose which of the two entries should be retained
+Take Newer ( last modified )
+Take Both ( resulting in two different , parallel entries )
+Remember my choice and do not ask me again for this folder
+Strategy for resolving PIM conflicts when synchronizing with the Kolab server
+Could not get the Kolab store from shell view !
+Got ACL response but server did not advertise ACL capability
+Got MYRIGHTS response but server did not advertise ACL capability
+A CamelIMAPXServer extended untagged response handler has been registered twice
+Got ANNOTATION response but server did not advertise ANNOTATEMORE capability
+Malformed IMAP annotation response , expected ' ( ' after annotation name
+SQLite Error : Multiple tables named ' % s ' , corrupted database ' % s '
+SQLite Error : could not open / create SQLite database ' % s '
+Must be online to complete this operation
+Could not get user cache directory from Camel service
+XML parser returned null for data part % d
+Kolab mail struct has no Kolab XML data part
+Folder name ' % s ' is unknown to internal database
+Internal inconsistency detected : Invalid PIM Object handle , cannot get any UID
+Internal inconsistency detected : Invalid PIM Object handle , cannot get foldername , UID ' % s '
+PIM Object not found in internal database , UID ' % s ' , Folder ' % s '
+PIM Object not stored due to selected synchronization strategy , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : PIM Object handle , UID % s , has folder name ' % s ' set , but supplied folder name to delete it from is ' % s '
+No transition function defined from operational mode % i
+No transition function defined from operational mode % i to % i
+PIM Object handle , UID ' % s ' , which has PIM type % i , cannot be stored in folder of mismatching PIM type % i
+Internal inconsistency detected : Cannot get local PIM Object handle
+You must be working online to complete this operation
+A folder named ' % s ' already exists with a different folder type , cannot create
+Internal inconsistency detected : PIM Object handle has inconsistent summary information , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : PIM Object handle has inconsistent folder context information ( expected % i , got % i ) , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : PIM Object handle is incomplete , UID ' % s ' , Folder ' % s '
+Data conversion to Kolab format failed for PIM Object , UID ' % s ' , Folder ' % s '
+JOURNAL data type not supported for PIM Object , UID ' % s ' , Folder ' % s '
+Unknown data type for PIM Object , UID ' % s ' , Folder ' % s '
+Conversion from Kolab calendar type to Evolution failed for PIM Object , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : Corrupt timezone object for PIM Object , UID ' % s ' , Folder ' % s '
+Invalid Kolab mail object ( UID in subject does not match UID in data part ) , UID ' % s ' , Folder ' % s '
+Conversion from Kolab contact type to Evolution failed for PIM Object , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : Invalid summary information for PIM Object , UID ' % s ' , Folder ' % s '
+Cannot get Camel folder for path ' % s '
+Internal inconsistency detected : Could not set temporary folder creation type on CamelKolabIMAPXStore
+Moving object to different folder not yet implemented
+Could not get Camel folder for ' % s '
+Could not read-back mail message from server , UID ' % s ' , Folder ' % s '
+Could not get IMAP UID from message , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : Folder PIM context not set
+Could not set PIM folder context % i for this backend
+Folder ' % s ' has an invalid PIM type
+Internal inconsistency detected : Folder ' % s ' has a PIM type % i set which does not map to a known folder context
+Internal inconsistency detected : Kolab UID not set on PIM Object handle
+Internal inconsistency detected : Folder name not set on PIM Object handle , UID ' % s '
+Internal inconsistency detected : Folder context mismatch , real is % i , stored is % i , UID ' % s ' , Folder ' % s '
+Could not find Kolab mail message , UID ' % s ' , Folder ' % s '
+Folder name not known to internal database : ' % s '
+Folder to be removed does not exist in internal database : ' % s '
+Internal inconsistency detected : Folder without summary information , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : PIM Object has its folder deleted , UID ' % s ' , Folder ' % s '
+Destination folder has been deleted : ' % s '
+Record missing in internal database , UID ' % s ' , Folder ' % s '
+Mail message is not a multipart message , ignoring
+Mail message mime part has no content type set , skipping
+Could not get Camel data wrapper for mime part , skipping
+Internal inconsistency detected : Invalid mail part after Kolab data conversion , no Camel message created
+Internal inconsistency detected : Invalid cache object with zero mail message parts , UID ' % s ' , Folder ' % s '
+Internal inconsistency detected : Invalid cache object , UID ' % s ' , Folder ' % s ' .
+% 1 $ s % 2 $ s % 3 $ s
+Internal inconsistency detected : PIM Object handle has no Kolab UID set
+Could not find cache object , UID ' % s ' , Folder ' % s '
+Folder not found , neither in internal database as ' % s ' , nor on the server as ' % s '
+Internal inconsistency detected : Could not get a folder name , no info from internal database , write cache , or the IMAP cache
+Internal inconsistency detected , Folder type % i does not map to any known folder context
+Folder does not exist in internal database : ' % s '
+Could not create directory ' % s ' ( ' % s ' )
+Cannot set Camel data directory , it is a read-only resource
+Cannot set Camel cache directory , it is a read-only resource
+Cannot set user home directory , it is a read-only resource
+Cannot set ESource UID , it is a read-only resource
+Cannot set Camel configuration directory , it is a read-only resource
+Cannot change folder context after it has initially been set
+ESource for backend has no ' Kolab Folder ' extension
+Cannot set Kolab Folder Sync Strategy , it is a read-only resource
+Could not get Camel storage path for internal database
+Kolab engine did not switch into requested operational mode
+Configuring libcurl failed with CURLcode : % u ( % s )
+Access to URL ' % s ' failed in libcurl with CURLcode : % u ( % s )
+Could not create full DB path for database ' % s ' filename ' % s '
+Internal inconsistency detected : No settings table exists , no value has previously been set
+Internal inconsistency detected : No settings table with ID ' % i ' exists
+Internal inconsistency detected : No settings value for table ID ' % i ' , key ID ' % s ' , exists
+Support for modifying single instances of a recurring appointment is not yet implemented . No change was made to the appointment on the server .
+This message is not available in offline mode .
+Cannot append message to folder ' % s '
+Cannot get message % s : % s
+Could not load summary for % s
+C _ heck for new messages in all folders
+_ Apply filters to new messages in Inbox on this server
+Only check for Junk messag _ es in the Inbox folder
+For accessing Microsoft Exchange 2007 / OpenChange servers via MAPI
+This option will connect to the OpenChange server using a plaintext password .
+This option will connect to the server using kerberos key .
+Cannot find folder in a local cache
+Cannot create new folder ' % s '
+MAPI folders can be created only within mailbox of the logged user
+Cannot create folder ' % s ' : % s
+Cannot remove folder ' % s ' : % s
+Cannot rename MAPI folder ' % s ' . Folder does not exist
+Cannot rename MAPI default folder ' % s ' to ' % s '
+Cannot rename MAPI folder ' % s ' to ' % s '
+Cannot rename MAPI folder ' % s ' to ' % s ' : % s
+Exchange MAPI service for % s on % s
+Cannot connect MAPI store in offline mode
+Mailbox ' % s ' is full , no new messages will be received or sent .
+Mailbox ' % s ' is near its size limit , message send will be disabled soon .
+Mailbox ' % s ' is full , no new messages will be received .
+Mailbox ' % s ' is near its size limit .
+Data source ' % s ' does not represent a MAPI folder
+There are more users with similar user name on a server . Please select that you would like to use from the below list .
+Server , username and domain name cannot be empty . Please fill them with correct values .
+Realm name cannot be empty when kerberos is selected . Please fill them with correct values .
+Cannot edit permissions of folder ' % s ' , choose other folder .
+Searching remote MAPI folder structure , please wait ...
+Cannot add folder , folder already exists as ' % s '
+Cannot add folder , failed to add to store 's summary
+Folder ' % s ' not found . Either it does not exist or you do not have permission to access it .
+Cannot add folder , cannot determine folder 's type
+Testing availability of folder ' % s ' of user ' % s ' , please wait ...
+Cannot create more sessions , session limit was reached
+MAPI error % s ( 0x % x ) occurred
+Folder name ' % s ' is not a known default folder name , nor folder ID .
+Failed to open store for user ' % s '
+Folder of user ' % s ' not found
+Search result exceeded allowed size limit . Use more specific search term , please
+Cannot add folder , unsupported folder type
+Cannot add folder , master source not found
+Server , username and domain name cannot be empty . Please fill them with correct values .
+Could not create thread for populating cache
+Support for modifying single instances of a recurring appointment is not yet implemented . No change was made to the appointment on the server .
+Updating local summary cache for new messages in % s
+Removing deleted messages from cache in % s
+This message is not available in offline mode .
+Fetching summary information for new messages in % s
+Cannot get message % s : % s
+Cannot append message to folder ' % s '
+Could not load summary for % s
+C _ heck for new messages in all folders
+_ Apply filters to new messages in Inbox on this server
+Only check for Junk messag _ es in the Inbox folder
+For accessing Microsoft Exchange / OpenChange servers using MAPI
+This option will connect to the Openchange server using a plaintext password .
+Exchange MAPI service for % s on % s
+% s Please enter the MAPI password for % s @ % s
+Cannot create new folder '
+Cannot rename MAPI folder '
+Cannot rename MAPI default folder ' % s '
+Cannot rename MAPI folder ' % s '
+_ Limit number of GAL responses : % s
+Server , username and domain name cannot be empty . Please fill them with correct values .
+Failed to create address book ' % s ' : % s
+Failed to create address book ' % s '
+Failed to create calendar ' % s ' : % s
+Failed to fetch changes from a server : % s
+Could not create thread for populating cache
+Support for modifying single instances of a recurring appointment is not yet implemented . No change was made to the appointment on the server .
+Updating local summary cache for new messages in % s
+Removing deleted messages from cache in % s
+Fetching summary information for new messages in % s
+This message is not available in offline mode .
+Cannot get message % s : % s
+Cannot append message to folder ' % s '
+Could not load summary for % s
+C _ heck for new messages in all folders
+_ Apply filters to new messages in Inbox on this server
+Only check for Junk messag _ es in the Inbox folder
+For accessing Microsoft Exchange / OpenChange servers using MAPI
+This option will connect to the OpenChange server using a plaintext password .
+Exchange MAPI service for % s on % s
+% s Please enter the MAPI password for % s @ % s
+Unable to authenticate to Exchange MAPI server : % s
+Cannot create new folder ' % s '
+Cannot create folder ' % s ' : % s
+Cannot remove folder ' % s ' : % s
+Cannot rename MAPI folder ' % s ' . Folder does not exist .
+Cannot rename MAPI default folder ' % s ' to ' % s ' .
+Cannot rename MAPI folder ' % s ' to ' % s '
+Cannot rename MAPI folder ' % s ' to ' % s ' : % s
+Cannot create more sessions , session limit was reached
+MAPI error % s ( 0x % x ) occurred
+Evolution plugin that enables Evolution Mail to display RSS feeds .
+Evolution will show article 's summary instead of article 's web page . Summary can also be HTML .
+Hostname of the proxy server used for feeds and content .
+Type HTML Render used to display HTML pages .
+Use a custom font size instead of system defaults .
+The size of the font used in full text preview .
+Interval in seconds before a connection is dropped .
+Evolution RSS will accept cookies from articles you browse .
+Evolution RSS will automatically resize images larger than displayed area .
+Evolution RSS will scan web pages for RSS content
+Evolution will download all feed enclosures a feed article may contain .
+Limit maximum enclosure size Evolution will download .
+Display feed icon on feed folder
+If the proxy server requires authentication , this is the password field .
+The port number for proxy server used for feeds and content .
+Deleting feed entry will also remove feed folder .
+Frequency to check for new articles ( in minutes ) .
+Check for new articles every time Evolution is started .
+If a feed article has comments , it will be displayed .
+Use a proxy server to fetch articles and content .
+The username to use for proxy server authentication .
+Set to true to have a program specified in command handle RSS URLs
+True if the program to handle this URL should be run in a terminal
+Really delete feed ' { 0 } ' ?
+Invalid file or this file does not contain any feeds .
+No RSS feeds configured ! Unable to export .
+Note : In order to be able to use Mozilla ( Firefox ) or Apple Webkit as renders you need firefox or webkit devel package installed and evolution-rss should be recompiled to see those packages .
+Delete articles that are no longer in the feed
+Failed sending command to IMAP server % s : % s
+Unexpected response from server % s : % s
+Cannot select folder '
+Cannot select folder '
+New password does not follow password rules
+Failed to send command to IMAP server % s : % s
+Server % s unexpectedly disconnected : % s
+Enable mailing-list detection required for some filter and search folder rules
+Expire cached messages that haven 't been read in X seconds
+Expire cached messages older than X seconds
+Cannot access folder ' % s
+Cannot sync flags to folder '
+Cannot sync flags to folder '
+Cannot expunge folder '
+Cannot expunge folder '
+This message is not available in offline mode .
+Cannot get message % s from folder '
+Cannot get message % s from folder '
+Cannot append message to folder ' % s ' : Folder is read-only
+Cannot append message to folder '
+Cannot append message to folder '
+Error while moving message to trash : % s
+Cannot move messages from folder ' % s '
+Cannot copy messages from folder ' % s '
+Cannot move messages from folder ' % s '
+Cannot copy messages from folder ' % s '
+Cannot append message in offline mode : cache unavailable
+Cannot append message in offline mode : % s
+C _ heck for new messages in all folders
+_ Apply filters to new messages in INBOX on this server
+Only check for Junk messa _ ges in the INBOX folder
+This option will connect to the IMAPv4rev1 server using a plaintext password .
+Could not connect to % s : % s
+Failed to connect to IMAP server % s in secure mode : % s
+Cannot authenticate to IMAP server % s using the % s authentication mechanism
+% sPlease enter the IMAP password for % s on host % s
+Cannot authenticate to IMAP server % s using % s
+Cannot get folder ' % s
+" % s " is not a valid foldername
+Cannot create folder '
+Cannot create folder '
+Cannot delete folder '
+Cannot delete folder '
+Cannot delete folder '
+Cannot rename folder ' % s '
+Cannot rename folder ' % s '
+Cannot get % s information for pattern ' % s
+Cannot subscribe to IMAP folders in offline mode .
+Cannot subscribe to folder '
+Cannot subscribe to folder '
+Cannot unsubscribe from IMAP folders in offline mode .
+Cannot unsubscribe from folder '
+Cannot unsubscribe from folder '
+IMAP server % s is in an inconsistent state .
+Unexpected token in response from IMAP server % s :
+IMAP server % s unexpectedly disconnected : % s
+Authentication failed . Check for correct hostname , username and password .
+Initial loading complete . Please click Forward .
+Move it to Deleted Items Mark it as deleted Delete it immediately
+We will now connect to the Scalix server to synchronize data with it . Please enter your password and press " Connect " to proceed .
+We will now try to connect to the Scalix server to synchronize data with it .
+Set to true to have a program specified in command handle webcal URLs
+True if the program to handle this URL should be run in a terminal
+There was an error parsing the calendar , " % s " . Please verify that it is a valid calendar , and try again .
+Access to the calendar , " % s " , is forbidden .
+The calendar , " % s " , was not found on the server .
+There was an internal server error while trying to load " % s " .
+There was an error loading the calendar , " % s " .
+The URI " % s " is invalid .
+No URI to load was specified . You need to pass the URI of the calendar to subscribe to , as an argument on the command line .
+No events or tasks were found in the calendar " % s " .
+You are already subscribed to the calendar " % s " . Please subscribe to another calendar .
+A menu to quickly switch between users
+Specifies how to display the applet in the panel . Use " username " to display the current user 's name , " icon " to show the people icon , or " text " to use the word '
+When to show the " Login Window " item . Possible values include : " always " to always show the item , " never " to never show the item , and " auto " ( the default ) to show the item when the applet is in Xnest mode .
+When to show the " Other " item . Possible values include : " always " to always show the item , " never " to never show the item , and " auto " ( the default ) to show the item when the applet is in console ( not Xnest ) mode .
+Whether or not to create new Xnest windows instead of spawning new consoles when switching users .
+Whether or not to lock the screen after switching to a different console .
+Whether to show only users who are currently logged in , or all users .
+Some preferences have been locked by the system adminstrator .
+The user you want to switch to is logged in multiple times on this computer . Which login do you want to switch to ?
+Use the current user 's name for the menu title
+When a new login must be created to switch users , create it in a window instead of on a new screen
+When changing to a different display , activate the screensaver for this display .
+The Fast User Switch Applet is free software ; you can redistribute it and / or modify it under the terms of the GNU General Public License as published by the Free Software Foundation ; either version 2 of the License , or ( at your option ) any later version .
+This program is distributed in the hope that it will be useful , but WITHOUT ANY WARRANTY ; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE . See the GNU General Public License for more details .
+You should have received a copy of the GNU General Public License along with this program ; if not , write to the Free Software Foundation , Inc . , 51 Franklin Street , Fifth Floor , Boston , MA 02110-1301 , USA
+A menu to quickly switch between users .
+% s in a nested window on console % d
+In order for the User Selector to function properly , the GNOME Display Manager must be running , but it is not .
+This system does not support multiple graphical login screens .
+There are currently too many sessions running to create a new one . Someone must log out , or the system configuration must be changed to allow for more .
+The graphical interface did not properly start , which is needed for graphical logins . It is likely that the X Window System or GDM is not properly configured .
+The User Selector 's interfaces file , '
+Can 't temporarily set screensaver to blank screen : % s
+The name of the X11 display this object refers to .
+The user currently logged in on this virtual terminal .
+The number of the virtual console this display can be found on , or % -1 .
+Whether or not this display is a windowed ( Xnest ) display .
+The display manager could not be contacted for unknown reasons .
+The display manager is not running or too old .
+The configured limit of flexible servers has been reached .
+There was an unknown error starting X.
+The nested X server ( Xnest ) cannot connect to your current X server .
+The X server in the GDM configuration could not be found .
+Trying to set an unknown logout action , or trying to set a logout action which is not available .
+Trying to update an unsupported configuration key .
+~ / .Xauthority file badly configured or missing .
+Too many messages were sent to the display manager , and it hung up .
+The display manager sent an unknown error message .
+The user this menu item represents .
+The user manager object this user is controlled by .
+@ @ image : ' figures / file-roller _ main _ window.png ' ; md5 = 1ffe6686c623c5a279a1ad13fb8eb488
+@ @ image : ' figures / file-roller _ leftarrow.png ' ; md5 = 1878b2a4132b673aa79df7660398caa0
+@ @ image : ' figures / file-roller _ rightarrow.png ' ; md5 = 45a0479ca13140680220976ccb653bda
+@ @ image : ' figures / file-roller _ uparrow.png ' ; md5 = 097f01471c5575ceeb527ea8d50061bd
+@ @ image : ' figures / file-roller _ home.png ' ; md5 = 1cede2c4f8d21c357d0eb9979f39f18d
+Archive Manager , also known as File Roller , allows you to create , view , modify , or unpack an archive .
+This manual is part of a collection of GNOME manuals distributed under the GFDL . If you want to distribute this manual separately from the collection , you can do so by adding a copy of the license to the manual , as described in section 6 of the license .
+Many of the names used by companies to distinguish their products and services are claimed as trademarks . Where those names appear in any GNOME documentation , and the members of the GNOME Documentation Project are made aware of those trademarks , then the names are in capital letters or initial capital letters .
+DOCUMENT IS PROVIDED ON AN " AS IS " BASIS , WITHOUT WARRANTY OF ANY KIND , EITHER EXPRESSED OR IMPLIED , INCLUDING , WITHOUT LIMITATION , WARRANTIES THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE , FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING . THE ENTIRE RISK AS TO THE QUALITY , ACCURACY , AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS WITH YOU . SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT , YOU ( NOT THE INITIAL WRITER , AUTHOR OR ANY CONTRIBUTOR ) ASSUME THE COST OF ANY NECESSARY SERVICING , REPAIR OR CORRECTION . THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE . NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER ; AND
+UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY , WHETHER IN TORT ( INCLUDING NEGLIGENCE ) , CONTRACT , OR OTHERWISE , SHALL THE AUTHOR , INITIAL WRITER , ANY CONTRIBUTOR , OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT , OR ANY SUPPLIER OF ANY OF SUCH PARTIES , BE LIABLE TO ANY PERSON FOR ANY DIRECT , INDIRECT , SPECIAL , INCIDENTAL , OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING , WITHOUT LIMITATION , DAMAGES FOR LOSS OF GOODWILL , WORK STOPPAGE , COMPUTER FAILURE OR MALFUNCTION , OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT , EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES .
+This manual describes version 2.26.0 of Archive Manager .
+bzip2 gzip lzip lzop compress rzip file.txt.gz gzip file.txt
+The display area displays the contents of the archive .
+This manual documents functionality from the menubar .
+Select the archive that you want to open .
+The number files and folders ( objects ) in the current location , and their size when uncompressed , in the statusbar
+Archive Manager Save in folder Browse for other folders Name
+Decide where in the archive you want to add the files , then open that location in the archive .
+To Add a Folder to an Archive
+Select the folder that you want to add .
+To Convert an Archive to Another Format
+To convert an archive to another format and save as a new file , perform the following steps :
+Open the archive that you want to convert .
+You can modify the contents of an archive in several ways .
+For security , you might want to encrypt the files that you add to an archive .
+If the archive format supports encryption , you can specify a password to encrypt the files that you add to the archive .
+Currently , only 7-Zip , ZIP , RAR and ARJ archives support encryption .
+To specify a password for file encryption , perform the following steps :
+To Rename a File in an Archive
+To rename a file in an archive , perform the following steps :
+Select the file that you want to rename .
+To copy files in an archive , perform the following steps :
+Select the files that you want to copy .
+Open the location where you want to put the copied files .
+To move files in an archive , perform the following steps :
+Select the files that you want to move .
+Open the location where you want to put the moved files .
+To delete files from an archive , perform the following steps :
+Select the files that you want to delete .
+Edit the file opened in step 1 , and then save your changes .
+Archive Manager Open With Archive Manager Archive Manager Open Files
+To Modify a File in an Archive with a Custom Application
+Right click the file .
+The position of the archive in the file system .
+The date and time at which the archive was last modified .
+The size of the archive contents when compressed .
+The size of the archive contents when uncompressed . This information is also available in the statusbar .
+The compression ratio is a value used to describe the reduction in size of the data . For example a compression ratio of 5 means that the compressed archive is 1 / 5th the size of the original data .
+The name of a file or folder in the archive .
+To View a File in an Archive
+A damaged archive can be impossible to extract , this can bring to a loss of data . For this reason you should test the archive integrity before deleting the original files .
+Not all the archive types support the integrity testing , the following is the list of archive types that can be tested for integrity : 7-Zip , RAR , ZIP , ACE , ARJ and Zoo .
+To test the integrity of an archive that doesn 't support the integrity testing , extract all the files from the archive and check that the operation is completed successfully .
+Shows icon to navigate backwards in location history list .
+Click on this button to navigate backwards in the location history list .
+Shows icon to navigate forwards in location history list .
+Click on this button to navigate forwards in the location history list .
+Shows icon to navigate up one level in folder tree .
+Click on this button to navigate up one level in the folder tree .
+Shows icon to open the top-level folder in the archive .
+Click on this button to open the top-level folder in the archive .
+This field shows the full pathname , within the archive , of the current folder .
+You can sort the file list by name , size , type , modification date , or location .
+To specify a sort order , click on the heading of the corresponding column .
+To reverse the sort order , click on the column heading again .
+Using the File Manager to Work with an Archive
+You can use the file manager to add files to an archive , or to extract files from an archive .
+To Add Files to an Archive by Using the File Manager
+Use the file manager popup menu to add the files to the archive .
+To use the file manager popup menu to add files to an archive , perform the following steps :
+Right-click on the files or folders in a file manager window .
+Choose the archive type from the drop-down list .
+To Extract Files From an Archive by Using the File Manager
+Use the file manager popup menu to extract the files from the archive .
+To use the file manager popup menu to extract files from an archive , perform the following steps :
+Right-click on the archive in a file manager window .
+Type the password that will be used to encrypt the archive . If no password is specified the archive will not be encrypted .
+If this option is selected , the password will be requested even to view the list of files contained in the archive , otherwise it will be requested only to extract the files from the archive . This option is available only if a password is specified .
+Select this option to split the archive in more files of the specified dimension .
+Only 7-Zip and RAR archives support this feature .
+Select your home folder .
+Select this option to add all files that match the specified pattern , from the current folder and from subfolders .
+The filename , not the subfolder name , must match the specified pattern .
+Select this option to omit files from folders that are symbolic links . Symbolic links are pointers or shortcuts to other folders .
+Click on this button to reset the current selection of advanced add options to the default values .
+Select this option to reconstruct the folder structure when extracting the specified files .
+Select this option to overwrite any files in the destination folder that have the same name as the specified files .
+Do not extract older files Archive Manager Archive Manager
+Do not extract older files Overwrite existing files Archive Manager
+Can 't pass document URIs to a ' Type = Link ' desktop entry
+Specify file containing saved configuration
+S _ elect the files you want to update :
+You don 't have permission to create an archive in this folder
+File Roller is free software ; you can redistribute it and / or modify it under the terms of the GNU General Public License as published by the Free Software Foundation ; either version 2 of the License , or ( at your option ) any later version .
+File Roller is distributed in the hope that it will be useful , but WITHOUT ANY WARRANTY ; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE . See the GNU General Public License for more details .
+You should have received a copy of the GNU General Public License along with File Roller ; if not , write to the Free Software Foundation , Inc . , 51 Franklin St , Fifth Floor , Boston , MA 02110-1301 USA
+Copyright © 2001-2007 Free Software Foundation , Inc .
+You don 't have the right permissions to read files from folder " % s "
+Enter the password for the archive ' % s ' .
+The name " % s " is not valid because it cannot contain the characters : % s % s
+You don 't have the right permissions to create an archive in the destination folder .
+Destination folder " % s " does not exist . Do you want to create it ?
+Could not create the destination folder : % s .
+The archive is already present . Do you want to overwrite it ?
+You don 't have the right permissions to extract archives in the folder " % s "
+Update the file " % s " in the archive " % s " ?
+Update the files in the archive " % s " ?
+You can 't add an archive to itself .
+Could not find the volume : % s
+Could not display the folder " % s "
+An error occurred while extracting files .
+An error occurred while loading the archive .
+An error occurred while deleting files from the archive .
+An error occurred while adding files to the archive .
+An error occurred while testing archive .
+An error occurred while saving the archive .
+Do you want to add this file to the current archive or open it as a new archive ?
+Do you want to create a new archive with these files ?
+Could not save the archive " % s "
+The new name is equal to the old one .
+A folder named " % s " already exists . % s
+A file named " % s " already exists . % s
+% d % B % Y , % H : % M
+Add files to the specified archive and quit the program
+Add files asking the name of the archive and quit the program
+Extract archives to the specified folder and quit the program
+Extract archives asking the destination folder and quit the program
+Extract the contents of the archives in the archive folder and quit the program
+Default folder to use for the ' --add ' and ' --extract ' commands
+View the output produced by the last executed command
+Save the current archive with a different name
+@ @ image : ' figures / file-roller _ main _ window.png ' ; md5 = 1ffe6686c623c5a279a1ad13fb8eb488
+@ @ image : ' figures / file-roller _ leftarrow.png ' ; md5 = 1878b2a4132b673aa79df7660398caa0
+@ @ image : ' figures / file-roller _ rightarrow.png ' ; md5 = 45a0479ca13140680220976ccb653bda
+@ @ image : ' figures / file-roller _ uparrow.png ' ; md5 = 097f01471c5575ceeb527ea8d50061bd
+@ @ image : ' figures / file-roller _ home.png ' ; md5 = 1cede2c4f8d21c357d0eb9979f39f18d
+Archive Manager , also known as File Roller , allows you to create , view , modify , or unpack an archive .
+This manual is part of a collection of GNOME manuals distributed under the GFDL . If you want to distribute this manual separately from the collection , you can do so by adding a copy of the license to the manual , as described in section 6 of the license .
+Many of the names used by companies to distinguish their products and services are claimed as trademarks . Where those names appear in any GNOME documentation , and the members of the GNOME Documentation Project are made aware of those trademarks , then the names are in capital letters or initial capital letters .
+DOCUMENT IS PROVIDED ON AN " AS IS " BASIS , WITHOUT WARRANTY OF ANY KIND , EITHER EXPRESSED OR IMPLIED , INCLUDING , WITHOUT LIMITATION , WARRANTIES THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE , FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING . THE ENTIRE RISK AS TO THE QUALITY , ACCURACY , AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS WITH YOU . SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT , YOU ( NOT THE INITIAL WRITER , AUTHOR OR ANY CONTRIBUTOR ) ASSUME THE COST OF ANY NECESSARY SERVICING , REPAIR OR CORRECTION . THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE . NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER ; AND
+UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY , WHETHER IN TORT ( INCLUDING NEGLIGENCE ) , CONTRACT , OR OTHERWISE , SHALL THE AUTHOR , INITIAL WRITER , ANY CONTRIBUTOR , OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT , OR ANY SUPPLIER OF ANY OF SUCH PARTIES , BE LIABLE TO ANY PERSON FOR ANY DIRECT , INDIRECT , SPECIAL , INCIDENTAL , OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING , WITHOUT LIMITATION , DAMAGES FOR LOSS OF GOODWILL , WORK STOPPAGE , COMPUTER FAILURE OR MALFUNCTION , OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT , EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES .
+This manual describes version 2.26.0 of Archive Manager .
+bzip2 gzip lzip lzop compress rzip file.txt.gz gzip file.txt
+The display area displays the contents of the archive .
+This manual documents functionality from the menubar .
+Select the archive that you want to open .
+The number files and folders ( objects ) in the current location , and their size when uncompressed , in the statusbar
+Archive Manager Save in folder Browse for other folders Name
+Decide where in the archive you want to add the files , then open that location in the archive .
+To Add a Folder to an Archive
+Select the folder that you want to add .
+To Convert an Archive to Another Format
+To convert an archive to another format and save as a new file , perform the following steps :
+Open the archive that you want to convert .
+You can modify the contents of an archive in several ways .
+For security , you might want to encrypt the files that you add to an archive .
+If the archive format supports encryption , you can specify a password to encrypt the files that you add to the archive .
+Currently , only 7-Zip , ZIP , RAR and ARJ archives support encryption .
+To specify a password for file encryption , perform the following steps :
+To Rename a File in an Archive
+To rename a file in an archive , perform the following steps :
+Select the file that you want to rename .
+To copy files in an archive , perform the following steps :
+Select the files that you want to copy .
+Open the location where you want to put the copied files .
+To move files in an archive , perform the following steps :
+Select the files that you want to move .
+Open the location where you want to put the moved files .
+To delete files from an archive , perform the following steps :
+Select the files that you want to delete .
+Edit the file opened in step 1 , and then save your changes .
+Archive Manager Open With Archive Manager Archive Manager Open Files
+To Modify a File in an Archive with a Custom Application
+Right click the file .
+The position of the archive in the file system .
+The date and time at which the archive was last modified .
+The size of the archive contents when compressed .
+The size of the archive contents when uncompressed . This information is also available in the statusbar .
+The compression ratio is a value used to describe the reduction in size of the data . For example a compression ratio of 5 means that the compressed archive is 1 / 5th the size of the original data .
+The name of a file or folder in the archive .
+To View a File in an Archive
+A damaged archive can be impossible to extract , this can bring to a loss of data . For this reason you should test the archive integrity before deleting the original files .
+Not all the archive types support the integrity testing , the following is the list of archive types that can be tested for integrity : 7-Zip , RAR , ZIP , ACE , ARJ and Zoo .
+To test the integrity of an archive that doesn 't support the integrity testing , extract all the files from the archive and check that the operation is completed successfully .
+Shows icon to navigate backwards in location history list .
+Click on this button to navigate backwards in the location history list .
+Shows icon to navigate forwards in location history list .
+Click on this button to navigate forwards in the location history list .
+Shows icon to navigate up one level in folder tree .
+Click on this button to navigate up one level in the folder tree .
+Shows icon to open the top-level folder in the archive .
+Click on this button to open the top-level folder in the archive .
+This field shows the full pathname , within the archive , of the current folder .
+You can sort the file list by name , size , type , modification date , or location .
+To specify a sort order , click on the heading of the corresponding column .
+To reverse the sort order , click on the column heading again .
+Using the File Manager to Work with an Archive
+You can use the file manager to add files to an archive , or to extract files from an archive .
+To Add Files to an Archive by Using the File Manager
+Use the file manager popup menu to add the files to the archive .
+To use the file manager popup menu to add files to an archive , perform the following steps :
+Right-click on the files or folders in a file manager window .
+Choose the archive type from the drop-down list .
+To Extract Files From an Archive by Using the File Manager
+Use the file manager popup menu to extract the files from the archive .
+To use the file manager popup menu to extract files from an archive , perform the following steps :
+Right-click on the archive in a file manager window .
+Type the password that will be used to encrypt the archive . If no password is specified the archive will not be encrypted .
+If this option is selected , the password will be requested even to view the list of files contained in the archive , otherwise it will be requested only to extract the files from the archive . This option is available only if a password is specified .
+Select this option to split the archive in more files of the specified dimension .
+Only 7-Zip and RAR archives support this feature .
+Select your home folder .
+Select this option to add all files that match the specified pattern , from the current folder and from subfolders .
+The filename , not the subfolder name , must match the specified pattern .
+Select this option to omit files from folders that are symbolic links . Symbolic links are pointers or shortcuts to other folders .
+Click on this button to reset the current selection of advanced add options to the default values .
+Select this option to reconstruct the folder structure when extracting the specified files .
+Select this option to overwrite any files in the destination folder that have the same name as the specified files .
+Do not extract older files Archive Manager Archive Manager
+Do not extract older files Overwrite existing files Archive Manager
+Specify file containing saved configuration
+S _ elect the files you want to update :
+You don 't have permission to create an archive in this folder
+File Roller is free software ; you can redistribute it and / or modify it under the terms of the GNU General Public License as published by the Free Software Foundation ; either version 2 of the License , or ( at your option ) any later version .
+File Roller is distributed in the hope that it will be useful , but WITHOUT ANY WARRANTY ; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE . See the GNU General Public License for more details .
+You should have received a copy of the GNU General Public License along with File Roller ; if not , write to the Free Software Foundation , Inc . , 51 Franklin St , Fifth Floor , Boston , MA 02110-1301 USA
+Copyright © 2001 2010 Free Software Foundation – , Inc .
+You don 't have the right permissions to read files from folder " % s "
+Enter the password for the archive ' % s ' .
+The name " % s " is not valid because it cannot contain the characters : % s % s
+You don 't have the right permissions to create an archive in the destination folder .
+Destination folder " % s " does not exist . Do you want to create it ?
+Could not create the destination folder : % s .
+The archive is already present . Do you want to overwrite it ?
+You don 't have the right permissions to extract archives in the folder " % s "
+There was an internal error trying to search for applications :
+There is no command installed for % s files . Do you want to search for a command to open this file ?
+Update the file " % s " in the archive " % s " ?
+Update the files in the archive " % s " ?
+The program was not able to find out the file format you want to use for '
+You can 't add an archive to itself .
+Could not find the volume : % s
+Could not display the folder " % s "
+An error occurred while extracting files .
+An error occurred while loading the archive .
+An error occurred while deleting files from the archive .
+An error occurred while adding files to the archive .
+An error occurred while testing archive .
+An error occurred while saving the archive .
+Do you want to add this file to the current archive or open it as a new archive ?
+Do you want to create a new archive with these files ?
+Could not save the archive " % s "
+The new name is equal to the old one .
+A folder named " % s " already exists . % s
+A file named " % s " already exists . % s
+% d % B % Y , % H : % M
+Add files to the specified archive and quit the program
+Add files asking the name of the archive and quit the program
+Extract archives to the specified folder and quit the program
+Extract archives asking the destination folder and quit the program
+Extract the contents of the archives in the archive folder and quit the program
+Default folder to use for the ' --add ' and ' --extract ' commands
+View the output produced by the last executed command
+Save the current archive with a different name
+Sort file list by modification time
+Specify file containing saved configuration
+What criteria must be used to arrange files . Possible values : name , size , type , time , path .
+Whether to sort in ascending or descending direction . Possible values : ascending , descending .
+Use ' all-files ' to view all the files in the archive in a single list , use ' as-folder ' to navigate the archive as a folder .
+Display the type column in the main window .
+Display the size column in the main window .
+Display the time column in the main window .
+Display the path column in the main window .
+If true will display icons depending on the file type ( slower ) , otherwise will use always the same icon for all files ( faster ) .
+The default width of the name column the file list .
+Max number of items in the ' Open Recents ' submenu .
+List of applications entered in the ' Open File ' dialog and not associated with the file type .
+Compression level used when adding files to an archive . Possible values : very-fast , fast , normal , maximum .
+Whether to encrypt the archive header . If the header is encrypted the password will be required to list the archive content as well .
+S _ elect the files you want to update :
+You don 't have permission to create an archive in this folder
+Copyright © 2001 2010 Free Software Foundation – , Inc .
+You don 't have the right permissions to read files from folder " % s "
+Enter the password for the archive ' % s ' .
+The name " % s " is not valid because it cannot contain the characters : % s % s
+You don 't have the right permissions to create an archive in the destination folder .
+Destination folder " % s " does not exist . Do you want to create it ?
+Could not create the destination folder : % s .
+The archive is already present . Do you want to overwrite it ?
+You don 't have the right permissions to extract archives in the folder " % s "
+There was an internal error trying to search for applications :
+There is no command installed for % s files . Do you want to search for a command to open this file ?
+Update the file " % s " in the archive " % s " ?
+Update the files in the archive " % s " ?
+The program was not able to find out the file format you want to use for '
+You can 't add an archive to itself .
+Could not find the volume : % s
+Could not display the folder " % s "
+An error occurred while extracting files .
+An error occurred while loading the archive .
+An error occurred while deleting files from the archive .
+An error occurred while adding files to the archive .
+An error occurred while testing archive .
+An error occurred while saving the archive .
+Do you want to add this file to the current archive or open it as a new archive ?
+Do you want to create a new archive with these files ?
+Could not save the archive " % s "
+The new name is equal to the old one .
+A folder named " % s " already exists . % s
+A file named " % s " already exists . % s
+% d % B % Y , % H : % M
+Add files to the specified archive and quit the program
+Add files asking the name of the archive and quit the program
+Extract archives to the specified folder and quit the program
+Extract archives asking the destination folder and quit the program
+Extract the contents of the archives in the archive folder and quit the program
+Default folder to use for the ' --add ' and ' --extract ' commands
+View the output produced by the last executed command
+Save the current archive with a different name
+Sort file list by modification time
+I have set a password , but it does not protect the whole archive .
+File Roller opening an archive
+The integrity test verifies that your data is not corrupt .
+Set a password to encrypt data in a new archive by following these steps :
+Protect an existing archive by setting a password :
+Display the tree view of the folders in the side pane
+View the content of an archive as a list of files
+View the content of an archive as a folder structure
+@ @ image : ' figures / file-roller-main-window.png ' ; md5 = 133c50bfcf2ac220d3c2c61180f339db
+An archive is composed of one or more files , along with metadata . It may be encrypted in part or as a whole . By collecting multiple data files together into a single one , archive files are useful for storing data and transferring it between computers .
+Create new archive by adding files or folders
+There are two ways of viewing the archive :
+You may use these column headings mentioned above ( name , size ) … to sort the files in your archive . Do this by clicking on them , and click the same one again to sort in reverse order .
+Open the file with different application by following these steps :
+@ @ image : ' figures / file-roller-open-recent.png ' ; md5 = 56d69ff2cb369cc5b0b85d5dde11018e
+you can type the names of the files that you want to extract
+You can specify in the file chooser dialog whether you want :
+Tick this option if you want to keep the directory structure , as it was in your archive
+This option will not overwrite existing files with the same name , which have a more recent modification date than those which are in the archive .
+Choose the location in the file chooser , into which the files should be extracted . This will be the destination folder .
+The application will show you the progress bar in a new dialog . If the extraction completes successfully , you will be asked whether you want to :
+A dialog will open . Enter the new file name into the text entry field .
+Add files or folders to your new archive .
+Add files to the archive Edit Add files … File Roller Add a folder to the archive Edit Add a folder …
+When you add a folder to your archive , you will be offered some options :
+Select which subfolders or files are to be excluded
+Once you finish adding files , your archive is ready .
+Add files or folders to a new archive .
+Not all archive file formats support folders — if the file format that you are using does not , you will not be warned . If the file format that you are using does not support folders , the files from the folders will be added , but not the folder itself .
+Once you finish adding files , the archive is ready ; you do not need to save it .
+The application will show you the progress bar in a new dialog . If the extraction completes successfully , you will be asked whether you want to :
+All the files and folders in the archive will be extracted .
+You can specify in the file chooser dialog whether you want to :
+Tick this option if you want to keep the directory structure as it is in your archive .
+This option will not overwrite existing files with the same name , which have a more recent modification date than those which are in the archive .
+There are two ways to view an archive :
+You may use the column headings mentioned above ( name , size ) … to sort the files in your archive . Do this by clicking on them ; you can toggle to sort in reverse order .
+Open the file with a different application by following these steps :
+Right click on the file .
+Learn to use and manage compressed archives of files and folder .
+external ref = ' figures / file-roller-3-12.png ' md5 = ' 8bd9e68662e072527eacf3d0f69a9a8b '
+An archive consists of one or more files and folders , along with metadata . It may be encrypted in part or as a whole . Archive files are useful for storing data and transferring it between computers as they allow you to collect multiple files into one .
+Display the tree view of the folders in the side pane
+View the content of an archive as a list of files
+View the content of an archive as a folder structure
+Set a password to encrypt data in a new archive by following these steps :
+You may not be able to type a password , because not all archive types support encryption , so choose an archive type that can be password protected before setting a password .
+Protect an existing archive by setting a password :
+The integrity test verifies that your data is not corrupt .
+I have set a password , but it does not protect the whole archive .
+Add files to the archive Edit Add files … Archive Manager Add a folder to the archive Edit Add a folder
+Choose where you want the archive to be extracted to in the file chooser . This will be the destination folder .
+This is a bug tracking system where users and developers can file details about bugs , crashes and request enhancements .
+File a Bug Applications five-or-more bug writing guidelines browse
+Your report will be given an ID number , and its status will be updated as it is being dealt with .
+external ref = ' figures / small.png ' md5 = ' cc59a29333b3b145c9e7928872c714bc '
+external ref = ' figures / medium.png ' md5 = ' ae122a301d215d40fff80717211b0915 '
+external ref = ' figures / large.png ' md5 = ' 14942e047fbbc3538ababbfa888fa4e6 '
+While a larger board gives you more space , there are also more objects in play for each turn .
+The 3 different board sizes have the following parameters :
+external ref = ' figures / color-balls.png ' md5 = ' ac9b26a5c770a7e118c84d82b43fbcaa '
+external ref = ' figures / color-shapes.png ' md5 = ' 12b538f0d29c55aa93c8fd6adec58ffc '
+external ref = ' figures / pickcolor.png ' md5 = ' 51d82564630d095c45865aff5518e6fc '
+To change the appearance of the pieces and the board :
+To speed up object movements :
+external ref = ' figures / logo.png ' md5 = ' 83ba6ff888acbdea3ad599b055ed7710 '
+external ref = ' figures / logo32.png ' md5 = ' 51b65eea63f1a6c26a4c5d628dba406c '
+This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 Unported license .
+To copy , distribute and transmit the work .
+To adapt the work .
+You must attribute the work in the manner specified by the author or licensor ( but not in any way that suggests that they endorse you or your use of the work ) .
+If you alter , transform , or build upon this work , you may distribute the resulting work only under the same , similar or a compatible license .
+external ref = ' figures / glines-demo.ogv ' md5 = ' f9222aaac4ad0df37975c8ac77fbe1cc '
+Click on the object you want to move . The selected object will begin spinning .
+Press any of the arrow keys . An outline around a cell will appear on the board .
+Using the arrow keys , navigate to the object you want to move .
+external ref = ' figures / horizontal.png ' md5 = ' 069cf4ce8408b1cc5e6337f2527c4d2e '
+external ref = ' figures / vertical.png ' md5 = ' 9f17201dac1c4c78a572ac17dce45ce0 '
+external ref = ' figures / diagonal.png ' md5 = ' 8654cd0cc269ac9ed0f8fb8bce02a8fc '
+external ref = ' figures / glines-gameover.png ' md5 = ' ab35873b1818aa94499cc7fcca646db6 '
+There must be a clear path from the original position of the object to the destination cell ( i.e you can not jump over objects ) .
+A straight horizontal , vertical or diagonal line of five or more similar objects will disappear from the game board . When this happens you will have an extra move without additional objects being added to the board .
+The game is over when the board is full , since no object can be moved at that point .
+You score points by creating lines of 5 or more objects . The number of points depends on the number of objects that disappear .
+Try to set at least three same objects with your every move .
+Try to line up more than 5 objects . For example , if you have 6 objects , you can line up 2 and 3 with a space in between , and then connect them by placing the sixth object between them .
+Address book % ‘ s ’ is offline , so contact % ‘ s ’ cannot be removed .
+Permission denied to remove contact % s : % s ‘ ’
+Removing contacts isn 't supported by this persona store : % s
+Can 't remove contact % ‘ s ’ : % s
+Address book % ‘ s ’ is offline .
+Permission denied to open address book % ‘ s ’ : % s
+Couldn 't open address book % ‘ s ’ : % s
+Couldn 't get address book capabilities : % s
+Couldn 't get view for address book % s ‘ ’ .
+Couldn 't get view for address book % ‘ s ’ : % s
+Changing the % s property ‘ ’ failed due to reaching the timeout .
+Web service addresses are not writeable on this contact .
+Local IDs are not writeable on this contact .
+The contact cannot be marked as favourite .
+E-mail addresses are not writeable on this contact .
+Phone numbers are not writeable on this contact .
+Postal addresses are not writeable on this contact .
+Full name is not writeable on this contact .
+Structured name is not writeable on this contact .
+IM addresses are not writeable on this contact .
+Property % ‘ s ’ is not writeable : % s
+Invalid value for property % s : % s ‘ ’
+Unknown error setting property % s : % s ‘ ’
+The relationship key file ' % s ' could not be loaded : % s
+The relationship key file directory ' % s ' could not be created : % s
+The relationship key file ' % s ' could not be created : % s
+Could not write updated key file ' % s ' : % s
+Invalid IM address % s ‘ ’ for protocol % s : % s ‘ ’
+Couldn 't load data from key file : % s
+Couldn t prepare libsocialweb service ’ : % s
+Failed to determine whether we can set aliases on Telepathy account ' % s ' : % s
+Telepathy contacts representing the local user may not be removed .
+Failed to remove a persona from store : % s
+Persona store ( % s , % s ) requires the following details : contact ( provided : ' % s ' )
+Cannot create a new Telepathy contact while offline .
+Failed to add a persona from details : % s
+Failed to change favorite without a connection to the telepathy-logger service .
+Failed to change favorite status of Telepathy Persona because it has no attached TpContact .
+Failed to change favorite status for Telepathy contact % s ‘ ’ .
+Failed to change contact 's alias : % s
+Extended information may only be set on the user 's Telepathy contact .
+Extended information cannot be written because the store is disconnected .
+Unrecognized parameter ' % s ' passed to persona store ' % s ' .
+Error listing contents of folder ' % s ' : % s
+File or directory ' % s ' does not exist .
+Failed to get content type for ' % s ' .
+Birthday event ID is not writeable on this contact .
+Favorite status is not writeable on this contact .
+The IM address ' % s ' could not be understood .
+Error preparing persona store ' % s ' : % s
+Unknown property ' % s ' in linkable property list .
+Failed to add contact for persona store ID ' % s ' : % s
+Can t link personas ’ with no primary store .
+Persona store % s : % s ‘ ’ is configured as primary , but could not be found or failed to load .
+Check the relevant service is running , or change the default store in that service or using the % s GSettings key “ ” .
+Anti-links can 't be removed between personas being linked .
+Can ’ t add personas with no primary store .
+Can 't write to requested property ( % s “ ” ) of the writeable store .
+Failed to change property % s ‘ ’ : No suitable personas were found .
+The ID of the persona store which folks should use as primary ( i.e. to store linking data in ) . The type ID of the store may optionally be prepended , separated by a colon . For example : “ eds : system-address-book or key-file ” “ ” .
+% s , % s , % s , % s , % s , % s , % s
+Title : % s , Organisation : % s , Role : % s
+Failed to get information about file % s : % s
+The Pidgin buddy list file ' % s ' could not be loaded .
+The Pidgin buddy list file ‘ % s ’ could not be loaded : the root element could not be found or was not recognized .
+Error changing group of contact % s ‘ ’ : % s
+Ignoring buddy with no alias and only one IM address : % s
+Failed to create new contact for buddy with alias % s ‘ ’ and IM addresses : % s Error : % s
+Created contact % s ‘ ’ for buddy with alias % s ‘ ’ and IM addresses : % s
+Source backend name ( default : ' pidgin ' )
+Source filename ( default : specific to source backend )
+Couldn 't parse command line options : % s
+Couldn 't load the % s backend ‘ ’ .
+Couldn 't prepare the % s backend ‘ ’ : % s
+Couldn 't load the % s backend ‘ ’ 's persona store .
+Couldn 't prepare the % s backend ‘ ’ 's persona store : % s
+Unrecognized source backend name % s . % s ‘ ’ ‘ ’ is currently the only supported source backend .
+No BlueZ 5 object manager running , so the BlueZ backend will be inactive . Either your BlueZ installation is too old ( only version 5 is supported ) or the service can t be started ’ .
+Error connecting to OBEX transfer daemon over D-Bus . Ensure BlueZ and obexd are installed .
+Error reading the transferred address book file : % s
+Error during transfer of the address book % s ‘ ’ from Bluetooth device % s ‘ ’ .
+Permission to access the address book on Bluetooth device % ‘ s ’ was denied by the user .
+An OBEX address book transfer from device % ‘ s ’ could not be started : % s
+The OBEX address book transfer from device % ‘ s ’ failed : % s
+Error during transfer of the address book from Bluetooth device % s : % s ‘ ’
+Bluetooth device % ‘ s disappeared ’ during address book transfer .
+Address book % ‘ s ’ is offline , so contact % ‘ s ’ cannot be removed .
+Permission denied to remove contact % s : % s ‘ ’
+Removing contacts isn 't supported by this persona store : % s
+Can 't remove contact % ‘ s ’ : % s
+Address book % ‘ s ’ is offline .
+Permission denied to open address book % ‘ s ’ : % s
+Couldn 't open address book % ‘ s ’ : % s
+Couldn 't get address book capabilities : % s
+Couldn 't get view for address book % s ‘ ’ .
+Couldn 't get view for address book % ‘ s ’ : % s
+Changing the % s property ‘ ’ failed due to reaching the timeout .
+Web service addresses are not writeable on this contact .
+Local IDs are not writeable on this contact .
+The contact cannot be marked as favourite .
+E-mail addresses are not writeable on this contact .
+Phone numbers are not writeable on this contact .
+Postal addresses are not writeable on this contact .
+Full name is not writeable on this contact .
+Structured name is not writeable on this contact .
+IM addresses are not writeable on this contact .
+My Contacts is only available for Google Contacts
+Property % ‘ s ’ is not writeable : % s
+Invalid value for property % s : % s ‘ ’
+Unknown error setting property % s : % s ‘ ’
+The relationship key file ' % s ' could not be loaded : % s
+The relationship key file directory ' % s ' could not be created : % s
+The relationship key file ' % s ' could not be created : % s
+Could not write updated key file ' % s ' : % s
+Invalid IM address % s ‘ ’ for protocol % s : % s ‘ ’
+Couldn 't load data from key file : % s
+Couldn t prepare libsocialweb service ’ : % s
+No oFono object manager running , so the oFono backend will be inactive . Either oFono isn ’ t installed or the service can t be started ’ .
+Telepathy contacts representing the local user may not be removed .
+Failed to remove a persona from store : % s
+Persona store ( % s , % s ) requires the following details : contact ( provided : ' % s ' )
+Cannot create a new Telepathy contact while offline .
+Failed to add a persona from details : % s
+Failed to change favorite without a connection to the telepathy-logger service .
+Failed to change favorite status of Telepathy Persona because it has no attached TpContact .
+Failed to change favorite status for Telepathy contact % s ‘ ’ .
+Failed to change contact 's alias : % s
+Extended information may only be set on the user 's Telepathy contact .
+Extended information cannot be written because the store is disconnected .
+Unrecognized parameter ' % s ' passed to persona store ' % s ' .
+Error listing contents of folder ' % s ' : % s
+Error querying info for target % s ‘ ’ of symlink % s : % s ‘ ’
+File or directory ' % s ' does not exist .
+Failed to get content type for ' % s ' .
+Birthday event ID is not writeable on this contact .
+Favorite status is not writeable on this contact .
+The IM address ' % s ' could not be understood .
+Error preparing persona store ' % s ' : % s
+Unknown property ' % s ' in linkable property list .
+Failed to add contact for persona store ID ' % s ' : % s
+Can t link personas ’ with no primary store .
+Persona store % s : % s ‘ ’ is configured as primary , but could not be found or failed to load .
+Check the relevant service is running , or change the default store in that service or using the % s GSettings key “ ” .
+Anti-links can 't be removed between personas being linked .
+Can ’ t add personas with no primary store .
+Can 't write to requested property ( % s “ ” ) of the writeable store .
+Failed to change property % s ‘ ’ : No suitable personas were found .
+% g % t % m % t % f
+The ID of the persona store which folks should use as primary ( i.e. to store linking data in ) . The type ID of the store may optionally be prepended , separated by a colon . For example : “ eds : system-address-book or key-file ” “ ” .
+% s , % s , % s , % s , % s , % s , % s
+Title : % s , Organisation : % s , Role : % s
+Failed to get information about file % s : % s
+The Pidgin buddy list file ' % s ' could not be loaded .
+The Pidgin buddy list file ‘ % s ’ could not be loaded : the root element could not be found or was not recognized .
+Error changing group of contact % s ‘ ’ : % s
+Ignoring buddy with no alias and only one IM address : % s
+Failed to create new contact for buddy with alias % s ‘ ’ and IM addresses : % s Error : % s
+Created contact % s ‘ ’ for buddy with alias % s ‘ ’ and IM addresses : % s
+Source backend name ( default : ' pidgin ' )
+Source filename ( default : specific to source backend )
+Couldn 't parse command line options : % s
+Couldn 't load the % s backend ‘ ’ .
+Couldn 't prepare the % s backend ‘ ’ : % s
+Couldn 't load the % s backend ‘ ’ 's persona store .
+Couldn 't prepare the % s backend ‘ ’ 's persona store : % s
+Unrecognized source backend name % s . % s ‘ ’ ‘ ’ is currently the only supported source backend .
+Failed to determine whether we can set aliases on Telepathy account ' % s ' : % s
+Use different themes to improve your gaming experience .
+Change the level at which the computer plays or play with a friend .
+To change the level , or to play with a friend :
+Level one Level two Level three Level one Level three
+Press the key you want to use instead of the default key .
+When you are playing with a friend or a family member , both players will use the same controls .
+When sounds are enabled , you will hear something every time a marble is dropped , or when a game ends .
+Animation results in a more fluid movement of the marbles .
+Privileges are required to enroll new fingerprints for other users .
+Swipe was too short , try again
+Your finger was not centered , try swiping your finger again
+Remove your finger , and try swiping your finger again
+You may add pictures and videos to an already defined group .
+external ref = ' figures / preferences-general.png ' md5 = ' 8d162b86a0a4d707974113eb822e0796 '
+external ref = ' figures / preferences-connection.png ' md5 = ' 94a57d8bb4307783b862d7daf88383e3 '
+This tab allows you to set up a proxy .
+external ref = ' figures / edit-picture-details.png ' md5 = ' 61b5d97d77e1251b69c634a3b1718e32 '
+Use this box to amend the title
+Add some tags to better categorize the element
+Choose whether the element is public or private .
+You can specify whether the element is a photo , a screenshot or something else
+You can rate the kind of element you 're uploading
+You can change the license , or just use the default one set on Flickr
+You can let frogr set the geolocation information for a picture on Flickr based on its EXIF information
+You can specify whether it should be possible to find your picture or video using Flickr 's search engine
+external ref = ' figures / auth-dialog-step1.png ' md5 = ' 0bee821ca7fdd16842a4e2536e2bb17e '
+Click Ok , it will run your default web browser . On your default web browser , either create a Flickr account or log in to an existing account .
+external ref = ' figures / frogr-remote-organizer.png ' md5 = ' cb4f8098adc7b429e874c7d72d490b8e '
+Allow uploading pictures located in remote machines
+Allow specifying sets and group pools for the pictures to be added to after the upload process .
+external ref = ' figures / add-to-sets.png ' md5 = ' 7b5f33cb2f29b7f939c746b1dacba908 '
+external ref = ' figures / create-new-set.png ' md5 = ' dcb532384b0d30df70fa72b2b6db628f '
+You can add pictures and videos to sets in Flickr . A set is a category . Set do not imply hierarchical view .
+Creating new sets to add elements to . You can use the set 's title and description for every selected element too
+You can assign several tags to any element . Flickr allows you to define your own tags . It allows you to easily find any element you did upload .
+You first have to add elements ( pictures or videos ) into frogr before being able to upload them .
+@ @ image : ' figures / add-to-sets.png ' ; md5 = 4271e55d0c04feebbe4bbd5fe9d3712c
+@ @ image : ' figures / preferences-misc.png ' ; md5 = 679b3d09b469bb1e63dc2614df62f437
+@ @ image : ' figures / add-to-groups.png ' ; md5 = 8afe23df54ab15e0e76deea82cf3ed77
+Frogr : a Flickr Remote Organizer for GNOME
+Enter a spaces separated list of tags :
+Please press the button to authorize % s and then come back to complete the process .
+Error uploading picture : Quota exceeded
+Error uploading video : You can 't upload more videos with this account
+Error : Photo already in the maximum number of groups possible
+Error : Photo added to group 's queue
+Error : Photo already added to group 's queue
+Error : Content not allowed for this group
+Authorization failed . Please try again
+Error % s is not properly authorized to upload pictures to Flickr . Please re-authorize it
+Unable to authenticate in Flickr Please try again .
+You have not properly authorized % s yet . Please try again .
+Retrying Upload ( attempt % d / % d ) …
+You need to properly authorize % s before uploading any pictures to Flickr . Please re-authorize it .
+You need to be connected before uploading any pictures to Flickr .
+An error happened trying to load the picture
+Unable to load picture % s : % s
+Unable to load video % s Please check that you have the right codec installed
+Can 't load file % s : Size of file is bigger than the maximum allowed for this account ( % s )
+To switch between versions while editing :
+Double-click the photo you wish to edit .
+A brief introduction to the tagging capabilities of F-Spot
+There are several methods to search by tags .
+Method One : Double-click the tags you wish to search for .
+Drag the tags you wish to search for into the newly-enabled Find bar .
+To exclude a tag from your search :
+In the tag pane , double-click the tag you wish to exclude . This will add it to the Find bar .
+In the Find bar , double-click the tag you wish to exclude .
+As with attaching tags , there are two main methods of removing tags from photos .
+Select photos from which to remove a tag .
+In the tag pane , select a tag to remove from the photos you have selected .
+Right click the photos .
+Deleting tags removes them entirely from your system , but leaves behind any photos to which that tag is attached .
+Select the tag you wish to delete from within the tag pane .
+Creating tags to be attached to photos
+In order to use tags , you need to first create a set of tags which you wish to use . There are three main methods to create tags .
+Select the photos to which you wish to attach the new tag .
+Select photos to which to attach a tag .
+In the tag pane , select a tag to attach to the photos you have selected .
+Rate your photos from one to five stars
+By double-clicking , select the photo you wish to rate .
+In the lower-right corner , you will see five dots , corresponding to the rating you wish to give ; to give a rating of one star , for example , click the first dot .
+Select the photo ( s ) you wish to rate .
+Right-click the photo ( s ) you wish to rate , and select a rating at the bottom of the right-click menu by clicking the corresponding dot .
+To search by rating :
+Select the rating range which you wish to view .
+To stop searching by rating :
+Select the photos you wish to upload .
+Import rolls are " batches " of imported photos . Regardless of the date the photo was taken , the import roll timestamp is decided when you import photos .
+To search by latest import roll :
+Chances are , the first thing you will want to do is import photos .
+Select a source from which to import , such as a device or a folder .
+There are three ways to rotate a selected photo :
+Click the appropriate rotate button , to the right of the import button .
+Use the bracket keys to rotate the photo .
+Select a rotation , ranging from -45 to 45 degrees .
+Select a constraining aspect ratio , that is , a proportion of height to width to which the new photo must fit . Examples of constraining aspect ratios include 4x3 , 4x6 , and 5x7 .
+Click and drag to select the desired area to keep . This box can be dragged around after being sized .
+Name the gallery and give it a description .
+Create Standalone Web Gallery Save the files only Create gallery using " Original "
+Select the photos you wish to remove from the catalog .
+Remove From Catalog Edit Remove From Catalog
+Select the photos you wish to delete .
+To post selected photos to Facebook :
+Select whether to create a new album or add to an existing album . If you are creating a new album , fill in the relevant information .
+Edit captions for each photo , if so desired .
+Select an add-on to install from the list .
+To enable plugins that are already installed :
+Select the extension you wish to enable .
+To disable plugins that are installed :
+Select the extension you wish to disable .
+Select the extension you wish to uninstall .
+By double-clicking , select the photo on which you wish to use the red-eye removal tool .
+Select the area from which you wish to remove red-eye . Note : If the area contains many red areas , you may wish to select each eye individually .
+To automatically enhance the colors of the photo :
+By double-clicking , select the photo which you wish to enhance .
+Select a time period to from which to view photos . This can by done by selecting a set period , such as a week , or by specifying dates .
+Alternatively , you can use the timeline . To use the timeline :
+In the timeline , click the bar corresponding to the time period you wish to look at .
+This mode eliminates all saturation , turning a color image into a black and white image .
+This mode simulates a photo being created with sepia toner .
+This mode automatically adjusts the colors to a set profile .
+As far as the editing tools in F-Spot , adjusting the color is easily the most powerful . The color editor allows you to adjust :
+This adjustment simulates lengthening or shortening the exposure time .
+This adjustment simulates adjusting the amount of color in the image , i.e. sliding it to the left decrease color , making it black and white , while sliding it to the right will increase the vibrancy of colors .
+This adjustment increase the brightness of colors . Increasing this too much will make colors appear " washed out " , while decreasing it too much will make the image too dark and lacking in contrast .
+This adjustment causes colors to " rotate " along the color wheel .
+This adjustment adjusts the contrast ratio , that is , the ratio of difference between dark and light pixels . Sliding to the left decreases contrast , while sliding to the right will increase contrast .
+This adjust changes the color temperature , measured in degrees Kelvin .
+This adjustment allows you to tinge the photo with a color .
+Convert to B / W with control . Requires Mono 2.2 .
+This extension allows you to burn your photos to CD .
+This extension allows you to export your photos to Flickr and 23hq .
+This extension allows you to export your photos to HTML galleries , Original galleries or just to a folder .
+This extension allows you to export your photos to PHP Gallery ( http : / / gallery.menalto.com ) .
+This extension allows you to export your photos to PicasaWeb .
+This extension allows you to export your photos to SmugMug .
+This extension allows you to export your photos to Tabblo .
+UNSTABLE - Please ensure you have a backup of your photos.db before you test this extension . This extension will allow you to change the base path to the your photos . It is very handy if you move your photos from ~ / Photos to / OurPhotos for instance . Just ensure you let SqLite continue to process the changes for up to a few hours after f-spot reports finished . It will only change the path to photos which are located under the Photo directory .
+Develop the image in UFRaw , saves the result as a new version \ \ Note : Require ufraw 0.13 or CVS version newer than 2007-09-06 ! ! !
+Share photos with other people on the same network via Web Browser
+Create photomosaics using MetaPixel ( http : / / www.complang.tuwien.ac.at / schani / metapixel / )
+Create photo wall using PictureTile by Jamie Zawinski ( http : / / www.jwz.org / picturetile / )
+Merge RAW + Jpeg as multiple versions of the same photo
+Path to custom gtkrc for theming F-Spot .
+The width dimension to use for the main window .
+The height dimension to use for the main window .
+The X position to use for the main window .
+The Y position to use for the main window .
+Size of the tag icons shown in the sidebar .
+The orientation of the filmstrip , if shown .
+The size of the sidebar in the main window .
+The size ( width ) of the sidebar in the main window .
+The width dimension to use for the import dialog .
+The height dimension to use for the import dialog .
+Width of the preview image pane in the import dialog .
+The width dimension to use for the photo viewer window .
+The height dimension to use for the photo viewer window .
+The X position to use for the photo viewer window .
+The Y position to use for the photo viewer window .
+Show the toolbar in the photo viewer window .
+Use the current photo 's filename as the viewer window 's title .
+Enable this to allow interpolation on zoomed images .
+You can choose how to display transparent parts in images . This option has no effect on photos but setting this value to CHECK _ PATTERN or CUSTOM _ COLOR could be useful when viewing icons or other artwork with transparent parts .
+The color to use for transparent parts .
+If the ' transparency ' option is set , the color specified in this option will be used as the transparent color when viewing images .
+No photos matching { 0 } found
+The tag " { 0 } " is not applied to any photos . Try adding the tag to some photos or selecting a different tag in the F-Spot preference dialog .
+The tag F-Spot is looking for does not exist . Try selecting a different tag in the F-Spot preference dialog .
+Please wait while your F-Spot gallery 's database is updated . This may take some time .
+Select the eyes you wish to fix .
+This operation will merge the selected tags and any sub-tags into a single tag .
+No permission to delete the file : { 1 } { 0 }
+An error of type { 0 } occurred while deleting the file : { 2 } { 1 }
+If you remove photos from the F-Spot catalog all tag information will be lost . The photos remain on your computer and can be imported into F-Spot again .
+Delete tag " { 0 } " ?
+Can not delete tags that have tags within them . Please delete tags under " { 0 } " first
+Modified in { 1 } ( { 0 } )
+Received error " { 0 } " while attempting to rotate { 1 }
+An error occured while processing " { 0 } " : { 1 }
+Include Photos Tagged " { 0 } "
+Exclude Photos Tagged " { 0 } "
+Drag tags here to search for them
+or
+Received exception " { 0 } " . Unable to save photo { 1 }
+Unable to load " { 0 } " as icon for the tag
+Importing Photos : { 0 } of { 1 } ...
+Searching for photos ... ( You can already click Import to continue )
+Some files could not be imported , they might be corrupt or there might be something wrong with the storage on which they reside .
+F-Spot encountered an error while loading the photo database . The old database has be moved to { 0 } and a new database has been created .
+0000 : 00 : 00 00 : 00 : 00
+Create _ icon for this tag when first used
+Cancel , do not change the current timeline .
+Only photos taken within these dates will be displayed .
+Display only those photos that were imported in specified Rolls .
+Write XMP files next to the images instead .
+This tool requires an active selection . Please select a region of the photo and try the operation again
+Received exception " { 0 } " . Note that you have to develop RAW files into JPEG before you can edit them .
+On { 0 } between { 1 } and { 2 }
+The photo " { 0 } " does not exist
+Really delete version " { 0 } " ?
+This removes the version and deletes the corresponding file from disk .
+Really detach version " { 0 } " from " { 1 } " ?
+This makes the version appear as a separate photo in the library . To undo , drag the new photo back to its parent .
+This makes the photos appear as a single one in the library . The versions can be detached using the Photo menu .
+Original size ( possible very large file size )
+Create a mail with the selected photos ( possibly resized ) attached
+Enable this to allow interpolation on zoomed images . You shouldn 't disable this for viewing photos , but disabling the interpolation could be usefull in icon design .
+You can choose how to display transparent parts in images . This option has no effect on photos , but setting this as check pattern or custom color could be usefull when viewing icons or other artworks with transparent parts .
+Paper Size : { 0 } x { 1 } mm
+Select the area that you want blacked out .
+Transferring picture " { 0 } " To CD
+There are some previously scheduled items to write
+F-Spot will now launch your browser so that you can enable the permission you just selected . Once you are directed by Facebook to return to this application , click " Ok " below .
+Facebook only permits { 0 } photographs per album . Please refine your selection and try again .
+Please name your album or choose an existing album .
+An error occurred creating a new album . { 0 }
+Uploading picture " { 0 } " ( { 1 } of { 2 } )
+Error Uploading To Facebook : { 0 }
+F-Spot will now launch your browser so that you can log into Facebook . Once you are directed by Facebook to return to this application , click " Ok " below . F-Spot will cache your session in gnome-keyring , if possible , and re-use it on future Facebook exports .
+There was a problem logging into Facebook . Check your credentials and try again .
+Session established , fetching friend details ...
+{ 0 } { 1 } is logged into Facebook
+There was an error when downloading your information from Facebook . Facebook said : { 0 }
+Return to this window after you have finished the authorization process on { 0 } and click the " Complete Authorization " button below
+Welcome , { 0 } . You are connected to { 1 } .
+Used { 0 } of your allowed { 1 } monthly quota
+Waiting for response { 0 } of { 1 }
+Error Uploading To { 0 } : { 1 }
+F-Spot was unable to log on to { 0 } . Make sure you have given the authentication using { 0 } web browser interface .
+F-Spot needs your authorization in order to upload photos to your { 0 } account . Press the " Authorize " button to open a web browser and give F-Spot the authorization .
+Error Copying " { 0 } " to Gallery : { 2 } { 1 }
+The gallery URL entry does not appear to be a valid URL
+The following error was encountered while attempting to log in : { 0 }
+There is already a Gallery with the same name in your registered Galleries . Please choose a unique name .
+Cannot connect to a Gallery for which the version is unknown . Please check that you have Remote plugin 1.0.8 or later
+The gallery name contains invalid characters . Only letters , numbers , - and _ are allowed
+The following error was encountered while attempting to perform the requested operation : { 0 } ( { 1 } )
+Error uploading picture " { 0 } " to Gallery : { 1 }
+Please verify that the settings for this gallery are correct .
+The following error was encountered while attempting to create an album : { 0 }
+{ 0 } of approx . { 1 }
+Error Uploading To Gallery : { 0 }
+Available space : { 0 } , { 1 } % used out of { 2 }
+The selected album has a limit of { 0 } pictures , which would be passed with the current selection of { 1 } images
+F-Spot tags can help you track the export status of photos . Example : Use one tag for the photos that you plan to export , and another one for those already exported . Here , you can tell F-Spot to automatically replace these tags as appropriate .
+This tool requires an active selection . Please select one or more pictures and try again
+Gallery : { 0 } , Photos : { 1 } , Last client : { 3 }
+When the gallery is active , above is the URL you need to open on another computer to access the shared photos .
+The gallery stays active until you either deactivate it or close F-Spot . Make sure local viewers access it bypassing HTTP proxy .
+The file you selected is not a valid or supported database . Received exception " { 0 } " .
+Copy the images locally or keep them where they are . If you chose the later , be sure that this location will stay accessible from f-spot .
+Choose what to import from the selected db . " New Rolls Only " is the smart option that will avoid re-importing photos you could have imported during a previous operation . " A Single Import Roll " let you choose which roll you want to merge back . " Everything " will import everything , creating duplicates if you already imported from that database .
+Choose the location of the database you want to import from
+New _ Bookmark
+The contents of folder " % s " are autogenerated . You cannot add or remove bookmarks under it manually .
+Select the bookmarks file to open
+This druid will help you to export a bookmarks file.It will make a backup of any overwritten file .
+These locations are typical places where bookmarks can be found .
+This is the location that will be used . You can choose one from the list or enter your own .
+The exporting process has finished . For safety , you have a copy of your old bookmark set in % s .
+There has been an error exporting your bookmarks .
+Epiphany ( RDF ) Bookmarks Import Druid
+XBEL ( Galeon and Konqueror ) Bookmarks Import Druid
+This druid will help you to import a bookmarks file and merge its contents in the current bookmark set .
+These are the bookmarks of your current bookmark set .
+You can manually merge the two bookmark sets using drag & drop and copy & paste . Alternatively , you can try the Automatic Merger .
+This is the resulting bookmark set after merging .
+The importing process has finished . For safety , you have a copy of your old bookmark set in % s .
+Could not open file : % s
+% a , % b % -d % Y at % -I : % M % p
+% .1f MB / s
+No available applications to open the specified file .
+Line % d , Column % d , File " % s " in " % s "
+There was a problem printing . No printers could be found .
+URL for the user 's home page . Displayed when Galeon starts up and when a new window or tab is created , as controlled by / apps / galeon / Browsing / General / startpage _ type and / apps / galeon / Browsing / General / newpage _ type
+Whether the current session is automatically saved on exit .
+Type of page to show when opening a new window or tab . Possible values are : 0 ( home page ) , 1 ( last page ) , 2 ( blank )
+If true , Galeon will always ask for confirmation , when you try to close a window with modified forms .
+If true , Galeon will run in offline mode ; pages will be read from the browser cache rather than over the network .
+Couple a history dropdown box with smart bookmarks .
+When TRUE , no arrows will be displayed in a smart bookmark
+Match case for find in page .
+Match whole words only for find in page
+For find in page , whether to search inside frames
+For find in page , whether to start again at the beginning after reaching the end of the page
+Allow sites to open new windows using JavaScript ( if JavaScript is enabled ) .
+Allow JavaScript to override the contextmenu . If enabled , JavaScript can disable , or even replace the context menu for a page .
+Allow sites to change the statusbar message using JavaScript ( if JavaScript is enabled ) .
+When true , titles will be shown in the autocompletion alternatives window .
+Show the autocompletions alternatives list automatically when editing the url entry
+Automatically complete entries in the location bar from history .
+Use your own colors instead of the colors the page requests .
+Use your own fonts instead of the fonts the page requests .
+Default page background color in # RRGGBB hex format .
+Default page text color in # RRGGBB hex format .
+Default color for visited links in # RRGGBB hex format .
+Default color for unvisited links in # RRGGBB hex format .
+Open popups in tabs instead of new windows .
+Jump to new tabs .
+Color ( in # RRGGBB hex format ) of tab titles while the tab is loading .
+Color ( in # RRGGBB hex format ) of new tab titles for tabs that have finished loading , which the user has not yet seen .
+Always show tabs , even when only one is open .
+Edge of window used for tabs . 0 is left , 1 is right , 2 is top , and 3 is bottom .
+Show favicons in tabs . Possible values are ( 0 don 't show ) , 1 ( show favicon or default icon ) , and 2 ( show only favicons ) .
+When to load images . Possible values are 0 ( always ) , 1 ( from current server only ) , 2 ( never )
+Image animation type . Possible values are 0 ( continuously ) , 1 ( once through ) , 2 ( never )
+Default font type . Possible values are 0 ( serif ) , 1 ( sans-serif )
+Optionally , override the display of toolbar items from the desktop default . Possible values are : " system " : Respect the system style " icons _ only " : to display icons only " text _ only " : to display text only " text _ below " : to display text below icons " text _ beside " : to display text beside icons
+External download command . % s will be the URL to download .
+Run external download program in a terminal .
+Keep downloader open after download finished
+Keep downloader open after all downloads have finished .
+Ask for download directory .
+Indicates if the prefs have been migrated to GNOME2.2 settings
+Indicates if the prefs have been migrated to GNOME2.2 settings .
+When to compare cached copy to web copy . Possible values are 0 ( once per session ) , 1 ( every time ) , 2 ( never ) , 3 ( automatic ) .
+Where to accept cookies from . Possible values are 0 ( anywhere ) , 1 ( from current server only ) , 2 ( nowhere )
+What lifetime to give cookies . Possible values are 0 ( what the cookie asks for ) , 1 ( ask for each cookie ) , 2 ( make all cookies session cookies ) , 3 ( enforce a maximum lifetime . Default is 90 days )
+Do not ask about lifetime for session cookies when lifetime policy is to ask
+HTTP version . Possible values are confusing since it 's an int instaed of a float , so : 0 ( 1.0 ) , 1 ( 1.1 ) .
+Default session recovery method . 0 reopens windows , 1 adds sites to bookmarks , 2 discards session .
+What happens when clicking with the middle mouse button not over a link . Options : 0 ( Bookmarks menu ) , 1 ( Paste url in new tab ) , 2 ( Go back ) , 3 ( Gestures ) , 4 ( Automatic scroll ) , 5 ( Manual scroll , like ggv ) , 6 ( Paste in current tab )
+What to do when right mouse button is pressed . Possible values are 0 ( display context menu immediately ) , 1 ( perform gestures , displaying context menu on button release ) .
+Wheel action with no modifier
+Wheel action with no modifier . Possible values are 0 ( Scroll by one step ) , 1 ( Scroll by one page ) , 2 ( Move in the browsing history ) , 3 ( Zoom ) .
+Use default step with no modifier .
+Scroll step with no modifier , in lines .
+Expire history after how many days .
+Show only history entries from a particular time . Possible values are 0 ( all items ) , 1 ( today ) , 2 ( yesterday ) , 3 ( two days ago ) , 4 ( this week ) , 5 ( this month ) .
+Whether to print the page title in the header
+Whether to print the page address in the header
+Whether to print the page numbers ( x of total ) in the footer
+How to print pages containing frames . Allowed values are " normal " , " separately " and " selected " .
+What should be shown in the javascript console .
+Whether to split the bookmarks editor view in two .
+Whether to show the editing pane in the bookmarks editor .
+Number of bookmarks to allow opening at the same time before asking for confirmation .
+Could not load layout user interface file ' % s '
+While loading layout : don 't know how to create a dock object whose nick is ' % s '
+Drag an item onto the toolbars above to add it , from the toolbars in the items table to remove it .
+Open this file with " % s " ?
+The site % s wants to modify an existing cookie .
+The site % s wants to set a cookie .
+The site % s wants to set a second cookie .
+Galeon cannot handle this protocol , and no GNOME default handler is set
+“ % s protocol ” is not supported .
+Supported protocols are “ http ” , “ https ” , “ ftp ” , “ file ” , “ smb and sftp ” “ ” .
+File % “ s not found ” .
+Check the location of the file and try again .
+“ % s ” could not be found .
+Check that you are connected to the internet , and that the address is correct .
+If this page used to exist , you may find an archived version :
+“ % s ” refused the connection .
+The server may be busy or you may have a network connection problem . Try again later .
+There may be an old version of the page you wanted :
+The connection was lost because the server took too long to respond .
+The address you entered is not valid .
+“ % s ” redirected too many times .
+The redirection has been stopped for security reasons .
+“ % s ” requires an encrypted connection .
+The document could not be loaded because encryption support is not installed .
+The server dropped the connection before any data could be read .
+Cannot load document in offline mode .
+This document cannot be viewed in offline mode . Set Galeon to “ online ” and try again .
+“ % s denied ” access to port % d “ ” .
+Check your proxy server settings . If the connection still fails , there may be a problem with your proxy server or your network connection .
+You may find an old version : | in the Google Cache
+You may find an old version : | in the Internet Archive
+Choose a certificate to present as identification to % s .
+The site % s returned security information for % s . It is possible that someone is intercepting your communication to obtain your confidential information .
+You should only accept the security information if you trust % s and % s .
+It was not possible to automatically trust % s . It is possible that someone is intercepting your communication to obtain your confidential information .
+You should only connect to the site if you are certain you are connected to % s .
+_ Don 't show this message again for this site
+The security information for % s expired on % s .
+The security information for % s isn 't valid until % s .
+You should ensure that your computer 's time is correct .
+Cannot establish connection to % s .
+The certificate revocation list ( CRL ) from % s needs to be updated .
+Before trusting a Certificate Authority ( CA ) you should verify the certificate is authentic .
+Select a password to protect this certificate .
+Enter the password for this certificate .
+Certificate Revocation list successfully imported .
+This certificate has been verified for the following uses :
+Could not verify this certificate because it has been revoked .
+Could not verify this certificate because it has expired .
+Could not verify this certificate because it is not trusted .
+Could not verify this certificate because the issuer is not trusted .
+Could not verify this certificate because the issuer is unknown .
+Could not verify this certificate because the CA certificate is invalid .
+Could not verify this certificate for unknown reasons .
+Please wait while a new private key is generated . This process could take a few minutes .
+You can always see the security status of a page from the padlock icon in the statusbar .
+This page is loaded over a low security connection
+Information you see or enter on this page could be intercepted by some third parties .
+Parts of this page are loaded over an insecure connection
+Some information you see or enter will be sent over an insecure connection , and could be intercepted by a third party .
+Send information over an insecure connection ?
+The information you have entered will be sent over an insecure connection , and could be intercepted by a third party .
+Although this page was loaded over a secure connection , the information you have entered will be sent over an insecure connection , and could be intercepted by a third party .
+The web page might have been removed or had its name changed .
+% d of % d pages printed , about % d seconds left
+http : / / www.google.com / search ? ie = UTF-8q =
+Go To The Specified Location in New _ Tab
+Go To The Specified Location in New _ Window
+Render the page without using a style
+Do not apply a user style to the page
+Apply the user style from " % s " to the page
+Render the page using the " % s " style
+Display the page using the " % s " encoding
+Open a new tab in an existing Galeon window
+Open a new window in an existing Galeon process
+Do not raise the window when opening a page in an existing Galeon process
+Attempt to load URL in existing Galeon window
+Don 't open any windows ; instead act as a server for quick startup of new Galeon instances
+Add a bookmark ( don 't open any window )
+Create the initial window with the given geometry , see X ( 1 ) for the GEOMETRY format
+Same as --close , but exits server mode too
+Startup failed because of the following error : % s
+Copy the current page address to the clipboard
+Open the frame in a new tab in this window
+Open the link in a new tab in this window
+Open the image in a new tab in this window
+Block images from this image 's originating host
+Allow images from this image 's originating host
+Cannot start network proxy configuration program .
+Add " % s " to the Sidebar ?
+The source to the new sidebar page is % s .
+Ensure the % s environment variable is set to the correct Mozilla installation directory .
+A bookmark file that was probably saved by Galeon 1 has been found . Galeon 1 saved non-ascii chars incorrectly . Do you want to try to fix the bookmarks ?
+Transferring data from % s ( % d kB loaded )
+Transferring data from % s ( % d % % complete , % d kB of % d kB loaded )
+Save the current page with a different name
+Send the address of the current page by Email
+Search for a string in the current page
+Add the current window 's tabs as a folder
+Only allow cookies from a page 's own server
+This page contains changes that have not been submitted .
+Enter the arguments for this smart site :
+Maximum number of bookmarks to open without showing this dialog again :
+Move the current tab to a different window
+The web site % s supports authentication for the page you are viewing . The identity of this web site has been verified by % s , a certificate authority you trust for this purpose .
+Connection Encrypted : High-grade Encryption ( % s % d bit )
+The page you are viewing was encrypted before being transmitted over the Internet .
+Encryption makes it very difficult for unauthorized people to view information traveling between computers . It is therefore very unlikely that anyone read this page as it traveled across the network .
+Connection Encrypted : Low-grade Encryption ( % s % d bit )
+The web site % s is using low-grade encryption for the page you are viewing .
+Low-grade encryption may allow some unauthorized people to view this information .
+The web site % s does not support encryption for the page you are viewing .
+The page you are viewing is not encrypted .
+Information sent over the Internet without encryption can be seen by other people while it is in transit .
+Galeon is currently online . Click to work offline .
+Galeon is currently offline . Click to work online .
+A popup from % s was blocked . Click to allow popups from this site .
+A popup from % s was blocked . You can allow popups from this site to be shown in the future .
+Yanko Kaneti < yaneti \ @ declera \ .com >
+UTF-8 ISO-8859-1 ISO-8859-2 ISO-8859-3 ISO-8859-4 ISO-8859-5 ISO-8859-6 ISO-8859-7 ISO-8859-8 ISO-8859-9 ISO-8859-10 ISO-8859-11 ISO-8859-12 ISO-8859-13 ISO-8859-14 ISO-8859-15 KOI8-R KOI8-U KOI8-T CP1255 EUC-JP EUC-KR EUC-TW BIG5 BIG5-HKSCS GBK GB18030 SHIFTJIS JOHAB TIS-620 VISCII TCVN5712-1 GEORGIAN-PS
+_ Folders where this bookmark is present :
+Save the current file with a different name
+Set this folder as the folder to add new bookmarks
+Sort a folder of bookmarks one level ( folders first )
+Sort a folder of bookmarks recursively ( folders first )
+Helps importing your Galeon or Konqueror bookmarks into Galeon
+_ Import
+Import From _ XBEL ( Galeon and Konqueror ) ...
+Import From _ Mozilla ...
+Import From Ne _ tscape ...
+Ever Today Last two days Last three days Week Month
+Galeon appears to have crashed or been killed the last time it was run .
+Remove cookie ( s ) and block further cookies from the originating site
+It is not possible to view this file directly in the browser . You can open it with another application or save it instead .
+It is not possible to view this file directly in the browser . You can save it instead .
+_ Show tab bar if only one tab is open
+Allo _ w context menu replacing ( or disabling )
+Cookies _ expire at the end of the session
+Network proxy configuration program was not found .
+Network proxy preferences are configured in GNOME Control Center : Desktop Preferences .
+Size :
+You do not have permission to create files in % s .
+You do not have permission to overwrite % s .
+The file % s already exists . Do you want to replace it ?
+It is possible to export and then print the games provided by the app for playing while not at the computer .
+Change the challenge presentation time in memory games .
+To change the number of seconds you are given to memorize the challenge when playing memory games , proceed as follows :
+@ @ image : ' figures / all-games.png ' ; md5 = b9b2464dfdb280d8de79b921e03a4705
+@ @ image : ' figures / logic-games.png ' ; md5 = 2679be12956397b6337da869bdbee82d
+@ @ image : ' figures / math-games.png ' ; md5 = 208d189bcd6246b40e3dff184a5d5698
+@ @ image : ' figures / memory-games.png ' ; md5 = 2747c731e0a757a98a91c8e141748c75
+@ @ image : ' figures / verbal-games.png ' ; md5 = 6559e8d03907794b9983c5501df1aed2
+To start a new game , do one of the following :
+Click on one of the buttons in the toolbar .
+Starts a new game playing all the available game types .
+Start a new game playing only logic games .
+Starts a new game playing only calculation games .
+Starts a new game playing only memory games .
+Starts a new game playing only verbal analogy games .
+When you play a game , always read the instructions carefully !
+The game session begins by showing you the problem and then asking for the answer . At the bottom of the window is the main set of controls that you can use to interact with the game .
+@ @ image : ' figures / gbrainy.png ' ; md5 = d3b523ab1c8d00d00560d3f036d681bb
+It features different game types like logic puzzles , mental calculation games , memory trainers and verbal analogies , designed to test different cognitive skills .
+If you answer a puzzle incorrectly , you will not get any score for it .
+If you answer a puzzle correctly , you will get a score which depends on the time taken to resolve the problem and whether you used the tip during the game .
+The following table summarizes the different game durations ( in seconds ) based on the difficulty level .
+With the expected time for the chosen difficulty level and the time you take to complete the game , the following logic is applied :
+If you take less than the time expected to complete the game , you score 10 points .
+If you take more than the time expected to complete the game , you score 8 points .
+If you take more than 2x the time expected to complete the game , you score 7 points .
+If you take more than 3x the time expected to complete the game , you score 6 points .
+If you use a tip , you score only the 80 % of the original score .
+This means that when playing at medium difficulty level , to get a score of 100 points you need to score 10 points on at least 20 games of every game type played .
+This may sound challenging , but it allows players to compare game scores from different sessions ( in the player 's game history ) and allows better tracking of the progression of the player through all of the games played .
+To select the results that will be shown in the graphic , use the different check boxes located under the graph .
+In order to change the number of sessions recorded or how many games will be stored in the history , proceed as follows :
+Use the first spin box to change how many game sessions need to be recorded before you can start to see the results in the history graphic .
+Use the second spin box to change how many game sessions will be shown in the history graphic .
+To change the difficulty level of the game , proceed as follows :
+Use the tips to solve a puzzle .
+With some of the games you can play , it is possible to get simple tips that can help you to solve the problem .
+This feature is not available for some of the games .
+To pause a game so that you can resume it at the same point at a later time , perform one of the following :
+In order to resume the game after you paused it , perform one of the following :
+To end a game , perform one of the following :
+This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 Unported license .
+To copy , distribute and transmit the work .
+To adapt the work .
+You must attribute the work in the manner specified by the author or licensor ( but not in any way that suggests that they endorse you or your use of the work ) .
+If you alter , transform , or build upon this work , you may distribute the resulting work only under the same , similar or a compatible license .
+Games designed to challenge your reasoning and thinking skills . These games are based on sequences of elements , visual and spatial reasoning or relationships between elements .
+Games based on arithmetical operations designed to improve your mental calculation skills . Games that require the player to use multiplication , division , addition and subtraction combined in different ways .
+Games designed to challenge your short-term memory . These games show collections of objects and ask the player to recall them , sometimes establishing relationships between figures , words , numbers or colors .
+Games that challenge your verbal aptitude . These games ask the player to identify cause and effect , use synonyms or antonyms , and use their vocabulary .
+To do so , proceed as follows :
+Every hour rotates 360 degrees .
+Out of [ people ] people , [ brothers ] have brothers , [ sisters ] have sisters and [ both ] have both . How many people have neither brothers nor sisters ?
+It is calculated by taking the total number of people minus [ brothers _ only ] people that have brothers only , minus [ sisters _ only ] that have sisters only and minus [ both ] that have sisters and brothers .
+John 's son age is nowadays half of John 's age minus [ difference ] , that is , ( [ father ] / 2 ) - [ difference ] .
+Every digit has 10 possibilities . The total number of possibilities is 10 at the power of [ digits ] .
+Every digit has 8 possibilities . The total number of possibilities is 8 at the power of [ digits ] .
+Every game is an independent event with 2 possible results . The total number of possibilities is 2 at the power of [ games ] .
+In every match you eliminate one player . Therefore , the result is the total number of player minus one .
+Compound interest is paid on the principal plus any past interest accumulated .
+What number plus [ num _ a ] equals [ num _ b ] ?
+x + [ num _ a ] = [ num _ b ]
+It is the result of the operation [ num _ b ] - [ num _ a ] .
+What number minus [ num _ a ] equals [ num _ b ] ?
+x - [ num _ a ] = [ num _ b ]
+It is the result of the operation [ num _ a ] + [ num _ b ] .
+What number multiplied by [ num _ a ] equals [ num _ b ] ?
+x * [ num _ a ] = [ num _ b ]
+It is the result of the operation [ num _ b ] / [ num _ a ] .
+What number divided by [ num _ a ] equals [ num _ b ] ?
+x / [ num _ a ] = [ num _ b ]
+It is the result of the operation [ num _ a ] * [ num _ b ] .
+Box
+How many boxes measuring 1 x 1 x 0.5 can be fit into a container measuring 6 x 5 x [ z ] ?
+You can fit 6 * 5 * [ z ] * 2 boxes .
+[ year _ start ] is a palindromic year as [ year _ end ] is , a gap of 11 years . What are the next two consecutive palindromic years after [ year _ end ] with the same gap ? Answer using two numbers ( e.g. : [ year _ start ] and [ year _ end ] ) .
+A palindromic number remains the same when its digits are reversed ( e.g. : 2112 ) .
+[ rslt _ a ] and [ rslt _ b ]
+From year 1000 to year 10000 , palindrome years occur at 110 year intervals except for the end of each millennium that occur at a 11 years interval .
+On the dartboard below , where would you need to throw the darts to add 120 points in 5 throws ? Answer using a list of numbers ( e.g. : 4 , 5 , 6 , 3 , 2 )
+Only 3 of the 4 numbers in the dartboard are used to add 120 points .
+Every person has two legs and every horse four ( 2 * [ men ] + [ horses ] * 4 ) . Every person and every horse have also two eyes ( 2 * [ men ] + 2 * [ horses ] ) .
+How much weight is needed at the point indicated by the question mark to balance the lever ?
+Consider the sentence attributed to Archimedes : ' Give me a lever long enough and a place to stand and I can move the Earth ' .
+A lever is in equilibrium when the objects placed on it are at a distances reciprocally proportional to their weights .
+Which two numbers of the list below are both multiple of [ num _ x ] and [ num _ y ] ? [ option _ answers ]
+A multiple is a number that may be divided by another number with no remainder . For example , 10 , 15 and 25 are multiples of 5 .
+[ option _ prefix ] [ option _ a ] and [ option _ c ]
+[ option _ prefix ] [ option _ a ] and [ option _ b ]
+[ option _ prefix ] [ option _ b ] and [ option _ c ]
+[ option _ prefix ] [ option _ c ] and [ option _ d ]
+[ option _ a ] and [ option _ b ]
+[ option _ a ] and [ option _ b ] are both multiples of [ num _ x ] and [ num _ y ] .
+In a small town , [ all _ cars ] % of the inhabitants have a car and [ males _ cars ] % have a car and are males . What percentage of the population are females and have a car ? [ option _ answers ]
+[ option _ prefix ] [ option _ a ] %
+[ option _ prefix ] [ option _ b ] %
+[ option _ prefix ] [ option _ c ] %
+[ option _ prefix ] [ option _ d ] %
+[ females _ cars ] % ( [ all _ cars ] - [ males _ cars ] ) of the inhabitants are women and have a car .
+If p & lt ; x & lt ; q and r & lt ; y & lt ; s and you know that x & lt ; y is true , which of the following options is correct ? [ option _ answers ]
+If x & lt ; y , then p & lt ; x & lt ; y & lt ; s so s & gt ; p is true .
+If p & lt ; x & lt ; q and r & lt ; y & lt ; s and you know that x & gt ; y is true , which of the following options is correct ? [ option _ answers ]
+If x & gt ; y , then r & lt ; y & lt ; x & lt ; q , so r & lt ; q is true .
+Given two integer numbers x and y , if x is even and y odd , which of the following expressions gives always an odd result ? [ option _ answers ]
+[ option _ prefix ] x * y * 2
+[ option _ prefix ] ( x - y ) * 2
+Multiplication of two even numbers always produces an even number , so x multiplied by 2 is even . Adding an odd number ( y ) to that even number always produces an odd number .
+[ option _ prefix ] [ answer _ a ]
+[ option _ prefix ] [ answer _ b ]
+[ option _ prefix ] [ answer _ c ]
+[ option _ prefix ] [ answer _ d ]
+The heavier truck weights [ heavier ] and the lighter [ lighter ] .
+John 's father 's sister 's sister-in-law is also ? Do not assume that John has any relative that has not been mentioned . [ option _ answers ]
+[ option _ prefix ] Has no relation
+The sister 's sister-in-law is John 's father 's wife , that is , John 's mother .
+John 's mother 's brother 's brother-in-law is also ? Do not assume that John has any relative that has not been mentioned . [ option _ answers ]
+[ option _ prefix ] His father
+The brother 's brother-in-law is John 's mother 's husband , that is , John 's father .
+The average of three numbers is [ three ] . The average of two of these numbers is [ two ] . What is the third number ? [ option _ answers ]
+It is the result of the operation : ( [ three ] * 3 ) - ( [ two ] * 2 ) .
+gbrainy is a game to train memory , arithmetical and logical capabilities with many sorts of exercises of different difficulty levels .
+It should have something for all ages and purposes : kids whose parents want them to develop their capabilities , adults that want to keep their mind in form or just try it out for fun , older people that might need to do some memory exercises , etc .
+Play games that challenge your logic , verbal , calculation and memory abilities
+Which of the following sports does not belong in this group ?
+Think of the items used in the game .
+It is the only one that does not use a ball in the game .
+A terrier is to a dog like a ?
+Dog and horse are species and terrier and pony are breeds .
+The word ' taxidermist ' is used to define a person that ?
+A car engine that is poorly designed and lacking of sophistication is ?
+Which of the following words is the closest in meaning to ' censure ' ?
+An artist whose work has become the defining style of a genre is ?
+Which of the following sentences defines better an ' ostracized ' person ?
+Which of the following words means fear of people ?
+A person with excessive preoccupation for his health has ?
+Which of the following words does not belong in this group ?
+It is the only one that is not a woodwind instrument .
+It is the only one that is not related to architecture .
+It is the only unit that does not belong to the metric system .
+It is the only one that is not a fruit .
+It is the only one that is not a reptile and also does not have a tail .
+It is the only one that is not a carnivore .
+Which of the following words is closest to the meaning of ' hedonism ' ?
+The ethical doctrine holding that only what is pleasant is an intrinsic good .
+Which of the following words is closest to the meaning of ' asceticism ' ?
+The practice of austere self-discipline in order to achieve a higher or spiritual idea .
+Which of the following words is closest to the meaning of ' oxymoron ' ?
+A figure of speech that combines contradicting terms .
+It is the only one that is not a cereal .
+It is the only one that is not a metal .
+It is the only one that is not a medical specialty .
+Which of the following words is closest to the meaning of ' negligent ' ?
+It is the failure to take such care as may be rightfully or reasonably expected .
+The other words have the connotation of not occurring frequently .
+Which of the following words is closest to the meaning of ' perplexing ' ?
+Which of the following words is closest to the meaning of ' unhappy ' ?
+The other words have the meaning of distinguished .
+Which of the following words is closest to the meaning of ' specific ' ?
+It is the only one that is not used to storage liquids .
+It is the only one that is not a nut .
+Which of the following words is closest to the meaning of ' acclaim ' ?
+Which of the following words is closest to the meaning of ' grief ' ?
+Which of the following words is closest to the meaning of ' phlegmatic ' ?
+It is the only one that is not related to literature .
+It is the only one that is not related with triangles .
+It is the only one that does not produce light .
+It is the only one that is not used for protection .
+It is the only one that is not related to rocks .
+It is the only one that does not have roots .
+It is the only instrument that does not have keys .
+The radius of a circle is half the diameter .
+A pen is used to write and a fork is used to eat .
+An oasis is an isolated area of vegetation in a desert and an island is a piece of isolated land that is surrounded by water .
+A turtle is inside a shell and a letter is inside an envelope .
+Parallel and longitude traverse from east to west while meridian and latitude traverse from north to south .
+Both relate to an action that breaks the related item .
+button / push | key ( used in a lock )
+To make both objects work , a button needs to be pushed and a key needs to be turned .
+The relation between the two words is that they are synonymous .
+The first word is the instrument and the second what it measures .
+glass / break | paper
+A fish in an aquarium lives in captivity .
+track | railway | rails | railroad
+--version \ t \ t \ tPrint version information .
+--help \ t \ t \ tPrint this usage message .
+--gamelist \ t \ t \ tShows the list of available games .
+--customgame [ game1 , gameN ] \ tSpecifies a list of games to play during a custom game .
+--norandom \ t \ t \ tThe custom game list provided will not be randomized .
+--versions \ t \ t \ tShow dependencies .
+This program is free software ; you can redistribute it and / or modify it under the terms of the GNU General Public License as published by the Free Software Foundation ; either version 2 of the License , or ( at your option ) any later version .
+This program is distributed in the hope that it will be useful , but WITHOUT ANY WARRANTY ; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE . See the GNU General Public License for more details .
+You should have received a copy of the GNU General Public License along with this program ; if not , write to the Free Software Foundation , Inc . , 59 Temple Place - Suite 330 , Boston , MA 02111-1307 , USA .
+A brain teaser game for fun and to keep your brain trained .
+There was a problem generating the PDF file . The file has not been created .
+The graph below shows the player 's game score evolution .
+You need more than one game session recorded to see the score evolution .
+You are about to delete the player 's game session history .
+If you proceed , you will lose the history of the previous game sessions . Do you want to continue ?
+This option allows to export a set of games in a PDF file . You can complete the puzzles without a computer .
+Skip games that use colors ( for colorblind users )
+Force gbrainy to always use English language ( ignore translations )
+Time in seconds to memorize the challenge :
+Minimum number of played games to store the game session :
+Maximum number of records in the player 's game session history :
+Once you have an answer type it in the " Answer : " entry box and press the " OK " button .
+The level of translation of gbrainy for your language is low .
+You may be exposed to partially translated games making it more difficult to play . If you prefer to play in English , there is an option for doing so in gbrainy 's Preferences .
+All Games ( Logic , Mental Calculation , Memory and Verbal Analogies )
+Additional extensions are required to perform this operation .
+Select the add-ins to install and click on Next
+Select the location of the repository you want to register :
+{ 0 } , { 1 } or { 2 }
+{ 0 } , { 1 } , { 2 } or { 3 }
+{ 0 } games registered : { 1 } logic puzzles , { 2 } calculation trainers , { 3 } memory trainers , { 4 } verbal analogies
+Games played : { 0 } ( Score : { 1 } )
+{ 0 } - { 1 } - { 2 }
+Read the instructions carefully and identify the data and given clues .
+To score the player gbrainy uses the time and tips needed to complete each game .
+In logic games , elements that may seem irrelevant can be very important .
+Try to approach a problem from different angles .
+Do not be afraid of making mistakes , they are part of the learning process .
+Do all the problems , even the difficult ones . Improvement comes from challeging yourself .
+Play on a daily basis , you will notice progress soon .
+Use the ' Custom Game Selection ' to choose exactly which games you want to play .
+Use the Settings to adjust the difficulty level of the game .
+Association of elements is a common technique for remembering things .
+Grouping elements into categories is a common technique for remembering things .
+Build acronyms using the first letter of each fact to be remembered .
+The enjoyment obtained from a puzzle is proportional to the time spent on it .
+Think of breaking down every problem into simpler components .
+When answering verbal analogies pay attention to the verb tense .
+When you go shopping , try to perform calculations without the use of a calculator .
+Memorize the objects below in the given time
+Game # { 0 } . { 1 }
+Solutions
+{ 0 } Answer { 1 } .
+Given the relationship between the two words below , which word has the same relationship to ' { 0 } ' ?
+Time played { 0 } ( average per game { 1 } )
+For details on how gbrainy 's scoring works refer to the help .
+By scoring { 0 } in logic puzzle games you have established a new personal record . Your previous record was { 1 } .
+By scoring { 0 } in calculation games you have established a new personal record . Your previous record was { 1 } .
+By scoring { 0 } in memory games you have established a new personal record . Your previous record was { 1 } .
+By scoring { 0 } in verbal analogies you have established a new personal record . Your previous record was { 1 } .
+Logic puzzles . Challenge your reasoning and thinking skills .
+Mental calculation . Arithmetical operations that test your mental calculation abilities .
+Memory trainers . To prove your short term memory .
+Verbal analogies . Challenge your verbal aptitude .
+gbrainy is a brain teaser game and trainer to have fun and to keep your brain trained . It includes :
+What is the result of the following operation ?
+Given the numbers : { 0 } . Which of the following numbers is closest to the average ? Answer { 1 } , { 2 } , { 3 } or { 4 } .
+The average of a list of numbers is their sum divided by the number of numbers in the list .
+The result of the operation is { 0 } .
+Which of the following numbers is closer to { 0 } ? Answer { 1 } , { 2 } , { 3 } or { 4 } .
+The result of the operation { 0 } / { 1 } is ' { 2 } ' .
+In the list of single-digit numbers below , there are 5 consecutive numbers whose sum is { 0 } . Which numbers are these ?
+What is the result of the given operation ? Answer using either a fraction or a number .
+Which of the possible divisors is the greatest that divides all numbers ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+Which operators make { 0 } , { 1 } , and { 2 } equal { 3 } ? Answer using ' + - / * ' .
+Which of the following numbers is a prime ? A prime number is a positive integer that has exactly two different positive divisors , 1 and itself . Answer { 0 } , { 1 } , { 2 } or { 3 } .
+If the sum of all digits in a given number is divisible by 3 , then so is the number . For example 15 = 1 + 5 = 6 , which is divisible by 3 .
+The number { 0 } is a prime number .
+What is { 0 } % of { 1 } / { 2 } ? Answer { 3 } , { 4 } , { 5 } or { 6 } .
+Which two numbers have a sum of { 0 } and have a ratio of { 1 } to { 2 } ? Answer using two numbers ( e.g. : 1 and 2 ) .
+The second number can be calculated by multiplying the first number by { 0 } and dividing it by { 1 } .
+A ratio specifies a proportion between two numbers . A ratio of a : b means that for every ' a ' parts you have ' b ' parts .
+have a ratio of { 0 } : { 1 }
+In the list of numbers below , what is the sum of all the numbers with a value greater than { 0 } ? Answer { 1 } , { 2 } , { 3 } or { 4 } .
+In the list of numbers below , what is the product of all the numbers with a value greater than { 0 } ? Answer { 1 } , { 2 } , { 3 } or { 4 } .
+Which two numbers when added are { 0 } and when multiplied are { 1 } ? Answer using two numbers ( e.g. : 1 and 2 ) .
+Which two numbers when subtracted are { 0 } and when multiplied are { 1 } ? Answer using two numbers ( e.g. : 1 and 2 ) .
+How many small cubes does it take to build the large cube below ? Answer using a number .
+A cube is a regular solid object having six congruent square faces .
+Using triangles only , how many triangles are needed in the right part of the last figure to keep it balanced ?
+Every circle is equivalent to two triangles and every square to three triangles .
+Which three pieces can you use together to build a triangle ? Answer using the three figure names , e.g. : { 0 } { 1 } { 2 } .
+What is the maximum number of circles ( as shown ) that fit in the square below ?
+Using the above layout { 0 } units of height are gained per row leaving enough space for an additional row .
+To what number should the large handle of the ' { 0 } ' clock point ? Answer using numbers .
+Starting from the first clock , add { 1 } to the number obtained by appending the values to which the hands point . For example , the values of the hands for ' { 0 } ' are { 3 } ( { 2 } + { 1 } ) .
+The clocks do not follow the time logic .
+It is an easy exercise if you systematically count the circles .
+How many numbers ' 9' are required to represent the numbers between 10 to 100 ?
+How many two digit numbers occur where the first digit is larger than the second ( e.g. : 20 and 21 ) ?
+How many two digit numbers occur where the first digit is smaller than the second ( e.g. : 12 and 13 ) ?
+Notice that 99 contains two numbers ' 9' .
+What percentage of the figure is colored ?
+When you fold the figure below as a cube , which face on the figure is opposite the face with a { 0 } drawn on it ? Answer the number written on the face .
+What is the probability of getting a ' 2' or a ' 6' in a single throw of an unmodified 6 sided die ? Answer using a fraction ( e.g. : 1 / 2 ) .
+What is the probability of not getting a ' 5' in a single throw of an unmodified 6 sided die ? Answer using a fraction ( e.g. : 1 / 2 ) .
+Two unmodified 6 sided dice are thrown simultaneously . What is the probability of getting two even numbers ? Answer using a fraction ( e.g. : 1 / 2 ) .
+There are 9 of 36 possibilities of getting two even numbers .
+Two unmodified 6 sided dice are thrown simultaneously . What is the probability of getting two ' 6' ? Answer using a fraction ( e.g. : 1 / 2 ) .
+There is 1 of 6 possibilities of getting a ' 6' on the first die and the same for the second die .
+In the last figure , in how many regions is the circle divided into when all dots are connected ?
+What is the result of the equation below ?
+The order of arithmetical operations is always as follows : exponents and roots , multiplication and division , addition and subtraction .
+Which circle does not belong to the group ? It is not a sequence of elements . Answer { 0 } , { 1 } , { 2 } or { 3 } .
+All circles share a common property except for one .
+In all circles the color slices follow the same order except for this one .
+The figures and the texts are related . What text should go under the last figure ?
+Every character of the text represents a property of the figure .
+' A ' indicates that the figures overlap , ' B ' that are squares , ' C ' that are circles , ' D ' that the figures are separated , ' E ' that there are three figures and ' F ' that there are two figures .
+What figure should replace the question mark ? Answer { 0 } , { 1 } or { 2 } .
+The third figure of every row involves somehow combining the first two figures .
+Superpose the first and second figures and remove the lines that they have in common , then rotate the resulting figure 45 degrees .
+What is the next logical sequence of objects in the last column ? Answer { 0 } , { 1 } or { 2 } .
+It is the only combination that you can build with the given elements without repeating them .
+The number is located at row { 0 } , column { 1 } .
+How many four sided figures do you count in the figure below ?
+A four sided figure can be embedded inside another figure .
+The four sided figures are made by connecting the following points : { 0 }
+One of the numbers in the grid must be circled . Which one ?
+All circled numbers share an arithmetical property .
+Every circled number can be divided by { 0 } .
+Which is the next logical figure in the sequence ? Answer { 0 } , { 1 } or { 2 } .
+From the top-left figure , the top-left circle moves down , the bottom-left circle moves up , the bottom-right moves diagonally up-left and the top-right moves diagonally down-left .
+From the top-left figure , the figure is rotated counterclockwise 90 degrees .
+The numbers in the grid below follow a pattern . Which number should replace the question mark ?
+The fourth row is calculated by multiplying the first two rows and adding the third .
+The fourth column is calculated by multiplying the first two columns and adding the third .
+The fourth row is calculated by multiplying the first two rows and subtracting the third .
+The fourth column is calculated by multiplying the first two columns and subtracting the third .
+The fourth row is calculated by adding the first two rows and subtracting the third .
+The fourth column is calculated by adding the first two columns and subtracting the third .
+All attendees to a party are introduced to one another . { 0 } handshakes are made in total . How many people are attending the party ?
+Try to imagine a situation in which you are meeting a small number of people .
+Using n as the total number of people , the first person handshakes n-1 people , the second n-2 people , etc . The result is the sum of the first n-1 consecutive numbers : 1 + 2 + 3 + ... + ( n-1 ) .
+Which larger shape can you make combining the first two figures ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+Which of the following figures has the largest area ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+If the circles represented by the arcs below were completed , which circle would have the largest diameter ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+Less curved is the arc , the larger the circle is .
+How many line segments in total are in the figures below ? A line segment is a line between two points with no crossing lines .
+It is an easy exercise if you systematically count the lines .
+Which square completes the figure below ? Answer { 0 } , { 1 } or { 2 } .
+In every row the third square is made by flipping the first square and superimposing it on the second square , followed by removing the matching lines .
+The slices below have some kind of relation . Which is the missing slice in the circle below ? Answer { 0 } , { 1 } or { 2 } .
+Each slice is related to the opposite one .
+All numbers of each slice , when added to the ones of the opposite slice , add always { 0 } .
+Which of the possible answers have the most in common with the four given figures ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+Think of the common elements that the given figures have inside them .
+It has the same number of elements inside the figure as the given figures .
+It is the figure with the most elements in common compared to the given figures .
+What is the minimum number of circles to be moved in order to convert the left figure into the right figure ?
+Move the circle from the first line to the second and move two circles from the fourth line to the second and the fifth lines .
+Move the first line to the seventh ; move the two circles of the second line to third ; and move first and last circles of the fifth line to the sixth .
+From first figure , the top circle advances by two positions clockwise , while the left circle goes backwards one position .
+Every group of { 0 } numbers sums exactly { 1 } .
+Divide the sequence in groups of three numbers . Every third number is calculated by multiplying by the two previous ones .
+Divide the sequence in groups of three numbers . Every third number is calculated by subtracting the second number from the first .
+The next sequence follows a logic . What number should replace the question mark ?
+Every number in the sequence is related to the previous one .
+Every number in the sequence is the result of subtracting 1 from the previous number and multiplying it by 2 .
+Every number in the sequence is the result of adding 1 to the previous number and multiplying it by 3 .
+Every number in the sequence is the result of subtracting 2 from the previous number and multiplying it by -2 .
+Which element does not belong to the group ? It is not related to any arithmetical of the numbers . Answer { 0 } , { 1 } , { 2 } , { 3 } or { 4 } .
+The criteria for deciding if an equation belongs to the group is not arithmetical .
+Consider that every number that belongs to the group has two parts that are related .
+In all the other equations the digits from the left side also appear on the right side .
+In all the other numbers the last three digits are the square of the first two digits .
+Which of the following figures cannot be drawn without crossing any previous lines nor lifting the pencil ? Answer { 0 } , { 1 } , { 2 } , { 3 } or { 4 } .
+A group of people , spaced out evenly , are sitting at a round table . How many people are there if the { 0 } person sits directly across from the { 1 } ?
+Subtracting the two positions you find out how many people are seated half way around the table . Doubling this number leaves you with the total amount of people .
+Two people in the table sitting across from each other
+The amount of water in a bucket decreases by { 0 } % . By what percentage must the amount of water increase to reach its original value ?
+The objective is to obtain the same total amount .
+If all painters are artists and some citizens of Barcelona are artists . Which of the following conclusions is correct ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+If no ill artist is happy and some artists are happy . Which of the following conclusions is correct ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+People that travel always buy a map . You are not going to travel . Which of the following conclusions is correct ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+If you whistle if you are happy and you always smile when you whistle , which of the following conclusions is correct ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+You are only happy if you whistle
+If your course is always honest and your course is always the best policy , which of the following conclusions is correct ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+If no old misers are cheerful and some old misers are thin , which of the following conclusions is correct ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+If all pigs are fat and nothing that is fed on barley-water is fat , which of the following conclusions is correct ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+All animals fed on barley-water are non pigs
+If some pictures are first attempts and no first attempts are really good , which of the following conclusions is correct ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+If you have been out for a walk and you are feeling better , which of the following conclusions is correct ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+To feel better , you must go out for a walk
+If you go out for a walk , you will feel better
+Some who go out for a walk feel better
+No one feels better who does not go out for a walk
+Which of the following figures does not belong to the group ? Answer { 0 } , { 1 } , { 2 } , { 3 } , { 4 } or { 5 } .
+It is the only figure with all lines of equal length .
+In the grid below , which number should replace the question mark ?
+The number in the middle of every row is half of the sum of the other numbers in the row .
+The number in the middle of every row is the sum of the other numbers in the row .
+The number in the middle of every row is the double of the sum of the other numbers in the row .
+The letters around the squares follow a pattern . Which letter should replace the question mark in the last square ?
+Every letter is calculated by taking the alphabetical position of the previous character and adding { 0 } to it in order to get the position of the next letter .
+How many squares of any size do you count in the figure below ?
+A square is a rectangle with sides of equal length . A square can also be built from other squares .
+There are 16 single squares , 9 squares made by 4 single squares , 4 squares made by 9 single squares and 1 square made by 16 single squares .
+There are 9 single squares , 4 squares made by 4 single squares and 1 square made by 9 single squares .
+What is the minimum number of square sheets of paper of any size required to create the figure ? Lines indicate frontiers between different sheets .
+A full sized square of paper ( yellow ) , a 3 / 4 of the whole size square of paper ( blue ) in the bottom right corner , another 3 / 4 square of paper ( green ) in the top left corner and a 1 / 4 square of paper ( red ) in the top left corner .
+What figure completes the set below ? Answer { 0 } , { 1 } or { 2 } .
+It is the figure that completes all possible combinations with four blocks without taking into account rotations .
+The distance formula is ' distance = rate x time ' .
+You can calculate the answer by multiplying the speed of the first train by the time and dividing it by the difference of speeds .
+You can calculate the answer by dividing the distance by the sum of both speeds .
+How many triangles of any size do you count in the figure below ?
+A triangle can be embedded inside another triangle .
+The triangles are made by connecting the following points : { 0 }
+Which number should replace the question mark below ?
+All the triangles share a property and are independent of the rest .
+The result of multiplying the two numbers inside every triangle is { 0 } .
+Which of these figures was previously shown ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+What was the color of the text that said ' { 0 } ' ?
+How many dots of { 0 } color were in the previous image ? Answer using numbers .
+In which cell is the other face like the one shown below ? Answer the cell number .
+How many days did Shiny Cars halt its production for ?
+In what year did Shiny Cars last halt its production ?
+Shiny Cars sales fell { 0 } % this past December , the worst decline since { 1 } .
+By how much did company sales fall last December ?
+Shiny Cars sales fell { 0 } % this past December . This is the worst decline since which year ?
+About { 0 } % of Shiny Cars produced worldwide are sold in Europe .
+What percentage of all Shiny Cars produced worldwide are sold in Europe ?
+About { 0 } % of Shiny Cars use diesel , { 1 } % use gasoline and the remainder use electricity .
+What percentage of Shiny Cars use diesel ?
+What percentage of Shiny Cars use gasoline ?
+The list below enumerates the figures shown in the previous image except for one . Which is the missing figure ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+Which one of these squares was previously shown ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+Which of the following graphics represents the indications previously given ? Answer { 0 } , { 1 } , { 2 } or { 3 } .
+How many odd numbers were in the previous image ? Answer using numbers .
+How many even numbers were in the previous image ? Answer using numbers .
+How many numbers with more than one digit were in the previous image ? Answer using numbers .
+There is a missing word from the previous list . Which one is the missing word ?
+Boolean algebra can be calculated using the AND , OR and XOR operators .
+Characters cannot be converted using the keyboard .
+Currency information is approximate and should not be used for making financial decisions .
+Length / Area / Volume conversions must be performed using the keyboard .
+Time conversions must be performed using the keyboard .
+Mass conversions must be performed using the keyboard .
+Equations are entered in standard mathematical form . For example to add 7 and 2 enter the following :
+Calculations are performed in mathematical order - multiplication and division are performed before addition and subtraction . The following equation solves to 1 ( 3 × 2 = 6 , 7 6 = 1 − ) .
+To change the order of calculation use parenthesis . The following equation solves to 8 ( 7 3 = 4 − , 4 × 2 = 8 ) .
+Factorials are entered using the ! symbol . To calculate the factorial of 6 enter the following .
+When in financial mode the following buttons are available .
+Calculate the number of compounding periods necessary to increase an investment of present value to a future value , at a fixed interest rate per compounding period .
+Calculate the depreciation allowance on an asset for a specified period of time , using the double-declining balance method .
+Calculate the future value of an investment based on a series of equal payments at a periodic interest rate over the number of payment periods in the term .
+Calculate the resale price of a product , based on the product cost and the wanted gross profit margin .
+Calculate the amount of the periodic payment of a loan , where payments are made at the end of each payment period .
+Calculate the present value of an investment based on a series of equal payments discounted at a periodic interest rate over the number of payment periods in the term .
+Calculate the periodic interest necessary to increase an investment to a future value , over the number of compounding periods .
+Calculate the straight-line depreciation of an asset for one period . The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset . The useful life is the number of periods , typically years , over which an asset is depreciated .
+Calculate the depreciation allowance on an asset for a specified period of time , using the Sum-of-the-Years ' -Digits method . This method of depreciation accelerates the rate of depreciation , so that more depreciation expense occurs in earlier periods than in later ones . The useful life is the number of periods , typically years , over which an asset is depreciated .
+Calculate the number of payment periods that are necessary during the term of an ordinary annuity , to accumulate a future value , at a periodic interest rate .
+Financial functions cannot be performed using the keyboard .
+All mathematical equations can be entered using the keyboard .
+The following key combinations can be used to enter keys that may not be available on your keyboard .
+Powers can also be calculated using the ^ symbol . This allows the power to be an equation .
+Some equations may require numbers to be entered in superscript or subscript form. e.g.
+Calculates the number of compounding periods necessary to increase an investment of present value to a future value , at a fixed interest rate per compounding period .
+Calculates the depreciation allowance on an asset for a specified period of time , using the double-declining balance method .
+Calculates the future value of an investment based on a series of equal payments at a periodic interest rate over the number of payment periods in the term .
+Calculates the resale price of a product , based on the product cost and the wanted gross profit margin .
+Calculates the amount of the periodic payment of a loan , where payments are made at the end of each payment period .
+Calculates the present value of an investment based on a series of equal payments discounted at a periodic interest rate over the number of payment periods in the term .
+Calculates the periodic interest necessary to increase an investment to a future value , over the number of compounding periods .
+Calculates the straight-line depreciation of an asset for one period . The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset . The useful life is the number of periods , typically years , over which an asset is depreciated .
+Calculates the depreciation allowance on an asset for a specified period of time , using the Sum-of-the-Years ' -Digits method . This method of depreciation accelerates the rate of depreciation , so that more depreciation expense occurs in earlier periods than in later ones . The useful life is the number of periods , typically years , over which an asset is depreciated .
+Calculates the number of payment periods that are necessary during the term of an ordinary annuity , to accumulate a future value , at a periodic interest rate .
+The number of digits displayed after the numeric point
+The size of the words used in bitwise operations
+Indicates whether thousands separators are shown in large numbers .
+Indicates whether any trailing zeroes after the numeric point should be shown in the display value .
+Currency to convert the current calculation into
+Units to convert the current calculation into
+Error : the number of periods must be positive
+Help Options : -v , --version Show release version -h , - ? , --help Show help options --help-all Show all help options --help-gtk Show GTK + options
+GTK + Options : --class = CLASS Program class as used by the window manager --name = NAME Program name as used by the window manager --screen = SCREEN X screen to use --sync Make X calls synchronous --gtk-module = MODULES Load additional GTK + modules --g-fatal-warnings Make all warnings fatal
+Application Options : -s , --solve < equation > Solve the given equation
+Argument --solve requires an equation to solve
+Overflow . Try a bigger word size
+0,1,2,3,4,5,6,7,8,9 , A , B,C , D,E , F
+Gcalctool is free software ; you can redistribute it and / or modify it under the terms of the GNU General Public License as published by the Free Software Foundation ; either version 2 of the License , or ( at your option ) any later version . Gcalctool is distributed in the hope that it will be useful , but WITHOUT ANY WARRANTY ; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE . See the GNU General Public License for more details . You should have received a copy of the GNU General Public License along with Gcalctool ; if not , write to the Free Software Foundation , Inc . , 51 Franklin Street , Fifth Floor , Boston , MA 02110-1301 , USA
+Boolean XOR is only defined for positive integers
+The power of zero is undefined for a negative exponent
+nth root of negative number is undefined for even n
+Tangent is undefined for angles that are multiples of π ( 180 ° ) from π ∕ 2 ( 90 ° )
+Inverse sine is undefined for values outside [ -1 , 1 ]
+Inverse cosine is undefined for values outside [ -1 , 1 ]
+Inverse hyperbolic cosine is undefined for values less than one
+Inverse hyperbolic tangent is undefined for values outside [ -1 , 1 ]
+litre , litres , liter , liters , L
+millilitre , millilitres , milliliter , milliliters , mL , cm ³
+kilogram , kilograms , kilogramme , kilogrammes , kg , kgs
+gram , grams , gramme , grammes , g
+Error loading PKCS # 11 module : % s
+Couldn 't initialize PKCS # 11 module : % s
+Couldn 't initialize registered PKCS # 11 modules : % s
+The URI does not have the ' pkcs11 ' scheme .
+The key cannot be used to sign the request
+Gnupg process was terminated with signal : % d
+Could not parse invalid or corrupted data .
+Couldn 't find a place to store the pinned certificate
+Cannot display a file of this type .
+The information in this key has not yet been verified
+Cannot import because there are no compatible importers
+In order to import , please enter the password .
+Do you want to replace it with a new file ?
+Automatically unlock this keyring whenever I 'm logged in
+The contents of ' % s ' are locked . In order to view the contents , enter the correct password .
+The contents are locked . In order to view the contents , enter the correct password .
+Couldn 't setup PKCS # 11 module : % s
+Failed to open file ' % s ' : % s
+Image file ' % s ' contains no data
+Failed to load image ' % s ' : reason not known , probably a corrupt image file
+Failed to load animation ' % s ' : reason not known , probably a corrupt animation file
+Unable to load image-loading module : % s : % s
+Image-loading module % s does not export the proper interface ; perhaps it 's from a different gdk-pixbuf version ?
+Image type ' % s ' is not supported
+Couldn 't recognize the image file format for file ' % s '
+Failed to load image ' % s ' : % s

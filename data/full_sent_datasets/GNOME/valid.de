@@ -1,0 +1,151 @@
+Kategorien für Termine , Kontakte , Notizen und Aufgaben verwenden und verwalten .
+Eine andere Methode , wie Sie Kontakte , Termine , Aufgaben und Notizen ( im Folgenden unter dem Begriff » Objekte « zusammengefasst ) ordnen können , besteht darin , ihnen verschiedene Kategorien zuzuweisen . Sie können einem Objekt mehrere oder gar keine Kategorien zuordnen . Sie können zum Beispiel in Ihrem Adressbuch einen Freund in der Kategorie » Geschäftlich « einordnen , da er mit Ihnen arbeitet , und in die Kategorie » Freunde « , da er ein Freund ist .
+Um ein Objekt als zu einer Kategorie zugehörig zu markieren ,
+Klicken Sie doppelt auf das Objekt , damit das entsprechende Editor-Fenster geöffnet wird .
+Wählen Sie die Kategorie aus der Liste aus . Sie können so viele Kategorien aussuchen , wie Sie möchten .
+Klicken Sie doppelt auf ein beliebiges Objekt , um den entsprechenden Editor zu öffnen .
+Geben Sie den Namen der Kategorie in das Textfeld oben ein .
+Eine Online-WebDAV-Aufgaben- oder -Notizenliste verwenden .
+So fügen Sie eine Aufgaben- oder Notizenliste zu Evolution hinzu :
+Wählen Sie , ob Sie den Inhalt auch sehen können wollen , wenn Sie offline sind .
+Aufgaben- und Notizenlisten hinzufügen und mehr als eine Liste verwenden .
+Sie können mehrere Aufgaben- oder Notizenlisten verwenden und auswählen , welche Ihrer Listen angezeigt werden . So können Sie zum Beispiel Aufgaben für die Arbeit , für zu Hause und für den Gesangverein , in dem Sie Mitglied sind , haben . In der Seitenleiste werden diese Listen aufgelistet , und Sie können durch das Aus- und Abwählen der Ankreuzfelder neben den Namen entscheiden , ob die entsprechenden Aufgaben und Notizen in Ihrer Ansicht angezeigt oder verborgen werden .
+Die Aufgaben und Notizen jeder Aufgaben- oder Notizenliste erscheinen in einer anderen Farbe .
+Sie können auch Listen verwenden , die nicht auf Ihrem Rechner sind , etwa solche im Internet .
+Über das Hinzufügen , Bearbeiten und Löschen von Aufgaben .
+Wenn Sie eine Aufgabe ändern möchten , die bereits in Ihren Aufgabenlisten vorhanden ist ,
+Wenn Sie eine Aufgabe zügig per Zusammenfassung hinzufügen möchten , so geben Sie diese direkt in der Aufgabenliste ein .
+Evolution kann Aufgaben mehreren Personen zuweisen .
+Wenn Sie eine Aufgabe zuweisen , so können Sie die Teilnehmer in mehrere Kategorien einordnen , wie zum Beispiel als » Vorsitzender « oder » Benötigter Teilnehmer « . Wenn Sie eine Aufgabe speichern , wird jedem Teilnehmer eine E-Mail mit Informationen zur Aufgabe und der Möglichkeit zur Antwort geschickt .
+lokalisiert - verwendet original
+Durchsuchen Sie zügig die Aufgaben nach Zusammenfassung oder Kategorie in der Aufgabenansicht .
+Wählen Sie das Suchkriterium aus der Liste aus .
+Wählen Sie die Kategorie aus der Liste aus .
+Verwenden Sie die Erweiterte Suche , um mehrere Suchbedingungen festzulegen . Diese ist im Folgenden beschrieben .
+Wählen Sie die Bedingung in der Auswahlliste aus und geben Sie danach einen Suchbegriff in das Feld ein .
+Wenn Sie nach etwas Bestimmtem häufig suchen , so bietet es sich an , Tipparbeit zu sparen und gespeicherte Suchen einzusetzen .
+Ändern Sie den Titel oder die gewünschten Suchkriterien im Dialogfeld .
+Über Aufgaben- und Notizlisten , Suchvorgänge und Kategorien .
+Sie fügen wie folgt eine weitere lokale Aufgabenliste zu Evolution hinzu :
+Die Aufgabe wird daraufhin zu der Aufgabenliste in Evolution hinzugefügt .
+Optionen für die Anzeige für Aufgabenabschlüsse und Fälligkeitsdaten .
+Wählt die Farbe für heute fällige Aufgabe aus .
+Wählen Sie diese Option aus , wenn erledigte Aufgaben nach einer gewissen Anzahl von Tagen , Stunden oder Minuten verborgen werden sollen . Wenn Sie diese Option nicht auswählen , verbleiben erledigte Aufgaben in Ihrer Aufgabenliste und werden als erledigt markiert .
+Eine CalDAV-Aufgaben- oder -Notizliste hinzufügen
+Bitte geben Sie Ihren Benutzernamen und Ihre E-Mail-Adresse ein .
+Die Evolution-Daten mit Handheld-Geräten und Mobiltelefonen abgleichen .
+Derzeit gibt es keine » empfohlenen Anweisungen « für Benutzer .
+Zum Abgleichen mit einem Palm OS-Gerät , wie zum Beispiel dem PalmPilot(TM ) oder dem Handspring Visor , sind mehrere Schritte notwendig . Erstens : Das Aktivieren des Datenabgleichs . Zweitens muss der Rechner das tragbare Gerät erkennen und darauf zugreifen können . Drittens müssen Sie entscheiden , was genau abgeglichen werden soll .
+Bearbeiten GNOME Pilot abgleichen / dev/ pilot / dev/ ttyS0 / dev/ ttyUSB1 ttyUSB0 ttyUSB1
+Befolgen Sie folgende Schritte , um Daten zwischen Ihrem Palm OS-Gerät und Evolution abzugleichen :
+Falls Sie Palm OS Version 4.0 benutzen und der Passwortschutz aktiviert ist , so könnten Sie auf Probleme stoßen . Falls dies passiert , so stellen Sie den Passwortschutz für Ihr tragbares Gerät ab , gleichen Sie dessen Daten mit dem Rechner ab , und aktivieren Sie dann wieder den Passwortschutz .
+Nun sollte Ihr Palm-OS-Gerät Daten mit Evolution abgleichen .
+So liefern Sie wertvolle Informationen beim Analysieren eines Problems .
+Als ein erster Hinweis werden Fehlermeldungen entweder in der Statuszeile oder zwischen Werkzeugleiste und Suchleiste angezeigt .
+Über das Organisieren und Auffinden Ihrer Daten in Evolution .
+Über das Minimieren von Evolution in das Benachrichtigungsfeld .
+Über Hinzufügen , Bearbeiten und Löschen von Notizen .
+Derzeit wird der Abgleich von Notizen mit Tomboy und Gnote nicht unterstützt .
+Wenn Sie bereits bestehende Notizen in der Notizliste ändern möchten ,
+Wenn Sie eine Notiz zügig durch Eingabe einer Zusammenfassung hinzufügen möchten , so geben Sie diese direkt in der Notizliste ein .
+Gemeinsame Notizen sind im Prinzip Nachrichten , die für einen speziellen Tag geplant sind und im Kalender an diesem Datum erscheinen . Sie können gemeinsame Notizen zur Darstellung von Urlaub , Ferien , Zahltagen , Geburtstagen usw. verwenden . Beauftragte gemeinsame Notizen werden zum angegebenen Zeitpunkt in Ihren Kalender übertragen . Sie werden nicht in Ihrem oder einem Postfach eines anderen Benutzers erscheinen .
+Wählen Sie den Kontonamen des Organisators aus der Auswahlliste neben dem Feld » Organisator « .
+Geben Sie im Feld » An : « einen Benutzernamen ein und drücken Sie die Eingabetaste . Wiederholen Sie dies für weitere Benutzer .
+Geben Sie eine kurze Zusammenfassung in das » Zusammenfassung«-Feld ein .
+Geben Sie in das Feld » Startdatum « ein , an welchem Datum die gemeinsame Notiz im Kalender des Empfängers angezeigt werden soll .
+Durchsuchen Sie zügig die Notizen nach Zusammenfassung oder Kategorie in der Notizenansicht .
+Ein bekanntes Problem , das in neueren Versionen beseitigt ist .
+Nachrichtenschriften sind nicht dieselben Schriften wie in anderen Anwendungen
+Bearbeiten Einstellungen E-Mail-Einstellungen Allgemein Nachrichtenschriftarten Dieselben Schriften wie andere Anwendungen verwenden
+Fehlerbericht Bearbeiten Einstellungen E-Mail-Einstellungen Allgemein Nachrichtenanzeige Dieselben Schriften wie andere Anwendungen verwenden
+Arbeiten Sie mit Ihren E-Mails auch ohne bestehende Netzwerkverbindung .
+Der Offline-Modus hilft Ihnen , mit entfernten Mail-Systemen wie GroupWise , IMAP oder Exchange ohne dauerhafte Verbindung zum Netzwerk zu arbeiten . Evolution hält eine lokale Kopie von einem oder mehreren Ordner vorrätig , damit Sie Nachrichten schreiben und im Ausgangsordner speichern können , so dass diese bei der nächsten Verbindung mit einem Netzwerk verschickt werden können .
+POP lädt alle Nachrichten auf Ihre lokale Festplatte herunter , andere Verbindungsarten jedoch laden oftmals nur die Kopfzeilen herunter , und alles weitere erst dann , wenn Sie die Nachricht wirklich lesen wollen . Bevor Sie offline gehen lädt Evolution die ungelesenen Nachrichten aus den Ordnern herunter , die Sie zur Speicherung ausgewählt haben .
+Um einen Ordner für die Offline-Nutzung zu markieren ,
+Evolution erkennt automatisch den Netzwerkstatus und verhält sich dementsprechend . Evolution geht automatisch in den Offline-Modus , wenn die Netzwerkverbindung getrennt wird , und geht in den Online-Modus , wenn das Netzwerk wieder verfügbar ist . Stellen Sie sicher , dass die Anwendung Network Manager installiert ist , damit diese Funktion wie erwartet arbeitet .
+Worte werden in ausgehenden E-Mails ab 72 Zeichen umgebrochen .
+Worte werden in ausgehenden E-Mails ab 72 Zeichen umgebrochen
+Zur besseren Lesbarkeit werden Zeilen nach 72 Zeichen umgebrochen . Dieser Wert ist fest eingestellt und kann nicht geändert werden .
+So ändern Sie die Darstellung von E-Mails auf Breitbildschirmen .
+Evolution bietet neben der klassischen Ansicht auch eine vertikale Ansicht . In der vertikalen Ansicht ist die Nachrichtenvorschau rechts von der E-Mail-Liste , während sich in der klassischen Ansicht die Nachrichtenvorschau unterhalb der E-Mail-Liste befindet . Die vertikale Ansicht bietet sich für Monitore mit breitem Bildschirm ( zum Beispiel 16:9- oder Breitbild-Format ) an .
+In der vertikalen Ansicht wird eine E-Mail in der E-Mail-Liste mit zwei Zeilen dargestellt , was Ihnen zusätzliche Breite in der Nachrichtenvorschau bereitstellt . Die zwei Zeilen stellen Absendernamen und -E-Mail , Anhangssymbol , Datum und Betreff dar .
+Wenn Sie ein USENET-News-Konto erstellen , haben Sie noch keine Newsgroups abonniert . Um Newsgroups zu abonnieren :
+Falls Sie Konten auf mehreren Servern besitzen , wählen Sie den Server aus , für den Sie Ihre Abonnements verwalten möchten .
+Wählen Sie die zu abonnierenden Ordner aus , indem Sie das Ankreuzfeld der Gruppe anwählen .
+Eine Erklärung des Problems , dass zwei Müll-Ordner in Evolution angezeigt werden .
+Sie könnten einen weiteren Müll-Ordner für Ihre gelöschten Nachrichten erstellt haben . Dies kann passieren , wenn Sie neben Evolution ein weiteres E-Mail-Programm verwenden .
+So legen Sie den Umgang mit unerwünschten E-Mails fest .
+Evolution ermöglicht die Prüfung auf unerwünschte E-Mails mit Hilfe der Werkzeuge Bogofilter und SpamAssassin . Stellen Sie vor dem Einsatz sicher , dass diese mit der Softwareverwaltung Ihrer Distribution installiert wurden und die entsprechenden Plugins aktiviert sind .
+Wählen Sie die gewünschten Plugins zur Aktivierung . Sie haben die Wahl zwischen Bogofilter oder SpamAssassin , oder beiden .
+Legen Sie den Umgang von Evolution mit unerwünschten Nachrichten in den Unerwünscht-Einstellungen fest :
+Unerwünscht-Ordner beim Beenden leeren , und wie oft unerwünschte Nachrichten gelöscht werden sollen .
+Nachrichten nicht als Unerwünscht markieren , wenn der Absender im Adressbuch ist .
+Einstellungen für Bogofilter und SpamAssassin . Sie sind nur eingeblendet , wenn die Plugins aktiviert sind .
+So markieren Sie unerwünschte Nachrichten .
+Evolution kann nach unerwünschten Nachrichten suchen . Evolution nutzt SpamAssassin* und/ oder Bogofilter* mit trainierbaren Bayes-Filtern , um zu suchen . Wenn das Programm entdeckt , dass eine Nachricht wahrscheinlich unerwünscht ist , so wird die Nachricht als unerwünscht markiert und Ihnen nicht im jeweiligen normalen E-Mail-Ordner , sondern einzig im Unerwünscht-Ordner angezeigt .
+Der Filter für unerwünschte Nachrichten kann erlernen , welche Nachrichten berechtigt sind und welche nicht , wenn Sie ihn trainieren , indem Sie eingehende Nachrichten als unerwünscht erkennen und markieren . Prüfen Sie beim erstmaligen Blockieren von unerwünschten Nachrichten Ihren Unerwünscht-Ordner regelmäßig , um sicherzustellen , dass seriöse Nachrichten nicht versehentlich als unerwünscht markiert wurden .
+Umschalttaste Strg J Nachricht als unerwünscht markieren Strg J
+Jedes mal , wenn Sie Nachrichten als unerwünscht markieren , wird der Absender zu Ihrer Liste unerwünschter Absender hinzugefügt . Jedes mal , wenn Sie Nachrichten als erwünscht markieren , wird der Absender von Ihrer Liste unerwünschter Absender entfernt .
+So markieren Sie in Novell Groupwise eine Nachricht als erwünscht .
+Wählen Sie die als Erwünscht zu markierende E-Mail in Ihrem Unerwünscht-Ordner .
+Die Nachricht wird nun in Ihren E-Mail-Ordner verschoben und der Absender wird von Ihrer Unerwünscht-Liste entfernt .
+So entfernen Sie eine E-Mail-Adresse aus Ihrer Liste unerwünschter Absender in Novell Groupwise .
+Eine Nachricht in Novell Groupwise als Unerwünscht markieren .
+Die Nachricht wird nun in den Unerwünscht-Ordner verschoben und der Absender wird zu Ihrer Unerwünscht-Liste hinzugefügt .
+Verwaltung Ihrer Unerwünscht-Listen in Novell Groupwise .
+Wählen Sie dies , um die Verarbeitung von unerwünschten Nachrichten zu aktivieren oder zu deaktivieren .
+So fügen Sie eine E-Mail-Adresse Ihrer Liste unerwünschter Absender in Novell Groupwise hinzu .
+Bedenken Sie : Wenn Sie ein Objekt in GroupWise als unerwünscht markieren , dann wird das Objekt zu der Liste unerwünschter E-Mails im GroupWise-System hinzugefügt . Weil diese Einstellungen auf dem GroupWise-System verbleiben , ändert sich die Liste nicht mit einem Rechnerwechsel .
+Die E-Mail-Liste eines Nachrichtenordners sortieren .
+Evolution ermöglicht das Organisieren Ihrer E-Mails , indem Sie Ihre Nachrichten sortieren .
+Wenn Sie diese Funktion aktivieren , werden Antworten zusammen mit der ursprünglichen Nachricht angeordnet und Sie können so den Verlauf der Nachrichten nachvollziehen .
+Sobald eine neue Nachricht eingeht , wird diese unter die übergeordnete Nachricht hinzugefügt . Threads werden nach Datum der zuletzt erhaltenen Nachricht sortiert und angezeigt .
+Für fortgeschrittene Anwender : Es gibt einen GConf-Schlüssel , der das Umschalten zwischen eingeklapptem und ausgeklapptem Zustand der E-Mail-Threads ermöglicht . Der eingeklappte Zustand ist voreingestellt und kann unter / apps/ evolution/ mail/ display/ thread_expand angepasst werden .
+Die E-Mail-Liste besitzt Spalten , die den Absender , das Datum und den Betreff anzeigen , sowie ob eine Nachricht gelesen wurde , ob sie Anhänge besitzt , oder wie wichtig sie ist . So können Sie die Reihenfolge der Spalten in der Nachrichtenliste ändern :
+Klicken Sie mit der rechten Maustaste auf die Kopfzeile .
+Evolution ermöglicht es Ihnen , Ihre Nachrichten mit Hilfe dieser Spalten zu sortieren . Klicken Sie auf die Spaltenbeschriftung , um E-Mails zu sortieren . Die Richtung des Pfeils neben der Beschriftung gibt die Sortierreihenfolge an .
+Evolution bietet auch andere Möglichkeiten zur Sortierung von E-Mails . Möglich sind » Sortieren nach « , » Aufsteigend sortieren « , » Absteigend sortieren « und » Unsortiert « .
+Klicken Sie mit der rechten Maustaste auf die Spaltenbezeichnung in der E-Mail-Liste .
+Die Liste der Sortierkriterien für E-Mails wird daraufhin angezeigt :
+Wählen Sie die Sortierreihenfolge zum Sortieren der E-Mail-Nachrichten .
+Die jüngsten Nachrichten werden unten angezeigt .
+Die jüngsten Nachrichten werden oben angezeigt .
+So wird nicht in der Spalte sortiert . Die Nachrichten werden wieder in der Reihenfolge dargestellt , wie sie zu dem Ordner hinzugefügt wurden .
+So teilen und sortieren Sie Nachrichten bei Verwendung von mehr als einem lokalen Konto .
+Es ist nicht möglich , dass es mehrere getrennte Konten in der Kontenansicht und der Ordnerlistenansicht gibt . Evolution hat nur einen Eingangsbereich für eingehende E-Mails .
+Ordner erstellen Filter erstellen Bearbeiten Nachrichtenfilter Hinzufügen
+Kostenlose Webmail-Provider veröffentlichen normalerweise Informationen darüber , welche Optionen Sie zum Verbinden nutzen können . Falls Sie in einer Firma oder einer Organisation arbeiten , so fragen Sie bitte Ihren System-Administrator für weitere Informationen .
+Falls der Server Legitimation erfordert , müssen folgende Informationen eingegeben werden :
+Automatisch regelmäßig neue E-Mail-Nachrichten abrufen .
+Automatisch nach neuen E-Mails sehen alle Minuten Empfangsoptionen Bearbeiten Einstellungen E-Mail-Konten Bearbeiten Empfangsoptionen
+Durch das Definieren von Bedingungen können Sie in der Nachrichtenansicht schnell nach bestimmten Nachrichten suchen .
+Wählen Sie den Bereich aus der Auswahlliste rechts neben dem Textfeld aus .
+Wenn Sie direkt mit Schritt vier beginnen , so wird im aktuellen Ordner nach dem Suchbegriff im Betreff und den E-Mail-Adressen aller Nachrichten gesucht .
+Es gibt derzeit keine Möglichkeit , nach E-Mails mit einem bestimmten Anhangtyp zu suchen ( wie zum Beispiel nach E-Mails mit PDF-Anhängen ) .
+Es kann passieren , dass einer Ihrer Suchordner nicht aktualisiert worden ist , seit z.B. neue Nachrichten eingegangen sind oder gelöscht wurden . Dies bedeutet , dass die Liste der Nachrichten im Ordner nicht aktuell ist .
+Verwenden Sie Suchordner , um Nachrichten in einem Ordner zu lesen , während diese in den ursprünglichen Ordnern verbleiben .
+Evolution aktualisiert automatisch den Inhalt von Suchordnern , sobald eine Nachricht gelöscht oder eine neue empfangen wird .
+Die E-Mail-Adresse oder der Name des Absenders .
+Nur die Empfänger im Feld » Blindkopie an « . Selbstverständlich kann dies nur auf Ausgangsfilter angewendet werden .
+Die E-Mail-Adresse oder der Name des Absenders , oder der Empfänger der Nachricht .
+Falls eine Nachricht die gleiche Kopfzeile mehr als einmal benutzt , so wertet Evolution nur ihr erstes Auftreten aus , selbst wenn die Nachricht die Kopfzeile beim zweiten Mal anders definiert . Wenn zum Beispiel eine Nachricht die Kopfzeile » Resent-From : « als » engineering@example.com « und dann nochmals als » marketing@example.com « definiert , so filtert Evolution , als ob der zweite Wert nicht existierte . Verwenden Sie reguläre Ausdrücke , um Nachrichten zu filtern , welche die gleichen Kopfzeilen mehr als einmal definieren .
+Sucht im Nachrichtentext der Nachricht .
+Filtert Nachrichten gemäß dem Datum , an dem sie verschickt wurden . Wählen Sie zunächst die Bedingungen , die auf eine Nachricht zutreffen sollen , wie zum Beispiel vor einem bestimmten Zeitpunkt oder nach einem bestimmten Zeitpunkt . Wählen Sie dann den Zeitpunkt aus . Der Filter vergleicht den Zeitstempel der Nachricht mit der Systemzeit wenn der Filter angewendet wird , oder mit einem von Ihnen vorgegebenen Zeitpunkt . Es kann auch nach einem relativen Zeitpunkt gefiltert werden , also zum Beispiel zwei oder vier Tage zuvor .
+Dies funktioniert genau so wie das Filtern gemäß dem Verschickt-Datum , nur dass hierbei der Zeitpunkt verglichen wird , an dem Sie die Nachricht erhalten haben .
+Setzt die Bewertung der Nachricht auf einen ganzzahligen Wert der größer als 0 ist . Sie können einen Filter haben , der die Bewertung setzt , und einen weiteren Filter , der auf der Bewertung basierend die Nachrichten in Ordner verschiebt . Eine Bewertung basiert auf keinen speziellen Eigenschaften , es handelt sich nur um eine Nummer , die Sie Nachrichten zuweisen können , damit andere Filter diese weiterverarbeiten können .
+Sortiert gemäß der Größe der Nachricht in Kilobyte .
+Filtert gemäß dem Status einer Nachricht , der Beantwortet , Entwurf , Wichtig , Gelesen , oder Unerwünscht sein kann .
+Filtert je nachdem , ob eine Nachricht einen Anhang besitzt .
+Filtert basierend auf der Mailingliste , von welcher die Nachricht stammt . Dieser Filter prüft auf die X-BeenThere-Kopfzeile von Nachrichten , welche genutzt wird , um Mailinglisten zu kennzeichnen . E-Mails die von List-Servern stammen , die diese Kopfzeile nicht korrekt benutzen , werden von diesem Filter nicht erkannt .
+Bearbeiten Suchordner Nachricht Regel anlegen Suche Suchordner aus Suche anlegen
+Legen Sie die Bedingungen für die Regel fest . Sie müssen für jede Bedingung zuerst wählen , welcher Nachrichtenteil geprüft wird , und dann den Vergleich definieren .
+Benutzt alle lokalen Ordner als Suchordner-Quellen , zusätzlich zu den ausgewählten individuellen Ordnern .
+Entfernte ( nicht-lokale ) Ordner werden als aktiv betrachtet , wenn Sie mit dem Server verbunden sind ; Sie müssen mit dem Server verbunden sein , damit der Suchordner auch Nachrichten aus den entfernten Ordner beinhaltet , zusätzlich zu den ausgewählten individuellen Ordnern .
+Benutzt alle lokalen und aktiven nicht-lokalen Ordner als Suchordner-Quellen , zusätzlich zu den ausgewählten individuellen Ordnern .
+Aktualisieren der Ordner auf dem E-Mail-Server
+Abrufen von E-Mails Bearbeiten Einstellungen E-Mail-Konten Bearbeiten Abrufen von E-Mails
+Wählen Sie aus , ob Sie eine sichere Verbindung ( SSL oder TLS ) verwenden möchten .
+Sie sollten diese Funktion aktivieren , falls sie von Ihrem Server unterstützt wird .
+Wählen Sie , ob Evolution sich an Ihr Passwort erinnern soll .
+Empfangsoptionen Bearbeiten Einstellungen E-Mail-Konten Bearbeiten Empfangsoptionen
+Wählen Sie , ob Ordner in Kurznotation angezeigt werden sollen .

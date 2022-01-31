@@ -1,0 +1,151 @@
+Using and managing categories for appointments , contacts , memos and tasks .
+Another way to group contacts , appointments , tasks and memos ( summarized by the term " objects " in the following text ) is to mark them as belonging to different categories . You can mark an object as being in several categories or no category at all . For example in your address book , you put a friend in the " Business " category because he works with you and the " Friends " category because he is a friend .
+To mark an object as belonging to a category ,
+Double-click the object to bring up the corresponding editor .
+Select the category from the list . You can select as many or as few categories as you like .
+Double-click any object to bring up th corresponding editor .
+Enter the new category in the entry box at the top .
+Using an online WebDAV task list or memo list .
+To add such a task list or memo list to Evolution , perform the following steps :
+Choose if you want to be able to view the content also when being offline .
+Adding and using more than one task list or memo list .
+You can have multiple task or memo lists and choose which of your lists get displayed . For example , you might have tasks for work , tasks for home , and tasks for the singing club that you are a member of . The side bar lists those lists , and you can select or deselect any of the boxes next to them to show and hide the corresponding tasks or memos in your view .
+Tasks and memos from each task or memo list appear as different colors .
+You can also use lists that are not on your computer , such as on the internet .
+On adding , editing , and deleting tasks .
+If you want to change a task that already exists in your task lists ,
+If you just want to quickly add a task by entering a summary you can directly enter it in the list of tasks .
+Evolution can be used to assign a task to multiple people .
+When you assign a task , you can specify the attendees in several categories , such as " chair " or " required " . When you save the task , each attendee is sent an email with the task information , which also gives them the option to respond .
+@ @ image : ' figures / search-icon.png ' ; md5 = cd4b82c84c628bfbbfa39d1e0d1eae89
+In the Tasks view , you can quickly search for tasks either by summary or by category .
+Select the search condition from the list .
+Select the category from the list .
+If you want to set several search conditions , you should use an Advanced search , which is described below .
+Select the condition from the dropdown list , and then type a search entry in the field .
+If you search for something rather often , you will prefer not to type it many times . In this case you can use saved searches .
+Edit the title or search conditions from the dialog box .
+On task and memo lists , searching , and categories .
+To add another local task list to Evolution , perform the following steps :
+The task list will be added to the list of task lists in Evolution .
+Options for displaying task completion and due dates .
+Select the color for tasks due today .
+Select this option to have completed tasks hidden after a period of time measured in days , hours , or minutes . If you do not select this option , completed tasks remain in your task list , marked as complete .
+Using an online CalDAV task list or memo list .
+Enter your username and your email address .
+Synchronize Evolution data with handheld devices and mobile phones .
+There are currently no " recommended instructions " for users .
+To synchronize with a Palm OS device like the PalmPilot ( TM ) and the Handspring Visor several steps are needed : First , you need to enable synchronization . Second , your computer needs to recognize and access your handheld . Third , you should decide what sort of synchronization behavior you want .
+Edit GNOME Pilot Synchronization ... / dev / pilot / dev / ttyS0 / dev / ttyUSB1 ttyUSB0 ttyUSB1
+Use the following procedure to synchronize the data on your Palm OS device with the data you store in Evolution .
+If you use Palm OS version 4.0 and have password protection turned on for your handheld device , you might encounter trouble synchronizing . If this happens , try turning off password protection on your handheld , synchronize it with your desktop computer , and then re-enable password protection on your handheld .
+Now your Palm OS device will synchronize data with Evolution .
+How to provide good information when tracking down a problem .
+As a first hint , error messages will be either displayed in the statusbar or between the tool bar and the search bar .
+On organizing and finding your data in Evolution .
+On minimizing Evolution to the notification area .
+On adding , editing , and deleting memos .
+Currently there is no support for syncing memos with the Tomboy or Gnote applications .
+If you want to change a memo that already exists in your memo lists ,
+If you just want to quickly add a memo by entering a summary you can directly enter it in the list of memos .
+Shared Memos are like mail messages except they are scheduled for a particular day and appear on the calendar for that date . You can use shared memos to show vacations , holidays , pay days , birthdays , and so on . Posted shared memos are placed in your Calendar on the date you specify . They are not placed in your Mailbox or in any other user 's Mailbox .
+Select the Organizer 's account name from the drop-down list given next to the Organizer field .
+In the To field , type a username , then press Enter . Repeat this for additional users .
+Enter a brief summary in the Summary field .
+In the Start Date field , type the date this shared memo should appear in the recipients ' calendars .
+In the Memos view , you can quickly search for memos either by summary or by category .
+A known problem that is fixed in newer versions .
+Message fonts are not the same fonts as in other applications
+Edit Preferences Mail Preferences General Message Fonts Use the same fonts as other applications
+bug report Edit Preferences Mail Preferences General Message Display Use the same fonts as other applications
+Work with your mail while not being connected to the network .
+Offline mode helps you communicate with remote mail storage systems like GroupWise , IMAP or Exchange , in situations where you are not connected to the network at all times . Evolution keeps a local copy of one or more folders to allow you to compose messages , storing them in your Outbox to be sent the next time you connect .
+POP mail downloads all messages to your local system , but other connections usually download just the headers , and get the rest only when you want to read the message . Before you go offline , Evolution downloads the unread messages from the folders you have chosen to store .
+To mark a mail folder for offline use ,
+Evolution automatically understands the network state and acts accordingly . For instance , Evolution switches to offline mode when the network goes down and automatically switches on when the network is up again . Ensure that your system has Network Manager installed on to enable this feature .
+Words are wrapped in outgoing mails at 72 characters .
+Words are wrapped in outgoing mails at 72 characters
+For better readability lines are wrapped after 72 characters . This value is hardcoded and cannot be changed .
+Changing the mail view for widescreen displays .
+Evolution provides a vertical view in addition to the classical view . In the vertical view , the message preview pane is located at the right side of the message list when compared to the classical view where the message preview pane is placed below the message list . Vertical view enables you to use the extra width of wide screen monitors .
+In vertical view , the message list contains double lines of compressed headers , which enables you to consume the extra width in the preview column . The compressed columns have Sender Name and Email , Attachment Icon , Date and Subject in the second line .
+When you create a newsgroup account , you are not subscribed to any groups . To subscribe to a newsgroup :
+If you have accounts on multiple servers , select the server where you want to manage your subscriptions .
+Click a group 's checkbox to add a folder to your subscriptions .
+An explanation for the problem that two trash folders are present in Evolution .
+You may have created another Trash folder to hold all your deleted email messages . This can happen when you use another email client together with Evolution .
+How to set up handling unwanted junk / spam mail .
+Evolution lets you check for unwanted junk or spam emails by using the Bogofilter or SpamAssassin tools . To use these tools , you need to make sure that they are installed via the software management tool of your distribution and you need enable their respective plugins .
+Select the plugins you wish to enable . You can select either Bogofilter or SpamAssassin , or both .
+You can modify how Evolution handles junk mail by changing the Junk Mail Preferences :
+Deleting junk messages upon exit , and how often junk messages are to be deleted .
+Marking messages as not junk if the sender is in the address book .
+Bogofilter and SpamAssassin options . These options are available only if the plugins are enabled .
+How to mark unwanted junk and spam mail .
+Evolution can check for junk mail for you . Evolution uses SpamAssassin and / or Bogofilter with trainable Bayesian filters to perform the spam check . When the software detects mail that appears to be junk mail , it will flag it and hide it from your view . Messages that are flagged as junk mail are displayed only in the Junk folder .
+The junk mail filter can learn which kinds of mail are legitimate and which are not if you train it by marking as junk incoming mail that you determine is spam . When you first start using junk mail blocking , check the Junk folder frequently to be sure that legitimate mail doesn 't get flagged as junk mail .
+Mark as Not Junk Shift Ctrl J Mark as Junk Ctrl J
+Each time you flag a message as Junk , the sender is added to your Spam List ; each time you flag a message as Not Junk , the sender is removed from your Spam List .
+How to mark a message in Novell Groupwise as not junk .
+Select the message to mark as not junk in your Junk Mail folder .
+The message is moved to your Mailbox folder and the name is removed from your junk list .
+How to remove an email address from your junk mail list in Novell Groupwise .
+How to mark a message in Novell Groupwise as junk .
+The message is moved to your Junk Mail folder and the user is added to your junk list .
+How to manage your junk mail list in Novell Groupwise .
+Specify whether you wish to Enable or Disable junk mail handling .
+How to add an email address to your junk mail list in Novell Groupwise .
+Remember , when you mark an item as junk in GroupWise , that item is added to your junk list in the GroupWise system . The settings in the GroupWise system are applied from computer to computer .
+Sorting the message list of a mail folder .
+Evolution lets you organize your emails by letting you sort messages .
+This feature , when enabled , groups replies with the original email and allows you to follow the flow of the conversation from one message to the next .
+When a new message arrives , it will be added below the parent message . Threads are sorted and displayed based on the date of the most recent message received .
+For Advanced Users : There is a GConf key that allows you to toggle between the collapsed and expanded state of the email threads . The collapsed state is enabled by default and may be modified at / apps / evolution / mail / display / thread _ expand .
+The message list displays columns that indicate whether a message has been read , whether it has attachments , how important the message is , the sender , date , and the subject . To change the columns used in the message list , you can do one of the following :
+Right-click on the header .
+Evolution allows you to sort your messages using these columns . Just click on the column label to sort the emails . The direction of the arrow next to the label indicates the direction of the sort .
+Evolution provides other ways for sorting email messages . You can use Sort By , Sort Ascending , Sort Descending , or Unsort .
+Right-click on the message list column headers .
+This brings up this list of criteria for sorting email messages :
+Select the option you wish to use in sorting email messages .
+The messages will be displayed with the most recent at the bottom .
+The messages will be displayed with the most recent at the top .
+This removes sorting from the column , reverting to the order of messages as they were added to the folder .
+How to split and sort mail when using more than one local account .
+It is not possible to have separate accounts in the accounts and folder list pane . Evolution only has one unique inbox for incoming email .
+creating folders creating filters Edit Message Filters ... Add
+Free webmail providers often supply information about which of these options can be used . If you are in an organizational environment , you may want to contact your system administrator for more information .
+If the server requires authentication , you need to provide the following information :
+Check automatically and regularly for new received mail .
+Check for new messages every ... minutes Receiving Email Edit Preferences Mail Accounts Edit Receiving Email
+In the mail view , you can quickly search for messages by defining conditions .
+Select the scope from the drop-down list right to the text box .
+If you start directly from the fourth step , text will be searched in mail 's subjects and addresses and scope will be " Current folder " .
+There currently is no way to do search for emails with a specific type of attachment ( for example searching for all emails that have a PDF attachment ) .
+It might happen that one of your Search folders has not updated since some new email arrived or since an email was deleted , for example . This will mean that the list of emails in the folder is not up-to-date .
+Use search folders to see messages in one folder while still keeping them in their original folders .
+Evolution automatically updates the search folder contents when new messages are received or message are deleted .
+The sender 's email address or the name of the sender .
+Only the BCC recipients of the message . Obviously this can only be applied to outgoing filters .
+The sender 's email address or the name of the sender or the recipients of the message .
+If a message uses a header more than once , Evolution pays attention only to the first instance , even if the message defines the header differently the second time . For example , if a message declares the Resent-From : header as " engineering @ example.com " and then restates it as " marketing @ example.com " , Evolution filters as though the second declaration did not occur . To filter on messages that use headers multiple times , use a regular expression .
+Searches in the actual text of the message .
+Filters messages according to the date on which they were sent . First , choose the conditions you want a message to meet , such as before a given time or after a given time . Then choose the time . The filter compares the message 's time stamp to the system clock when the filter is run , or to a specific time and date you choose from a calendar . You can also have it look for a message within a range of time relative to the filter , such as two to four days ago .
+This works the same way as the Date Sent option , except that it compares the time you received the message with the dates you specify .
+Sets the message score to any whole number greater than 0 . You can have one filter set or change a message score , and then set up another filter to move the messages you have scored . A message score is not based on anything in particular : it is simply a number you can assign to messages so other filters can process them .
+Sorts based on the size of the message in kilobytes .
+Filters according to the status of a message . The status can be Replied To , Draft , Important , Read , or Junk .
+Checks whether there is an attachment for the email .
+Filters based on the mailing list the message came from . This filter might miss messages from some list servers , because it checks for the X-BeenThere header , which is used to identify mailing lists or other redistributors of mail . Mail from list servers that do not set X-BeenThere properly are not be caught by these filters .
+Edit Search Folders Message Create Rule Search Create Search Folder From Search ...
+Define the conditions for the rule . For each condition , you first select which part of the message will be checked and then define the comparison .
+Uses all local folders for the search folder source in addition to individual folders that are selected .
+Remote folders are considered active if you are connected to the server ; you must be connected to your mail server for the search folder to include any messages from that source in addition to individual folders that are selected .
+Uses all local and active remote folders for the search folder source in addition to individual folders that are selected .
+Updating / refreshing the folders on the mail server
+Receiving Email Edit Preferences Mail Accounts Edit Receiving Email
+Select if you want to use a secure connection ( SSL or TLS ) .
+You should enable this option if your server supports it .
+Select if you want Evolution to remember your password .
+Receiving Options Edit Preferences Mail Accounts Edit Receiving Options
+Select if you want to show folders in short notation .

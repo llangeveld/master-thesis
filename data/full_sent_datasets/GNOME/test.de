@@ -1,0 +1,2001 @@
+Zwischenspeicher konnte nicht für » %s « angelegt werden :
+SQLite-Fehler : Mehrere Tabellen namens » %s « , Datenbank » %s « ist beschädigt
+SQLite-Fehler : SQLite-Datenbank » %s « konnte nicht geöffnet/ angelegt werden
+In allen Ordnern nach neuen E-Mails se_hen
+In abonnierten Ordnern nach neuen E-Mails se_hen
+» _Schnelles Abgleichen « verwenden , falls es der Server unterstützt
+_Filter auf neue Nachrichten in allen Ordnern anwenden
+_Filter auf neue Nachrichten im Eingang dieses Servers anwenden
+A_usschließlich den Eingangsordner auf unerwünschte Nachrichten prüfen
+Zum Lesen und Speichern von E-Mails auf Kolab-Servern .
+Dies stellt unter Verwendung eines unverschlüsselten Passworts eine Verbindung mit dem Kolab-Server her .
+Zwischenspeicher konnte nicht für » %s « angelegt werden
+Verbindung mit IMAP-Server %s im sicheren Modus ist gescheitert : %s
+Verbindung mit IMAP-Server %s im sicheren Modus ist gescheitert :
+IMAP-Server %s unterstützt den Legitimationstyp %s nicht
+Sie müssen online arbeiten , um diesen Vorgang abzuschließen
+Zum Lesen und Speichern von E-Mails auf IMAP-Servern .
+Dies stellt unter Verwendung eines unverschlüsselten Passworts eine Verbindung mit dem IMAP-Server her .
+Zusammenfassende Informationen für neue Nachrichten in %s werden abgerufen
+Nachricht mit Kennung %s konnte nicht abgerufen werden : %s
+Der Ordnername » %s « ist ungültig , da er das Zeichen » %c « enthält
+Der Elternordner darf keine Unterordner enthalten
+Beim Abgleich ist ein Fehler aufgetreten : Wahrscheinlich hat jemand einen Eintrag auf dem Server geändert , den Sie außerdem lokal geändert haben .
+Bitte wählen Sie , wie lange die Abgleichoption wirksam sein soll
+Auf alle während dieser Evolution-Sitzung auftretenden Konflikte anwenden
+Nur auf diesen Konflikt anwenden ( jedes Mal nachfragen )
+Bitte wählen Sie , welcher der beiden Einträge behalten werden soll
+Beide behalten ( ergibt zwei verschiedene , parallele Einträge )
+Ordnername » %s « ist in der internen Datenbank nicht bekannt
+Interne Inkonsistenz wurde entdeckt : Ungültiger PIM-Objektverarbeiter , es kann keine UID erhalten werden
+Interne Inkonsistenz wurde entdeckt : Ungültiger PIM-Objektverarbeiter , es kann kein Ordnername erhalten werden , UID » %s «
+PIM-Objekt wurde in der internen Datenbank nicht gefunden , UID » %s « , Ordner » %s «
+PIM-Objekt wurde aufgrund der gewählten Abgleichmethode nicht gespeichert , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : PIM-Objekt-Handle , UID %s , hat den Ordnernamen » %s « , aber der gelieferte Ordnername zum Löschen ist » %s «
+Keine Übergangsfunktion definiert vom Betriebsmodus %i
+Keine Übergangsfunktion definiert vom Betriebsmodus %i nach %i
+PIM-Objekt-Handle , UID » %s « , mit PIM-Typ %i darf nicht in einem Ordner des nicht übereinstimmenden PIM-Typ %i gespeichert werden
+Interne Inkonsistenz wurde entdeckt : Lokaler PIM-Objektverarbeiter kann nicht erhalten werden
+Interne Inkonsistenz wurde entdeckt : PIM-Objektverarbeiter hat inkonsistente zusammenfassende Informationen , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : PIM-Objektverarbeiter hat inkonsistente Informationen zum Ordnerkontext ( erwartet wurde %i , erhalten wurde %i ) , UID » %s « , Folder » %s «
+Interne Inkonsistenz wurde entdeckt : PIM-Objektverarbeiter ist unvollständig , UID » %s « , Ordner » %s «
+Datenumwandlung in das Kolab-Format scheiterte für das PIM-Objekt , UID » %s « , Ordner » %s «
+Datentyp JOURNAL wird nicht für PIM-Objekt unterstützt , UID » %s « , Ordner » %s «
+Unbekannter Datentyp des PIM-Objekts , UID » %s « , Ordner » %s «
+Umwandlung von Kolab-Kalender nach Evolution ist für PIM-Objekt fehlgeschlagen , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : Beschädigtes Zeitzonen-Objekt des PIM-Objekts , UID » %s « , Ordner » %s «
+Ungültiges Kolab-Nachrichtenobjekt ( UID im Betreff entspricht nicht der UID des Datenteils ) , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : PIM-Objektverarbeiter hat ungültige zusammenfassende Informationen , UID » %s « , Ordner » %s «
+Camel-Ordnerpfad für » %s « konnte nicht ermittelt werden
+Interne Inkonsistenz wurde entdeckt : PIM-Kontext des Ordners wurde nicht festgelegt
+Ordner » %s « hat ungültigen PIM-Typ
+Interne Inkonsistenz wurde entdeckt : Für Ordner » %s « wurde der PIM-Typ %i festgelegt , der keinem bekannten Ordnerkontext zuzuordnen ist
+Verschieben des Objekts in einen anderen Ordner ist noch nicht implementiert
+Camel-Ordner für %s konnte nicht erstellt werden
+Nachricht konnte nicht vom Server zurück-gelesen werden , UID » %s « , Ordner » %s «
+IMAP-UID der Nachricht konnte nicht ermittelt werden , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : Die Kolab-UID wurde für den PIM-Objektverarbeiter nicht festgelegt
+Interne Inkonsistenz wurde entdeckt : Der Ordnername wurde für den PIM-Objektverarbeiter nicht festgelegt , UID » %s «
+Interne Inkonsistenz wurde entdeckt : Ordnerkontext stimmt nicht überein , real ist %i , gespeichert ist %i , UID » %s « , Ordner » %s «
+Kolab-Nachricht konnte nicht gefunden werden , UID » %s « , Ordner » %s «
+Ordnername ist in der internen Datenbank nicht bekannt : » %s «
+Der zu entfernende Ordner existiert in der internen Datenbank nicht : » %s «
+Interne Inkonsistenz wurde entdeckt : Ordner ohne zusammenfassende Informationen , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : Ordner des PIM-Objekts wurde gelöscht , UID » %s « , Ordner » %s «
+Zielordner wurde gelöscht : » %s «
+Datensatz fehlt in der internen Datenbank , UID » %s « , Ordner » %s «
+Nachricht ist keine Multipart-Nachricht , wird ignoriert
+Nachricht hat nicht das erwartete Minimum von %i MIME-Teilen , wird ignoriert
+Der MIME-teil der Nachricht hat keinen Inhaltstyp festgelegt , wird übergangen
+Camel-Daten-Wrapper konnte nicht für den MIME-Teil erhalten werden , wird übergangen
+Interne Inkonsistenz wurde entdeckt : Ungültiger Nachrichtenteil nach der Kolab-Datenumwandlung , es wurde keine Camel-Nachricht erzeugt
+Interne Inkonsistenz wurde entdeckt : Ungültiges Zwischenspeicher-Objekt mit Null Nachrichtenteilen , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : Ungültiges Zwischenspeicher-Objekt hat %i Byte Nutzlast , erwartet wurden %i Byte , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : Im PIM-Objektverarbeiter ist keine Kolab-UID festgelegt
+Zwischengespeichertes Objekt konnte nicht gefunden werden , UID » %s « , Ordner » %s «
+Ordner wurde nicht gefunden , weder in der internen Datenbank als » %s « noch auf dem Server als » %s «
+Interne Inkonsistenz wurde entdeckt : Ordnername konnte nicht erhalten werden , weder aus der internen Datenbank , noch aus dem Schreibpuffer oder IMAP
+Interne Inkonsistenz wurde entdeckt : Der Ordnertyp %i lässt sich keinem bekannten Ordnerkontext zuordnen
+Der Ordner existiert in der internen Datenbank nicht : » %s «
+Ordner » %s « konnte nicht erstellt werden ( » %s « )
+Camel-Datenordner konnte nicht eingerichtet werden , die Ressource ist schreibgeschützt
+Camel-Konfigurationsordner konnte nicht eingerichtet werden , die Ressource ist schreibgeschützt
+Der Ordnerkontext kann nicht geändert werden , nachdem er anfänglich festgelegt wurde
+Interne Inkonsistenz wurde entdeckt : Keine Einstellungstabelle vorhanden , bisher wurde kein Wert festgelegt
+Interne Inkonsistenz wurde entdeckt : Keine Einstellungstabelle mit der Kennung » %i « vorhanden
+Interne Inkonsistenz wurde entdeckt : Keine Einstellungstabelle mit der Kennung » %i « , Schlüsselkennung » %s « vorhanden
+Camel-Speicherpfad für interne Datenbank konnte nicht ermittelt werden
+XML-Parser gab Null für Datenteil %d zurück
+Kolab-Nachrichten-struct hat keinen Kolab XML-Datenteil
+Zugriff auf die Adresse » %s « scheiterte in libcurl mit CURLcode : %u
+Vollständiger Datenbankpfad für Datenbank » %s « , Dateiname » %s « konnte nicht angelegt werden
+TZID ist festgelegt , aber es ist keine Zeitzone verfügbar . Derzeit kann dies passieren , wenn ein Objekt in einen leeren Kalender kopiert wird .
+Ablegen des Zeitzonen-Objekts in den Zwischenspeicher schlug fehl .
+In allen Ordnern nach neuen E-Mails se_hen
+In abonnierten Ordnern nach neuen E-Mails se_hen
+» _Schnelles Abgleichen « verwenden , falls es der Server unterstützt
+_Filter auf neue Nachrichten in allen Ordnern anwenden
+_Filter auf neue Nachrichten im Eingang dieses Servers anwenden
+A_usschließlich den Eingangsordner auf unerwünschte Nachrichten prüfen
+Zum Lesen und Speichern von E-Mails auf Kolab-Servern .
+Dies stellt unter Verwendung eines unverschlüsselten Passworts eine Verbindung mit dem Kolab-Server her .
+Es konnte kein passender Ordnertyp für einen neuen Ordner namens » %s « ermittelt werden
+Datenquelle » %s « entspricht keinem Kolab-Ordner
+Beim Abgleich ist ein Fehler aufgetreten : Wahrscheinlich hat jemand einen Eintrag aus der Ferne ( auf dem Server ) geändert , den Sie parallel dazu lokal ( d.h. auf Ihrem Client ) geändert haben . Sync Conflict Resolution
+Bitte wählen Sie , welcher der beiden Einträge behalten werden sollSync Conflict Resolution
+Neueren übernehmen ( Datum der letzten Änderung)Sync Conflict Resolution
+Beide übernehmen ( ergibt zwei verschiedene , parallele Einträge)Sync Conflict Resolution
+Diese Wahl merken und nicht mehr für diesen Ordner nachfragenKolab Folder Metadata
+Strategie zum Auflösen von PIM-Konflikten beim Abgleichen mit einem Kolab-ServerKolab Folder Options
+Kolab-Speicher konnte nicht von der Shell-Ansicht ermittelt werden
+ACL-Antwort wurde erhalten , aber der Server wies keine ACL-Fähigkeit aus
+MYRIGHTS-Antwort wurde erhalten , aber der Server wies keine ACL-Fähigkeit aus
+Ein mit CamelIMAPXServer erweiterter , nicht markierter Antwort-Handler wurde zweimal registriert
+ANNOTATION-Antwort wurde erhalten , aber der Server meldete keine ANNOTATEMORE-Fähigkeit
+Fehlerhafte IMAP-Annotation-Antwort , erwartet wurde » ( « nach dem Annotation-Name
+SQLite-Fehler : Mehrere Tabellen namens » %s « , Datenbank » %s « ist beschädigt
+SQLite-Fehler : SQLite-Datenbank » %s « konnte nicht geöffnet/ angelegt werden
+Sie müssen online arbeiten , um diesen Vorgang abzuschließen
+Zwischenspeicher-Ordner des Benutzers konnte vom Camel-Dienst nicht ermittelt werden
+XML-Parser gab Null für Datenteil %d zurück
+Kolab-Nachrichten-struct hat keinen Kolab XML-Datenteil
+Ordnername » %s « ist in der internen Datenbank nicht bekannt
+Interne Inkonsistenz wurde entdeckt : Ungültiger PIM-Objektverarbeiter , es kann keine UID erhalten werden
+Interne Inkonsistenz wurde entdeckt : Ungültiger PIM-Objektverarbeiter , es kann kein Ordnername erhalten werden , UID » %s «
+PIM-Objekt wurde in der internen Datenbank nicht gefunden , UID » %s « , Ordner » %s «
+PIM-Objekt wurde aufgrund der gewählten Abgleichmethode nicht gespeichert , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : PIM-Objekt-Handle , UID %s , hat den Ordnernamen » %s « , aber der gelieferte Ordnername zum Löschen ist » %s «
+Keine Übergangsfunktion definiert vom Betriebsmodus %i
+Keine Übergangsfunktion definiert vom Betriebsmodus %i nach %i
+PIM-Objekt-Handle , UID » %s « , mit PIM-Typ %i darf nicht in einem Ordner des nicht übereinstimmenden PIM-Typ %i gespeichert werden
+Interne Inkonsistenz wurde entdeckt : Lokaler PIM-Objektverarbeiter kann nicht erhalten werden
+Sie müssen online arbeiten , um diesen Vorgang abzuschließen
+Ein Ordner namens » %s « ist bereits mit einem anderen Ordnertyp vorhanden und kann nicht erstellt werden
+Interne Inkonsistenz wurde entdeckt : PIM-Objektverarbeiter hat inkonsistente zusammenfassende Informationen , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : PIM-Objektverarbeiter hat inkonsistente Informationen zum Ordnerkontext ( erwartet wurde %i , erhalten wurde %i ) , UID » %s « , Folder » %s «
+Interne Inkonsistenz wurde entdeckt : PIM-Objektverarbeiter ist unvollständig , UID » %s « , Ordner » %s «
+Datenumwandlung in das Kolab-Format scheiterte für das PIM-Objekt , UID » %s « , Ordner » %s «
+Datentyp JOURNAL wird nicht für PIM-Objekt unterstützt , UID » %s « , Ordner » %s «
+Unbekannter Datentyp des PIM-Objekts , UID » %s « , Ordner » %s «
+Umwandlung des Kalendertyps von Kolab nach Evolution ist für PIM-Objekt fehlgeschlagen , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : Beschädigtes Zeitzonen-Objekt des PIM-Objekts , UID » %s « , Ordner » %s «
+Ungültiges Kolab-Nachrichtenobjekt ( UID im Betreff entspricht nicht der UID des Datenteils ) , UID » %s « , Ordner » %s «
+Umwandlung des Kontakttyps von Kolab nach Evolution ist für PIM-Objekt fehlgeschlagen , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : PIM-Objektverarbeiter hat ungültige zusammenfassende Informationen , UID » %s « , Ordner » %s «
+Camel-Ordnerpfad für » %s « konnte nicht ermittelt werden
+Interne Inkonsistenz wurde entdeckt : Erstellungstyp des temporären Ordners konnte nicht für CamelKolabIMAPXStore festgelegt werden
+Verschieben des Objekts in einen anderen Ordner ist noch nicht implementiert
+Camel-Ordner für %s konnte nicht erstellt werden
+Nachricht konnte nicht vom Server zurück-gelesen werden , UID » %s « , Ordner » %s «
+IMAP-UID der Nachricht konnte nicht ermittelt werden , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : PIM-Kontext des Ordners wurde nicht festgelegt
+PIM-Ordnerkontext %i konnte nicht für dieses Backend festgelegt werden
+Ordner » %s « hat ungültigen PIM-Typ
+Interne Inkonsistenz wurde entdeckt : Für Ordner » %s « wurde der PIM-Typ %i festgelegt , der keinem bekannten Ordnerkontext zuzuordnen ist
+Interne Inkonsistenz wurde entdeckt : Die Kolab-UID wurde für den PIM-Objektverarbeiter nicht festgelegt
+Interne Inkonsistenz wurde entdeckt : Der Ordnername wurde für den PIM-Objektverarbeiter nicht festgelegt , UID » %s «
+Interne Inkonsistenz wurde entdeckt : Ordnerkontext stimmt nicht überein , real ist %i , gespeichert ist %i , UID » %s « , Ordner » %s «
+Kolab-Nachricht konnte nicht gefunden werden , UID » %s « , Ordner » %s «
+Ordnername ist in der internen Datenbank nicht bekannt : » %s «
+Der zu entfernende Ordner existiert in der internen Datenbank nicht : » %s «
+Interne Inkonsistenz wurde entdeckt : Ordner ohne zusammenfassende Informationen , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : Ordner des PIM-Objekts wurde gelöscht , UID » %s « , Ordner » %s «
+Zielordner wurde gelöscht : » %s «
+Datensatz fehlt in der internen Datenbank , UID » %s « , Ordner » %s «
+Nachricht ist keine Multipart-Nachricht , wird ignoriert
+Der MIME-teil der Nachricht hat keinen Inhaltstyp festgelegt , wird übergangen
+Camel-Daten-Wrapper konnte nicht für den MIME-Teil erhalten werden , wird übergangen
+Interne Inkonsistenz wurde entdeckt : Ungültiger Nachrichtenteil nach der Kolab-Datenumwandlung , es wurde keine Camel-Nachricht erzeugt
+Interne Inkonsistenz wurde entdeckt : Ungültiges Zwischenspeicher-Objekt mit Null Nachrichtenteilen , UID » %s « , Ordner » %s «
+Interne Inkonsistenz wurde entdeckt : Ungültiges Zwischenspeicher-Objekt , UID » %s « , Ordner » %s «
+%1$s %2$s %3$s
+Interne Inkonsistenz wurde entdeckt : Im PIM-Objektverarbeiter ist keine Kolab-UID festgelegt
+Zwischengespeichertes Objekt konnte nicht gefunden werden , UID » %s « , Ordner » %s «
+Ordner wurde nicht gefunden , weder in der internen Datenbank als » %s « noch auf dem Server als » %s «
+Interne Inkonsistenz wurde entdeckt : Ordnername konnte nicht erhalten werden , weder aus der internen Datenbank , noch aus dem Schreibpuffer oder IMAP
+Interne Inkonsistenz wurde entdeckt : Der Ordnertyp %i lässt sich keinem bekannten Ordnerkontext zuordnen
+Der Ordner existiert in der internen Datenbank nicht : » %s «
+Ordner » %s « konnte nicht erstellt werden ( » %s « )
+Camel-Datenordner konnte nicht eingerichtet werden , die Ressource ist schreibgeschützt
+Camel-Zwischenspeicherordner konnte nicht festgelegt werden , die Ressource ist schreibgeschützt
+Persönlicher Ordner kann nicht festgelegt werden . Die Ressource ist schreibgeschützt
+ESource-UID konnte nicht festgelegt werden , die Ressource ist schreibgeschützt
+Camel-Konfigurationsordner konnte nicht eingerichtet werden , die Ressource ist schreibgeschützt
+Der Ordnerkontext kann nicht geändert werden , nachdem er anfänglich festgelegt wurde
+ESource für das Backend hat keine Erweiterung » Kolab-Ordner «
+Abgleichstrategie des Kolab-Ordners kann nicht festgelegt werden . Die Ressource ist schreibgeschützt
+Camel-Speicherpfad für interne Datenbank konnte nicht ermittelt werden
+Kolab-Engine wechselte nicht in den angeforderten Betriebsmodus
+Konfiguration von libcurl scheiterte mit CURLcode : %u ( %s )
+Zugriff auf die Adresse » %s « scheiterte in libcurl mit CURLcode : %u ( %s )
+Vollständiger Datenbankpfad für Datenbank » %s « , Dateiname » %s « konnte nicht angelegt werden
+Interne Inkonsistenz wurde entdeckt : Keine Einstellungstabelle vorhanden , bisher wurde kein Wert festgelegt
+Interne Inkonsistenz wurde entdeckt : Keine Einstellungstabelle mit der Kennung » %i « vorhanden
+Interne Inkonsistenz wurde entdeckt : Keine Einstellungstabelle mit der Kennung » %i « , Schlüsselkennung » %s « vorhanden
+Das Verändern einzelner Instanzen eines wiederkehrenden Termins wird noch nicht unterstützt . Der auf dem Server gespeicherte Termin wurde daher nicht verändert .
+Diese Nachricht ist im Offline-Modus nicht verfügbar .
+Nachricht konnte nicht an Ordner » %s « angehängt werden
+Nachricht » %s « kann nicht abgerufen werden : %s
+Zusammenfassung für » %s « konnte nicht geladen werden
+In _allen Ordnern nach neuen E-Mails schauen
+Filter auf neue Nachrichten im Eingang dieses Servers an_wenden
+Ausschließlich den _Eingang auf unerwünschte Nachrichten prüfen
+Für den Zugriff auf Microsoft Exchange 2007-/ OpenChange-Server über MAPI
+Diese Option erzeugt eine Verbindung zum OpenChange-Server über ein Klartext-Passwort .
+Diese Option erstellt eine Verbindung zum Server über einen Kerberos-Schlüssel .
+Ordner konnte nicht in einem lokalen Zwischenspeicher gefunden werden
+Neuer Ordner » %s « konnte nicht angelegt werden .
+MAPI-Ordner können nur innerhalb des Postfachs des angemeldeten Benutzers angelegt werden
+Ordner » %s « konnte nicht angelegt werden : %s
+Ordner » %s « konnte nicht entfernt werden : %s
+MAPI-Ordner » %s « konnte nicht umbenannt werden . Der Ordner existiert nicht
+MAPI-Vorgabeordner » %s « konnte nicht in » %s « umbenannt werden .
+MAPI-Ordner » %s « konnte nicht in » %s « umbenannt werden .
+MAPI-Ordner » %s « konnte nicht in » %s « umbenannt werden : %s
+Exchange MAPI-Dienst für %s auf %s
+Verbindung zum MAPI-Speicherbereich konnte im Offline-Modus nicht erstellt werden
+Postfach » %s « ist voll , es können keine neuen Nachrichten empfangen oder gesendet werden .
+Postfach » %s « ist nahe der Speicherplatzbegrenzung , das Senden von Nachrichten wird in Kürze deaktiviert .
+Postfach » %s « ist voll , es können keine neuen Nachrichten empfangen werden .
+Postfach » %s « ist nahe der Speicherplatzbegrenzung .
+Datenquelle » %s « repräsentiert keinen MAPI-Ordner
+Es gibt weitere Benutzer mit ähnlichen Benutzernamen auf dem Server . Bitte wählen Sie den gewünschten Namen aus der nachfolgenden Liste aus .
+Server , Benutzername und Domain-Name dürfen nicht leer sein . Bitte geben Sie die korrekten Werte ein .
+Realm-Name darf nicht leer sein , wenn Kerberos ausgewählt ist . Bitte geben Sie die korrekten Werte ein .
+Zugriffsrechte für Ordner » %s « können nicht bearbeitet werden , bitte wählen Sie einen anderen Ordner .
+Nach entfernter MAPI-Ordnerstruktur wird gesucht , bitte warten
+Ordner konnte nicht hinzugefügt werden , der Ordner existiert bereits als » %s«Mailbox - John SmithForeignFolder
+Ordner kann nicht hinzugefügt werden , Hinzufügen zur Zusammenfassung des Speicherbereichs ist gescheitert
+Ordner » %s « wurde nicht gefunden . Entweder existiert dieser Ordner nicht oder Sie haben keine Berechtigung , darauf zuzugreifen .
+Ordner konnte nicht hinzugefügt werden , der Ordnertyp konnte nicht bestimmt werdenJohn Smith - CalendarForeignFolder
+Fähigkeiten des Ordners » %s « des Benutzers » %s « werden überprüft , bitte warten
+Weitere Sitzungen können nicht erstellt werden , maximale Anzahl wurde erreicht
+MAPI-Fehler %s ( 0x%x ) ist aufgetretenEXCHANGEMAPI_ERROR
+Ordnername » %s « ist weder ein ein bekannter Name eines Vorgabeordners noch eine Ordnerkennung .
+Speicherbereich für Benutzer » %s « konnte nicht geöffnet werden
+Ordner des Benutzers » %s « nicht gefunden
+Das Suchergebnis überschreitet die erlaubte Speicherplatzbegrenzung . Bitte verwenden Sie einen spezifischeren Suchbegriff
+Ordner konnte nicht hinzugefügt werden , der Ordnertyp wird nicht unterstützt
+Ordner kann nicht hinzugefügt werden , Hauptquelle wurde nicht gefunden
+Server , Benutzername und Domain-Name dürfen nicht leer sein . Bitte geben Sie die korrekten Werte ein .
+Thread zum Füllen des Zwischenspeichers konnte nicht erzeugt werden
+Das Verändern einzelner Instanzen eines wiederkehrenden Termins wird noch nicht unterstützt . Der auf dem Server gespeicherte Termin wurde daher nicht verändert .
+Zwischenspeicher der zusammenfassenden Informationen für neue Nachrichten in %s wird aktualisiert
+Gelöschte Nachrichten werden aus dem Zwischenspeicher in %s entfernt
+Diese Nachricht ist im Offline-Modus nicht verfügbar .
+Zusammenfassende Informationen für neue Nachrichten in » %s « werden abgerufen
+Nachricht » %s « kann nicht abgerufen werden : %s
+Nachricht konnte nicht an Ordner » %s « angehängt werden
+Zusammenfassung für » %s « konnte nicht geladen werden
+In _allen Ordnern nach neuen E-Mails schauen
+Filter auf neue Nachrichten im Eingang dieses Servers an_wenden
+Ausschließlich den _Eingang auf unerwünschte Nachrichten prüfen
+Für den Zugriff auf Microsoft Exchange-/ OpenChange-Server über MAPI
+Diese Option erzeugt eine Verbindung zum Openchange-Server über ein Klartext-Passwort .
+Exchange MAPI-Dienst für %s auf %s
+%s Bitte geben Sie das MAPI-Passwort für %s@%s ein
+Neuer Ordner » %s « konnte nicht angelegt werden .
+MAPI-Ordner » %s « konnte nicht umbenannt werden . Der Ordner existiert nicht .
+MAPI-Ordner » %s « konnte nicht in » %s « umbenannt werden .
+MAPI-Ordner » %s « konnte nicht in » %s « umbenannt werden .
+Anzahl der GAL-Antworten be_grenzen : %s
+Server , Benutzername und Domain-Name dürfen nicht leer sein . Bitte geben Sie die korrekten Werte ein .
+Erstellen des Adressbuchs » %s « ist gescheitert : %s
+Erstellen des Adressbuchs » %s « ist gescheitert
+Erstellen des Kalenders » %s « ist gescheitert : %s
+Fehler beim Abrufen der Änderungen vom Server : %s
+Thread zum Füllen des Zwischenspeichers konnte nicht erzeugt werden
+Das Verändern einzelner Instanzen eines wiederkehrenden Termins wird noch nicht unterstützt . Der auf dem Server gespeicherte Termin wurde daher nicht verändert .
+Zwischenspeicher der zusammenfassenden Informationen für neue Nachrichten in %s wird aktualisiert
+Gelöschte Nachrichten werden aus dem Zwischenspeicher in %s entfernt
+Zusammenfassende Informationen werden abgerufen für neue Nachrichten in %s
+Diese Nachricht ist im Offline-Modus nicht verfügbar .
+Nachricht » %s « kann nicht abgerufen werden : %s
+Nachricht konnte nicht an Ordner » %s « angehängt werden
+Zusammenfassung für » %s « konnte nicht geladen werden
+In _allen Ordnern nach neuen E-Mails schauen
+Filter auf neue Nachrichten im Eingang dieses Servers an_wenden
+Ausschließlich den _Eingang auf unerwünschte Nachrichten prüfen
+Für den Zugriff auf Microsoft Exchange-/ OpenChange-Server über MAPI
+Diese Option erzeugt eine Verbindung zum OpenChange-Server über ein Klartext-Passwort .
+Exchange MAPI-Dienst für %s auf %s
+%s Bitte geben Sie das MAPI-Passwort für %s@%s ein
+Legitimation am Exchange MAPI-Server gescheitert : %s
+Neuer Ordner » %s « konnte nicht angelegt werden .
+Ordner » %s « konnte nicht angelegt werden : %s
+Ordner » %s « konnte nicht entfernt werden : %s
+MAPI-Ordner » %s « konnte nicht umbenannt werden . Der Ordner existiert nicht .
+MAPI-Vorgabeordner » %s « konnte nicht in » %s « umbenannt werden .
+MAPI-Ordner » %s « konnte nicht in » %s « umbenannt werden .
+MAPI-Ordner » %s « konnte nicht in » %s « umbenannt werden : %s
+Weitere Sitzungen können nicht erstellt werden , maximale Anzahl wurde erreicht
+MAPI-Fehler %s ( 0x%x ) ist aufgetretenEXCHANGEMAPI_ERROR
+Plugin für Evolution , welches die Anzeige von RSS-Nachrichtenquellen ermöglicht .
+Evolution wird anstelle der Webseite die Artikelzusammenfassung anzeigen , welche auch in HTML vorliegen kann .
+Rechnername des Proxy-Servers , der für Nachrichtenquellen und Inhalte verwendet wird .
+Der HTML-Darsteller zur Anzeige von HTML-Seiten .
+Eine eigene Schrift anstelle der Systemvorgabe verwenden .
+Die Größe der Schrift in der Volltextansicht .
+Zeitspanne in Sekunden , bevor eine Verbindung abgebrochen wird .
+Evolution wird Cookies von Artikeln auf den von Ihnen besuchten Webseiten akzeptieren .
+Evolution RSS passt die Größe von Bildern automatisch an , die größer als der Anzeigebereich sind .
+Evolution wird Webseiten nach RSS-Inhalten durchsuchen
+Evolution wird alle Einbettungen herunterladen , die ein Artikel der Nachrichtenquelle enthalten kann .
+Die Größe der von Evolution heruntergeladenen Einbettungen begrenzen .
+Symbol einer Nachrichtenquelle auf dem Ordner der Quellen anzeigen
+Falls der Proxy-Server Legitimierung erfordert , ist dies das Passwort-Feld .
+Die Portnummer des für Nachrichtenquellen und Inhalte verwendeten Proxy-Servers .
+Das Löschen des Nachrichtenquellen-Eintrages wird auch den Ordner für Quellen entfernen .
+Zeitspanne zum Prüfen auf neue Artikel ( in Minuten ) .
+Bei jedem Start von Evolution auf neue Artikel prüfen .
+Falls ein Artikel aus einer Nachrichtenquelle Kommentare enthält , werden diese angezeigt .
+Einen Proxy-Server zum Holen von Artikeln und Inhalten verwenden .
+Der Benutzername zur Legitimierung am Proxy-Server .
+Auf » wahr « setzen , wenn ein Programm als Befehl zum Öffnen von RSS-Adressen festgelegt ist
+Auf » wahr « setzen , falls das Programm zum Öffnen dieser Adresse im Terminal ausgeführt werden soll
+Nachrichtenquelle » { 0 } « wirklich löschen ?
+Ungültige Datei oder keine Datei , welche Nachrichtenquellen enthält .
+Keine RSS-Nachrichtenquellen konfiguriert ! Export nicht möglich .
+Achtung : Um hier Mozilla ( Firefox ) oder Apple Webkit nutzen zu können , müssen die Entwicklungspakete zu Firefox bzw. Webkit installiert werden . Danach muss evolution-rss neu kompiliert werden , damit diese Pakete nutzbar sind .
+Artikel löschen , die nicht mehr in der Nachrichtenquelle verfügbar sind
+Befehl konnte nicht an IMAP-Server %s gesendet werden : %s
+Unerwartete Antwort von Server %s : %s
+Ordner » %s « konnte nicht geöffnet werden : Ungültiger Ordnername
+Ordner » %s « konnte nicht geöffnet werden : Falscher Befehl
+Das neue Passwort folgt nicht den vom Administrator festgelegten Regeln
+Befehl konnte nicht an IMAP-Server %s gesendet werden : %s
+Server %s hat die Verbindung unerwartet beendet : %s
+Erkennung von Mailinglisten aktivieren . Wird für einige Filter- und Suchordner-Regeln benötigt .
+Verfallene zwischengespeicherte Nachrichten , die in X Sekunden nicht gelesen wurden
+Verfallene zwischengespeicherte Nachrichten , die älter als X Sekunden sind
+Beim Lesen des Ordners » %s « ist ein Fehler aufgetreten : %s
+Nachrichtenattribute für den Ordner » %s « konnten nicht abgeglichen werden : Unbekannter Fehler
+Nachrichtenattribute für den Ordner » %s « konnten nicht abgeglichen werden : falscher Befehl
+Ordner » %s « konnte nicht gesäubert werden : Unbekannter Fehler
+Ordner » %s « konnte nicht gesäubert werden : falscher Befehl
+Diese Nachricht ist im Offline-Modus nicht verfügbar
+Nachricht %s aus Ordner » %s « konnte nicht geladen werden : Nachricht nicht gefunden
+Nachricht %s aus Ordner » %s « konnte nicht geladen werden : falscher Befehl
+Nachricht konnte nicht an Ordner » %s « angehängt werden : Ordner ist nur lesbar
+Nachricht konnte nicht im Ordner » %s « gespeichert werden : unbekannter Fehler
+Nachricht konnte nicht im Ordner » %s « gespeichert werden : falscher Befehl
+Beim Verschieben der Nachricht in » Gelöschte Elemente « ist ein Fehler aufgetreten : %s
+Nachricht konnte nicht von » %s « nach » %s « verschoben werden
+Nachricht konnte nicht von » %s « nach » %s « kopiert werden
+Nachricht konnte nicht von » %s « nach » %s « verschoben werden : falscher Befehl
+Nachricht konnte nicht von » %s « nach » %s « kopiert werden : falscher Befehl
+Nachricht konnte nicht im Offline-Modus beigelegt werden : Zwischenspeicher nicht verfügbar
+Nachricht konnte nicht im Offline-Modus beigelegt werden : %s
+In allen Ordnern nac_h neuen E-Mails sehen
+Filter auf neue N_achrichten im Eingangspost anwenden
+Nur Eingangspost auf _unerwünschte Nachrichten prüfen
+Diese Einstellung versendet das Passwort im Klartext an den IMAPv4rev1-Server
+Verbindung mit %s konnte nicht hergestellt werden : %s
+Sichere Verbindung zum IMAP-server %s konnte nicht hergestellt werden : %s
+Authentisierung mit dem IMAP-Server %s mittels %s konnte nicht durchgeführt werden
+%sBitte geben Sie das Passwort für %s auf Server %s ein
+Legitimierung auf dem IMAP-Server %s mittels %s konnte nicht durchgeführt werden
+Der Ordner » %s « auf Server %s konnte nicht geladen werden : Unbekannt
+» %s « ist kein gültiger Ordnername
+Der Ordner » %s « konnte nicht angelegt werden : Ungültiger Ordnername
+Der Ordner » %s « konnte nicht angelegt werden : falscher Befehl
+Der Ordner » %s « konnte nicht gelöscht werden weil er ein Systemordner ist
+Der Ordner » %s « konnte nicht gelöscht werden : Ungültiger Ordnername
+Der Ordner » %s « konnte nicht gelöscht werden : falscher Befehl
+Der Ordner » %s « konnte nicht zu » %s « unbenannt werden , da er ein Systemordner ist
+Der Ordner » %s « konnte nicht unbenannt werden zu » %s « : falscher Befehl
+Beim Ermitteln von %s für » %s « auf IMAP-Server %s ist ein Problem aufgetreten : %s
+Im Offline-Modus können keine Ordner abonniert werden .
+Der Ordner » %s « konnte nicht abonniert werden : Ungültiger Ordnername
+Der Ordner » %s « konnte nicht abonniert werden : falscher Befehl
+Im Offline-Modus können keine Ordner abbestellt werden .
+Der Ordner » %s « konnte nicht abbestellt werden : Ungültiger Ordnername
+Der Ordner » %s « konnte nicht abbestellt werden : falscher Befehl
+IMAP-Server %s ist in einem inkonsistenten Zustand .
+Unerwartete Daten in Antwort von IMAP-Server %s :
+Server %s hat die Verbindung unerwartet unterbrochen : %s
+Anmeldung am Server ist fehlgeschlagen . Servername , Benutzername oder Passwort ist falsch .
+Erstmaliger Abgleich abgeschlossen . Bitte auf » Weiter « klicken .
+In » Gelöschte Elemente « verschieben Als gelöscht markieren Sofort löschen
+Es wird nun versucht , zwecks Abgleich eine Verbindung zum Scalix-Server herzustellen . Bitte geben Sie Ihr Passwort ein und klicken Sie dann auf » Verbinden « .
+Es wird nun versucht , zwecks Abgleich eine Verbindung zum Scalix-Server herzustellen .
+Falls dieser Schlüssel wahr ist , handhabt das in » command « angegebene Programm webcal-URLs .
+Falls dieser Schlüssel wahr ist , wird das Programm , das diese URL handhaben soll , in einem Terminal ausgeführt .
+Bei der Syntaxanalyse des Kalenders » %s « ist ein Fehler aufgetreten . Bitte stellen Sie sicher , dass dieser ein gültiger Kalender ist und versuchen Sie es noch einmal .
+Der Zugriff auf den Kalender » %s « wurde verweigert .
+Der Kalender » %s « wurde nicht auf dem Server gefunden .
+Beim Versuch , » %s « zu laden , ist ein interner Fehler aufgetreten .
+Beim Laden von » %s « ist ein Fehler aufgetreten .
+Die URI » %s « ist ungültig .
+Sie haben keine zu ladende URI angegeben . Sie müssen sie dem zu abonnierenden Kalender übergeben , und zwar als Befehlszeilenargument .
+Es konnten keine Termine oder Aufgaben im Kalender » %s « gefunden werden .
+Sie haben den Kalender » %s « bereits abonniert . Bitte abonnieren Sie einen anderen .
+Ein Menü , um schnell zwischen Benutzern zu wechseln
+Legt fest , wie das Applet im Panel angezeigt wird . Verwenden Sie » username « , um den Namen des aktuellen Benutzers , » Icon « , um das Benutzersymbol oder » text « , um das Wort » Benutzer « anzuzeigen .
+Legt fest , wann der Menüeintrag » Anmeldefenster « erscheint . Mögliche Werte sind : » always « , um den Eintrag immer anzuzeigen , » never « , um den Eintrag nie anzuzeigen und » auto « ( die Standardeinstellung ) , um den Eintrag anzuzeigen , wenn sich das Applet im Xnest-Modus befindet .
+Legt fest , wann der Menüeintrag » Andere « erscheint . Mögliche Werte sind : » always « , um den Eintrag immer anzuzeigen , » never « , um den Eintrag nie anzuzeigen und » auto « ( die Standardeinstellung ) , um den Eintrag anzuzeigen , wenn sich das Applet im Konsolen-Modus ( nicht im Xnest-Modus ) befindet .
+Legt fest , ob ein neues Xnest-Fenster anstatt einer vollständig neuen Konsole beim Benutzerwechsel angelegt wird .
+Legt fest , ob der Bildschirm nach dem Wechsel auf eine andere Konsole gesperrt wird .
+Legt fest , ob nur aktuell angemeldete Benutzer oder alle Benutzer angezeigt werden .
+Einige Einstellungen wurden vom Systemadministrator gesperrt .
+Der Benutzer zu dem Sie wechseln möchten , ist auf diesem Rechner mehrfach angemeldet . Zu welcher Anmeldung möchten Sie wechseln ?
+Den Namen des aktuellen Benutzers als Menütitel verwenden
+Wenn ein neuer Anmeldevorgang für einen Benutzerwechsel angelegt werden muss , wird dieser in einem Fenster anstatt in einem neuen Bildschirm gestartet
+Wenn zu einem anderen virtuellen Bildschirm gewechselt wird , wird für diesen virtuellen Bildschirm der Bildschirmschoner aktiviert .
+Das Benutzerwechsel-Applet ist freie Software . Sie können es unter den Bedingungen der GNU General Public License , wie von der Free Software Foundation veröffentlicht , weitergeben und/ oder modifizieren , entweder gemäß Version 2 der Lizenz oder ( nach Ihrer Option ) jeder späteren Version .
+Die Veröffentlichung des Benutzerwechsel-Applets erfolgt in der Hoffnung , dass es Ihnen von Nutzen sein wird , aber OHNE IRGENDEINE GARANTIE , sogar ohne die implizierte Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK . Details finden Sie in der GNU General Public License .
+Sie sollten ein Exemplar der GNU General Public License zusammen mit dem Benutzerwechsel-Applet erhalten haben . Falls nicht , schreiben Sie an die Free Software Foundation , Inc. , 51 Franklin Street , Fifth Floor , Boston , MA , 02110-1301 USE .
+Ein Menü , um schnell zwischen Benutzern zu wechseln .
+%s ist ein verschachteltes Fenster auf Konsole %d
+Damit die Benutzerauswahl richtig funktioniert , muss der GNOME-Display-Manager aktiv sein . Dies ist jedoch nicht der Fall .
+Mehrere grafische Anmeldebildschirme werden von diesem System nicht unterstützt .
+Derzeit sind zu viele Sitzungen aktiv , um eine neue zu erzeugen . Irgendjemand muss sich abmelden oder die Systemeinstellungen müssen so abgeändert werden , dass mehr Sitzungen erlaubt sind .
+Die grafische Oberfläche ist nicht richtig gestartet , wodurch neue grafische Anmeldevorgänge nicht möglich sind . Eventuell ist das X-Window-System oder GDM nicht richtig konfiguriert .
+Die Interface-Datei der Benutzerauswahl » %s « konnte nicht geöffnet werden . Scheinbar ist die Anwendung nicht richtig installiert oder eingestellt .
+Der Bildschirmschoner konnte den Bildschirm vorübergehend nicht leeren : %s
+Der Name des X11-Bildschirms zu dem dieses Objekt gehört .
+Der Benutzer , welcher derzeit auf diesem virtuellen Terminal angemeldet ist .
+Die Nummer der virtuellen Konsole auf der dieser Bildschirm dargestellt wird oder %-1 .
+Gibt an , ob dieser Bildschirm ein Fenster ( Xnest ) ist .
+Aus unbekanntem Grund konnte der Display-Manager nicht kontaktiert werden .
+Der Display-Manager läuft nicht oder ist veraltet .
+Das voreingestellte Maximum an flexiblen X-Servern wurde erreicht .
+Beim Starten von X ist ein unbekannter Fehler aufgetreten .
+Der verschachtelte X-Server ( Xnest ) konnte Ihren aktuellen X-Server nicht erreichen .
+Der X-Server aus der GDM-Konfiguration wurde nicht gefunden .
+Es wird versucht einen unbekannten Abmeldebefehl oder einen nicht verfügbaren Abmeldebefehl auszuführen .
+Es wird versucht , einen nicht unterstützten Konfigurationsschlüssel zu aktualisieren .
+Die ~/ .Xauthority-Datei ist falsch konfiguriert oder nicht vorhanden .
+Es wurden zu viele Nachrichten an den Display-Manager geschickt , so dass dieser die Annahme weiterer Nachrichten verweigert hat .
+Der Display-Manager hat eine unbekannte Fehlermeldung übergeben .
+Der Benutzer , welcher durch diesen Menüeintrag repräsentiert wird .
+Das Benutzerverwaltungsobjekt durch welches dieser Benutzer verwaltet wird .
+Wenn fuzzy , bitte das entsprechende Bild aktualisieren
+Wenn fuzzy , bitte das entsprechende Bild aktualisieren
+Wenn fuzzy , bitte das entsprechende Bild aktualisieren
+Wenn fuzzy , bitte das entsprechende Bild aktualisieren
+Wenn fuzzy , bitte das entsprechende Bild aktualisieren
+Sie können den Archivmanager , auch File Roller genannt , zum Erstellen , Betrachten , Verändern oder Entpacken von Archiven verwenden .
+Das vorliegende Handbuch ist Teil einer Reihe von GNOME-Handbüchern , die unter der GFDL verteilt werden . Wenn Sie dieses Handbuch separat verteilen möchten , können Sie dies tun , indem Sie dem Handbuch eine Kopie der Lizenz , wie in Abschnitt 6 der Lizenz beschrieben , hinzufügen .
+Bei vielen der von Firmen zur Unterscheidung ihrer Produkte und Dienstleistungen verwendeten Namen handelt es sich um Marken . An den Stellen , an denen derartige Namen in einer GNOME-Dokumentation vorkommen und wenn die Mitglieder des GNOME-Dokumentationsprojekts über diese Marken informiert wurden , sind die Namen in Großbuchstaben oder mit großen Anfangsbuchstaben geschrieben .
+DAS DOKUMENT WIRD » WIE VORLIEGEND « GELIEFERT , OHNE JEGLICHE GEWÄHRLEISTUNG , WEDER AUSDRÜCKLICH NOCH STILLSCHWEIGEND , EINSCHLIESSLICH , ABER NICHT BESCHRÄNKT AUF , GEWÄHRLEISTUNGEN , DASS DAS DOKUMENT ODER EINE MODIFIZIERTE VERSION DES DOKUMENTS FREI VON HANDELSÜBLICHEN FEHLERN UND FÜR EINEN BESTIMMTEN ZWECK GEEIGNET IST UND KEINE RECHTE DRITTER VERLETZT . JEGLICHES RISIKO IN BEZUG AUF DIE QUALITÄT , GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS TRAGEN SIE . SOLLTE SICH EIN DOKUMENT ODER EINE MODIFIZIERTE VERSION DAVON IN IRGENDEINER WEISE ALS FEHLERHAFT ERWEISEN , TRAGEN SIE ( NICHT DER URSPRÜNGLICHE VERFASSER , AUTOR ODER EIN MITWIRKENDER ) DIE KOSTEN FÜR JEGLICHE ERFORDERLICHE SERVICE- , REPARATUR- UND KORREKTURMASSNAHMEN : DIESE BESCHRÄNKUNG DER GEWÄHRLEISTUNG IST WESENTLICHER BESTANDTEIL DIESER LIZENZ . JEDE VERWENDUNG EINES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS UNTERLIEGT DIESER BESCHRÄNKUNG ; UND
+UNTER KEINEN UMSTÄNDEN UND GEMÄSS KEINER RECHTSLEHRE , WEDER AUFGRUND VON UNERLAUBTEN HANDLUNGEN ( EINSCHLIESSLICH FAHRLÄSSIGKEIT ) , VERTRÄGEN ODER SONSTIGEM , KANN DER AUTOR , DER URSPRÜNGLICHE VERFASSER , EIN MITWIRKENDER ODER EIN VERTEILER DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS ODER EIN LIEFERANT EINER DIESER PARTEIEN VON EINER PERSON FÜR DIREKTE , INDIREKTE , BESONDERE , ZUFÄLLIGE ODER ALS FOLGE AUFGETRETENE SCHÄDEN IRGENDEINER ART , EINSCHLIESSLICH , ABER NICHT BESCHRÄNKT AUF , SCHÄDEN DURCH GESCHÄFTSWERTVERLUSTE , ARBEITSAUSFÄLLE , COMPUTERAUSFÄLLE ODER -FUNKTIONSSTÖRUNGEN ODER JEGLICHE ANDERE SCHÄDEN ODER VERLUSTE , DIE DURCH ODER IM ZUSAMMENHANG MIT DER VERWENDUNG DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS ENTSTANDEN SIND , SELBST WENN DIESE PARTEI ÜBER MÖGLICHE SCHÄDEN INFORMIERT WORDEN SEIN SOLLTE , HAFTBAR GEMACHT WERDEN .
+In diesem Handbuch wird Version 2.26.0 des Archivmanagers beschrieben .
+bzip2 gzip lzip lzop compress rzip datei.txt.gz datei.txt gzip
+Im Anzeigebereich sehen Sie den Inhalt des Archivs .
+In diesem Handbuch wird die Arbeitsweise über die Menüleiste beschrieben .
+Wählen Sie das zu öffnende Archiv aus .
+die Gesamtanzahl der Dateien und Ordner ( Objekte ) im Archiv sowie die Größe des unkomprimierten Archivs in der Statusleiste
+Archivmanager In Order Speichern Ordner-Browser Name
+Entscheiden Sie , wo im Archiv Sie die Dateien hinzufügen möchten , und öffnen Sie dann den Ort im Archiv .
+So fügen Sie einen Ordner in ein Archiv ein
+Wählen Sie den hinzuzufügenden Ordner aus .
+So wandeln Sie ein Archiv in ein anderes Format um
+Gehen Sie wie folgt vor , um ein Archiv in ein anderes Format umzuwandeln und in eine neue Datei zu speichern :
+Öffnen Sie das umzuwandelnde Archiv .
+Der Inhalt eines Archivs kann auf verschiedene Arten geändert werden .
+Aus Sicherheitsgründen kann es sich anbieten , die Dateien , die Sie in ein Archiv einfügen möchten , zu verschlüsseln .
+Wenn das Archivformat Verschlüsselung unterstützt , können Sie ein Passwort angeben , um hinzuzufügende Dateien zu verschlüsseln .
+Gegenwärtig unterstützen nur die Archivformate 7-ZIP , ZIP , RAR und ARJ die Verschlüsselung .
+Gehen Sie wie folgt vor , um ein Passwort für die Verschlüsselung festzulegen :
+So benennen Sie eine Datei in einem Archiv um
+Gehen Sie wie folgt vor , um eine Datei in einem Archiv umzubenennen :
+Wählen Sie die umzubennende Datei aus .
+Gehen Sie wie folgt vor , um Dateien in einem Archiv zu kopieren :
+Wählen Sie die zu kopierenden Dateien aus .
+Öffnen Sie den Ordner , in den die Dateien kopiert werden sollen .
+Gehen Sie wie folgt vor , um Dateien in einem Archiv zu verschieben :
+Wählen Sie die zu verschiebenden Dateien aus .
+Öffnen Sie den Ordner , in den die Dateien verschoben werden sollen .
+Gehen Sie wie folgt vor , um Dateien aus einem Archiv zu löschen :
+Wählen Sie die zu löschenden Dateien aus .
+Bearbeiten Sie die in Schritt 1 geöffnete Datei , und speichern Sie die Änderungen .
+Archivemanager Öffnen mit Archivmanager Dateien öffnen
+So verändern Sie eine Datei in einem Archiv mit einer benutzerdefinierten Anwendung
+Klicken sie mit der rechten Maustaste auf die Datei .
+Die Position des Archivs im Dateisystem .
+Das Datum und die Uhrzeit der letzten Änderung des Archivs .
+Die Größe des komprimierten Archivinhalts .
+Die Größe des unkomprimierten Archivinhalts . Diese Information finden Sie auch in der Statusleiste .
+Der Kompressionsgrad ist ein Wert , der verwendet wird , um die Reduktion der Datengröße zu beschreiben . Eine Kompressionsrate von 5 bedeutet zum Beispiel , dass das komprimierte Archiv 1/ 5 der Größe der Originaldaten hat .
+Der Name der Datei oder des Ordners im Archiv .
+So zeigen Sie eine Datei aus einem Archiv an
+Es könnte unmöglich sein , eine beschädigte Datei zu entpacken , was zum Datenverlust führt . Aus diesem Grund sollten Sie die Integrität des Archivs prüfen , bevor Sie die Originaldateien löschen .
+Nicht alle Archivtypen unterstützen die Integritätsprüfung . Die folgenden Archivtypen können auf Integrität getestet werden : 7-Zip , RAR , ZIP , ACE , ARJ und Zoo .
+Um die Integrität eines Archivs zu prüfen , dessen Format die Integritätsprüfung nicht unterstützt , entpacken Sie alle Dateien aus dem Archiv und prüfen , ob diese Aktion erfolgreich war .
+Zeigt das Symbol , mit dem Sie zum zuvor besuchten Ort gehen können .
+Klicken Sie auf diesen Knopf , um zum zuvor besuchten Ort zu gehen .
+Zeigt das Symbol , mit dem Sie zum als nächstes besuchten Ort gehen können .
+Klicken Sie auf diesen Knopf , um zum als nächstes besuchten Ort zu gehen .
+Zeigt das Symbol , mit dem Sie eine Ebene nach oben in der Ordnerhierarchie gehen können .
+Klicken Sie auf diesen Knopf , um eine Ebene nach oben in der Ordnerhierarchie zu gehen .
+Zeigt das Symbol , mit dem Sie zur obersten Ebene des Ordnerhierarchie innerhalb des Archivs gehen können .
+Klicken Sie auf diesen Knopf , um zur obersten Ebene der Ordnerhierarchie innerhalb des Archivs zu gehen .
+Dieses Textfeld zeigt den vollständigen Pfadnamen des aktuell angezeigten Ordners innerhalb des Archivs an .
+Die Dateiliste lässt sich nach Namen , Größe , Typ , Änderungsdatum oder Ordner sortieren .
+Um die Sortierreihenfolge anzugeben , klicken Sie auf die Überschrift der jeweiligen Spalte .
+Um die Sortierreihenfolge umzukehren , klicken Sie nochmals auf die Überschrift der jeweiligen Spalte .
+Arbeiten mit Archiven im Dateimanager
+Mit dem Dateimanager lassen sich Dateien in ein Archiv einfügen oder Dateien aus einem Archiv entpacken
+So fügen Sie mit dem Dateimanager Dateien in ein Archiv ein
+Verwenden des Dateimanager-Kontextmenüs .
+Führen Sie die folgenden Schritte aus , um Dateien mit dem Dateimanager in ein Archiv einzufügen :
+Klicken Sie in einem Dateimanager-Fenster mit der rechten Maustaste auf die Dateien oder Ordner .
+Wählen Sie in der Einblendliste den Archivtyp aus .
+So entpacken Sie mit dem Dateimanager Dateien aus einem Archiv
+Verwenden des Dateimanager-Kontextmenüs .
+Führen Sie die folgenden Schritte aus , um Dateien mit dem Dateimanager aus einem Archiv zu entpacken :
+Klicken Sie im Dateimanager-Fenster mit der rechten Maustaste auf das Archiv .
+Geben Sie das Passwort ein , das bei der Verschlüsselung des Archivs verwendet werden soll . Falls kein Passwort angegeben wird , wird das Archiv nicht verschlüsselt .
+Falls diese Option ausgewählt ist , wird das Passwort bereits für die Anzeige der Liste der im Archiv enthaltenen Dateien benötigt , anderenfalls ist das Passwort nur für das Entpacken der Dateien aus dem Archiv erforderlich . Diese Option ist nur verfügbar , wenn ein Passwort angegeben wurde .
+Wählen Sie diese Option , um das Archiv in mehrere Dateien der angegebenen Größe zu teilen .
+Nur 7-Zip-Archive und RAR-Archive werden von dieser Funktion unterstützt .
+Wählen Sie Ihren » persönlichen Ordner « aus .
+Wählen Sie diese Option aus , um alle mit dem Muster übereinstimmenden Dateien aus dem aktuellen Ordner und seinen Unterordnern einzufügen .
+Dabei muss nicht der Name des Unterordners , sondern der Dateiname mit dem Muster übereinstimmen .
+Mit dieser Option werden Dateien aus Ordnern , die nur symbolische Links darstellen , ausgelassen . Symbolische Links sind Zeiger auf oder Verknüpfungen zu anderen Ordnern .
+Klicken Sie auf diesen Knopf , um die aktuelle Auswahl von Hinzufügeoptionen auf die Standardwerte zurückzusetzen .
+Mit dieser Option wird beim Entpacken der angegebenen Dateien deren Ordnerhierarchie beibehalten .
+Mit dieser Option werden Dateien im Zielordner , deren Namen mit den Namen der ausgewählten Dateien übereinstimmen , überschrieben .
+Keine älteren Dateien entpacken Archivmanager Archivmanager
+Keine älteren Dateien entpacken Vorhandene Dateien ersetzen Archivmanager
+Dokument-URIs können nicht an eine Desktop-Datei vom Typ » Link « übergeben werden
+Geben Sie die Datei an , welche die gespeicherte Konfiguration enthält
+_Wählen Sie die Dateien aus , die aktualisiert werden sollen :
+Sie haben nicht die erforderlichen Zugriffsrechte , um in diesem Ordner Archive anzulegen
+File Roller ist freie Software . Sie können es unter den Bedingungen der GNU General Public License , wie von der Free Software Foundation veröffentlicht , weitergeben und/ oder verändern , entweder gemäß Version 2 der Lizenz oder ( nach Ihrer Option ) jeder späteren Version .
+Die Veröffentlichung von File Roller erfolgt in der Hoffnung , dass es Ihnen von Nutzen sein wird , aber OHNE IRGENDEINE GARANTIE , sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK . Details finden Sie in der GNU General Public License .
+Sie sollten ein Exemplar der GNU General Public License zusammen mit File Roller erhalten haben . Falls nicht , schreiben Sie an die Free Software Foundation , Inc. , 51 Franklin St , Fifth Floor , Boston , MA 02110 , USA .
+Copyright © 2001-2007 Free Software Foundation , Inc.
+Sie haben nicht die erforderlichen Zugriffsrechte , um Dateien im Ordner » %s « zu lesen
+Geben Sie das Passwort für das Archiv » %s « ein .
+Der Name » %s « ist ungültig , da er folgende Zeichen nicht enthalten darf : %s %s
+Sie haben nicht die erforderlichen Zugriffsrechte , um im Zielordner Archive anzulegen .
+Der Zielordner » %s « existiert nicht . Soll er angelegt werden ?
+Der Zielordner konnte nicht angelegt werden : %s .
+Das Archiv existiert bereits . Soll es überschrieben werden ?
+Sie haben nicht die erforderlichen Zugriffsrechte , um Archive im Ordner » %s « zu entpacken
+Soll die Datei » %s « im Archiv » %s « aktualisiert werden ?
+Sollen die Dateien im Archiv » %s « aktualisiert werden ?
+Ein Archiv kann nicht zu sich selbst hinzugefügt werden
+Der Teil » %s « konnte nicht gefunden werden
+Der Ordner » %s « konnte nicht angezeigt werden
+Beim Entpacken der Dateien ist ein Fehler aufgetreten .
+Beim Laden des Archivs ist ein Fehler aufgetreten .
+Beim Löschen von Dateien aus dem Archiv ist ein Fehler aufgetreten .
+Beim Hinzufügen von Dateien zum Archiv ist ein Fehler aufgetreten .
+Beim Testen des Archivs ist ein Fehler aufgetreten .
+Beim Speichern des Archivs ist ein Fehler aufgetreten .
+Soll diese Datei zum momentan geöffneten Archiv hinzugefügt oder als neues Archiv geöffnet werden ?
+Soll ein neues Archiv mit diesen Dateien erstellt werden ?
+Das Archiv » %s « konnte nicht gespeichert werden
+Der neue Name entspricht dem alten Namen .
+Es existiert bereits ein Ordner namens » %s « . %s
+Es existiert bereits eine Datei namens » %s « . %s
+%d . %B %Y , %H:%M
+Dateien zum angegebenen Archiv hinzufügen und das Programm beenden
+Dateien zu einem anzugebenden Archiv hinzufügen und das Programm beenden
+Archive im angegebenen Ordner entpacken und das Programm beenden
+Archive in einem anzugebenden Zielordner entpacken und das Programm beenden
+Inhalt der Archive im Archivordner entpacken und das Programm beenden
+Für die » --add « und » --extract«-Befehle zu verwendender Vorgabeordner
+Die Ausgabe des zuletzt ausgeführten Befehls anzeigen
+Das momentan geöffnete Archiv unter einem anderen Namen speichern
+Wenn fuzzy , bitte das entsprechende Bild aktualisieren
+Wenn fuzzy , bitte das entsprechende Bild aktualisieren
+Wenn fuzzy , bitte das entsprechende Bild aktualisieren
+Wenn fuzzy , bitte das entsprechende Bild aktualisieren
+Wenn fuzzy , bitte das entsprechende Bild aktualisieren
+Sie können den Archivmanager , auch File Roller genannt , zum Erstellen , Betrachten , Verändern oder Entpacken von Archiven verwenden .
+Das vorliegende Handbuch ist Teil einer Reihe von GNOME-Handbüchern , die unter der GFDL verteilt werden . Wenn Sie dieses Handbuch separat verteilen möchten , können Sie dies tun , indem Sie dem Handbuch eine Kopie der Lizenz , wie in Abschnitt 6 der Lizenz beschrieben , hinzufügen .
+Bei vielen der von Firmen zur Unterscheidung ihrer Produkte und Dienstleistungen verwendeten Namen handelt es sich um Marken . An den Stellen , an denen derartige Namen in einer GNOME-Dokumentation vorkommen und wenn die Mitglieder des GNOME-Dokumentationsprojekts über diese Marken informiert wurden , sind die Namen in Großbuchstaben oder mit großen Anfangsbuchstaben geschrieben .
+DAS DOKUMENT WIRD » WIE VORLIEGEND « GELIEFERT , OHNE JEGLICHE GEWÄHRLEISTUNG , WEDER AUSDRÜCKLICH NOCH STILLSCHWEIGEND , EINSCHLIESSLICH , ABER NICHT BESCHRÄNKT AUF , GEWÄHRLEISTUNGEN , DASS DAS DOKUMENT ODER EINE MODIFIZIERTE VERSION DES DOKUMENTS FREI VON HANDELSÜBLICHEN FEHLERN UND FÜR EINEN BESTIMMTEN ZWECK GEEIGNET IST UND KEINE RECHTE DRITTER VERLETZT . JEGLICHES RISIKO IN BEZUG AUF DIE QUALITÄT , GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS TRAGEN SIE . SOLLTE SICH EIN DOKUMENT ODER EINE MODIFIZIERTE VERSION DAVON IN IRGENDEINER WEISE ALS FEHLERHAFT ERWEISEN , TRAGEN SIE ( NICHT DER URSPRÜNGLICHE VERFASSER , AUTOR ODER EIN MITWIRKENDER ) DIE KOSTEN FÜR JEGLICHE ERFORDERLICHE SERVICE- , REPARATUR- UND KORREKTURMASSNAHMEN : DIESE BESCHRÄNKUNG DER GEWÄHRLEISTUNG IST WESENTLICHER BESTANDTEIL DIESER LIZENZ . JEDE VERWENDUNG EINES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS UNTERLIEGT DIESER BESCHRÄNKUNG ; UND
+UNTER KEINEN UMSTÄNDEN UND GEMÄSS KEINER RECHTSLEHRE , WEDER AUFGRUND VON UNERLAUBTEN HANDLUNGEN ( EINSCHLIESSLICH FAHRLÄSSIGKEIT ) , VERTRÄGEN ODER SONSTIGEM , KANN DER AUTOR , DER URSPRÜNGLICHE VERFASSER , EIN MITWIRKENDER ODER EIN VERTEILER DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS ODER EIN LIEFERANT EINER DIESER PARTEIEN VON EINER PERSON FÜR DIREKTE , INDIREKTE , BESONDERE , ZUFÄLLIGE ODER ALS FOLGE AUFGETRETENE SCHÄDEN IRGENDEINER ART , EINSCHLIESSLICH , ABER NICHT BESCHRÄNKT AUF , SCHÄDEN DURCH GESCHÄFTSWERTVERLUSTE , ARBEITSAUSFÄLLE , COMPUTERAUSFÄLLE ODER -FUNKTIONSSTÖRUNGEN ODER JEGLICHE ANDERE SCHÄDEN ODER VERLUSTE , DIE DURCH ODER IM ZUSAMMENHANG MIT DER VERWENDUNG DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS ENTSTANDEN SIND , SELBST WENN DIESE PARTEI ÜBER MÖGLICHE SCHÄDEN INFORMIERT WORDEN SEIN SOLLTE , HAFTBAR GEMACHT WERDEN .
+In diesem Handbuch wird Version 2.26.0 des Archivmanagers beschrieben .
+bzip2 gzip lzip lzop compress rzip datei.txt.gz datei.txt gzip
+Im Anzeigebereich sehen Sie den Inhalt des Archivs .
+In diesem Handbuch wird die Arbeitsweise über die Menüleiste beschrieben .
+Wählen Sie das zu öffnende Archiv aus .
+die Gesamtanzahl der Dateien und Ordner ( Objekte ) im Archiv sowie die Größe des unkomprimierten Archivs in der Statusleiste
+Archivmanager In Order Speichern Ordner-Browser Name
+Entscheiden Sie , wo im Archiv Sie die Dateien hinzufügen möchten , und öffnen Sie dann den Ort im Archiv .
+So fügen Sie einen Ordner in ein Archiv ein
+Wählen Sie den hinzuzufügenden Ordner aus .
+So wandeln Sie ein Archiv in ein anderes Format um
+Gehen Sie wie folgt vor , um ein Archiv in ein anderes Format umzuwandeln und in eine neue Datei zu speichern :
+Öffnen Sie das umzuwandelnde Archiv .
+Der Inhalt eines Archivs kann auf verschiedene Arten geändert werden .
+Aus Sicherheitsgründen kann es sich anbieten , die Dateien , die Sie in ein Archiv einfügen möchten , zu verschlüsseln .
+Wenn das Archivformat Verschlüsselung unterstützt , können Sie ein Passwort angeben , um hinzuzufügende Dateien zu verschlüsseln .
+Gegenwärtig unterstützen nur die Archivformate 7-ZIP , ZIP , RAR und ARJ die Verschlüsselung .
+Gehen Sie wie folgt vor , um ein Passwort für die Verschlüsselung festzulegen :
+So benennen Sie eine Datei in einem Archiv um
+Gehen Sie wie folgt vor , um eine Datei in einem Archiv umzubenennen :
+Wählen Sie die umzubennende Datei aus .
+Gehen Sie wie folgt vor , um Dateien in einem Archiv zu kopieren :
+Wählen Sie die zu kopierenden Dateien aus .
+Öffnen Sie den Ordner , in den die Dateien kopiert werden sollen .
+Gehen Sie wie folgt vor , um Dateien in einem Archiv zu verschieben :
+Wählen Sie die zu verschiebenden Dateien aus .
+Öffnen Sie den Ordner , in den die Dateien verschoben werden sollen .
+Gehen Sie wie folgt vor , um Dateien aus einem Archiv zu löschen :
+Wählen Sie die zu löschenden Dateien aus .
+Bearbeiten Sie die in Schritt 1 geöffnete Datei , und speichern Sie die Änderungen .
+Archivemanager Öffnen mit Archivmanager Dateien öffnen
+So verändern Sie eine Datei in einem Archiv mit einer benutzerdefinierten Anwendung
+Klicken sie mit der rechten Maustaste auf die Datei .
+Die Position des Archivs im Dateisystem .
+Das Datum und die Uhrzeit der letzten Änderung des Archivs .
+Die Größe des komprimierten Archivinhalts .
+Die Größe des unkomprimierten Archivinhalts . Diese Information finden Sie auch in der Statusleiste .
+Der Kompressionsgrad ist ein Wert , der verwendet wird , um die Reduktion der Datengröße zu beschreiben . Eine Kompressionsrate von 5 bedeutet zum Beispiel , dass das komprimierte Archiv 1/ 5 der Größe der Originaldaten hat .
+Der Name der Datei oder des Ordners im Archiv .
+So zeigen Sie eine Datei aus einem Archiv an
+Es könnte unmöglich sein , eine beschädigte Datei zu entpacken , was zum Datenverlust führt . Aus diesem Grund sollten Sie die Integrität des Archivs prüfen , bevor Sie die Originaldateien löschen .
+Nicht alle Archivtypen unterstützen die Integritätsprüfung . Die folgenden Archivtypen können auf Integrität getestet werden : 7-Zip , RAR , ZIP , ACE , ARJ und Zoo .
+Um die Integrität eines Archivs zu prüfen , dessen Format die Integritätsprüfung nicht unterstützt , entpacken Sie alle Dateien aus dem Archiv und prüfen , ob diese Aktion erfolgreich war .
+Zeigt das Symbol , mit dem Sie zum zuvor besuchten Ort gehen können .
+Klicken Sie auf diesen Knopf , um zum zuvor besuchten Ort zu gehen .
+Zeigt das Symbol , mit dem Sie zum als nächstes besuchten Ort gehen können .
+Klicken Sie auf diesen Knopf , um zum als nächstes besuchten Ort zu gehen .
+Zeigt das Symbol , mit dem Sie eine Ebene nach oben in der Ordnerhierarchie gehen können .
+Klicken Sie auf diesen Knopf , um eine Ebene nach oben in der Ordnerhierarchie zu gehen .
+Zeigt das Symbol , mit dem Sie zur obersten Ebene des Ordnerhierarchie innerhalb des Archivs gehen können .
+Klicken Sie auf diesen Knopf , um zur obersten Ebene der Ordnerhierarchie innerhalb des Archivs zu gehen .
+Dieses Textfeld zeigt den vollständigen Pfadnamen des aktuell angezeigten Ordners innerhalb des Archivs an .
+Die Dateiliste lässt sich nach Namen , Größe , Typ , Änderungsdatum oder Ordner sortieren .
+Um die Sortierreihenfolge anzugeben , klicken Sie auf die Überschrift der jeweiligen Spalte .
+Um die Sortierreihenfolge umzukehren , klicken Sie nochmals auf die Überschrift der jeweiligen Spalte .
+Arbeiten mit Archiven im Dateimanager
+Mit dem Dateimanager lassen sich Dateien in ein Archiv einfügen oder Dateien aus einem Archiv entpacken
+So fügen Sie mit dem Dateimanager Dateien in ein Archiv ein
+Verwenden des Dateimanager-Kontextmenüs .
+Führen Sie die folgenden Schritte aus , um Dateien mit dem Dateimanager in ein Archiv einzufügen :
+Klicken Sie in einem Dateimanager-Fenster mit der rechten Maustaste auf die Dateien oder Ordner .
+Wählen Sie in der Einblendliste den Archivtyp aus .
+So entpacken Sie mit dem Dateimanager Dateien aus einem Archiv
+Verwenden des Dateimanager-Kontextmenüs .
+Führen Sie die folgenden Schritte aus , um Dateien mit dem Dateimanager aus einem Archiv zu entpacken :
+Klicken Sie im Dateimanager-Fenster mit der rechten Maustaste auf das Archiv .
+Geben Sie das Passwort ein , das bei der Verschlüsselung des Archivs verwendet werden soll . Falls kein Passwort angegeben wird , wird das Archiv nicht verschlüsselt .
+Falls diese Option ausgewählt ist , wird das Passwort bereits für die Anzeige der Liste der im Archiv enthaltenen Dateien benötigt , anderenfalls ist das Passwort nur für das Entpacken der Dateien aus dem Archiv erforderlich . Diese Option ist nur verfügbar , wenn ein Passwort angegeben wurde .
+Wählen Sie diese Option , um das Archiv in mehrere Dateien der angegebenen Größe zu teilen .
+Nur 7-Zip-Archive und RAR-Archive werden von dieser Funktion unterstützt .
+Wählen Sie Ihren » persönlichen Ordner « aus .
+Wählen Sie diese Option aus , um alle mit dem Muster übereinstimmenden Dateien aus dem aktuellen Ordner und seinen Unterordnern einzufügen .
+Dabei muss nicht der Name des Unterordners , sondern der Dateiname mit dem Muster übereinstimmen .
+Mit dieser Option werden Dateien aus Ordnern , die nur symbolische Links darstellen , ausgelassen . Symbolische Links sind Zeiger auf oder Verknüpfungen zu anderen Ordnern .
+Klicken Sie auf diesen Knopf , um die aktuelle Auswahl von Hinzufügeoptionen auf die Standardwerte zurückzusetzen .
+Mit dieser Option wird beim Entpacken der angegebenen Dateien deren Ordnerhierarchie beibehalten .
+Mit dieser Option werden Dateien im Zielordner , deren Namen mit den Namen der ausgewählten Dateien übereinstimmen , überschrieben .
+Keine älteren Dateien entpacken Archivmanager Archivmanager
+Keine älteren Dateien entpacken Vorhandene Dateien ersetzen Archivmanager
+Geben Sie die Datei an , welche die gespeicherte Konfiguration enthält
+_Wählen Sie die Dateien aus , die aktualisiert werden sollen :
+Sie haben nicht die erforderlichen Zugriffsrechte , um in diesem Ordner Archive anzulegen
+File Roller ist freie Software . Sie können es unter den Bedingungen der GNU General Public License , wie von der Free Software Foundation veröffentlicht , weitergeben und/ oder verändern , entweder gemäß Version 2 der Lizenz oder ( nach Ihrer Option ) jeder späteren Version .
+Die Veröffentlichung von File Roller erfolgt in der Hoffnung , dass es Ihnen von Nutzen sein wird , aber OHNE IRGENDEINE GARANTIE , sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK . Details finden Sie in der GNU General Public License .
+Sie sollten ein Exemplar der GNU General Public License zusammen mit File Roller erhalten haben . Falls nicht , schreiben Sie an die Free Software Foundation , Inc. , 51 Franklin St , Fifth Floor , Boston , MA 02110 , USA .
+Copyright © 2001-2010 Free Software Foundation , Inc.
+Sie haben nicht die erforderlichen Zugriffsrechte , um Dateien im Ordner » %s « zu lesen
+Geben Sie das Passwort für das Archiv » %s « ein .
+Der Name » %s « ist ungültig , da er folgende Zeichen nicht enthalten darf : %s %s
+Sie haben nicht die erforderlichen Zugriffsrechte , um im Zielordner Archive anzulegen .
+Der Zielordner » %s « existiert nicht . Soll er angelegt werden ?
+Der Zielordner konnte nicht angelegt werden : %s .
+Das Archiv existiert bereits . Soll es überschrieben werden ?
+Sie haben nicht die erforderlichen Zugriffsrechte , um Archive im Ordner » %s « zu entpacken
+Ein interner Fehler ist bei der Suche nach Anwendungen aufgetreten :
+Für %s-Dateien ist kein Befehl installiert . Wollen Sie nach einem Befehl zum Öffnen dieser Datei suchen ?
+Soll die Datei » %s « im Archiv » %s « aktualisiert werden ?
+Sollen die Dateien im Archiv » %s « aktualisiert werden ?
+Das für » %s « zu verwendende Dateiformat konnte nicht ermittelt werden . Bitte stellen Sie sicher , dass Sie für diese Datei eine bekannte Erweiterung verwenden oder wählen Sie ein Dateiformat aus der nachstehenden Liste .
+Ein Archiv kann nicht zu sich selbst hinzugefügt werden
+Der Teil » %s « konnte nicht gefunden werden
+Der Ordner » %s « konnte nicht angezeigt werden
+Beim Entpacken der Dateien ist ein Fehler aufgetreten .
+Beim Laden des Archivs ist ein Fehler aufgetreten .
+Beim Löschen von Dateien aus dem Archiv ist ein Fehler aufgetreten .
+Beim Hinzufügen von Dateien zum Archiv ist ein Fehler aufgetreten .
+Beim Testen des Archivs ist ein Fehler aufgetreten .
+Beim Speichern des Archivs ist ein Fehler aufgetreten .
+Soll diese Datei zum momentan geöffneten Archiv hinzugefügt oder als neues Archiv geöffnet werden ?
+Soll ein neues Archiv mit diesen Dateien erstellt werden ?
+Das Archiv » %s « konnte nicht gespeichert werden
+Der neue Name entspricht dem alten Namen .
+Es existiert bereits ein Ordner namens » %s « . %s
+Es existiert bereits eine Datei namens » %s « . %s
+%d . %B %Y , %H:%M
+Dateien zum angegebenen Archiv hinzufügen und das Programm beenden
+Dateien zu einem anzugebenden Archiv hinzufügen und das Programm beenden
+Archive im angegebenen Ordner entpacken und das Programm beenden
+Archive in einem anzugebenden Zielordner entpacken und das Programm beenden
+Inhalt der Archive im Archivordner entpacken und das Programm beenden
+Der Vorgabeordner für die » --add « und » --extract«-Befehle
+Die Ausgabe des zuletzt ausgeführten Befehls anzeigenFile
+Das momentan geöffnete Archiv unter einem anderen Namen speichern
+Die Dateiliste dem Änderungsdatum nach sortierensort by file location
+Geben Sie die Datei an , welche die gespeicherte Konfiguration enthält
+Welches Kriterium zum Sortieren der Dateien benutzt werden soll . Mögliche Werte sind : » name « , » size « , » type « , » time « , » path « .
+Ob aufsteigend oder absteigend sortiert werden soll . Mögliche Werte sind : » ascending « , » descending « .
+Verwenden Sie » all-files « , um alle Dateien in einer einzigen Liste anzuzeigen , und verwenden Sie » as-folder « , um das Archiv wie einen Ordner zu durchsuchen .
+Eine Spalte mit dem Dateityp im Hauptfenster anzeigen .
+Eine Spalte mit der Dateigröße im Hauptfenster anzeigen .
+Eine Spalte mit dem Änderungsdatum im Hauptfenster anzeigen .
+Eine Spalte mit dem Pfad im Hauptfenster anzeigen .
+Wenn aktiviert werden Symbole abhängig vom Dateityp dargestellt ( langsamer ) , sonst wird immer das gleiche Symbol verwendet ( schneller ) .
+Standardbreite der Dateinamensspalte in der Dateiliste .
+Maximale Anzahl an Einträgen im » Zuletzt geöffnet « Menü .
+Liste von Anwendungen , die im » Datei öffnen « Dialog angegeben sind und keinem Dateityp zugeordnet sind .
+Kompressionsgrad beim Hinzufügen von Dateien zu einem Archiv . Mögliche Werte sind : » very-fast « , » fast « , » normal « , » maximum « .
+Ob der Archivkopf verschlüsselt wird . Wenn der Kopf verschlüsselt wird , ist das Passwort auch notwendig um eine Auflistung des Archivinhalts zu erhalten .
+_Wählen Sie die Dateien aus , die aktualisiert werden sollen :
+Sie haben nicht die erforderlichen Zugriffsrechte , um in diesem Ordner Archive anzulegen
+Copyright © 2001-2010 Free Software Foundation , Inc.
+Sie haben nicht die erforderlichen Zugriffsrechte , um Dateien im Ordner » %s « zu lesen
+Geben Sie das Passwort für das Archiv » %s « ein .
+Der Name » %s « ist ungültig , da er folgende Zeichen nicht enthalten darf : %s %s
+Sie haben nicht die erforderlichen Zugriffsrechte , um im Zielordner Archive anzulegen .
+Der Zielordner » %s « existiert nicht . Soll er angelegt werden ?
+Der Zielordner konnte nicht angelegt werden : %s .
+Das Archiv existiert bereits . Soll es überschrieben werden ?
+Sie haben nicht die erforderlichen Zugriffsrechte , um Archive im Ordner » %s « zu entpacken
+Ein interner Fehler ist bei der Suche nach Anwendungen aufgetreten :
+Für %s-Dateien ist kein Befehl installiert . Wollen Sie nach einem Befehl zum Öffnen dieser Datei suchen ?
+Soll die Datei » %s « im Archiv » %s « aktualisiert werden ?
+Sollen die Dateien im Archiv » %s « aktualisiert werden ?
+Das für » %s « zu verwendende Dateiformat konnte nicht ermittelt werden . Bitte stellen Sie sicher , dass Sie für diese Datei eine bekannte Erweiterung verwenden oder wählen Sie ein Dateiformat aus der nachstehenden Liste .
+Ein Archiv kann nicht zu sich selbst hinzugefügt werden
+Das Teilarchiv » %s « konnte nicht gefunden werden
+Der Ordner » %s « konnte nicht angezeigt werden
+Beim Entpacken der Dateien ist ein Fehler aufgetreten .
+Beim Laden des Archivs ist ein Fehler aufgetreten .
+Beim Löschen von Dateien aus dem Archiv ist ein Fehler aufgetreten .
+Beim Hinzufügen von Dateien zum Archiv ist ein Fehler aufgetreten .
+Beim Testen des Archivs ist ein Fehler aufgetreten .
+Beim Speichern des Archivs ist ein Fehler aufgetreten .
+Soll diese Datei zum momentan geöffneten Archiv hinzugefügt oder als neues Archiv geöffnet werden ?
+Soll ein neues Archiv mit diesen Dateien erstellt werden ?
+Das Archiv » %s « konnte nicht gespeichert werden
+Der neue Name entspricht dem alten Namen .
+Es existiert bereits ein Ordner namens » %s « . %s
+Es existiert bereits eine Datei namens » %s « . %s
+%d . %B %Y , %H:%M
+Dateien zum angegebenen Archiv hinzufügen und das Programm beenden
+Dateien zu einem anzugebenden Archiv hinzufügen und das Programm beenden
+Archive im angegebenen Ordner entpacken und das Programm beenden
+Archive in einem anzugebenden Zielordner entpacken und das Programm beenden
+Inhalt der Archive im Archivordner entpacken und das Programm beenden
+Der Vorgabeordner für die » --add « und » --extract«-Befehle
+Die Ausgabe des zuletzt ausgeführten Befehls anzeigen
+Das momentan geöffnete Archiv unter einem anderen Namen speichern
+Die Dateiliste dem Änderungsdatum nach sortierensort by file location
+Ich habe ein Passwort festgelegt , aber es schützt nicht das ganze Archiv .
+Archivmanager Die Datei ist nicht vorhanden Öffnen eines Archivs
+Die Integritätsprüfung untersucht , ob Ihre Daten beschädigt sind .
+Gehen Sie wie folgt vor , um die Daten in einem Archiv zu verschlüsseln :
+So schützen Sie ein vorhandenes Archiv mit einem Passwort :
+In der Seitenleiste die Ordner in einer Baumansicht anzeigen
+Den Inhalt eines Archivs als Dateiliste anzeigen
+Den Inhalt eines Archivs als Ordnerstruktur anzeigen
+Wenn fuzzy , bitte das entsprechende Bild aktualisieren
+Ein Archiv besteht aus einer oder mehreren Dateien sowie Metadaten . Es kann teilweise oder als Ganzes verschlüsselt werden . Durch Zusammenfassen von mehreren Dateien in einer einzigen Datei können solche Archivdateien die Datenspeicherung und -übertragung zwischen Rechnern vereinfachen .
+Ein neues Archiv durch Zusammenstellen von Dateien oder Ordnern erstellen
+Es gibt zwei Möglichkeiten , ein Archiv anzusehen :
+Verwenden Sie die zuvor genannten Spaltenbeschriftungen ( Name , Größe usw. ) , um die Dateien in Ihrem Archiv zu sortieren . Klicken Sie dazu auf die Beschriftung . Ein weiterer Mausklick sortiert in umgekehrter Reihenfolge .
+Öffnen Sie die Datei mit verschiedenen Anwendungen wie folgt :
+Original verwenden
+Geben Sie die Namen der zu entpackenden Dateien ein
+Im Dateiwählerdialog können Sie Folgendes angeben :
+Aktivieren Sie diese Option , wenn Sie die Ordnerstruktur erhalten wollen , so wie sie in Ihrem Archiv vorhanden ist
+Diese Option sorgt dafür , dass keine vorhandenen Dateien gleichen Namens überschrieben werden , die laut Änderungszeitpunkt neuer sind als jene im Archiv .
+Wählen Sie den Ort im Dateiwählerdialog , wo die Dateien entpackt werden sollen . Dies wird der Zielordner sein .
+Die Anwendung zeigt einen Fortschrittsbalken in einem neuen Fenster an . Sobald das Entpacken erfolgreich abgeschlossen ist , können Sie zwischen folgenden Optionen wählen :
+Daraufhin öffnet sich ein Fenster . Geben Sie den Namen der neuen Datei in das Textfeld ein .
+Dateien oder Ordner zu Ihrem neuen Archiv hinzufügen .
+Dateien zum Archiv hinzufügen Bearbeiten Dateien hinzufügen Archivmanager Einen Ordner zum Archiv hinzufügen Bearbeiten Einen Ordner hinzufügen
+Beim Hinzufügen eines Ordners zu Ihrem Archiv stehen Ihnen folgende Optionen zur Verfügung :
+Wählen Sie , welche Unterordner oder Dateien nicht einbezogen werden sollen
+Sobald Sie mit dem Hinzufügen von Dateien fertig sind , ist Ihr Archiv bereit .
+Dateien oder Ordner zu einem neuen Archiv hinzufügen .
+Nicht alle Archivformate unterstützen Ordner . Falls das für das von Ihnen verwendete Dateiformat zutrifft , werden Sie gewarnt .
+Sobald Sie mit dem Hinzufügen von Dateien fertig sind , ist Ihr Archiv fertig , ein Speichern ist nicht notwendig .
+Die Anwendung zeigt einen Fortschrittsbalken in einem neuen Fenster an . Sobald das Entpacken erfolgreich abgeschlossen ist , können Sie zwischen folgenden Optionen wählen :
+Alle Dateien und Ordner im Archiv werden entpackt .
+Im Dateiwählerdialog können Sie Folgendes angeben :
+Aktivieren Sie diese Option , wenn Sie die Ordnerstruktur erhalten wollen , so wie sie in Ihrem Archiv vorhanden ist .
+Diese Option sorgt dafür , dass keine vorhandenen Dateien gleichen Namens überschrieben werden , die laut Änderungszeitpunkt neuer sind als jene im Archiv .
+Es gibt zwei Möglichkeiten , ein Archiv anzusehen :
+Verwenden Sie die zuvor genannten Spaltenbeschriftungen ( Name , Größe usw. ) , um die Dateien in Ihrem Archiv zu sortieren . Klicken Sie dazu auf die Beschriftung . Ein weiterer Mausklick sortiert in umgekehrter Reihenfolge .
+Öffnen Sie die Datei mit einer anderen Anwendung wie folgt :
+Klicken Sie mit der rechten Maustaste auf die Datei .
+Lernen Sie komprimierte Archive aus Dateien und Ordnern zu verwenden und zu verwalten .
+ok
+Ein Archiv besteht aus einer oder mehreren Dateien sowie Metadaten . Es kann teilweise oder als Ganzes verschlüsselt werden . Durch Zusammenfassen von mehreren Dateien in einer einzigen Datei können solche Archivdateien die Datenspeicherung und -übertragung zwischen Rechnern vereinfachen .
+In der Seitenleiste die Ordner in einer Baumansicht anzeigen
+Den Inhalt eines Archivs als Dateiliste anzeigen
+Den Inhalt eines Archivs als Ordnerstruktur anzeigen
+Gehen Sie wie folgt vor , um die Daten in einem Archiv zu verschlüsseln :
+Möglicherweise können Sie kein Passwort eingeben , weil nicht alle Archivtypen dafür geeignet sind . Daher ist es besser , wenn Sie vor dem Festlegen eines Passworts zunächst ein entsprechendes Dateiformat wählen .
+So schützen Sie ein vorhandenes Archiv mit einem Passwort :
+Die Integritätsprüfung untersucht , ob Ihre Daten beschädigt sind .
+Ich habe ein Passwort festgelegt , aber es schützt nicht das ganze Archiv .
+Dateien zum Archiv hinzufügen Bearbeiten Dateien hinzufügen Archivmanager Einen Ordner zum Archiv hinzufügen Bearbeiten Einen Ordner hinzufügen
+Wählen Sie den Ort im Dateiwählerdialog , wo die Dateien entpackt werden sollen . Dies wird der Zielordner sein._
+Dies ist ein Fehlererfassungssystem , in dem Benutzer und Entwickler Details über Fehler , Abstürze und Verbesserungswünsche hinterlassen können .
+File a Bug Applications five-or-more bug writing guidelines schauen Sie bitte nach
+Ihr Bericht bekommt eine Kennung ( ID ) zugewiesen und der Status wird mit laufender Bearbeitung stets aktualisiert._
+original_
+original_
+original
+Zwar gibt Ihnen ein größeres Spielfeld mehr Raum , aber jeder Zug bringt auch mehr Objekte ins Spiel .
+Für die drei verschiedenen Spielfeldgrößen stehen die folgenden Parameter zur Verfügung :
+original_
+original_
+original
+So ändern Sie die Darstellung der Kugeln und des Spielfelds :
+So können Sie die Bewegungen der Objekte beschleunigen :
+original_
+originallink
+Dieses Werk wird unter einer » CreativeCommons Attribution-Share Alike 3.0 Unported license « verbreitet .
+Das Werk bzw. den Inhalt zu vervielfältigen , zu verbreiten und öffentlich zugänglich zu machen .
+Abwandlungen und Bearbeitungen des Werkes bzw. Inhaltes anzufertigen .
+Sie dürfen das Werk nur unter gleichen Bedingungen weitergeben , wie Sie vom Autor oder Lizenzgeber festgelegt wurden ( aber nicht so , dass es wie Ihr Werk aussieht ) .
+Wenn Sie das lizenzierte Werk bzw. den lizenzierten Inhalt bearbeiten , abwandeln oder in anderer Weise erkennbar als Grundlage für eigenes Schaffen verwenden , dürfen Sie die daraufhin neu entstandenen Werke bzw. Inhalte nur unter Verwendung von Lizenzbedingungen weitergeben , die mit denen dieses Lizenzvertrages identisch , vergleichbar oder kompatibel sind .
+original
+Klicken Sie auf das Objekt , welches Sie bewegen wollen . Das ausgewählte Objekt beginnt sich zu drehen .
+Drücken Sie eine der Pfeiltasten . Eine der Zellen auf dem Spielfeld wird daraufhin umrandet .
+Mit den Pfeiltasten können Sie sich nun zu dem Objekt bewegen , welches Sie verschieben wollen .
+original_
+original_
+original_
+original
+Der Weg von der ursprünglichen Position zur Zielposition muss frei sein , das bedeutet , dass Sie nicht über andere Objekte springen können .
+Eine gerade horizontale , vertikale oder diagonale Linie aus fünf oder mehr Objekten wird vom Spielfeld entfernt . In diesem Fall erhalten Sie außerdem einen zusätzlichen Zug , bei dem keine weiteren Objekte zum Spielfeld hinzugefügt werden .
+Das Spiel ist vorbei , sobald das Spielfeld vollständig gefüllt ist , da dann kein Objekt mehr bewegt werden kann .
+Sie erzielen Punkte , indem Sie Reihen aus fünf oder mehr Objekten bilden . Die erzielbaren Punkte hängen von der Anzahl der Objekte ab , die dadurch entfernt werden .
+Versuchen Sie , mit jedem Zug mindestens drei gleiche Objekte in eine Linie zu bringen .
+Versuchen Sie , mehr als fünf Objekte zusammenzufügen . Bei sechs Objekten beispielsweise können Sie zwei hintereinander liegende Linien mit zwei beziehungsweise drei Objekten und einem Leerfeld dazwischen bilden . Im nächsten Zug fügen Sie das sechste Objekt ein .
+Das Adressbuch » %s « ist nicht verfügbar , daher kann der Kontakt » %s « nicht entfernt werden .
+Kontakt » %s « kann nicht entfernt werden : %s
+Das Entfernen von Kontakten wird für diesen Personenspeicher nicht unterstützt : %s
+Kontakt » %s « konnte nicht entfernt werden : %s
+Das Adressbuch » %s « ist nicht verfügbar .
+Der Zugriff zum Öffnen des Adressbuchs » %s « wurde verweigert : %s
+Adressbuch » %s « konnte nicht geöffnet werden : %s
+Fähigkeiten des Adressbuchs konnten nicht ermittelt werden : %s
+Ansicht für Adressbuch » %s « konnte nicht abgerufen werden .
+Ansicht für Adressbuch » %s « konnte nicht abgerufen werden : %s
+Das Ändern der Eigenschaft » %s « ist wegen Zeitüberschreitung fehlgeschlagen .
+Webdienst-Adressen sind für diesen Kontakt schreibgeschützt .
+Lokale Kennungen sind für diesen Kontakt schreibgeschützt .
+Der Kontakt kann nicht als Favorit markiert werden .
+E-Mail-Adressen sind für diesen Kontakt schreibgeschützt .
+Telefonnummern sind für diesen Kontakt schreibgeschützt .
+Postanschriften sind für diesen Kontakt schreibgeschützt .
+Der vollständige Name ist für diesen Kontakt schreibgeschützt .
+Der strukturierte Name ist für diesen Kontakt schreibgeschützt .
+Sofortnachrichtenadressen sind für diesen Kontakt schreibgeschützt .
+Die Eigenschaft » %s « ist schreibgeschützt : %s
+Ungültiger Wert für Eigenschaft » %s « : %s
+Unbekannter Fehler beim Setzen der Eigenschaft » %s « : %s
+Die Beziehungs-Schlüsseldatei » %s « konnte nicht geladen werden : %s
+Die Beziehungs-Schlüsseldatei » %s « konnte nicht erzeugt werden : %s
+Die Beziehungs-Schlüsseldatei » %s « konnte nicht erzeugt werden : %s
+Aktualisierte Schlüsseldatei » %s « konnte nicht geschrieben werden : %s
+Ungültige Sofortnachrichtenadresse » %s « für Protokoll » %s « : %s
+Daten konnten nicht aus Schlüsseldatei geladen werden : %s
+libsocialweb-Dienst konnte nicht vorbereitet werden : %s
+Es konnte nicht ermittelt werden , ob Aliase für das Telepathy-Konto » %s « gesetzt werden können : %s
+Telepathy-Kontakte , die den lokalen Benutzer verkörpern , können nicht entfernt werden .
+Entfernen einer Person aus dem Speicher ist fehlgeschlagen : %s
+Personenspeicher ( %s , %s ) erfordert die folgenden Details : Kontakt ( angegeben : » %s « )
+Ein neuer Telepathy-Kontakt kann im Offline-Modus nicht erstellt werden .
+Hinzufügen der Person aus den Details schlug fehl : %stelepathy-logger
+Ändern eines Favoriten ohne Verbindung zum telepathy-logger-Dienst schlug fehl .
+Favoritenstatus für Telepathy-Person konnte nicht geändert werden , weil kein TpContact zugeordnet ist .
+Favoritenstatus für Telepathy-Kontakt » %s « konnte nicht geändert werden .
+Alias des Kontakts konnte nicht geändert werden : %s
+Erweiterte Informationen können nur für den Telepathy-Kontakt des Benutzers angegeben werden .
+Erweiterte Informationen können nicht gespeichert werden , da die Verbindung zum Speicher unterbrochen ist .
+Unbekannter Parameter » %s « wurde an den Personenspeicher » %s « übergeben .
+Fehler beim Auflisten des Inhalts des Ordners » %s « : %s
+Datei oder Ordner » %s « existiert nicht .
+Typ des Inhalts konnte für » %s « nicht abgefragt werden .
+Die Geburtstags-Ereigniskennung ist für diesen Kontakt schreibgeschützt .
+Der Favoritenstatus ist für diesen Kontakt schreibgeschützt .
+Die Sofortnachrichtenadresse » %s « ist unverständlich .
+Fehler beim Vorbereiten des Personenspeichers » %s « : %s
+Unbekannte Eigenschaft » %s « in verknüpfbarer Eigenschaftsliste .
+Hinzufügen eines Kontakts zum Personenspeicher mit der Kennung » %s « schlug fehl : %s
+Personen können ohne primären Speicher nicht verknüpft werden .
+Personenspeicher » %s:%s « ist als primärer konfiguriert , konnte aber nicht gefunden werden oder das Laden schlug fehl .
+Prüfen Sie den relevanten Dienstanbieter , oder ändern Sie den voreingestellten Speicher für diesen Dienst mit dem GConf-Schlüssel » %s « .
+Anti-Links können nicht zwischen Personen , die verlinkt sind , gelöscht werden .
+Personen können ohne primären Speicher nicht hinzugefügt werden .
+In angeforderte Eigenschaft ( » %s « ) des schreibbaren Speichers konnte nicht geschrieben werden .
+Eigenschaft » %s « konnte nicht geändert werden : Es wurden keine passenden Personen gefunden .
+Die Kennung des Personenspeichers , den folks als primären ( d.h. zum Speichern von Verknüpfungsdaten ) verwenden soll . Die Typenkennung des Speichers darf optional nachgesetzt werden , durch einen Doppelpunkt getrennt . Zum Beispiel : » eds:system-address-book « oder » key-file « .
+%s , %s , %s , %s , %s , %s , %s
+Titel : %s , Organisation : %s , Funktion : %s
+Es können keine Informationen zur Datei » %s « gefunden werden : %s
+Die Buddylisten-Datei » %s « aus Pidgin konnte nicht geladen werden .
+Die Buddylisten-Datei » %s « aus Pidgin konnte nicht geladen werden : Das Wurzelelement konnte nicht gefunden werden oder wurde nicht erkannt .
+Fehler beim Ändern der Gruppe des Kontakts » %s « : %s
+Buddy ohne Alias und nur einer einzigen Sofortnachrichtenadresse wird ignoriert : %s
+Erstellen eines neuen Kontakts für den Buddy mit Alias » %s « und Sofortnachrichten-Adresse ist gescheitert : %s Fehler : %s
+Kontakt » %s « des Buddy mit Alias » %s « und Sofortnachrichten-Adressen wurde erstellt : %s
+Name des Quell-Backends ( Vorgabe : » pidgin « )
+Quelldateiname ( Vorgabe : abhängig vom Quellen-Backend )
+Befehlszeilenoptionen konnten nicht verarbeitet werden : %s
+Das Backend » %s « konnte nicht geladen werden .
+Das Backend » %s « konnte nicht vorbereitet werden : %s
+Der Personenspeicher des Backends für » %s « konnte nicht geladen werden .
+Der Personenspeicher des Backends für » %s « konnte nicht vorbereitet werden : %s
+Unbekannter Name » %s « des Quellen-Backends . » %s « ist derzeit das einzige unterstützte Quellen-Backend .
+Das » BlueZ«-Backend wird deaktiviert , da die » BlueZ 5«-Objektverwaltung nicht läuft . Entweder ist Ihre » BlueZ«-Installation zu alt ( es wird nur Version 5 unterstützt ) oder der Dienst kann nicht gestartet werden .
+Fehler beim Verbinden mit dem OBEX Transferdienst über D-Bus . Stellen Sie sicher , dass » BlueZ « und » obexd « installiert sind .
+Fehler beim Lesen der übertragenen Adressbuch-Datei : %s «
+Fehler beim Übertragen des Adressbuchs » %s « vom Bluetooth-Gerät » %s « .
+Zugriff auf das Adressbuch des Bluetooth-Gerätes » %s « wurde durch den Benutzer verweigert .
+Eine OBEX-Übertragung des Adressbuchs von Gerät » %s « konnte nicht gestartet werden : %s
+Die OBEX-Übertragung des Adressbuchs von Gerät » %s « ist fehlgeschlagen : %s
+Fehler beim Übertragen des Adressbuchs vom Bluetooth-Gerät » %s « : %s
+Bluetooth-Gerät » %s « verschwand während der Adressbuchübertragung .
+Das Adressbuch » %s « ist nicht verfügbar , daher kann der Kontakt » %s « nicht entfernt werden .
+Kontakt » %s « kann nicht entfernt werden : %s
+Das Entfernen von Kontakten wird für diesen Personenspeicher nicht unterstützt : %s
+Kontakt » %s « konnte nicht entfernt werden : %s
+Das Adressbuch » %s « ist nicht verfügbar .
+Der Zugriff zum Öffnen des Adressbuchs » %s « wurde verweigert : %s
+Adressbuch » %s « konnte nicht geöffnet werden : %s
+Fähigkeiten des Adressbuchs konnten nicht ermittelt werden : %s
+Ansicht für Adressbuch » %s « konnte nicht abgerufen werden .
+Ansicht für Adressbuch » %s « konnte nicht abgerufen werden : %s
+Das Ändern der Eigenschaft » %s « ist wegen Zeitüberschreitung fehlgeschlagen .
+Webdienst-Adressen sind für diesen Kontakt schreibgeschützt .
+Lokale Kennungen sind für diesen Kontakt schreibgeschützt .
+Der Kontakt kann nicht als Favorit markiert werden .
+E-Mail-Adressen sind für diesen Kontakt schreibgeschützt .
+Telefonnummern sind für diesen Kontakt schreibgeschützt .
+Postanschriften sind für diesen Kontakt schreibgeschützt .
+Der vollständige Name ist für diesen Kontakt schreibgeschützt .
+Der strukturierte Name ist für diesen Kontakt schreibgeschützt .
+Sofortnachrichtenadressen sind für diesen Kontakt schreibgeschützt .
+» Meine Kontakte « ist nur für Google-Kontakte verfügbar .
+Die Eigenschaft » %s « ist schreibgeschützt : %s
+Ungültiger Wert für Eigenschaft » %s « : %s
+Unbekannter Fehler beim Setzen der Eigenschaft » %s « : %s
+Die Beziehungs-Schlüsseldatei » %s « konnte nicht geladen werden : %s
+Die Beziehungs-Schlüsseldatei » %s « konnte nicht erzeugt werden : %s
+Die Beziehungs-Schlüsseldatei » %s « konnte nicht erzeugt werden : %s
+Aktualisierte Schlüsseldatei » %s « konnte nicht geschrieben werden : %s
+Ungültige Sofortnachrichtenadresse » %s « für Protokoll » %s « : %s
+Daten konnten nicht aus Schlüsseldatei geladen werden : %s
+libsocialweb-Dienst konnte nicht vorbereitet werden : %s
+Das » oFono«-Backend wird deaktiviert , da die » oFono«-Objektverwaltung nicht läuft . Entweder ist » oFono « nicht installiert oder der Dienst kann nicht gestartet werden .
+Telepathy-Kontakte , die den lokalen Benutzer verkörpern , können nicht entfernt werden .
+Entfernen einer Person aus dem Speicher ist fehlgeschlagen : %s
+Personenspeicher ( %s , %s ) erfordert die folgenden Details : Kontakt ( angegeben : » %s « )
+Ein neuer Telepathy-Kontakt kann im Offline-Modus nicht erstellt werden .
+Hinzufügen der Person aus den Details schlug fehl : %stelepathy-logger
+Ändern eines Favoriten ohne Verbindung zum telepathy-logger-Dienst schlug fehl .
+Favoritenstatus für Telepathy-Person konnte nicht geändert werden , weil kein TpContact zugeordnet ist .
+Favoritenstatus für Telepathy-Kontakt » %s « konnte nicht geändert werden .
+Alias des Kontakts konnte nicht geändert werden : %s
+Erweiterte Informationen können nur für den Telepathy-Kontakt des Benutzers angegeben werden .
+Erweiterte Informationen können nicht gespeichert werden , da die Verbindung zum Speicher unterbrochen ist .
+Unbekannter Parameter » %s « wurde an den Personenspeicher » %s « übergeben .
+Fehler beim Auflisten des Inhalts des Ordners » %s « : %s
+Fehler beim Anfragen von Informtionen für das Ziel » %s « der symbolischen Verknüpfung » %s « : %s
+Datei oder Ordner » %s « existiert nicht .
+Typ des Inhalts konnte für » %s « nicht abgefragt werden .
+Die Geburtstags-Ereigniskennung ist für diesen Kontakt schreibgeschützt .
+Der Favoritenstatus ist für diesen Kontakt schreibgeschützt .
+Die Sofortnachrichtenadresse » %s « ist unverständlich .
+Fehler beim Vorbereiten des Personenspeichers » %s « : %s
+Unbekannte Eigenschaft » %s « in verknüpfbarer Eigenschaftsliste .
+Hinzufügen eines Kontakts zum Personenspeicher mit der Kennung » %s « schlug fehl : %s
+Personen können ohne primären Speicher nicht verknüpft werden .
+Personenspeicher » %s:%s « ist als primärer konfiguriert , konnte aber nicht gefunden werden oder das Laden schlug fehl .
+Prüfen Sie den relevanten Dienstanbieter , oder ändern Sie den voreingestellten Speicher für diesen Dienst mit dem GConf-Schlüssel » %s « .
+Anti-Links können nicht zwischen Personen , die verlinkt sind , gelöscht werden .
+Personen können ohne primären Speicher nicht hinzugefügt werden .
+In angeforderte Eigenschaft ( » %s « ) des schreibbaren Speichers konnte nicht geschrieben werden .
+Eigenschaft » %s « konnte nicht geändert werden : Es wurden keine passenden Personen gefunden .
+%g%t%m%t%f
+Die Kennung des Personenspeichers , den folks als primären ( d.h. zum Speichern von Verknüpfungsdaten ) verwenden soll . Die Typenkennung des Speichers darf optional nachgesetzt werden , durch einen Doppelpunkt getrennt . Zum Beispiel : » eds:system-address-book « oder » key-file « .
+%s , %s , %s , %s , %s , %s , %s
+Titel : %s , Organisation : %s , Funktion : %s
+Es können keine Informationen zur Datei » %s « gefunden werden : %s
+Die Buddylisten-Datei » %s « aus Pidgin konnte nicht geladen werden .
+Die Buddylisten-Datei » %s « aus Pidgin konnte nicht geladen werden : Das Wurzelelement konnte nicht gefunden werden oder wurde nicht erkannt .
+Fehler beim Ändern der Gruppe des Kontakts » %s « : %s
+Buddy ohne Alias und nur einer einzigen Sofortnachrichtenadresse wird ignoriert : %s
+Erstellen eines neuen Kontakts für den Buddy mit Alias » %s « und Sofortnachrichten-Adresse ist gescheitert : %s Fehler : %s
+Kontakt » %s « des Buddy mit Alias » %s « und Sofortnachrichten-Adressen wurde erstellt : %s
+Name des Quell-Backends ( Vorgabe : » pidgin « )
+Quelldateiname ( Vorgabe : abhängig vom Quellen-Backend )
+Befehlszeilenoptionen konnten nicht verarbeitet werden : %s
+Das Backend » %s « konnte nicht geladen werden .
+Das Backend » %s « konnte nicht vorbereitet werden : %s
+Der Personenspeicher des Backends für » %s « konnte nicht geladen werden .
+Der Personenspeicher des Backends für » %s « konnte nicht vorbereitet werden : %s
+Unbekannter Name » %s « des Quellen-Backends . » %s « ist derzeit das einzige unterstützte Quellen-Backend .
+Es konnte nicht ermittelt werden , ob Aliase für das Telepathy-Konto » %s « gesetzt werden können : %s
+Verschiedene Themen zum Verbessern des Spielerlebnisses nutzen .
+Die Spielstärke des Rechners in Ihrem Spiel oder im Spiel mit einem Freund ändern .
+So ändern Sie die Spielstufe oder spielen mit einem Freund :
+Stufe eins Stufe zwei Stufe drei Stufe eins Stufe drei
+Drücken Sie die Taste , die Sie anstelle der voreingestellten verwenden wollen .
+Wenn Sie mit einem Freund oder Familienmitglied spielen verwenden beide Spieler die gleiche Steuerung .
+Klänge
+Animation
+Systemverwalterrechte sind zum Eintragen neuer Fingerabdrücke für andere Benutzer erforderlich .
+Das Abstreifen war zu kurz , versuchen Sie es erneut
+Ihr Finger war nicht zentriert , versuchen Sie erneut Ihren Finger abzustreifen
+Entfernen Sie Ihren Finger und versuchen Sie erneut Ihren Finger abzustreifen
+Sie können Bilder zu einem bereits angelegten Album hinzufügen .
+_
+a_
+Hier können Sie einen Proxy festlegen .
+a
+Verwenden Sie dieses Feld , um einen Titel hinzuzufügen .
+Fügen Sie Markierungen hinzu , um das Bild zu kategorisieren
+Wählen Sie , ob das Bild privat ist oder öffentlich sichtbar sein soll .
+Sie können angeben , ob es sich bei dem Bild um ein Foto , ein Bildschirmfoto oder etwas anderes handelt
+Sie können die Art des hochgeladenen Bildes bewerten
+Sie können die Lizenz ändern oder die in Flickr vorgegebene Lizenz verwenden
+Sie können mit Frogr die Geopositions-Informationen für ein Bild auf Flickr anhand dessen EXIF-Information festlegen
+Sie können festlegen , ob es gestattet sein soll , Ihre Bilder über die Flickr-Suchmaschine zu finden
+_
+OK
+a
+Hochladen von Bildern , die sich auf entfernten Rechnern befinden
+Nach dem Hochladevorgang Alben zusammenstellen und Bilder zu Sammlungen hinzufügen .
+_
+a
+Sie können Bilder zu einem Album hinzufügen . Ein Album stellt eine Kategorie dar , keine hierarchische Ordnung .
+Neue Alben zum Hinzufügen von Bildern erstellen . Sie können für jedes ausgewählte Bild auch Titel und Beschreibung angeben
+Flickr
+Sie müssen zunächst Bilder hinzufügen , bevor Sie Bilder hochladen können .
+a
+a
+a
+Frogr : Eine GNOME-Anwendung zum entfernten Verwalten von Flickr
+Geben Sie eine durch Leerzeichen getrennte Liste von Markierungen an :
+Bitte klicken Sie den Knopf , um %s zu legitimieren . Kehren Sie dann zu diesem Fenster zurück , um den Vorgang abzuschließen .
+Fehler beim Hochladen des Bildes : Kontingent wurde erreicht
+Fehler beim Hochladen des Videos : Sie können keine weiteren Videos mit diesem Konto hochladen
+Fehler : Foto ist bereits in der maximalen Gruppenanzahl enthalten
+Fehler : Foto wurde zur Warteschlange der Gruppe hinzugefügt
+Fehler : Foto wurde bereits zur Warteschlange der Gruppe hinzugefügt
+Fehler : Inhalt ist für diese Gruppe nicht erlaubt
+Legitimierung ist fehlgeschlagen . Bitte versuchen Sie es erneut
+Fehler : %s ist nicht ausreichend legitimiert , um Bilder zu Flickr hochzuladen . Bitte legitimieren Sie erneut
+Legitimierung bei Flickr ist fehlgeschlagen . Bitte versuchen Sie es erneut
+Sie haben %s noch nicht korrekt legitimiert . Bitte versuchen Sie es erneut .
+Hochladen wird erneut versucht ( Versuch %d/ %d )
+Sie müssen %s ausreichend legitimieren , bevor Bilder zu Flickr hochgeladen werden können . Bitte nehmen Sie die Legitimierung erneut vor .
+Sie müssen %s ausreichend legitimieren , bevor Bilder zu Flickr hochgeladen werden können . Bitte nehmen Sie die Legitimierung erneut vor .
+Ein Fehler trat beim Versuch auf , ein Bild hochzuladen
+Bild %s kann nicht geladen werden : %s
+Video %s kann nicht geladen werden Bitte prüfen Sie , ob der richtige Codec installiert ist
+Datei %s kann nicht geladen werden : Datei ist größer als das für dieses Konto zulässige Maximum ( %s )
+So wechseln Sie zwischen verschiedenen Versionen bei der Bearbeitung :
+Doppelklicken Sie auf das Foto , das Sie bearbeiten wollen .
+Eine kurze Einführung in die Möglichkeiten der Markierung mit F-Spot
+Es gibt verschiedene Methoden , nach Markierungen zu suchen .
+Erste Methode : Doppelklicken Sie auf die Markierungen , nach denen Sie suchen wollen .
+Ziehen Sie die Markierungen , nach denen Sie suchen wollen , in das soeben aktivierte Suchfeld .
+So schließen Sie eine Markierung von Ihrer Suche aus :
+Doppelklicken Sie in der Markierungsleiste auf die Markierung , die Sie ausschließen wollen . Dadurch wird sie zunächst zur Suchleiste hinzugefügt .
+Doppelklicken Sie anschließend in der Suchleiste auf die Markierung , die Sie ausschließen wollen .
+Wie beim Hinzufügen von Markierungen gibt es zwei grundlegende Methoden , um Markierungen von Ihren Fotos zu entfernen .
+Wählen Sie die Fotos aus , von denen Sie eine Markierung entfernen wollen .
+Wählen Sie in der Markierungsleiste eine Markierung aus , die Sie von den von Ihnen ausgewählten Fotos entfernen wollen .
+Klicken Sie mit der rechten Maustaste auf die Fotos .
+Das Löschen von Markierungen entfernt diese vollständig aus dem System , aber lässt die Fotos zurück , denen diese Markierung zugeordnet ist .
+Wählen Sie die zu entfernende Markierung in der Markierungsleiste aus .
+Erstellen von Markierungen , die Fotos zugeordnet werden können
+Um überhaupt Markierungen benutzen zu können , müssen Sie zunächst eine Reihe von Markierungen erstellen . Es gibt drei grundlegende Methoden zum Erstellen von Markierungen .
+Wählen Sie die Fotos aus , denen Sie die neue Markierung zuordnen wollen .
+Wählen Sie Fotos aus , denen Sie eine Markierung zuordnen wollen .
+Wählen Sie in der Markierungsleiste eine Markierung aus , die Sie zu den gewählten Fotos hinzufügen wollen .
+Bewerten Sie Ihre Fotos mit einem bis fünf Sternen
+Wählen Sie mittels Doppelklick das Foto aus , das Sie bewerten wollen .
+In der unteren rechten Ecke sehen Sie fünf Punkte , die sich auf die zu vergebende Bewertung beziehen . Um beispielsweise einen Stern zu vergeben , klicken Sie auf den ersten Punkt .
+Wählen Sie das/ die Foto(s ) zur Bewertung aus .
+Klicken Sie mit der rechten Maustaste auf das oder die zu bewertenden Foto(s ) und wählen Sie eine Bewertung unten im Kontextmenü aus , indem Sie auf den entsprechenden Punkt klicken .
+So suchen Sie nach Fotos anhand von Bewertungssternen :
+Wählen Sie den Bereich der Bewertungen der zu betrachtenden Fotos .
+So halten Sie die Suche nach Bewertungssternen an :
+Wählen Sie die Fotos aus , die Sie hochladen wollen .
+Importierte Rollen sind » Stapel « von importierten Fotos . Unabhängig vom eigentlichen Aufnahmedatum des Bildes ist hier der Zeitstempel des Imports der Fotos entscheidend .
+So suchen Sie nach der neuesten importierten Rolle :
+Als erstes werden Sie vermutlich Fotos importieren wollen .
+Wählen Sie eine Quelle für den Import aus , wie ein Gerät oder einen Ordner .
+Sie haben drei Möglichkeiten zum Drehen eines ausgewählten Fotos :
+Klicken Sie auf den entsprechenden Drehungsknopf rechts neben dem Importknopf .
+Verwenden Sie die Klammer-Tasten , um das Foto zu drehen .
+Wählen Sie den Drehwinkel im Bereich von -45 bis 45 Grad .
+Wählen Sie ein Seitenverhältnis , also ein Verhältnis zwischen Höhe und Breite , dem das neue Foto entsprechen soll . Beispiele für Seitenverhältnisse sind 4x3 , 4x6 und 5x7 .
+Klicken und ziehen Sie , um den zu erhaltenden Bereich zu wählen . Dieses Rechteck können Sie noch als Ganzes verschieben , nachdem die Größe gewählt wurde .
+Benennen Sie die Galerie und versehen Sie sie mit einer Beschreibung .
+Eigenständige Web-Galerie anlegen Nur die Dateien speichern Galerie unter Verwendung von » Original « anlegen
+Wählen Sie die Fotos , die Sie aus dem Katalog entfernen wollen .
+Aus dem Katalog entfernen Bearbeiten Aus dem Katalog entfernen
+Wählen Sie die Fotos , die Sie löschen wollen .
+So senden Sie die gewählten Fotos an Facebook :
+Wählen Sie , ob ein neues Album erstellt werden soll oder zu einem vorhandenen Album hinzugefügt werden soll . Wenn Sie ein neues Album erstellen , dann geben Sie die erforderlichen Informationen ein .
+Bearbeiten Sie die Beschriftung für jedes Foto , falls gewünscht .
+Wählen Sie aus der Liste eine zu installierende Erweiterung aus .
+So aktivieren Sie Plugins , die bereits installiert sind :
+Wählen Sie die Erweiterung , die Sie aktivieren wollen .
+So deaktivieren Sie Plugins , die bereits installiert sind :
+Wählen Sie die Erweiterung , die Sie deaktivieren wollen .
+Wählen Sie die Erweiterung , die Sie deinstallieren wollen .
+Wählen Sie mittels Doppelklick das Foto aus , welches Sie mit dem Rote-Augen-Entfernungswerkzeug bearbeiten wollen .
+Wählen Sie den Bereich aus , in dem Sie rote Augen entfernen wollen . Falls der Bereich viele rote Bereiche enthält , müssen Sie möglicherweise jedes Auge einzeln auswählen .
+So verbessern Sie automatisch die Farben eines Fotos :
+Wählen Sie mittels Doppelklick das Foto aus , das Sie verbessern wollen .
+Wählen Sie einen Zeitabschnitt , aus dem Sie Fotos betrachten wollen . Wählen Sie hierzu einen gesetzten Zeitabschnitt aus oder verwenden Sie Datumsangaben .
+Alternativ können Sie die Zeitlinie verwenden . So verwenden Sie die Zeitlinie :
+Klicken Sie in der Zeitlinie auf den Balken des Zeitabschnitts , den Sie betrachten wollen .
+Dieser Modus entfernt die Farben , wodurch ein farbiges Bild in ein Schwarzweißbild umgewandelt wird .
+Dieser Modus simuliert ein Foto , das mit Sepia-Tönung erstellt wurde .
+Dieser Modus gleicht die Farben automatisch mit einem gesetzten Profil ab .
+Von den Bearbeitungswerkzeugen in F-Spot ist die Farbanpassung wohl das mächtigste Werkzeug . Die Farbanpassung ermöglicht Ihnen Folgendes :
+Hierdurch wird die Verlängerung oder Verkürzung der Belichtungszeit simuliert .
+Diese Einstellung erlaubt das Anpassen der Farbintensität in einem Bild . Verschieben nach links verringert die Farben bis hin zum Schwarzweißbild , wogegen Verschieben nach rechts die Farben intensiviert .
+Diese Einstellung verstärkt die Helligkeit der Farben . Ein zu hoher Wert lässt Farben » verwaschen « erscheinen , während ein zu geringer Wert das Bild zu dunkel und kontrastarm darstellt .
+Diese Einstellung lässt Farben entlang des Farbrades » rotieren « .
+Diese Einstellung passt das Kontrastverhältnis an , also den Unterschied zwischen den hellen und den dunklen Bildpunkten . Verschieben nach links verringert den Kontrast , während Verschieben nach rechts den Kontrast erhöht .
+Diese Einstellung ändert die Farbtemperatur , gemessen in Kelvin .
+Diese Einstellung ermöglicht Ihnen die Tönung Ihrer Fotos mit einer Farbe .
+Nach Schwarzweiß mit Steuerungsmöglichkeit umwandeln . Erfordert Mono 2.2 .
+Diese Erweiterung ermöglicht es , Ihre Fotos auf eine CD zu brennen .
+Diese Erweiterung ermöglicht es , Ihre Fotos nach Flickr und 23hq zu exportieren .
+Diese Erweiterung ermöglicht es , Ihre Fotos als HTML-Galerien , Original-Galerien oder in einen Ordner zu exportieren .
+Diese Erweiterung ermöglicht es , Ihre Fotos in eine PHP-Gallery ( http:/ /gallery.menalto.com ) zu exportieren .
+Diese Erweiterung ermöglicht es , Ihre Fotos nach PicasaWeb zu exportieren .
+Diese Erweiterung ermöglicht es , Ihre Fotos nach SmugMug zu exportieren .
+Diese Erweiterung ermöglicht es , Ihre Fotos nach Tabblo zu exportieren .
+NICHT STABIL - Bitte stellen Sie sicher , dass Sie eine Sicherungskopie von photos.db vor einem Test dieser Erweiterung erstellen . Diese Erweiterung ermöglicht es , den Basispfad Ihrer Fotos zu ändern . Es ist sehr praktisch z.B. Ihre Fotos von ~/ Photos nach / OurPhotos zu verschieben . Stellen Sie lediglich sicher , dass SqLite die Änderungen für einige Stunden umsetzen kann , nachdem f-spot den Abschluß gemeldet hat . Es wird nur der Pfad zu Ihren Fotos im Foto-Ordner geändert .
+Das Bild in UFRaw entwickeln und das Ergebnis als neue Version speichern\ \ Hinweis : Erfordert ufraw 0.13 oder eine CVS-Version neuer als vom 6.9.2007 ! ! !
+Fotos für andere Leute im gleichen Netzwerk mittels Web-Browser freigeben
+Foto-Mosaike mit MetaPixel erstellen ( http:/ /www.complang.tuwien.ac.at/ schani/ metapixel/ )
+Fotowand mit PictureTile von Jamie Zawinski erstellen ( http:/ /www.jwz.org/ picturetile/ )
+RAW+Jpeg als mehrfache Versionen des selben Fotos vereinen
+Pfad zu eigener gtkrc zur Anpassung des Erscheinungsbildes von F-Spot .
+Die Breite , die für das Hauptfenster verwendet werden soll .
+Die Höhe , die für das Hauptfenster verwendet werden soll .
+Die X-Position des Hauptfensters .
+Die Y-Position des Hauptfensters .
+Größe der Markierungssymbole in der Seitenleiste .
+Die Ausrichtung des Filmstreifens , wenn angezeigt .
+Die Größe der Seitenleiste im Hauptfenster .
+Die Größe ( Breite ) der Seitenleiste im Hauptfenster .
+Die Breite , die für den Import-Dialog verwendet werden soll .
+Die Höhe , die für den Import-Dialog verwendet werden soll .
+Breite der Bildvorschauleiste im Import-Dialog .
+Die Breite , die für das Fenster des Bildbetrachters verwendet werden soll .
+Die Höhe , die für das Fenster des Bildbetrachters verwendet werden soll .
+Die X-Position des Fensters des Bildbetrachters .
+Die Y-Position des Fensters des Bildbetrachters .
+Die Werkzeugleiste im Fenster des Fotobetrachters zeigen .
+Den Dateinamen des aktuellen Fotos als Fenstertitel des Betrachters verwenden .
+Erlaubt Interpolation bei größenveränderten Bildern .
+Sie können wählen , wie transparente Bereiche eines Bildes dargestellt werden . Diese Einstellung hat keinen Effekt auf Fotos , aber eine Einstellung auf ein Schachbrettmuster ( CHECK_PATTERN ) oder eine frei wählbare Farbe ( CUSTOM_COLOR ) kann bei der Betrachtung von Symbolen und anderen Bildern mit transparenten Bereichen nützlich sein .
+Die für die transparenten Bereiche zu verwendende Farbe .
+Wenn die Option zur Transparenz gewählt ist , dann wird die hier ausgewählte Farbe als Transparenzfarbe beim Betrachten von Bildern verwendet .
+Keine Fotos gefunden , die mit { 0 } übereinstimmen
+Die Markierung » { 0 } « wird bei keinem Foto genutzt . Versuchen Sie , die Markierung zu einigen Fotos hinzuzufügen oder wählen Sie eine andere Markierung im F-Spot-Einstellungsdialog .
+Die Markierung , nach der F-Spot gesucht hat , existiert nicht . Versuchen Sie eine andere Markierung im F-Spot-Einstellungsdialog .
+Bitte warten Sie , während die Datenbank Ihrer F-Spot Galerie aktualisiert wird . Dies kann einige Zeit dauern .
+Wählen Sie die Augen , die korrigiert werden sollen .
+Diese Aktion wird die gewählten Markierungen und alle Untermarkierungen zu einer einzigen Markierung zusammenführen .
+Keine Berechtigung zum Löschen der Datei:{1}{0 }
+Ein Fehler des Typs { 0 } ist beim Löschen der Datei aufgetreten:{2}{1 }
+Wenn Fotos aus dem F-Spot-Katalog entfernt werden , gehen alle Markierungsinformationen verloren . Die Fotos bleiben jedoch auf dem Rechner erhalten und können wieder in F-Spot importiert werden .
+Die Markierung » { 0 } « löschen ?
+Markierungen können nicht gelöscht werden , wenn sie weitere Markierungen beinhalten . Bitte löschen Sie zuerst die Markierungen unterhalb von » { 0 } « .
+Bearbeitet in { 1 } ( { 0 } )
+Beim Versuch » { 1 } « zu drehen , wurde der Fehler » { 0 } « empfangen
+Ein Fehler ist beim Bearbeiten von » { 0 } « aufgetreten : { 1 }
+Fotos mit Markierung » { 0 } « hinzufügen
+Fotos mit Markierung » { 0 } « ausschließen
+Markierungen hier einfügen , um nach ihnen zu suchen
+oder ( ? 'Ops ' or | and | , | \\s+ )
+Die Ausnahme » { 0 } « wurde empfangen . Das Bild { 1 } kann nicht gespeichert werden .
+» { 0 } « kann nicht als Symbol für die Markierung geladen werden
+Fotos werden importiert : { 0 } von { 1 }
+Nach Fotos wird gesucht ( Sie können auf » Importieren « klicken , um fortzusetzen )
+Einige Dateien konnten nicht importiert werden . Sie könnten beschädigt sein oder das Speichermedium könnte fehlerhaft sein , auf dem sie sich befinden .
+Ein Fehler trat beim Laden der Foto-Datenbank auf . Die alte Datenbank wurde nach » { 0 } « verschoben und eine neue Datenbank wurde erstellt .
+0000:00:00 00:00:00
+Symbol für diese Mark_ierung bei erster Benutzung erstellen
+Abbrechen , aktuelle Zeitlinie nicht ändern .
+Nur Fotos innerhalb dieser Daten werden angezeigt .
+Nur Fotos darstellen , die in den angegebenen Importen enthalten sind .
+Erstellen Sie stattdessen XMP-Dateien zu den Bildern .
+Dieses Werkzeug benötigt eine aktive Auswahl . Bitte wählen Sie einen Bereich des Fotos aus und versuchen Sie es danach erneut .
+Die Ausnahme » { 0 } « wurde empfangen . Beachten Sie , dass RAW-Dateien vor der Bearbeitung erst in JPEG-Dateien umgewandelt werden müssen .
+Auf { 0 } zwischen { 1 } und { 2 }
+Das Foto » { 0 } « ist nicht vorhanden
+Soll die Version » { 0 } « wirklich gelöscht werden ?
+Dadurch wird die Version gelöscht und die entsprechende Datei vom Datenträger gelöscht .
+Soll die Version » { 0 } « wirklich von » { 1 } « abgetrennt werden ?
+Dadurch erscheint die Version als eigenständiges Foto in der Bibliothek . Um diesen Vorgang rückgängig zu machen , ziehen Sie das neue Foto an die Ausgangsposition zurück .
+Dadurch erscheinen die Fotos als einzelnes Bild in der Bibliothek . Im » Foto«-Menü können Sie die Versionen voneinander trennen .
+Originalgröße ( eventuell sehr große Dateigröße )
+Eine Mail mit den ausgewählten Fotos ( eventuell verkleinert ) angehängt erstellen
+Aktivieren Sie dies , um die Interpolation in vergrößerten Fotos zu erlauben . Zur Betrachtung von Fotos sollte die Interpolation nicht deaktiviert werden , für die Bearbeitung von Symbolen dagegen kann die Deaktivierung nützlich sein .
+Sie können wählen , wie transparente Bereiche eines Bildes dargestellt werden . Diese Einstellung hat keinen Effekt auf Fotos , aber eine Einstellung auf ein Schachbrettmuster oder eine frei wählbare Farbe kann bei der Betrachtung von Symbolen und anderen Bildern mit transparenten Bereichen nützlich sein .
+Papiergröße : { 0 } x { 1 } mm
+Wählen Sie den Bereich zum Ausschwärzen aus .
+Übertragung des Bilds » { 0 } « auf CD
+Es existieren schon Objekte , die gespeichert werden müssen
+F-Spot startet nun Ihren Browser , so dass Sie die gerade gewählten Zugriffsrechte aktualisieren können . Sobald Sie von Facebook dazu geführt werden , zu dieser Anwendung zurückzukehren , klicken Sie auf » OK « .
+Facebook erlaubt nur { 0 } Fotos per Album . Bitte verkleinern Sie Ihre Auswahl und versuchen Sie es erneut .
+Bitte geben Sie den Namen des Albums an oder wählen Sie ein existierendes .
+Beim Anlegen des neuen Album ist ein Fehler aufgetreten . { 0 }
+Hochladen des Bildes » { 0 } « ( { 1 } von { 2 } )
+Fehler beim Hochladen zu Facebook : { 0 }
+F-Spot wird nun Ihren Browser starten , so dass Sie sich bei Facebook anmelden können . Sobald Sie von Facebook dazu geführt werden , zu dieser Anwendung zurückzukehren , klicken Sie auf » OK « .
+Es gab ein Problem beim Anmelden in Facebook . Überprüfen Sie Ihre Daten und versuchen Sie es erneut .
+Sitzung ist gestartet , Details zu Freunden werden geholt
+{ 0 } { 1 } ist bei Facebook angemeldet
+Beim Herunterladen Ihrer Informationen von Facebook trat ein Fehler auf . Facebook antwortete : { 0 }
+Kehren Sie zu diesem Fenster zurück , nachdem Sie die Legitimierung auf { 0 } durchgeführt haben , und klicken Sie auf den » Legitimierung vervollständigen«-Knopf unten
+Willkommen { 0 } , Sie sind nun mit { 1 } verbunden .
+{ 0 } von Ihrer monatlichen Quota von { 1 } in Benutzung
+Warte auf Antwort { 0 } von { 1 }
+Fehler beim Hochladen von { 0 } : { 1 }
+Die Anmeldung bei { 0 } ist fehlgeschlagen . Stellen Sie sicher , dass Sie sich in der Internet-Browser-Oberfläche { 0 } legitimiert haben .
+F-Spot benötigt Ihre Legitimierung , um Fotos zu Ihrem { 0}-Benutzerkonto hochzuladen . Bitte klicken Sie auf den » Legitimieren«-Knopf , um einen Browser zu öffnen und F-Spot die benötigte Legitimierung zu geben .
+Fehler beim Kopieren von » { 0 } « in die Galerie:{2}{1 }
+Die Galerie-Adresse scheint ungültig zu sein
+Der folgende Fehler trat beim Anmelden auf : { 0 }
+In Ihren registrierten Galerien ist dieser Name bereits vorhanden . Bitte wählen Sie einen eindeutigen Namen .
+Verbindung nicht möglich zur Galerie mit unbekannter Version . Bitte überprüfen Sie , ob Sie das Remote-Plugin 1.0.8 oder eine neuere Version benutzen .
+Der Name der Galerie enthält ein ungültiges Zeichen . Nur Buchstaben , Zahlen , - und _ sind zulässig
+Der folgende Fehler trat beim Versuch auf , die gewünschte Aktion auszuführen : { 0 } ( { 1 } )
+Fehler beim Hochladen des Bildes » { 0 } « in die Galerie : { 1 }
+Überprüfen Sie bitte , ob die Einstellungen für diese Galerie korrekt sind .
+Der folgende Fehler trat beim Versuch auf , ein neues Album zu erstellen : { 0 }
+{ 0 } von ca. { 1 }
+Fehler beim Hochladen zur Galerie : { 0 }
+Verfügbarer Platz : { 0 } , { 1 } % benutzt von { 2 }
+Das ausgewählte Album hat ein Limit von { 0 } Bildern , dieses würde erreicht mit der aktuellen Auswahl von { 1 } Bildern
+F-Spot-Markierungen können Ihnen dabei helfen , den Exportstatus Ihrer Fotos zu verfolgen . Beispiel : Verwenden Sie eine bestimmte Markierung für Fotos , die Sie exportieren wollen , und eine weitere für jene Fotos , die bereits exportiert wurden . So können Sie F-Spot anweisen , diese Markierungen automatisch wie gewünscht zu ersetzen .
+Dieses Werkzeug benötigt eine aktive Auswahl . Bitte wählen Sie ein oder mehrere Fotos aus und versuchen Sie es danach erneut
+Galerie : { 0 } , Fotos : { 1 } , Letzter Betrachter : { 3 }
+Wenn die Galerie aktiv ist , wird oben die Adresse angezeigt , mit der Sie auf einem anderen Rechner auf die freigegebenen Fotos zugreifen können .
+Die Galerie bleibt aktiv , bis Sie sie entweder deaktivieren oder F-Spot schließen . Stellen Sie sicher , dass lokale Betrachter den HTTP-Proxy umgehen .
+Die ausgewählte Datei ist eine ungültige oder nicht unterstützte Datenbank . Ausnahmefehler : » { 0 } « .
+Bilder lokal kopieren oder sie an ihrem Ort belassen . Wenn Sie letzteres wählen , stellen Sie sicher , dass der Speicherort für f-spot erreichbar ist .
+Wählen Sie , was aus der gewählten Datenbank importiert werden soll . » Nur neue Rollen « ist die intelligente Option , die das erneute Importieren von bereits früher importierten Bildern vermeidet . » Eine einzelne Rolle importieren « welche Rolle Sie zusammenführen möchte . » Alles « wird alles importieren und Duplikate erstellen , falls Sie von dieser Datenbank bereits früher importiert haben .
+Wählen Sie den Ordner , in dem sich die zu importierende Datenbank befindet
+Lesezeichen _hinzufügenFileAddSmartSite " verb="AddSmartSite " _label="New S_mart Bookmarkfilename " pixname="@prefix@/ @DATADIRNAME@/ galeon/ new_item_small.xpm
+Der Inhalt des Ordners » %s « wurde automatisch erzeugt . Sie können darin enthaltene Lesezeichen weder manuell hinzufügen noch löschen .
+Wählen Sie die zu öffnende Datei mit Lesezeichen :
+Dieser Assistent hilft Ihnen beim Export einer Datei mit Lesezeichen . Von allen überschriebenen Dateien werden Sicherungskopien angelegt .
+An diesen Speicherorten könnten typischerweise Lesezeichen gefunden werden
+Dies ist der zu verwendende Speicherort . Sie können einen aus der Liste wählen oder selbst einen eingeben .
+Der Export-Vorgang wurde abgeschlossen . Zur Sicherheit wurde unter %s eine Kopie Ihrer alten Lesezeichen-Sammlung abgelegt .
+Beim Exportieren Ihrer Lesezeichen ist ein Fehler aufgetreten .
+Assistent zum Import von Lesezeichen aus Epiphany ( RDF )
+Assistent zum Import von XBEL-Lesezeichen ( Galeon und Konqueror )
+Dieser Assistent hilft Ihnen beim Import einer Datei mit Lesezeichen und der Integration in Ihre aktuelle Lesezeichen-Sammlung .
+Dies sind die Lesezeichen Ihrer aktuellen Lesezeichen-Sammlung .
+Sie können die importierten Lesezeichen mittels Ziehen & Ablegen und Kopieren & Einfügen manuell in Ihre Sammlung integrieren . Alternativ dazu kann Galeon diesen Vorgang auch automatisch abwickeln .
+Dies ist die neu zusammengestellte Lesezeichen-Sammlung .
+Der Import-Vorgang wurde abgeschlossen . Zur Sicherheit wurde eine Kopie Ihrer alten Lesezeichen-Sammlung unter %s abgelegt .
+Beim Öffnen der Datei ist ein Fehler aufgetreten : %s
+%a , %-d.%m.%Y , %-H:%M
+%.1f MB/ s1.0 of 4.2 MB at 42.0 KB/ s1.2 MB at 14.6 KB/ s
+Es konnten keine Anwendungen zum Öffnen der angegebenen Datei gefunden werden .
+Zeile %d , Spalte %d , Datei » %s « in » %s «
+Beim Drucken ist ein Problem aufgetreten . Es konnten keine Drucker gefunden werden
+Die Adresse der Startseite . Diese wird beim Programmstart und beim Öffnen eines neuen Fensters/ Reiters angezeigt . Einstellungen hierzu finden sich unter / apps/ galeon/ Browsing/ General/ startpage_type und / apps/ galeon/ Browsing/ General/ newpage_type
+Soll die laufende Sitzung beim Beenden des Programms automatisch gespeichert werden ?
+Die beim Öffnen eines neuen Fensters/ Reiters anzuzeigende Seite . Zulässige Werte : 0 ( Startseite ) , 1 ( letzte Seite ) sowie 2 ( leere Seite ) .
+Falls dieser Schlüssel wahr ist , werden Sie immer um Bestätigung gebeten , wenn Sie ein Fenster mit ausgefüllten Formularen schließen .
+Falls dieser Schlüssel wahr ist , wird Galeon im Offline-Modus ausgeführt . Seiten werden dann vom Browser-Cache und nicht per Netzwerk gelesen .
+Eine Chronik-Dropdown-Liste mit intelligenten Lesezeichen kombinieren .
+Ist dieser Wert WAHR , werden in den intelligenten Lesezeichen keine Pfeile angezeigt
+Soll beim Suchen im Dokument die Groß-/ Kleinschreibung berücksichtigt werden ?
+Beim Durchsuchen einer Seite nur nach Übereinstimmung von ganzen Wörter suchen ?
+Soll beim Durchsuchen eines Dokumentes auch innerhalb von Frames gesucht werden ?
+Soll beim Durchsuchen von Dokumenten die Suche am Anfang fortgesetzt werden , sobald das Seitenende erreicht wurde ?
+Aufgerufenen Seiten das Öffnen neuer Fenster mittels JavaScript erlauben ( falls JavaScript verarbeitet wird ) ?
+Das außer Kraft setzen des Kontextmenüs über JavaScript erlauben . Falls diese Option gesetzt ist , kann JavaScript das Kontextmenü für eine Seite abschalten oder ersetzen .
+Aufgerufenen Seiten das Ändern der Nachricht in der Statusleiste mittels JavaScript erlauben ( falls JavaScript verarbeitet wird ) ?
+Wenn dieser Wert wahr ist , werden Titel bei den Auswahlmöglichkeiten zur automatischen Vervollständigung mit angezeigt .
+Sollen die Auswahlmöglichkeiten zur automatischen Vervollständigung bei der Bearbeitung von Adresseinträgen automatisch angezeigt werden ?
+Einträge in der Adressleiste automatisch aus der Chronik vervollständigen ?
+Eigene anstelle der vom Dokument verlangten Farben verwenden ?
+Eigene anstelle der vom Dokument verlangten Schriften verwenden ?
+Die voreingestellte Hintergrundfarbe im Hexadezimal-Format #RRGGBB .
+Die voreingestellte Textfarbe im Hexadezimal-Format #RRGGBB
+Voreingestellte Farbe für bereits besuchte Links im Hexadezimal-Format #RRGGBB .
+Voreingestellte Farbe für noch nicht besuchte Links im Hexadezimal-Format #RRGGBB .
+Popup-Fenster in Reitern anstelle von neuen Fenstern öffnen
+Sollen neue Reiter automatisch im Vordergrund geöffnet werden ?
+Die Textfarbe ( im Hexadezimal-Format #RRGGBB ) neuer Reiter während des Ladevorgangs .
+Die Textfarbe ( im Hexadezimal-Format #RRGGBB ) neuer Reiter , die fertig geladen aber noch nicht betrachtet wurden .
+Soll immer eine Leiste mit Reitern angezeigt werden , auch wenn nur einer geöffnet ist ?
+Welche Fensterseite soll für die Reiterleiste verwendet werden ? Zulässige Werte : 0 ( links ) , 1 ( rechts ) , 2 ( oben ) sowie 3 ( unten ) .
+Favicons auf Reitern anzeiogen . Zulässige Werte : 0 ( nicht anzeigen ) , 1 ( Favicon oder Vorgabe-Symbol anzeigen ) sowie 2 ( ausschließlich Favicons anzeigen ) .
+Verhalten beim Laden von Bildern . Zulässige Werte : 0 ( immer laden ) , 1 ( nur vom aktuellen Server laden ) , 2 ( nie laden ) .
+Welche Animationsart soll für Bilder verwendet werden ? Zulässige Werte : 0 ( fortlaufend ) , 1 ( einmal ) sowie 2 ( nie )
+Der voreingestellte Schrifttyp . Zulässige Werte : 0 ( Antiqua ) und 1 ( Grotesk ) .
+Optional können die Anzeigeeinstellungen bezüglich der Werkzeugleistenobjekte von den Desktop-Vorgaben abweichen . Zulässige Werte : » system « ( Desktop-Vorgaben verwenden ) , » icons_only « ( ausschließlich Symbole anzeigen « , » text_only « ( ausschließlich Text anzeigen ) , » text_below « ( Text unter Symbolen anzeigen ) sowie » text_beside « ( Text neben Symbolen anzeigen ) .
+Befehl zum Herunterladen mit einer externen Anwendung . %s wird durch die zu herunterladende Adresse ersetzt .
+Soll die externe Anwendung zum Herunterladen in einem Terminal ausgeführt werden ?
+Den Dialog auch nach Fertigstellen des Downloads offen halten
+Den Dialog auch nach Fertigstellen aller Downloads offen halten .
+Soll beim Herunterladen nach einem Zielordner gefragt werden ?
+Einstellungen nach GNOME 2.2 migriert
+Zeigt an , ob die Einstellungen in GNOME 2.2-Einstellungen migriert wurden .
+Verhalten beim Vergleich zwischen Internet und Cache . Zulässige Werte : 0 ( einmal pro Sitzung ) , 1 ( jedes Mal ) , 2 ( nie ) sowie 3 ( automatisch ) .
+Verhalten beim Akzeptieren von Cookies . Zulässige Werte : 0 ( immer akzeptieren ) , 1 ( nur vom aktuellen Server akzeptieren ) sowie 2 ( nie akzeptieren )
+Die für Cookies zu setzende Lebenszeit . Mögliche Angaben sind » 0 « ( Einstellung des Cookies ) , » 1 « ( bei jedem Cookie nachfragen ) , » 2 « ( alle Cookies gelten nur für die Sitzung ) , » 3 « ( höchste Lebenszeit erzwingen , Vorgabe ist 90 Tage )
+Nicht nach der Lebenszeit von Sitzungs-Cookies fragen , wenn die Lebenszeitregel besagt , dass nachgefragt werden soll .
+HTTP-Version . Zulässige Werte : 0 ( 1.0 ) und 1 ( 1.1 ) .
+Die voreingestellte Wiederherstellungsmethode für Sitzungen . 0 öffnet Fenster erneut , 1 fügt die Seiten zu Ihren Lesezeichen hinzu , 2 verwirft die Sitzung .
+Was soll passieren , wenn die mittlere Maustaste gedrückt wird und sich dabei nicht über einem Link befindet . Zulässige Werte : 0 ( Lesezeichen-Menü ) , 1 ( Adresse einfügen ) , 2 ( gehe zurück ) , 3 ( Maus-Gesten ) , 4 ( automatisch rollen ) 5 ( manuell rollen , wie GGV ) sowie 6 ( Im aktuellen Reiter einfügen )
+Was soll beim Drücken Maustaste der rechten Maustaste geschehen ? Zulässige Werte : 0 ( sofort das Kontext-Menü anzeigen ) und 1 ( Maus-Gesten interpretieren , erst beim Loslassen des Knopfes das Kontext-Menü anzeigen ) .
+Aktion beim Betätigen des Mausrads bei keiner gedrückten Taste
+Beim Betätigen des Mausrads bei keiner gedrückten Taste auszuführende Aktion . Zulässige Werte : 0 ( einen Schritt weiterrollen ) , 1 ( eine Seite weiterrollen ) , 2 ( in der Chronik wandern ) sowie 3 ( Ansicht verändern ) .
+Soll bei keinem gedrücktem Umschalter die voreingestellte Schrittweite verwendet werden ?
+Schrittweite für das Weiterrollen ohne zusätzlich gedrückte Taste in Zeilen
+Nach wie vielen Tagen soll ein Eintrag aus der Chronik gelöscht werden ?
+Sollen ausschließlich Chronik-Einträge eines bestimmten Zeitraums angezeigt werden ? Zulässige Werte : 0 ( alle ) , 1 ( heute ) , 2 ( gestern ) , 3 ( die letzten beiden Tage ) , 4 ( diese Woche ) sowie 5 ( dieser Monat ) .
+Titel einer Seite beim Drucken in der Kopfzeile ausgeben
+Adresse einer Seite beim Drucken in der Kopfzeile ausgeben
+Seitennummern ( x von gesamt ) beim Drucken in der Fußzeile ausgeben
+Legt fest , wie Seiten gedruckt werden sollen , die Frames enthalten .
+Was soll in der JavaScript-Konsole angezeigt werden ?
+Soll die Lesezeichen-Editoransicht zweigeteilt werden ?
+Soll im Lesezeichen-Editor das Bearbeiten-Feld angezeigt werden ?
+Die maximale Anzahl der gleichzeitig zu öffnenden Lesezeichen , bevor um Bestätigung gebeten wird .
+Layout-Benutzeroberflächendatei » %s « konnte nicht geladen werden
+Fehler beim Laden eines Layouts : Es ist nicht bekannt , wie ein Dock-Objekt namens » %s « angelegt werden soll
+Legen Sie ein Objekt auf einer Werkzeugleiste ab , um es hinzuzufügen . Ziehen Sie es von einer Werkzeugleiste und legen Sie es in der Objekttabelle ab , um es zu entfernen .
+Diese Datei mit » %s « öffnen ?
+Die Seite %s möchte ein vorhandenes Cookie verändern .
+Die Seite %s möchte ein Cookie setzen .
+Die Seite %s möchte ein zweites Cookie setzen .
+Galeon kann mit diesem Protokoll nicht umgehen und in GNOME wurde kein Handler festgelegt
+Das » %s«-Protokoll wird nicht unterstützt .
+Unterstützte Protokolle sind » http « , » https « , » ftp « , » file « , » smb « und » sftp«./ home/ user/ test.html
+Die Datei » %s « wurde nicht gefunden .
+Überprüfen Sie die Position der Datei und versuchen Sie es erneut.www.example.com
+» %s « konnte nicht gefunden werden .
+Überprüfen Sie , dass Sie mit dem Internet verbunden sind und dass die Adresse korrekt ist .
+Falls diese Seite existierte , könnten Sie eine archivierte Version finden :
+Eine Verbindung zu » %s « konnte nicht aufgebaut werden .
+Der Server könnte ausgelastet sein oder Sie könnten ein Netzwerkverbindungsproblem haben . Versuchen Sie es später noch einmal .
+Es könnte eine alte Version der Seite , die Sie wollten , geben :
+Die Verbindung brach ab , da der Server zu lange zum Reagieren brauchte .
+Die von Ihnen eingegebene Adresse ist nicht gültig .
+» %s « wurde zu oft umgeleitet .
+Die Umleitung wurde wegen Sicherheitsbedenken gestoppt .
+» %s « erfordert eine verschlüsselte Verbindung .
+Das Dokument konnte nicht geladen werden , da keine Unterstützung für Verschlüsselung installiert ist .
+Der Server hat die Verbindung fallengelassen , bevor Daten gelesen werden konnten .
+Das Dokument kann im Offline-Modus nicht geladen werden .
+Dieses Dokument kann im Offline-Modus nicht betrachtet werden . Setzen Sie Galeon auf » online « und versuchen Sie es erneut .
+» %s « hat den Zugriff auf Port » %d « verweigert .
+Überprüfen Sie Ihre Proxy-Server-Einstellungen . Falls die Verbindung dennoch fehlschlägt , könnte es ein Problem mit Ihrem Proxy-Server oder Ihrer Netzwerkverbindung geben.|
+im Google-Zwischenspeicher|
+im Internet-Archiv
+Wählen Sie ein Zertifikat , das %s zur Identifikation angezeigt werden soll .
+Die Seite %s lieferte Sicherheitsinformationen für %s . Möglicherweise hat sich jemand in Ihre Verbindung eingeklinkt , um an Ihre vertraulichen Daten zu gelangen .
+Sie sollten die Sicherheitsinformationen ausschließlich akzeptieren , falls Sie %s und %s vertrauen .
+Es war nicht möglich , » %s « automatisch zu vertrauen . Möglicherweise hat sich jemand in Ihre Verbindung eingeklinkt , um an Ihre vertraulichen Daten zu gelangen .
+Sie sollten ausschließlich mit dieser Seite verbinden , falls Sie sicher sind , mit %s verbunden zu sein .
+Diese Entscheidung für diese Seite _merken
+Die Sicherheitsinformationen für %s sind am %s ausgelaufen .
+Die Sicherheitsinformationen für %s sind bis zum %s ungültig .
+Sie sollten sicherstellen , dass Ihre Systemzeit korrekt ist .
+Die Verbindung mit %s konnte nicht hergestellt werden .
+Die Liste zurückgezogener Zertifikate ( CRL ) von %s muss aufgefrischt werden .
+Vor dem Vertrauen einer Zertifikatverwaltungsstelle ( CA ) sollten Sie sicherstellen , dass das Zertifikat authentisch ist .
+Wählen Sie ein Passwort , um dieses Zertifikat zu schützen .
+Geben Sie das Passwort für dieses Zertifikat ein .
+Liste zurückgezogener Zertifikate ( CRL ) erfolgreich importiert .
+Dieses Zertifikat wurde für folgende Verwendungszwecke verifiziert :
+Dieses Zertifikat konnte nicht verifiziert werden , da es zurückgezogen wurde .
+Dieses Zertifikat konnte nicht verifiziert werden , da es ausgelaufen ist .
+Dieses Zertifikat konnte nicht verifiziert werden , da es nicht als vertrauenswürdig eingestuft wurde .
+Dieses Zertifikat konnte nicht verifiziert werden , da der Aussteller nicht als vertrauenswürdig eingestuft wurde .
+Dieses Zertifikat konnte nicht verifiziert werden , da der Aussteller unbekannt ist .
+Dieses Zertifikat konnte nicht verifiziert werden , da das CA-Zertifikat ungültig ist .
+Dieses Zertifikat konnte aus unbekannten Gründen nicht verifiziert werden .
+Bitte warten Sie , es wird ein neuer privater Schlüssel generiert . Dieser Vorgang kann einige Minuten in Anspruch nehmen .
+Sie können die Sicherheitsstufe einer Seite jederzeit an dem Schlosssymbol in der Statusleiste erkennen .
+Diese Seite wird über ein relativ unsichere Verbindung geladen
+Es ist möglich , dass Daten die Sie auf dieser Seite sehen oder eingeben von Dritten mitgelesen werden .
+Teile dieser Seite werden über ein unsichere Verbindung geladen
+Einige Daten die Sie auf dieser Seite sehen oder eingeben , werden über eine unsichere Verbindung übertragen und können daher von Dritten mitgelesen werden .
+Sollen Daten über eine unsichere Verbindung gesendet werden ?
+Die von Ihnen eingegebenen Daten werden über eine unsichere Verbindung gesendet und können daher von Dritten mitgelesen werden .
+Obwohl diese Seite über eine sichere Verbindung geladen wurde , werden von Ihnen eingegebene Daten über eine unsichere Verbindung gesendet und können daher von Dritten mitgelesen werden .
+Möglicherweise wurde die Website entfernt oder sie wurde umbenannt .
+%d von %d Seiten gedruckt , noch ca. %d Sekunden
+http:/ /www.google.de/ search ? ie=UTF-8q=
+In neuem _Reiter zum angegebenen Ort gehen
+In neuem _Fenster zum angegebenen Ort gehen
+Diese Seite anzeigen , ohne einen Stil zu verwenden
+Keinen Benutzerstil auf die Seite anwenden
+Den Benutzerstil von » %s « auf die Seite anwenden
+Diese Seite unter Verwendung des Stils » %s « anzeigen
+Diese Seite unter Verwendung der Zeichenkodierung » %s « anzeigen
+Einen neuen Reiter in einem bestehenden Galeon-Fenster öffnen
+Ein neues Fenster in einer bestehenden Galeon-Instanz öffnen
+Fenster nicht in den Vordergrund bringen , wenn eine Seite in einem bestehenden Galeon-Prozess geöffnet wird
+Es wurde versucht , die Adresse in einem bestehenden Galeon-Fenster zu laden .
+Keine Fenster öffnen , stattdessen als Server für schnellen Start von neuen Galeon-Instanzen fungieren
+Ein Lesezeichen hinzufügen ( kein Fenster öffnen )
+Das erste Fenster mit der angegebenen Geometrie öffnen . Weitere Informationen zum GEOMETRIE-Format finden Sie in der man-Seite X(1 ) .
+Wie --close , beendet aber auch den Server-Modus
+Der Start scheiterte wegen des folgenden Fehlers : %s
+Die Adresse der momentan geöffneten Seite in die Zwischenablage kopieren
+Diesen Frame in einem neuen Reiter in diesem Fenster öffnen
+Diesen Link in einem neuen Reiter in diesem Fenster öffnen
+Dieses Bild in einem neuen Reiter in diesem Fenster öffnen
+Bilder vom Rechner , auf dem sich dieses Bild befindet nicht übertragen
+Bilder vom Rechner übertragen , auf dem sich dieses Bild befindet
+Das Programm zum Konfigurieren des Netzwerk-Proxies konnte nicht gestartet werden .
+» %s « zur Seitenleiste hinzufügen ?
+Die Quellseite der neuen Seitenleiste ist %s .
+Stellen Sie sicher , dass die Umgebungsvariable %s auf den richtigen Mozilla-Installationsordner gesetzt wurde .
+Es wurde eine Datei mit Lesezeichen gefunden , die möglicherweise durch Galeon 1 erstellt wurde . In Galeon 1 wurden Zeichen , die nicht dem ASCII-Standard entsprechen , fehlerhaft gespeichert . Soll versucht werden , die Lesezeichen zu korrigieren ?
+Datenübertragung von %s ( %d KB geladen )
+Datenübertragung von %s ( %d % % vollständig , %d KB von %d KB geladen )
+Die momentan geöffnete Seite unter einem anderen Namen speichern
+Den Inhalt der momentan geöffneten Seite per E-Mail verschicken
+Auf der momentan geöffnete Seite nach einer Zeichenkette suchen
+Die Reiter des momentan geöffneten Fensters als Ordner hinzufügen
+Cookies nur von dem Server akzeptieren , auf dem sich eine Seite befindet
+Diese Seite enthält nicht übertragene Änderungen .
+Geben Sie die Argumente für diese intelligente Seite ein :
+Maximale Anzahl zu öffnender Lesezeichen , ohne dass dieser Dialog angezeigt wird :
+Den momentan geöffneten Reiter in ein anderes Fenster verschieben
+Die Website %s unterstützt für die momentan angezeigte Website Legitimation . Die Identität dieser Website wurde von %s verifiziert , einer Zertifizierungsstelle , der Sie für diesen Verwendungszweck vertrauen .
+Verbindung verschlüsselt : Hochgradige Verschlüsselung ( %s %d Bit )
+Die angezeigte Seite wurde vor der Internet-Übertragung verschlüsselt .
+Die Verschlüsselung macht es nicht legitimierten Personen sehr schwer , Informationen beim Datenaustausch zwischen Computern auszuspähen . Daher ist es sehr unwahrscheinlich , dass jemand bei der Datenübertragung über das Netzwerk diese Seite liest .
+Verbindung verschlüsselt : Schwache Verschlüsselung ( %s %d Bit )
+Die Website %s verwendet für die angezeigte Seite eine schwache Verschlüsselung .
+Die schwache Verschlüsselung erlaubt es nicht legitimierten Personen möglicherweise , diese Informationen auszuspähen .
+Die Website %s unterstützt für die angezeigte Seite keine Verschlüsselung .
+Die angezeigte Website ist nicht verschlüsselt .
+Unverschlüsselte , per Internet übertragene Informationen können bei der Übertragung von dritten ausgespäht werden .
+Galeon ist im Moment online . Klicken Sie , um offline zu arbeiten .
+Galeon ist im Moment offline . Klicken Sie , um online zu arbeiten .
+Ein Popup-Fenster von %s wurde blockiert . Klicken Sie » Popup-Fenster erlauben « an , um Popup-Fenster von dieser Seite zu erlauben .
+Ein Popup-Fenster von %s wurde blockiert . Sie können das Anzeigen von Popup-Fenstern von dieser Seite zukünftig erlauben .
+Janko Kaneti
+UTF-8 ISO-8859-1 ISO-8859-2 ISO-8859-3 ISO-8859-4 ISO-8859-5 ISO-8859-6 ISO-8859-7 ISO-8859-8 ISO-8859-9 ISO-8859-10 ISO-8859-11 ISO-8859-12 ISO-8859-13 ISO-8859-14 ISO-8859-15 KOI8-R KOI8-U KOI8-T CP1255 EUC-JP EUC-KR EUC-TW BIG5 BIG5-HKSCS GBK GB18030 SHIFTJIS JOHAB TIS-620 VISCII TCVN5712-1 GEORGIAN-PS
+_Ordner , in denen sich dieses Lesezeichen befindet :
+Die momentan geöffnete Datei unter einem anderen Namen speichern
+Neue Lesezeichen in diesem Ordner hinzufügen
+Eine Ebene des Lesezeichen-Ordners sortieren ( Ordner zuerst )
+Alle Ebenen des Lesezeichen-Ordners rekursiv sortieren ( Ordner zuerst )
+Hilft Ihnen dabei , Ihre Galeon- und Konqueror-Lesezeichen in Galeon zu importieren
+_ImportierenFileImport " verb= " " _label="Import From XBEL ...
+Aus _XBEL ( Galeon und Konqueror ) importieren FileRevert " verb= " " _label="_Revert
+Aus _Mozilla importieren FileRevert " verb= " " _label="_Revert
+Aus _Netscape importieren FileRevert " verb= " " _label="_Revert
+Unbegrenzt Heute Letzte zwei Tage Letzte drei Tage Woche Monat
+Galeon scheint beim letzten Mal abgestürzt oder abgewürgt worden zu sein .
+Cookie(s ) entfernen und in sie Zukunft von der Ursprungsseite blockieren
+Diese Datei konnte nicht direkt im Browser angezeigt werden . Sie können sie mit einer anderen Anwendung öffnen oder speichern .
+Diese Datei konnte nicht direkt im Browser angezeigt werden . Sie können sie stattdessen speichern .
+Reiterleiste _immer anzeigen , auch wenn nur ein Reiter offen ist
+Ersetzen oder Abschalten des Kontextmenüs e_rlauben
+Cookies am _Sitzungsende löschen
+Das Programm zum Konfigurieren des Netzwerk-Proxies konnte nicht gefunden werden .
+Sie können die Proxy-Einstellungen im globalen Einstellungsdialog » Netzwerk-Proxy « festlegen .
+Größe : PDF document " or " application/ pdf
+Sie besitzen nicht die erforderlichen Zugriffsrechte zum Erstellen von Dateien in %s .
+Sie besitzen nicht die erforderlichen Zugriffsrechte zum Überschreiben von %s .
+Die Datei %s existiert bereits . Soll sie ersetzt werden ?
+gbrainy
+Ändern der für Gedächtnisaufgaben zur Verfügung stehenden Zeit
+Um die Anzahl an Sekunden zu verändern , die zum Merken einer Gedächtnisaufgabe zur Verfügung stehen , gehen Sie wie folgt vor :
+@@image : 'figures/ all-games.png ' ; md5=b9b2464dfdb280d8de79b921e03a4705
+@@image : 'figures/ logic-games.png ' ; md5=2679be12956397b6337da869bdbee82d
+@@image : 'figures/ math-games.png ' ; md5=208d189bcd6246b40e3dff184a5d5698
+@@image : 'figures/ memory-games.png ' ; md5=2747c731e0a757a98a91c8e141748c75
+@@image : 'figures/ verbal-games.png ' ; md5=6559e8d03907794b9983c5501df1aed2
+Um ein neues Spiel zu starten , führen Sie folgende Schritte durch :
+Klicken Sie auf einen der Knöpfe in der Werkzeugleiste .
+Startet ein neues Spiel mit allen verfügbaren Spielarten .
+Startet ein neues Spiel , das nur Logikrätsel beinhaltet .
+Startet ein neues Spiel , in dem nur Übungen zum Rechnen enthalten sind .
+Startet ein neues Spiel , das nur aus Gedächtnisübungen besteht .
+Startet ein neues Spiel , das nur verbale Analogien enthält .
+Lesen Sie sich die Anleitung immer genau durch , wenn Sie ein Spiel spielen !
+Die Spielsitzung beginnt mit der Anzeige der Problemstellung und der Frage nach der Antwort . Am unteren Rand des Fensters finden Sie die Hauptkontrollelemente zur Steuerung des Spiels .
+@@image : 'figures/ gbrainy.png ' ; md5=d3b523ab1c8d00d00560d3f036d681bb
+Es beinhaltet unterschiedliche Spielarten wie Logikrätsel , Kopfrechenaufgaben , Gedächtnisübungen und verbale Analogien , die dafür gedacht sind , verschiedene kognitive Fähigkeiten zu prüfen .
+Wenn Sie eine Aufgabe falsch beantworten , so erhalten Sie keine Punkte dafür .
+Wenn Sie eine Aufgabe korrekt beantworten , erhalten Sie Punkte , die sowohl von der Zeit abhängig sind , die für die Lösung des Problems benötigt wurde als auch davon , ob ein Hinweis während des Spiels zu Rate gezogen wurde .
+Folgende Tabelle fasst die unterschiedlichen Spielzeiten ( in Sekunden ) in Abhängigkeit vom Schwierigkeitsgrad zusammen .
+Basierend auf der für den gewählten Schwierigkeitsgrad erwarteten Zeit und der für die Übung benötigten Zeit , wird folgende Logik verwendet :
+Wenn Sie schneller als die erwartete Zeit sind , erreichen Sie 10 Punkte .
+Wenn Sie langsamer als die erwartete Zeit sind , erreichen Sie 8 Punkte .
+Wenn Sie mehr als doppelt so lange brauchen wie die erwartete Zeit , erreichen Sie 7 Punkte .
+Wenn Sie mehr als dreimal so lange brauchen wie die erwartete Zeit , erreichen Sie 6 Punkte .
+Wenn Sie einen Hinweis verwenden , erhalten Sie nur 80 % des ursprünglichen Ergebnisses .
+Das bedeutet , dass man bei mittlerem Schwierigkeitsgrad in mindestens 20 Spielen jeder Spielart 10 Punkte erreichen muss , um ein Endergebnis von 100 Punkten zu erhalten .
+Dies mag sich anspruchsvoll anhören , erlaubt Spielern allerdings , Ergebnisse aus verschiedenen Sitzungen in der Spielchronik zu vergleichen und den Fortschritt des Spielers in allen absolvierten Aufgaben besser mitzuverfolgen .
+Verwenden Sie die verschiedenen Ankreuzfelder unterhalb der Grafik , um die Ergebnisse auszuwählen , die in der Grafik angezeigt werden sollen .
+Um die Anzahl an gespeicherten Spielsitzungen zu ändern oder auch wie viele Spiele in der Chronik gespeichert werden , gehen Sie wie folgt vor :
+Verwenden Sie das erste Einstellfeld , um die Anzahl an Spielsitzungen zu ändern , die gespeichert werden müssen , so dass die Ergebnisse erstmals in der Verlaufsgrafik angezeigt werden .
+Das zweite Einstellfeld dient zur Änderung der Anzahl an Spielsitzungen , die in der Verlaufsgrafik angezeigt werden .
+Um den Schwierigkeitsgrad eines Spiels zu ändern , gehen Sie wie folgt vor :
+Verwenden Sie die Hinweise , um ein Rätsel zu lösen .
+Bei manchen Spielen werden einfache Hinweise angeboten , die beim Lösen des Problems hilfreich sein können .
+Diese Funktion steht bei einigen Spielen nicht zur Verfügung .
+Um ein Spiel anzuhalten , so dass Sie es zu einem späteren Zeitpunkt wieder fortsetzen können , führen Sie einen der folgenden Schritte durch :
+Um ein Spiel fortzusetzen , nachdem es pausiert wurde , führen Sie einen der folgenden Schritte durch :
+Um ein Spiel zu beenden , führen Sie folgende Schritte durch :
+Diese Arbeit ist lizenziert unter einer Creative Commons Attribution-Share Alike 3.0 Unported License .
+Das Werk bzw. den Inhalt zu vervielfältigen , zu verbreiten und öffentlich zugänglich zu machen .
+Abwandlungen und Bearbeitungen des Werkes bzw. Inhaltes anzufertigen .
+Sie dürfen das Werk nur unter gleichen Bedingungen weitergeben , wie Sie vom Autor oder Lizenzgeber festgelegt wurden ( aber nicht so , dass es wie Ihr Werk aussieht ) .
+Wenn Sie das lizenzierte Werk bzw. den lizenzierten Inhalt bearbeiten , abwandeln oder in anderer Weise erkennbar als Grundlage für eigenes Schaffen verwenden , dürfen Sie die daraufhin neu entstandenen Werke bzw. Inhalte nur unter Verwendung von Lizenzbedingungen weitergeben , die mit denen dieses Lizenzvertrages identisch , vergleichbar oder kompatibel sind .
+Aufgaben , die Ihr Schlussfolgerungs- und Denkvermögen herausfordern . Diese Rätsel basieren auf Sequenzen von Elementen , visuellen und räumlichen Schlussfolgerungen oder Zusammenhängen zwischen Elementen .
+Aufgaben , die auf arithmetischen Operationen beruhen , um Ihre Kopfrechenfähigkeiten zu verbessern . Der Spieler hat bei diesen Übungen Multiplikation , Division , Addition und Subtraktion zu kombinieren und auf unterschiedliche Weise zu verwenden .
+Aufgaben , die Ihr Kurzzeitgedächtnis auf die Probe stellen . Bei diesen Übungen handelt es sich um Sammlungen von Objekten , die sich der Spieler merken soll . Manchmal sind es Zusammenhänge zwischen Elementen , Wörter , Zahlen oder Farben .
+Spiele , die Ihr verbales Geschick fordern . Diese Aufgaben fordern den Spieler auf , Ursachen und Auswirkungen herauszufinden , Synonyme oder Gegenteile zu verwenden und prüfen das Vokabular .
+Um dies zu erreichen , gehen Sie wie folgt vor :
+Jede Stunde bedeutet eine Drehung von 360 Grad .
+Es sind insgesamt [ people ] Personen . [ brothers ] davon haben Brüder , [ sisters ] haben Schwestern und [ both ] haben beides . Wie viele Personen haben weder Brüder noch Schwestern ?
+Sie wird berechnet durch die Gesamtzahl aller Personen minus [ brothers_only ] Personen , die nur Brüder haben , minus [ sisters_only ] , die nur Schwestern haben , und minus [ both ] Personen , die Schwestern und Brüder haben .
+Johanns Sohn ist heute halb so alt wie Johann minus [ difference ] , das bedeutet ( [ father ] / 2 ) - [ difference ] .
+Jede Stelle hat 10 Möglichkeiten . Die Gesamtanzahl an Möglichkeiten ist 10 hoch [ digits ] .
+Jede Stelle hat 8 Möglichkeiten . Die Gesamtanzahl an Möglichkeiten ist 8 hoch [ digits ] .
+Jedes Spiel ist ein unabhängiges Ereignis mit zwei möglichen Ergebnissen . Die Gesamtanzahl an Möglichkeiten ist 2 hoch [ games ] .
+In jeder Begegnung scheidet ein Spieler aus . Somit lautet das Ergebnis : Gesamtanzahl an Spielern minus 1.
+Zinseszinsen werden auf das Grundkapital plus sämtliche angesammelten Zinsen bezahlt .
+Welche Zahl plus [ num_a ] ist gleich [ num_b ] ?
+x + [ num_a ] = [ num_b ]
+Es ist das Ergebnis der Operation [ num_b ] - [ num_a ] .
+Welche Zahl minus [ num_a ] ist gleich [ num_b ] ?
+x - [ num_a ] = [ num_b ]
+Es ist das Ergebnis der Operation [ num_a ] + [ num_b ] .
+Welche Zahl multipliziert mit [ num_a ] ist gleich [ num_b ] ?
+x * [ num_a ] = [ num_b ]
+Es ist das Ergebnis der Operation [ num_b ] / [ num_a ] .
+Welche Zahl dividiert durch [ num_a ] ist gleich [ num_b ] ?
+x / [ num_a ] = [ num_b ]
+Es ist das Ergebnis der Operation [ num_a ] * [ num_b ] .
+Schachtel , " for example instead of " .
+Wie viele Schachteln mit einer Größe von 1 x 1 x 0,5 passen in einen Behälter der Größe 6 x 5 x [ z ] ?
+Es passen 6 * 5 * [ z ] * 2 Schachteln hinein .
+[ year_start ] ist ein palindromisches Jahr , so wie es [ year_end ] ist , mit einem Abstand von 11 Jahren . Wie lauten die nächsten zwei palindromischen Jahre nach [ year_end ] mit demselben Abstand ? Antworten Sie mit zwei Zahlen ( z.B. : [ year_start ] und [ year_end ] ) .
+Eine palindromische Zahl bleibt gleich , wenn man die Reihenfolge der Ziffern umkehrt ( z.B. 2112 ) .
+[ rslt_a ] und [ rslt_b ]
+In den Jahren 1000 bis 10000 kommen palindromische vierstellige Jahreszahlen üblicher Weise alle 110 Jahre vor , außer am Ende eines jeden Jahrtausends , wo der Abstand zum nächsten 11 Jahre beträgt .
+Wo muss man in der Dartscheibe unten mit den Pfeilen treffen , um 120 Punkte in 5 Würfen zu erhalten ? Antworten Sie mit einer Liste an Zahlen ( z.B. 4 , 5 , 6 , 3 , 2 )
+Nur drei der vier Zahlen in der Dartscheibe werden verwendet , um 120 Punkte hinzuzufügen .
+Jede Person hat zwei Beine und jedes Pferd vier ( 2 * [ men ] + [ horses ] * 4 ) . Jede Person und jedes Pferd haben auch zwei Augen ( 2 * [ men ] + 2 * [ horses ] ) .
+Wieviel Gewicht ist in dem mit einem Fragezeichen markierten Punkt erforderlich , um den Hebelarm auszubalancieren ?
+Berücksichtigen Sie den Archimedes zugeschriebenen Satz : » Gib mir einen Punkt , auf dem ich stehen kann , und ich werde die Welt aus den Angeln heben « .
+Ein Hebel ist im Gleichgewicht , wenn sich darauf platzierte Objekte in Entfernungen umgekehrt proportional zu deren Gewichten befinden .
+Welche zwei Zahlen aus der Liste unten sind beide Vielfache von [ num_x ] und [ num_y ] ? [ option_answers ]
+Ein Vielfaches ist eine Zahl , welche durch die andere Zahl ohne Rest geteilt werden kann . Zum Beispiel : 10 , 15 und 25 sind Vielfache von 5.
+[ option_prefix ] [ option_a ] und [ option_c ]
+[ option_prefix ] [ option_a ] und [ option_b ]
+[ option_prefix ] [ option_b ] und [ option_c ]
+[ option_prefix ] [ option_c ] und [ option_d ]
+[ option_a ] und [ option_b ]
+[ option_a ] und [ option_b ] sind beide Vielfache von [ num_x ] und [ num_y ] .
+In einer kleinen Stadt besitzen [ all_cars ] % der Einwohner ein Auto , wobei [ males_cars ] % ein Auto haben und männlich sind . Wie viel Prozent der Bevölkerung sind Frauen und besitzen ein Auto ? [ option_answers ]
+[ option_prefix ] [ option_a ] %
+[ option_prefix ] [ option_b ] %
+[ option_prefix ] [ option_c ] %
+[ option_prefix ] [ option_d ] %
+[ females_cars ] % ( [ all_cars ] - [ males_cars ] ) aller Einwohner sind Frauen und besitzen ein Auto .
+Wenn p & lt ; x & lt ; q und r & lt ; y & lt ; s und Sie wissen , dass x & lt ; y wahr ist , welche der folgenden Möglichkeiten ist richtig ? [ option_answers ]
+Wenn x & lt ; y , dann p & lt ; x & lt ; y & lt ; s also s & gt ; p ist wahr .
+Wenn p & lt ; x & lt ; q und r & lt ; y & lt ; s und Sie wissen , dass x & gt ; y wahr ist , welche der folgenden Möglichkeiten ist richtig ? [ option_answers ]
+Wenn x & gt ; y , dann r & lt ; y & lt ; x & lt ; q , also r & lt ; q ist wahr .
+Es sind zwei ganze Zahlen x und y gegeben , wobei x gerade und y ungerade ist . Welcher der folgenden Ausdrücke ergibt immer ein ungerades Ergebnis ? [ option_answers ]
+[ option_prefix ] x * y * 2
+[ option_prefix ] ( x - y ) * 2
+Die Multiplikation zweier gerader Zahlen ergibt immer eine gerade Zahl , somit ist x multipliziert mit 2 gerade . Die Addition einer ungeraden Zahl ( y ) zu dieser geraden Zahl führt immer zu einer ungeraden Zahl .
+[ option_prefix ] [ answer_a ]
+[ option_prefix ] [ answer_b ]
+[ option_prefix ] [ answer_c ]
+[ option_prefix ] [ answer_d ]
+Der schwerere Lastwagen wiegt [ heavier ] und der leichtere [ lighter ] .
+Die Schwägerin von Johanns Vaters Schwester ist auch ? Nehmen Sie nicht an , dass Johann Verwandte hat , die nicht erwähnt worden sind . [ option_answers ]
+[ option_prefix ] Ist nicht verwandtJohn's father's sister's sister-in-law is also ?
+Die Schwägerin der Schwester ist die Gattin von Johanns Vater und diese ist Johanns Mutter .
+Der Schwager von Johanns Mutters Bruder ist auch ? Nehmen Sie nicht an , dass Johann Verwandte hat , die nicht erwähnt worden sind . [ option_answers ]
+[ option_prefix ] Sein VaterJohn's mother's brother's brother-in-law is also ?
+Der Schwager des Bruders ist der Gatte von Johanns Mutter und dieser ist Johanns Vater .
+Der Durchschnitt dreier Zahlen ist [ three ] . Der Durchschnitt von zwei dieser Zahlen ist [ two ] . Wie lautet die dritte Zahl ? [ option_answers ]
+Es ist das Ergebnis der Operation : [ three ] * 3 ) - ( [ two ] * 2 ) .
+gbrainy ist ein Spiel , um das Gedächtnis sowie rechnerische und logische Fähigkeiten mit einer Vielzahl an Übungen und unterschiedlichen Schwierigkeitsgraden zu trainieren .
+Für jedes Alter sollte etwas dabei sein : Für Kinder , wo die Eltern deren Fähigkeiten fördern möchten ; Erwachsene , die ihren Kopf in Form halten möchten oder es nur zum Spaß ausprobieren ; ältere Leute , die gerne ein paar Gedächtnisübungen machen möchten usw.
+Spiele , die Ihre logischen , verbalen und Kopfrechenfähigkeiten sowie Ihr Gedächtnis herausfordern
+Welche der folgenden Sportarten gehört nicht zu dieser Gruppe ?
+Denken Sie daran , was in den jeweiligen Spielen verwendet wird .
+Es ist das einzige Spiel ohne Ball .
+Terrier verhält sich zu Hund wie ?
+Hunde und Pferde sind Arten , während Terrier und Ponys Rassen sind .
+Das Wort » Taxidermist « wird verwendet , um eine Person zu beschreiben , die
+Ein schlecht konstruierter Automotor , dem es an Raffinesse fehlt , ist ?
+Welches der folgenden Wörter kommt dem Wort » verurteilen « am nächsten ?
+Einen Künstler , dessen Arbeit maßgeblich zum Stil eines Genres beigetragen hat , nennt man ?
+Welcher der folgenden Sätze definiert am besten » Ostrakismos « ?
+Welches der folgenden Wörter bedeutet Angst vor Menschen ?
+Eine Person , die sich übertrieben mit der eigenen Gesundheit auseinandersetzt , leidet unter ?
+Welches der folgenden Worte gehört nicht zu dieser Gruppe ?
+Es ist das einzige , das kein Holzblasinstrument ist .
+Es ist das einzige , das nichts mit Architektur zu tun hat .
+Es ist die einzige Einheit , die nicht zum metrischen System gehört .
+Es ist das einzige , das keine Frucht ist .
+Es ist das einzige , das kein Reptil ist und auch keinen Schwanz besitzt .
+Es ist das einzige Tier , das kein Fleischfresser ist .
+Welches der folgenden Wörter kommt dem Wort » Hedonismus « am nächsten ?
+Eine philosophische bzw. ethische Strömung , die Lust als höchstes Gut und Bedingung für Glückseligkeit und gutes Leben ansieht .
+Welches der folgenden Wörter kommt dem Wort » Askese « am nächsten ?
+Die Ausübung strenger Selbstdisziplin , um Tugenden zu erlangen oder den Weg zu Höherem zu finden .
+Welches der folgenden Wörter kommt dem Wort » Oxymoron « am nächsten ?
+Eine rhetorische Figur , die aus gegensätzlichen Begriffen gebildet wird .
+Es ist das einzige , das kein Getreide ist .
+Es ist das einzige , das kein Metall ist .
+Es ist das einzige , das keine medizinische Spezialität ist .
+Welches der folgenden Wörter kommt dem Wort » vernachlässigend « am nächsten ?
+Die Nachlässigkeit besteht darin , dass man sich nicht ausreichend um etwas kümmert , wie man es eigentlich erwarten würde .
+Die anderen Wörter haben die Bedeutung , dass etwas selten vorkommt .
+Welches der folgenden Wörter kommt dem Wort » verblüffend « am nächsten ?
+Welches der folgenden Wörter kommt dem Wort » unglücklich « am nächsten ?
+Die anderen Wörter haben eine Bedeutung im Sinne von berühmt .
+Welches der folgenden Wörter kommt dem Wort » spezifisch « am nächsten ?
+Es ist das einzige , das nicht zur Aufbewahrung von Flüssigkeiten verwendet wird .
+Es ist das einzige , das keine Nuss ist .
+Welches der folgenden Wörter kommt dem Wort » Beifall « am nächsten ?
+Welches der folgenden Wörter kommt dem Wort » Kummer « am nächsten ?
+Welches der folgenden Wörter kommt dem Wort » phlegmatisch « am nächsten ?
+Es ist das einzige , das nichts mit Literatur zu tun hat .
+Es ist das einzige , das nichts mit Dreiecken zu tun hat .
+Es ist das einzige , das kein Licht erzeugt .
+Es ist das einzige , das nicht zum Schutz verwendet wird .
+Es ist das einzige , das nichts mit Gesteinen zu tun hat .
+Es ist die einzige oberirdische Frucht .
+Es ist das einzige Musikinstrument , das keine Tasten hat .
+Der Radius eines Kreises entspricht dem halben Durchmesser .
+Ein Stift wird zum Schreiben und eine Gabel zum Essen verwendet .
+Eine Oase ist ein Vegetationsfleck in der Wüste und eine Insel ist eine hinausragende Landmasse , die vollständig von Wasser umgeben ist .
+Eine Schildkröte ist in einem Panzer und ein Brief ist in einem Umschlag .
+Parallelkreis und Längengrad verlaufen von Ost nach West , wohingegen Meridian und Breitengrad von Nord nach Süd verlaufen .
+Beide beziehen sich auf einen Vorgang , der das angesprochene Objekt zerstört .
+Knopf / drücken | Schlüssel ( zum Sperren eines Schlosses )
+Damit beide Objekte funktionieren , muss ein Knopf gedrückt und ein Schlüssel gedreht werden .
+Der Zusammenhang zwischen den beiden Wörtern ist , dass es sich um Synonyme handelt .
+Das erste Wort ist das Gerät und das zweite Wort , was es misst .
+Glas / brechen | PapierTo pull apart or into pieces by force
+Ein Fisch in einem Aquarium lebt in Gefangenschaft .
+Gleis | Gleise | Geleise | Bahn | Schiene | Schienen
+--version\t\t\tVersionsinformation anzeigen und beenden .
+--help\t\t\tDiese Hilfe anzeigen und beenden .
+--gamelist\t\t\tListe verfügbarer Spiele anzeigen .
+--customgame [ spiel1 , spielN]\tLegt eine Liste an Spielen für ein eigenes Spiel fest .
+--norandom \t\t\tDie angegebene Liste mit eigenen Spielen wird nicht zufällig angeordnet .
+--versions \t\t\tAbhängigkeiten und deren Versionen anzeigen .
+Dieses Programm ist freie Software . Sie können es weitergeben und/ oder verändern , solange Sie sich an die Regeln der » GNU General Public License « halten , so wie sie von der Free Software Foundation festgelegt wurden ; entweder in Version 2 der Lizenz oder ( nach Ihrem Ermessen ) in jeder neueren Lizenz .
+Dieses Programm wurde mit dem Ziel veröffentlicht , dass Sie es nützlich finden , jedoch OHNE JEGLICHE GARANTIE , sogar ohne eine implizite Garantie der VERKAUFBARKEIT oder der VERWENDBARKEIT FÜR EINEN SPEZIELLEN ZWECK . Schauen Sie für weitere Informationen bitte in der » GNU General Public License « ( GNU GPL ) nach .
+Zusammen mit diesem Programm sollten Sie außerdem eine Kopie der » GNU General Public License « erhalten haben . Wenn dem nicht so ist , so schreiben Sie bitte an die Free Software Foundation , Inc. , 51 Franklin Street , Fifth Floor , Boston , MA 02110-1301 , USA .
+Ein Spiel , um Spaß zu haben und das Gehirn zu trainieren
+Beim Erstellen der PDF-Datei trat ein Problem auf . Die Datei wurde nicht erstellt .
+Das untere Diagramm zeigt den Verlauf der Ergebnisse des Spielers .
+Es muss mehr als eine Spielsitzung gespeichert sein , um den Verlauf der Ergebnisse zu sehen .
+Sie sind dabei , die Chronik des Spielers zu löschen .
+Wenn Sie fortsetzen , werden Sie die Chronik früherer Spielsitzungen verlieren . Möchten Sie fortfahren ?
+Diese Funktion ermöglicht den Export einer Sammlung an Spielen in eine PDF-Datei . Damit können Sie die Rätsel nach dem Ausdrucken ohne einen Rechner lösen .
+Spiele überspringen , bei denen Farben verwendet werden ( vorgesehen für farbenblinde Benutzer )
+gbrainy immer in Englisch ausführen ( Vorhandene Übersetzungen ignorieren )
+Zeit in Sekunden , um sich die Aufgabe zu merken :
+Minimale Anzahl an absolvierten Aufgaben , um die Spielsitzung zu speichern :
+Maximale Anzahl an gespeicherten Spielen in der Chronik des Spielers :
+Schreiben Sie die gefundene Antwort in das Eingabefeld und drücken Sie danach den » OK«-Knopf .
+Der Übersetzungsanteil von gbrainy ist für Ihre Sprache niedrig .
+Spiele könnten nur teilweise übersetzt sein , so dass es schwieriger ist , diese zu spielen . Wenn Sie es vorziehen in Englisch zu spielen , so gibt es eine Einstellung dazu in den Einstellungen von gbrainy .
+Alle Spiele und Übungen ( Logik , Kopfrechnen , Gedächtnis und verbale Analogien )
+Zusätzliche Erweiterungen sind erforderlich , um diese Operation auszuführen .
+Wählen Sie die Erweiterungen zur Installation aus und klicken Sie auf » Vor «
+Wählen Sie den Ort der Quelle , die Sie registrieren möchten :
+{ 0 } , { 1 } oder { 2 }
+{ 0 } , { 1 } , { 2 } oder { 3 }
+{ 0 } Spiel(e ) vorhanden : { 1 } Logikrätsel , { 2 } Übungen zum Kopfrechnen , { 3 } Gedächtnisübungen , { 4 } verbale Analogien
+Anzahl der Spiele : { 0 } ( Ergebnis : { 1 } )
+{ 0 } - { 1 } - { 2 }
+Lesen Sie die Anleitung aufmerksam und verwenden Sie die Angaben und Hinweise .
+Zur Berechnung des Ergebnisses verwendet gbrainy die Zeit und die Anzahl der Tipps , die während des Spiels nötig waren .
+Bei Logikspielen können Elemente , die unbedeutend erscheinen , sehr wichtig sein .
+Versuchen Sie , das Problem aus verschiedenen Blickwinkeln zu betrachten .
+Schrecken Sie nicht davor zurück , Fehler zu machen , denn sie sind Teil des Lernprozesses .
+Befassen Sie sich mit allen Problemen , auch den schwierigen . Übung macht den Meister .
+Spielen Sie täglich und Sie werden schon bald einen Fortschritt bemerken .
+Unter » Eigenes Spiel erstellen « können Sie sich gewünschte Spiele zusammenstellen .
+Sie können den Schwierigkeitsgrad des Spiels in den Einstellungen festlegen .
+Elemente zu assoziieren ist eine verbreitete Technik um sich Dinge zu merken .
+Elemente in Kategorien einzuteilen ist eine verbreitete Technik , um sich Dinge zu merken .
+Erstellen Sie Akronyme unter Verwendung des ersten Buchstabens jeder Tatsache , die man sich merken soll .
+Das Vergnügen an einem Rätsel ist proportional zur Zeit , die man damit verbringt .
+Versuchen Sie , jedes Problem in einfachere Teilprobleme zu zerlegen .
+Achten Sie auf die Zeitform des Verbs , wenn Sie verbale Analogien beantworten .
+Wenn Sie einkaufen gehen , können Sie versuchen , die Beträge ohne einen Taschenrechner zu berechnen .
+Merken Sie sich die unterhalb gezeigten Objekte in der vorgegebenen Zeit
+Spiel #{0 } . { 1 }
+LösungenPossible correct answers are : sleep , rest .
+{ 0 } Antwort { 1}.option ) answer " for example " a ) " 21 x 60 = 1260
+Unten ist ein Wörterpaar angegeben ; welches Wort ist am nächsten verwandt zu » { 0 } « ?
+Gespielte Zeit : { 0 } ( Durchschnitt pro Spiel { 1 } )
+Details , wie gbrainy Ergebnisse berechnet , finden Sie in der Hilfe .
+Durch Erreichen von { 0 } bei den Logikrätseln haben Sie einen neuen persönlichen Rekord aufgestellt . Ihr alter Rekord war { 1 } .
+Durch Erreichen von { 0 } bei den Kopfrechenaufgaben haben Sie einen neuen persönlichen Rekord aufgestellt . Ihr alter Rekord war { 1 } .
+Durch Erreichen von { 0 } bei den Gedächtnisübungen haben Sie einen neuen persönlichen Rekord aufgestellt . Ihr alter Rekord war { 1 } .
+Durch Erreichen von { 0 } bei den verbalen Analogien haben Sie einen neuen persönlichen Rekord aufgestellt . Ihr alter Rekord war { 1 } .
+Logikrätsel . Herausforderungen Ihres Schlussfolgerungs- und Denkvermögens .
+Kopfrechnen . Rechenoperationen , die Ihre Kopfrechenfähigkeiten prüfen .
+Gedächtnisübungen . Sie stellen Ihr Kurzzeitgedächtnis auf die Probe .
+Verbale Analogien . Fordern Sie Ihr verbales Geschick .
+gbrainy ist ein unterhaltsames Spiel , um das Gehirn zu trainieren . Es enthält :
+Wie lautet das Ergebnis der folgenden Aufgabe ?
+Zahlenangabe : { 0 } . Welche der folgenden Zahlen liegt dem Durchschnitt am nächsten ? Antwort { 1 } , { 2 } , { 3 } oder { 4 } .
+Der Durchschnitt einer Liste an Zahlen ist deren Summe dividiert durch die Anzahl an Zahlen in der Liste .
+Das Ergebnis der Operation lautet { 0 } .
+Welche der folgenden Zahlen liegt näher bei { 0 } ? Antwort { 1 } , { 2 } , { 3 } oder { 4 } .
+Das Ergebnis der Operation { 0 } / { 1 } lautet { 2 }
+In der Liste unten mit einstelligen Zahlen befinden sich 5 aufeinanderfolgende Zahlen , deren Summe { 0 } ergibt . Welche Zahlen sind das ?
+Wie lautet das Ergebnis der angegebenen Operation ? Sie können als Antwort entweder einen Bruch oder eine Zahl angeben .
+Welcher der folgenden Teiler ist der größte , der alle Zahlen teilt ? Antwort { 0 } , { 1 } , { 2 } oder { 3 } .
+Welche Rechenzeichen müssen eingesetzt werden , damit { 0 } , { 1 } und { 2 } die Zahl { 3 } ergeben ? Antworten Sie mit » +-/ * « .
+Welche der unten angegebenen Zahlen ist eine Primzahl ? Eine Primzahl ist eine natürliche Zahl mit genau zwei natürlichen Zahlen als Teiler , nämlich der Zahl 1 und sich selbst . Antwort { 0 } , { 1 } , { 2 } oder { 3 } .
+Wenn die Ziffernsumme einer Zahl durch drei teilbar ist , dann ist auch die Zahl selbst durch drei teilbar . Beispiel : Die Ziffernsumme von 15 ist 1 + 5 = 6 , was durch drei teilbar ist .
+Die Zahl { 0 } ist eine Primzahl .
+Wie viel sind { 0 } % von { 1}/ { 2 } ? Antwort { 3 } , { 4 } , { 5 } oder { 6 } .
+Welche zwei Zahlen ergeben eine Summe von { 0 } und haben ein Verhältnis von { 1 } zu { 2 } ? Antworten Sie mit zwei Zahlen ( z.B. : 1 und 2 ) .
+Die zweite Zahl kann durch Multiplikation der ersten mit { 0 } und Division durch { 1 } berechnet werden .
+Ein Verhältnis gibt die Proportion zwischen zwei Zahlen an . Ein Verhältnis von a:b bedeutet , dass man für jeweils » a « Teile » b « Teile hat .
+haben ein Verhältnis von { 0}:{1 }
+Unten befindet sich eine Liste mit Zahlen . Wie lautet die Summe aller Zahlen , deren Wert größer als { 0 } ist ? Antwort { 1 } , { 2 } , { 3 } oder { 4 } .
+Unten befindet sich eine Liste mit Zahlen . Wie lautet das Produkt aller Zahlen , deren Wert größer als { 0 } ist ? Antwort { 1 } , { 2 } , { 3 } oder { 4 } .
+Welche zwei Zahlen ergeben bei Addition { 0 } und bei Multiplikation { 1 } ? Antworten Sie mit zwei Zahlen ( z.B. : 1 und 2 ) .
+Welche zwei Zahlen ergeben bei Subtraktion { 0 } und bei Multiplikation { 1 } ? Antworten Sie mit zwei Zahlen ( z.B. : 1 und 2 ) .
+Wie viele kleine Würfel sind erforderlich , um den unteren großen Würfel zu bauen ? Antworten Sie mit einer Zahl .
+Ein Würfel ist ein reguläres , festes Objekt mit sechs kongruenten quadratischen Flächen .
+Wie viele Dreiecke werden im rechten Teil des letzten Bildes benötigt , wenn nur Dreiecke verwendet werden , um das Gleichgewicht zu halten ?
+Jeder Kreis ist äquivalent zu zwei Dreiecken und jedes Quadrat zu drei Dreiecken .
+Welche drei Teile können gemeinsam verwendet werden , um ein Dreieck zu formen ? Antworten Sie unter Verwendung der Bezeichnungen der drei Teile , z. B. : { 0}{1}{2 } .
+Wie lautet die maximale Anzahl an Kreisen ( wie der gezeigte ) , die in das untere Quadrat passen ?
+In der oben gezeigten Anordnung werden { 0 } Höheneinheiten pro Reihe gewonnen . Dies schafft Platz für eine zusätzliche Reihe .
+Auf welche Ziffer soll der große Zeiger der Uhr in » { 0 } « zeigen ? Antworten Sie mit Zahlen .
+Beginnen Sie mit der ersten Uhr und addieren Sie { 1 } zur Zahl , die durch Hinzufügen der Werte erhalten wird , die von den Zeigern angezeigt werden . Zum Beispiel sind die Werte der Zeiger für » { 0 } « : { 3 } ( { 2 } + { 1 } ) .
+Die Uhren folgen keiner zeitlichen Logik .
+Die Übung ist leicht , wenn Sie die Kreise systematisch zählen .
+Wie oft tritt die Ziffer » 9 « in allen ganzen Zahlen zwischen 10 und 100 auf ?
+Wie viele zweistellige Zahlen kommen vor , wo die erste Ziffer größer ist als die zweite ( z. B. : 20 und 21 ) ?
+Wie viele zweistellige Zahlen kommen vor , wo die erste Ziffer kleiner ist als die zweite ( z. B. : 12 und 13 ) ?
+Beachten Sie , dass 99 zweimal die Ziffer » 9 « enthält .
+Wie viel Prozent des Bildes gehören zur gefärbten Fläche ?
+Wenn man die Figur unten zu einem Würfel faltet , welche Fläche der Figur liegt der Fläche mit einer { 0 } gegenüber ? Geben Sie die Zahl auf der Fläche als Antwort .
+Wie groß ist die Wahrscheinlichkeit , mit einem gewöhnlichen sechsseitigen Würfel in einem einzigen Wurf eine » 2 « oder » 6 « zu erhalten ? Antworten Sie mit einem Bruch ( z.B. 1/ 2 ) .
+Wie groß ist die Wahrscheinlichkeit , mit einem gewöhnlichen sechsseitigen Würfel in einem einzigen Wurf keine » 5 « zu erhalten ? Antworten Sie mit einem Bruch ( z.B. 1/ 2 ) .
+Zwei gewöhnliche sechsseitige Würfel werden gleichzeitig geworfen . Wie groß ist die Wahrscheinlichkeit , zwei gerade Zahlen zu erhalten ? Antworten Sie mit einem Bruch ( z.B. 1/ 2 ) .
+Es gibt 9 von insgesamt 36 Möglichkeiten , zwei gerade Zahlen zu erhalten .
+Zwei gewöhnliche sechsseitige Würfel werden gleichzeitig geworfen . Wie groß ist die Wahrscheinlichkeit , auf beiden Würfeln eine » 6 « zu erhalten ? Antworten Sie mit einem Bruch ( z.B. 1/ 2 ) .
+Es gibt 1 von insgesamt 6 Möglichkeiten , auf dem ersten Würfel eine » 6 « und das Gleiche auf dem zweiten Würfel zu erhalten .
+In wie viele Bereiche wird der letzte Kreis unterteilt , wenn alle Punkte verbunden werden ?
+Wie lautet das Ergebnis der unteren Gleichung ?
+Die Reihenfolge arithmetischer Operationen ist immer wie folgt : Potenzieren und Wurzel ziehen , Multiplikation und Division , Addition und Subtraktion .
+Welcher Kreis gehört nicht zur Gruppe ? Antwort { 0 } , { 1 } , { 2 } oder { 3 } .
+Alle Kreise bis auf einen teilen sich eine gemeinsame Eigenschaft .
+In allen Kreisen bis auf diesen folgen die farbigen Teile derselben Reihenfolge .
+Es besteht ein Zusammenhang zwischen den Bildern und den Texten . Welcher Text gehört unter das letzte Bild ?
+Jeder einzelne Buchstabe repräsentiert eine Eigenschaft des Bildes .
+» A « bedeutet eine Überlappung der Bilder , » B « Quadrate , » C « Kreise , » D « getrennte Bilder , » E « drei Bilder und » F « zwei Bilder .
+Welches Bild soll das Fragezeichen ersetzen ? Antwort { 0 } , { 1 } oder { 2 } .
+Das dritte Bild jeder Reihe ergibt sich auf irgendeine Art und Weise aus den ersten beiden Bildern .
+Überlagern Sie das erste und das zweite Bild , entfernen Sie die gemeinsamen Linien und drehen Sie das entstandene Bild um 45 Grad .
+Wie lautet die nächste Folge an Objekten in der letzten Spalte ? Antwort { 0 } , { 1 } oder { 2 } .
+Dies ist die einzige Anordnung , die Sie mit den gegebenen Elementen ohne Wiederholung erstellen können .
+Die Zahl befindet sich in Reihe { 0 } , Spalte { 1 } .
+Wie viele vierseitige Figuren können Sie im Bild unten zählen ?
+Eine vierseitige Figur kann sich innerhalb einer anderen Figur befinden .
+Die vierseitigen Figuren entstehen durch Verbindung folgender Punkte : { 0 }
+Eine der Zahlen im Raster muss eingekreist werden . Welche ?
+Alle eingekreisten Zahlen haben eine arithmetische Eigenschaft gemeinsam .
+Jede eingekreiste Zahl kann durch { 0 } geteilt werden .
+Wie lautet das nächste logische Bild in der Folge ? Antwort { 0 } , { 1 } oder { 2 } .
+Von der Figur links oben wandert der linke obere Kreis nach unten , der linke untere Kreis nach oben , der rechte untere diagonal nach links oben und der rechte obere wandert diagonal nach links unten .
+Von der Figur oben links ausgehend , wird die Figur 90 Grad gegen den Uhrzeigersinn gedreht .
+Die Zahlen im Raster folgen einem Muster . Welche Zahl sollte anstelle des Fragezeichens stehen ?
+Die vierte Zeile wird durch Multiplikation der ersten beiden Zeilen und Addition der dritten berechnet .
+Die vierte Spalte wird durch Multiplikation der ersten beiden Spalten und Addition der dritten berechnet .
+Die vierte Zeile wird durch Multiplikation der ersten beiden Zeilen und Subtraktion der dritten berechnet .
+Die vierte Spalte wird durch Multiplikation der ersten beiden Spalten und Subtraktion der dritten berechnet .
+Die vierte Zeile wird durch Addition der ersten beiden Zeilen und Subtraktion der dritten berechnet .
+Die vierte Spalte wird durch Addition der ersten beiden Spalten und Subtraktion der dritten berechnet .
+Alle Teilnehmer einer Party stellen sich gegenseitig vor . Dabei werden insgesamt { 0 } Handschläge gegeben . Wie viele Personen nehmen an der Party teil ?
+Versuchen Sie sich eine Situation vorzustellen , in der Sie eine geringe Anzahl an Personen treffen .
+Sei n die Anzahl aller Personen . Die erste Person schüttelt n-1 Personen die Hand , die zweite n-2 Personen usw. Das Ergebnis entspricht der Summe der ersten n-1 aufeinander folgenden Zahlen : 1+2+3+ ... +(n-1 ) .
+Welche der größeren Figuren kann aus den ersten beiden Figuren erstellt werden ? Antwort { 0 } , { 1 } , { 2 } oder { 3 } .
+Welche der folgenden Figuren hat die größte Fläche ? Antwort { 0 } , { 1 } , { 2 } , oder { 3 } .
+Wenn man die Bögen unten zu Kreisen vervollständigt , welcher Kreis hat dann den größten Durchmesser ? Antwort { 0 } , { 1 } , { 2 } oder { 3 } .
+Je weniger der Bogen gekrümmt ist , desto größer ist der Kreis .
+Wie viele Liniensegmente findet man insgesamt in den unteren Bildern ? Als Liniensegment zählt eine Linie zwischen zwei Punkten ohne kreuzende Linien .
+Die Übung ist leicht , wenn Sie die Linien systematisch zählen .
+Welches Quadrat vervollständigt das Bild unten ? Antwort { 0 } , { 1 } oder { 2 } .
+Das dritte Quadrat jeder Zeile entsteht durch vertikale Spiegelung des ersten Quadrates und Überlagerung mit dem zweiten Quadrat , wobei die gemeinsamen Linien entfernt werden .
+Zwischen den Stücken unten besteht ein gewisser Zusammenhang . Welches Stück fehlt im unteren Kreis ? Antwort { 0 } , { 1 } oder { 2 } .
+Es besteht ein Zusammenhang zwischen gegenüberliegenden Stücken .
+Alle Zahlen eines Stücks ergeben immer { 0 } , wenn man sie zur Zahl im gegenüberliegenden Stück addiert .
+Welche der möglichen Antworten stimmt am meisten mit den vier gezeigten Bildern überein ? Antwort { 0 } , { 1 } , { 2 } oder { 3 } .
+Konzentrieren Sie sich auf die gemeinsamen Elemente , die sich innerhalb der Bilder befinden .
+Im Bild befinden sich gleich viele Elemente wie in den angegebenen Bildern .
+Es ist das Bild mit den meisten gemeinsamen Elementen verglichen mit den anderen .
+Wie lautet die minimale Anzahl an Kreisen , die bewegt werden müssen , um das linke Bild in das rechte zu verwandeln ?
+Bewegen Sie den Kreis von der ersten Zeile zur zweiten und je einen Kreis von der vierten Zeile zur zweiten sowie von der vierten zur neuen fünften Zeile .
+Bewegen Sie die erste Zeile in die siebente Zeile , die zwei Kreise der zweiten Zeile in die dritte sowie den ersten und letzten Kreis der fünften Zeile in die sechste Zeile .
+Der obere Kreis der ersten Figur wandert immer zwei Positionen im Uhrzeigersinn , während sich der linke Kreis eine Position in die Gegenrichtung bewegt .
+Jede Gruppe von { 0 } Zahlen ergibt genau eine Summe von { 1 } .
+Teilen Sie die Folge in Gruppen von drei Zahlen . Jede dritte Zahl wird durch Multiplikation der beiden vorherigen berechnet .
+Teilen Sie die Folge in Gruppen von drei Zahlen . Jede dritte Zahl wird durch Subtraktion der zweiten Zahl von der ersten berechnet .
+Hinter der nächsten Folge steckt eine Logik . Welche Zahl soll das Fragezeichen ersetzen ?
+Es besteht ein Zusammenhang zwischen jeder Zahl der Folge und der vorherigen Zahl .
+Jede Zahl der Folge ist das Ergebnis aus Subtraktion von 1 von der vorherigen Zahl und Multiplikation mit 2.
+Jede Zahl der Folge ist das Ergebnis aus Addition von 1 zur vorherigen Zahl und Multiplikation mit 3.
+Jede Zahl der Folge ist das Ergebnis aus Subtraktion von 2 von der vorherigen Zahl und Multiplikation mit -2 .
+Welches Element gehört nicht zur Gruppe ? Es hat nichts mit Arithmetik der Zahlen zu tun . Antwort { 0 } , { 1 } , { 2 } , { 3 } oder { 4 } .
+Das Kriterium zur Entscheidung , ob die Gleichung zur Gruppe gehört , ist nicht arithmetisch .
+Beachten Sie , dass jede Zahl , die zur Gruppe gehört , zwei Teile hat , zwischen denen ein Zusammenhang besteht .
+In allen anderen Gleichungen kommen die Ziffern der linken Seite auch auf der rechten Seite vor .
+Bei allen anderen Zahlen sind die letzten drei Stellen das Quadrat der ersten beiden Stellen .
+Welches der folgenden Bilder kann nicht gezeichnet werden , ohne eine vorhergehende Linie zu kreuzen oder den Bleistift anzuheben ? Antwort { 0 } , { 1 } , { 2 } , { 3 } oder { 4 } .
+Eine Gruppe Leute sitzt gleichmäßig verteilt um einen runden Tisch . Wie viele Leute sitzen dort , wenn die { 0 } Person der { 1 } direkt gegenüber sitzt ?
+Wenn Sie beide Positionen voneinander subtrahieren , werden Sie herausfinden , wie viele Personen auf einer Hälfte des Tisches sitzen . Eine Verdoppelung dieser Zahl führt zur gesuchten Gesamtanzahl an Leuten .
+Zwei Personen sitzen einander am Tisch gegenüber
+Die Menge an Wasser in einem Kübel nimmt um { 0 } % ab . Welchen Prozentsatz muss die Wassermenge zunehmen , damit der ursprüngliche Stand wieder erreicht wird ?
+Ziel ist es , die gleiche Gesamtmenge zu erreichen .
+Wenn alle Maler auch Künstler sind und einige der Einwohner von Barcelona Künstler sind , welche der folgenden Aussagen ist dann zutreffend ? Antworten Sie mit { 0 } , { 1 } , { 2 } oder { 3 } .
+Falls kein kranker Künstler glücklich ist und einige Künstler glücklich sind , welche der folgenden Aussagen ist dann zutreffend ? Antworten Sie mit { 0 } , { 1 } , { 2 } oder { 3 } .
+Reisende kaufen immer eine Karte . Sie selbst werden nicht verreisen . Welche der folgenden Aussagen ist zutreffend ? Antworten Sie mit { 0 } , { 1 } , { 2 } oder { 3 } .
+Wenn Sie pfeifen , falls Sie glücklich sind und immer lächeln , wenn Sie pfeifen - welche der folgenden Aussagen ist dann zutreffend ? Antworten Sie mit { 0 } , { 1 } , { 2 } oder { 3 } .
+Sie sind nur dann glücklich , wenn Sie pfeifen
+Wenn Ihr Kurs immer ehrlich ist und Ihr Kurs immer der beste Grundsatz ist , welche der folgenden Aussagen ist dann zutreffend ? Antworten Sie mit { 0 } , { 1 } , { 2 } oder { 3 } .
+Falls keine alten Geizkragen heiter sind und einige alte Geizkragen dünn sind , welche der folgenden Aussagen ist dann zutreffend ? Antworten Sie mit { 0 } , { 1 } , { 2 } oder { 3 } .
+Wenn alle Schweine fett sind und nichts , was mit Gerstenwasser gefütter wird fett ist , welche der folgenden Aussagen ist dann zutreffend ? Antworten Sie mit { 0 } , { 1 } , { 2 } oder { 3 } .
+Alle Tiere , die mit Gerstenwasser gefüttert werden , sind keine Schweine
+Falls einige Bilder erste Versuche sind und keine ersten Versuche wirklich gut sind , welche der folgenden Aussagen ist dann zutreffend ? Antworten Sie mit { 0 } , { 1 } , { 2 } oder { 3 } .
+Wenn Sie spazieren gehen waren und sich besser fühlen - welche der folgenden Aussagen ist dann zutreffend ? Antworten Sie mit { 0 } , { 1 } , { 2 } oder { 3 } .
+Um sich besser zu fühlen , muss man einen Spaziergang machen
+Wenn Sie einen Spaziergang machen , werden Sie sich besser fühlen
+Einige , die einen Spaziergang machen , fühlen sich dann besser
+Niemand fühlt sich besser , der nicht einen Spaziergang macht
+Welches der folgenden Bilder gehört nicht zur Gruppe ? Antwort { 0 } , { 1 } , { 2 } , { 3 } , { 4 } oder { 5 } .
+Es ist die einzige Figur , deren Linien alle gleich lang sind .
+Welche Zahl sollte im Raster unten anstelle des Fragezeichens stehen ?
+Die Zahl in der Mitte jeder Zeile entspricht der Hälfte der Summe der anderen Zahlen in dieser Zeile .
+Die Zahl in der Mitte jeder Zeile entspricht der Summe der anderen Zahlen in dieser Zeile .
+Die Zahl in der Mitte jeder Zeile entspricht der doppelten Summe der anderen Zahlen in dieser Zeile .
+Die Buchstaben an den Quadraten folgen einem Muster . Welcher Buchstabe soll das Fragezeichen am letzten Quadrat ersetzen ?
+Jeder Buchstabe ergibt sich aus der Position des vorherigen im Alphabet , zu der man { 0 } hinzuzählt , um an die Position des nächsten Buchstabens zu gelangen .
+Wie viele Quadrate beliebiger Größe können Sie im Bild unten zählen ?
+Ein Quadrat ist ein Rechteck mit vier gleich langen Seiten . Ein Quadrat kann auch aus anderen Quadraten bestehen .
+Es gibt 16 einzelne Quadrate , 9 Quadrate aus 4 einzelnen , 4 Quadrate aus 9 einzelnen und 1 Quadrat , das aus 16 einzelnen besteht .
+Es gibt 9 einzelne Quadrate , 4 Quadrate aus 4 einzelnen und 1 Quadrat , das aus 9 einzelnen besteht .
+Wie lautet die minimale Anzahl an quadratischen Papierblättern beliebiger Größe , um das Bild zu erstellen ? Linien zeigen Grenzen zwischen unterschiedlichen Blättern .
+Ein ganzes quadr . Blatt Papier ( gelb ) , 3/ 4 eines ganzen quadr . Blatts ( blau ) in der rechten unteren Ecke , noch einmal 3/ 4 eines quadr . Blatts ( grün ) in der linken oberen Ecke und 1/ 4 eines quadr . Blatts ( rot ) in der linken oberen Ecke .
+Welches Bild vervollständigt die Menge unten ? Antwort { 0 } , { 1 } oder { 2 } .
+Es handelt sich um das Bild , das alle möglichen Kombinationen mit vier Blöcken vervollständigt , ohne dabei Drehungen in Betracht zu ziehen .
+Die Formel für die Entfernung lautet » Entfernung = Geschwindigkeit x Zeit « .
+Sie können die Antwort durch Multiplikation der Geschwindigkeit des ersten Zuges mit der angegebenen Zeit und Division des Ergebnisses durch die Differenz der Geschwindigkeiten berechnen .
+Sie können die Antwort berechnen , indem Sie die Entfernung durch die Summe beider Geschwindigkeiten dividieren .
+Wie viele Dreiecke beliebiger Größe zählen Sie im unteren Bild ?
+Ein Dreieck kann sich innerhalb eines anderen Dreiecks befinden .
+Die Dreiecke entstehen durch Verbindung folgender Punkte : { 0 }
+Welche Zahl soll das Fragezeichen unten ersetzen ?
+Alle Dreiecke teilen sich eine Eigenschaft und sind unabhängig von den anderen .
+Das Ergebnis der Multiplikation beider Zahlen in jedem Dreieck ist { 0 } .
+Welches dieser Bilder wurde zuvor gezeigt ? Antwort { 0 } , { 1 } , { 2 } oder { 3 } .
+Welche Farbe hatte der Text mit der Bezeichnung » { 0 } « ?
+Wie viele Punkte der Farbe { 0 } waren im vorherigen Bild ? Antworten Sie mit Zahlen .
+In welcher Zelle befindet sich das andere Gesicht wie das unten gezeigte ? Geben Sie die Zellnummer ein .
+Wie viele Tage lang stellten » Shiny Cars « die Produktion ein ?
+In welchem Jahr stellten » Shiny Cars « das letzte Mal die Produktion ein ?
+Der Umsatz von » Shiny Cars « fiel im letzten Dezember um { 0 } % , wobei dies der schlimmste Rückgang seit { 1 } war .
+Um wie viel fiel der Umsatz im letzten Dezember ?
+Der Umsatz von » Shiny Cars « fiel im letzten Dezember um { 0 } % . Seit welchem Jahr ist dies der schlimmste Rückgang ?
+Ungefähr { 0 } % der von » Shiny Cars « weltweit hergestellten Autos werden in Europa verkauft .
+Welcher Prozentsatz aller von » Shiny Cars « weltweit hergestellten Autos wird in Europa verkauft ?
+Ungefähr { 0 } % der Autos von » Shiny Cars « fahren mit Diesel , { 1 } % fahren mit Benzin und der Rest wird elektrisch angetrieben .
+Wie viel Prozent der Autos von » Shiny Cars « fahren mit Diesel ?
+Wie viel Prozent der Autos von » Shiny Cars « fahren mit Benzin ?
+Die unten angezeigte Liste nummeriert die in den vorherigen Bildern gezeigten Elemente bis auf eines . Welches Element fehlt ? Mögliche Antworten sind { 0 } , { 1 } , { 2 } und { 3 } .
+Welches dieser Quadrate wurde zuvor gezeigt ? Antwort { 0 } , { 1 } , { 2 } oder { 3 } .
+Welche der folgenden Graphiken stellt die zuvor angegebenen Anweisungen dar ? Antwort { 0 } , { 1 } , { 2 } oder { 3 } .
+Wie viele ungerade Zahlen waren im vorherigen Bild ? Antworten Sie mit Zahlen .
+Wie viele gerade Zahlen waren im vorherigen Bild ? Antworten Sie mit Zahlen .
+Wie viele mehrstellige Zahlen waren im vorherigen Bild ? Antworten Sie mit Zahlen .
+Es fehlt ein Wort aus der vorherigen Liste . Wie lautet das fehlende Wort ?
+Berechnungen in der Booleschen Algebra sind mit den Operatoren UND , ODER oder Exklusiv-ODER möglich .
+Zeichen können nicht mit der Tastatur umgewandelt werden .
+Währungsinformationen sind nur geschätzt und sollten nicht als Grundlage für finanzielle Entscheidungen dienen .
+Umrechnungen von Längen , Flächen oder Volumina müssen mit der Tastatur ausgeführt werden .
+Umrechnungen von Zeiten müssen mit der Tastatur ausgeführt werden .
+Umrechnungen von Massen müssen mit der Tastatur ausgeführt werden.sort
+Gleichungen werden in standardisierter mathematischer Form eingegeben . Um beispielsweise 7 und 2 zu addieren , geben Sie Folgendes ein :
+Berechnungen werden in mathematischer Reihenfolge ausgeführt . Multiplikation und Division haben den Vorzug vor Addition und Subtraktion . Die folgende Gleichung ergibt 1 ( 3×2 = 6 , 7 6 = 1 ) .
+Verwenden Sie Klammern , um die Reihenfolge der Rechenschritte zu ändern . Die folgende Gleichung ergibt 8 ( 7 3 = 4 , 4×2 = 8 ) .
+Fakultäten werden mit dem Symbol » ! « eingegeben . Um die Fakultät von 6 zu berechnen , geben Sie Folgendes ein :
+Im finanztechnischen Modus sind die folgenden Knöpfe verfügbar .
+Berechnet die Anzahl der Zinsperioden , die benötigt werden , um eine Investition von dem aktuellen Wert auf einen Zielwert bei einem festen Zinssatz pro Zinsperiode anwachsen zu lassen .
+Berechnet nach der geometrisch-degressiven Abschreibungsmethode den zulässigen Abschreibungssatz eines Wirtschaftsguts für einen gegebenen Zeitraum .
+Berechnet den zukünftigen Wert ( Zielwert ) einer Investition bei regelmäßigen Zahlungen und einem periodischen Zinssatz über die Anzahl der Zahlungsperioden der Laufzeit .
+Berechnet den Wiederverkaufspreis eine Produktes basierend auf den Produktkosten und der gewünschten Bruttogewinnspanne .
+Berechnet die Höhe der periodischen Abzahlungsrate für einen Kredit bei Zahlungen am Ende jedes Zahlungszeitraums .
+Berechnet den Barwert ( gegenwärtigen Wert ) einer Investition bei regelmäßigen Zahlungen und einem periodischen Zinssatz über die Anzahl der Zahlungsperioden der Laufzeit .
+Berechnet den periodischen Zinssatz , der benötigt wird , um eine Investition über die Anzahl der Perioden auf einen Zielwert anwachsen zu lassen .
+Berechnet die lineare Abschreibungsrate eines Wirtschaftsguts pro Periode . Die Methode der linearen Abschreibung teilt die Gesamtabschreibung über einen gewissen Zeitraum gleichmäßig auf jede einzelne Periode auf . Die sinnvolle Lebenszeit des Abschreibungsobjekts ist die Anzahl der Perioden , typischerweise Jahre , in denen das Wirtschaftsguts abgeschrieben wird .
+Berechnet den zulässigen Abschreibungssatz eines Wirtschaftsguts für einen gegebenen Zeitraum nach der Sum-of-the-Years-Digits-Methode . Diese Methode erhöht die Abschreibungsrate so , dass in zeitnahen Perioden mehr Abschreibungskosten entstehen als in zeitferneren Perioden . Die sinnvolle Lebenszeit des Abschreibungsobjekts ist die Anzahl der Perioden , typischerweise Jahre , in denen das Wirtschaftsguts abgeschrieben wird .
+Berechnet die Anzahl der Zahlungsperioden , die bei einer normalen Annuität und einem periodischen Zinssatz benötigt werden , um einen zukünftigen Zielwert zu erreichen .
+Finanztechnische Funktionen können nicht mit Hilfe der Tastatur eingegeben werden .
+Alle mathematischen Gleichungen können über die Tastatur eingegeben werden .
+Die folgenden Tastenkombinationen können für Zeichen verwendet werden , die möglicherweise nicht auf Ihrer Tastatur vorhanden sind :
+^
+n
+Berechnet die Anzahl der Perioden , die benötigt werden , um eine Investition von dem aktuellen Wert auf einen Zielwert bei einem festen Zinssatz pro Zinsperiode anwachsen zu lassen .
+Berechnet nach der geometrisch-degressiven Abschreibungsmethode den zulässigen Abschreibungssatz eines Wirtschaftsguts für einen gegebenen Zeitraum .
+Berechnet den zukünftigen Wert ( Zielwert ) einer Investition bei regelmäßigen Zahlungen und einem periodischen Zinssatz über die Anzahl der Zahlungsperioden der Laufzeit .
+Berechnet den Wiederverkaufspreis eine Produktes basierend auf den Produktkosten und der gewünschten Bruttogewinnspanne .
+Berechnet die Höhe der periodischen Abzahlungsrate für einen Kredit bei Zahlungen am Ende jedes Zahlungszeitraums .
+Berechnet den Barwert ( gegenwärtigen Wert ) einer Investition bei regelmäßigen Zahlungen und einem periodischen Zinssatz über die Anzahl der Zahlungsperioden der Laufzeit .
+Berechnet den periodischen Zinssatz , der benötigt wird , um eine Investition über die Anzahl der Perioden auf einen Zielwert anwachsen zu lassen .
+Berechnet die lineare Abschreibungsrate eines Wirtschaftsguts pro Periode . Die Methode der linearen Abschreibung teilt die Gesamtabschreibung über einen gewissen Zeitraum gleichmäßig auf jede einzelne Periode auf . Die sinnvolle Lebenszeit des Abschreibungsobjekts ist die Anzahl der Perioden , typischerweise Jahre , in denen das Wirtschaftsguts abgeschrieben wird .
+Berechnet den zulässigen Abschreibungssatz eines Wirtschaftsguts für einen gegebenen Zeitraum nach der Sum-of-the-Years-Digits-Methode . Diese Methode erhöht die Abschreibungsrate so , dass in zeitnahen Perioden mehr Abschreibungskosten entstehen als in zeitferneren Perioden . Die sinnvolle Lebenszeit ist die Anzahl der Perioden , typischerweise Jahre , in denen das Wirtschaftsgut abgeschrieben wird .
+Berechnet die Anzahl der Zahlungsperioden , die bei einer normalen Annuität und einem periodischen Zinssatz benötigt werden , um einen zukünftigen Zielwert zu erreichen .
+Die Anzahl der Ziffern nach dem numerischen Punkt
+Die Wortgröße bei bitweisen Operationen
+Zeigt an , ob Tausender-Trennzeichen in großen Zahlen angezeigt werden .
+Zeigt an , ob nachfolgende Nullen nach dem Komma in der Anzeige angezeigt werden sollen .
+Währung , in welche die aktuelle Berechnung umgewandelt werden soll
+Einheit , in welche die aktuelle Berechnung umgewandelt werden soll
+Fehler : Die Zahl der Perioden muss positiv sein
+Hilfeoptionen : -v , --version Version der Freigabe anzeigen -h , - ? , --help Hilfeoptionen anzeigen --help-all Alle Hilfeoptionen anzeigen --help-gtk GTK+ Optionen anzeigen
+GTK+ Optionen : --class=KLASSE Die vom Fensterverwalter verwendete Programmklasse --name=NAME Der vom Fensterverwalter verwendete Programmname --screen=ANZEIGE Zu verwendende X-Anzeige --sync X-Aufrufe synchron durchführen --gtk-module=MODULE Zusätzliche GTK+ Module laden --g-fatal-warnings All Warnungen werden zu fatalen
+Anwendungsoptionen : -s , --solve
+Das Argument » --solve « erfordert eine zu lösende Gleichung
+Überlauf . Versuchen Sie eine höhere Wortlänge zu verwenden
+0,1,2,3,4,5,6,7,8,9 , A , B , C , D , E , F
+Gcalctool ist freie Software . Sie können es unter den Bedingungen der GNU General Public License , wie von der Free Software Foundation veröffentlicht , weitergeben und/ oder modifizieren , entweder gemäß Version 2 der Lizenz oder ( nach Ihrer Option ) jeder späteren Version . Die Veröffentlichung von Gcalctool erfolgt in der Hoffnung , dass es Ihnen von Nutzen sein wird , aber OHNE IRGENDEINE GARANTIE , sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK . Details finden Sie in der GNU General Public License . Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben . Falls nicht , schreiben Sie an die Free Software Foundation , Inc. , 51 Franklin St , Fifth Floor , Boston , MA 02110 , USA .
+Boolesches exklusives ODER ist nur für positive Ganzzahlen definiert
+Die Potenz von null ist nicht für einen negativen Exponenten definiert
+Die n-te Quadratwurzel von negativen Zahlen ist nicht für gerade n definiert
+Tangens ist nicht für Winkel definiert , die ein Vielfaches von ( 180° ) ab 2 ( 90° ) sind
+Inverser Sinus ist nicht für Werte außerhalb des Intervalls [ -1 , 1 ] definiert
+Inverser Kosinus ist nicht für Werte außerhalb des Intervalls [ -1 , 1 ] definiert
+Inverser hyperbolischer Kosinus ist nicht für Werte kleiner als eins definiert
+Inverser hyperbolischer Tangens ist nicht für Werte außerhalb des Intervalls [ -1 , 1 ] definiertunit-format
+Liter , Liter , Liter , Liter , l
+Milliliter , Milliliter , Milliliter , Milliliter , ml , cm³
+Kilogramm , Kilogramm , Kilogramm , Kilogramm , kg , kg
+Gramm , Gramm , Gramm , Gramm , g
+Fehler beim Laden des PKCS#11-Moduls : %s
+PKCS#11-Modul konnte nicht initialisiert werden : %s
+PKCS#11-Modul konnte nicht registriert werden : %s
+Die Adresse entspricht nicht dem Schema » PKCS11 « .
+Dieser Schlüssel kann nicht genutzt werden , um die Anfrage zu unterzeichnen .
+Gnupg-Prozess wurde mit Signal beendet : %d
+Ungültige oder defekte Daten konnten nicht verarbeitet werden .
+Es konnte kein Ort für die Hinterlegung des importierten Zertifikats gefunden werden
+Eine Datei dieses Typs kann nicht angezeigt werden .
+Die Informationen in diesem Schlüssel wurde noch nicht verifiziert .
+Importieren nicht möglich , da keine kompatiblen Importierer verfügbar sind
+Um den Import zu starten , geben Sie bitte das Passwort ein .
+Wollen Sie sie durch eine neue Datei ersetzen ?
+Diesen Schlüsselbund beim Anmelden automatisch entsperren .
+Der Inhalt von » %s « ist gesperrt . Um den Inhalt anzeigen zu können , geben Sie das korrekte Passwort ein .
+Der Inhalt ist gesperrt . Um den Inhalt anzeigen zu können , geben Sie das korrekte Passwort ein .
+PKCS#11-Modul konnte nicht eingerichtet werden : %s
+Datei » %s « konnte nicht geöffnet werden : %s
+Bilddatei » %s « enthält keine Daten
+Bild » %s « konnte nicht geladen werden : Grund unbekannt , vermutlich eine defekte Bilddatei
+Animation » %s « konnte nicht geladen werden : Grund unbekannt , vermutlich eine defekte Animationsdatei
+Bildlader-Modul konnte nicht geladen werden : %s : %s
+Bildlader-Modul %s exportiert nicht die richtige Schnittstelle ; vielleicht stammt es aus einer anderen Version von gdk-pixbuf ?
+Bildtyp » %s « wird nicht unterstützt
+Das Format der Bilddatei » %s « konnte nicht erkannt werden
+Bild » %s « konnte nicht geladen werden : %s
