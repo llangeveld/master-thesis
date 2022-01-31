@@ -9,5 +9,3 @@ en2de.translate("Machine learning is great!")  # 'Maschinelles Lernen ist großa
 de2en = torch.load('/data/s3225143/wmt19.de-en.joined-dict.ensemble.tar.gz', checkpoint_file='model1.pt:model2.pt:model3.pt:model4.pt',
                        tokenizer='moses', bpe='fastbpe')
 de2en.translate("Maschinelles Lernen ist großartig!")  # 'Machine learning is great!'
-
-print("Bliepbloep")
