@@ -6,12 +6,18 @@ def load_full_files():
     Loads the six full data files, and returns them as lists.
     :return: The six full data files (as lists)
     """
-    EMEA_en_f = open("/home/lonneke/thesis/data/full_sent_datasets/EMEA/full.en")
-    EMEA_de_f = open("/home/lonneke/thesis/data/full_sent_datasets/EMEA/full.de")
-    GNOME_en_f = open("/home/lonneke/thesis/data/full_sent_datasets/GNOME/full.en")
-    GNOME_de_f = open("/home/lonneke/thesis/data/full_sent_datasets/GNOME/full.de")
-    JRC_en_f = open("/home/lonneke/thesis/data/full_sent_datasets/JRC/full.en")
-    JRC_de_f = open("/home/lonneke/thesis/data/full_sent_datasets/JRC/full.de")
+    EMEA_en_f = open("/home/lonneke/thesis/local/data/"
+                     "full_sent_datasets/EMEA/full.en")
+    EMEA_de_f = open("/home/lonneke/thesis/local/data/"
+                     "full_sent_datasets/EMEA/full.de")
+    GNOME_en_f = open("/home/lonneke/thesis/local/data/"
+                      "full_sent_datasets/GNOME/full.en")
+    GNOME_de_f = open("/home/lonneke/thesis/local/data/"
+                      "full_sent_datasets/GNOME/full.de")
+    JRC_en_f = open("/home/lonneke/thesis/local/data/"
+                    "full_sent_datasets/JRC/full.en")
+    JRC_de_f = open("/home/lonneke/thesis/local/data/"
+                    "full_sent_datasets/JRC/full.de")
 
     EMEA_en = [s for s in EMEA_en_f]
     EMEA_de = [s for s in EMEA_de_f]
@@ -33,11 +39,11 @@ def get_all_texts(domain: str, language: str):
     :type str
     :return: Three lists: train, test, and valid
     """
-    train = open(f"/home/lonneke/thesis/data/"
+    train = open(f"/home/lonneke/thesis/local/data/"
                  f"full_sent_datasets/{domain}/train.{language}")
-    test = open(f"/home/lonneke/thesis/data/"
+    test = open(f"/home/lonneke/thesis/local/data/"
                 f"full_sent_datasets/{domain}/test.{language}")
-    valid = open(f"/home/lonneke/thesis/data/"
+    valid = open(f"/home/lonneke/thesis/local/data/"
                  f"full_sent_datasets/{domain}/valid.{language}")
 
     train_l = [s for s in train]
