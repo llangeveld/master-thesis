@@ -7,17 +7,17 @@ def load_full_files():
     :return: The six full data files (as lists)
     """
     EMEA_en_f = open("/home/lonneke/thesis/local/data/"
-                     "full_sent_datasets/EMEA/full.en")
+                     "corrected_data/EMEA/full.en")
     EMEA_de_f = open("/home/lonneke/thesis/local/data/"
-                     "full_sent_datasets/EMEA/full.de")
+                     "corrected_data/EMEA/full.de")
     GNOME_en_f = open("/home/lonneke/thesis/local/data/"
-                      "full_sent_datasets/GNOME/full.en")
+                      "corrected_data/GNOME/full.en")
     GNOME_de_f = open("/home/lonneke/thesis/local/data/"
-                      "full_sent_datasets/GNOME/full.de")
+                      "corrected_data/GNOME/full.de")
     JRC_en_f = open("/home/lonneke/thesis/local/data/"
-                    "full_sent_datasets/JRC/full.en")
+                    "corrected_data/JRC/full.en")
     JRC_de_f = open("/home/lonneke/thesis/local/data/"
-                    "full_sent_datasets/JRC/full.de")
+                    "corrected_data/JRC/full.de")
 
     EMEA_en = [s for s in EMEA_en_f]
     EMEA_de = [s for s in EMEA_de_f]
