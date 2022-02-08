@@ -1,6 +1,4 @@
 import spacy
-from spacy import displacy
-import numpy
 from utils import get_all_texts, remove_wrong_language
 
 print("Loading language models...")
@@ -26,15 +24,25 @@ def do_analysis(domain: str):
     d["test_en"], d["test_de"] = remove_wrong_language(test_en, test_de)
     d["valid_en"], d["valid_de"] = remove_wrong_language(valid_en, valid_de)
 
-    for phase in ["train", "test", "valid"]:
-        for lang in ["en", "de"]:
-            print(f"Result for {domain} - {phase} - {lang}")
-            text = d[f"{phase}_{lang}"]
-            nlp = nlp_en if lang == "en" else nlp_de
-            for s in text:
-                doc = nlp(s.strip())
-                for ent in doc.ents:
-                    print(f"{ent.text} | {ent.label_}")
+    with open(f'out-{domain}.txt', 'w') as f:
+        for phase in ["valid"]:
+            for lang in ["en", "de"]:
+                print(f"Result for {domain} - {phase} - {lang}", file=f)
+                text = d[f"{phase}_{lang}"]
+                nlp = nlp_en if lang == "en" else nlp_de
+                for s in text:
+                    doc = nlp(s.strip())
+                    s_new = s
+                    print(s, file=f)
+                    for ent in doc.ents:
+                        placeholder = "X" * (ent.end_char-ent.start_char)
+                        s_new = s_new[:ent.start_char] + placeholder + s_new[ent.end_char:]
+                        print(ent.label_, file=f)
+                    print(s_new, file=f)
+                    print("---------------", file=f)
+            print("\n\n-------------------------------------------------\n\n", file=f)
+                    #for ent in doc.ents:
+                    #    print(f"{ent.text} | {ent.label_}")
 
 
 def main():
