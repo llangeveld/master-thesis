@@ -13,24 +13,6 @@ mt_en = MosesTokenizer('en')
 mt_de = MosesTokenizer('de')
 
 
-def count_tokens(data: list, language: str) -> int:
-    c = 0
-    if language == "en":
-        mt = mt_en
-    else:
-        mt = mt_de
-    for s in data:
-        s = s.rstrip("\n")
-        tokens = mt.tokenize(s)
-        c += len(tokens)
-    return c
-
-
-def make_wordcount(d: dict) -> list:
-    count = [count_tokens(v, k[-2:]) for k, v in d.items()]
-    return count
-
-
 def language_id(text, lang):
     correct = 0
     for s in text:
@@ -87,60 +69,68 @@ def check_sentence_length(d: dict):
     plt.savefig("../figures/lengths_boxplot.pdf")
 
 
+def count_tokens(data: list, language: str) -> int:
+    c = 0
+    if language == "en":
+        mt = mt_en
+    else:
+        mt = mt_de
+    for s in data:
+        s = s.rstrip("\n")
+        tokens = mt.tokenize(s)
+        c += len(tokens)
+
+    return c
+
+
+def make_wordcount(d: dict) -> list:
+    count = [count_tokens(v, k[-2:]) for k, v in d.items()]
+    return count
+
+
 def analyze_ner(text, analyzer, language):
-    results = []
-    not_empty = 0
+    results = 0
     for s in text:
         r = analyzer.analyze(text=s, language=language)
-        if not r:
-            not_empty += 1
-            results.append(r)
-        else:
-            continue
+        results += len(r)
     return results
 
 
-def do_analysis(d: dict, wordcount: list):
+def do_analysis_presidio(d: dict, wordcount: list):
     analyzer = create_presidio_engine()
 
     print("Doing NER-count analysis...")
-    count = {}
     i = 0
     per_word = {}
     for k, v in d.items():
         analysis = analyze_ner(v, analyzer, k[-2:])
-        c = len(analysis)/4
-        count[k] = c
-        print(f"  Results for {k}: {c}")
-        per_word[k] = c/wordcount[i]
+        print(f"  Results for {k}: {analysis}")
+        per_word[k] = analysis/wordcount[i]
         i += 1
-
-    data_normalizer = mp.colors.Normalize()
-    color_map = mp.colors.LinearSegmentedColormap.from_list("grey",
-                                                            ["lightgrey",
-                                                             "dimgrey"])
 
     print("Doing NER-count per-word analysis...")
     for k, v in per_word.items():
         print(f"  Results for {k}: {v}")
 
     x_axis = [k for k in d.keys()]
-    plt.bar(x_axis, per_word, align='center',
-            color=color_map(data_normalizer(per_word)))
+    y_axis = [v for v in per_word.values()]
+    norm = Normalize(vmin=0, vmax=0.025)
+    colors = [plt.cm.Greys(norm(c)) for c in y_axis]
+    sns.barplot(x=x_axis, y=y_axis, palette=colors)
     plt.title("Percentage of words with a NER-tag")
     plt.xticks(rotation=45)
     plt.ylabel("% of words")
     plt.tight_layout()
     # plt.show()
-    plt.savefig("ner_per_word.pdf")
+    plt.savefig("../figures/ner_per_word.pdf")
 
 
 def main():
     d = load_full_files()
     # check_languages(EMEA_en, EMEA_de, GNOME_en, GNOME_de, JRC_en, JRC_de)
-    check_sentence_length(d)
-    # wordcount = make_wordcount(d)
-    # do_analysis(d, wordcount)
+    # check_sentence_length(d)
+    wordcount = make_wordcount(d)
+    do_analysis_presidio(d, wordcount)
 
 
 if __name__ == "__main__":
