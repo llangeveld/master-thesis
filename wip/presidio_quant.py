@@ -1,7 +1,7 @@
 import langid
 import matplotlib.pyplot as plt
 import seaborn as sns
-import matplotlib as mp
+import spacy
 from matplotlib.colors import Normalize
 from utils import load_full_files, create_presidio_engine
 from sacremoses import MosesTokenizer
@@ -11,6 +11,8 @@ import pandas as pd
 plt.rcParams.update({'font.size': 14})
 mt_en = MosesTokenizer('en')
 mt_de = MosesTokenizer('de')
+nlp_en = spacy.load("en_core_web_lg")
+nlp_de = spacy.load("de_core_news_lg")
 
 
 def language_id(text, lang):
@@ -88,7 +90,7 @@ def make_wordcount(d: dict) -> list:
     return count
 
 
-def analyze_ner(text, analyzer, language):
+def analyze_ner_presidio(text, analyzer, language):
     results = 0
     for s in text:
         r = analyzer.analyze(text=s, language=language)
@@ -96,14 +98,27 @@ def analyze_ner(text, analyzer, language):
     return results
 
 
-def do_analysis_presidio(d: dict, wordcount: list):
-    analyzer = create_presidio_engine()
+def analyze_ner_spacy(text: list, language: str) -> int:
+    results = 0
+    nlp = nlp_en if language == "en" else nlp_de
+    for s in text:
+        doc = nlp(s.rstrip("\n"))
+        results += len(doc.ents)
+    return results
+
+
+def do_analysis(d: dict, wordcount: list, tagger="Presidio"):
+    if tagger == "Presidio":
+        analyzer = create_presidio_engine()
 
     print("Doing NER-count analysis...")
     i = 0
     per_word = {}
     for k, v in d.items():
-        analysis = analyze_ner(v, analyzer, k[-2:])
+        if tagger == "Presidio":
+            analysis = analyze_ner_presidio(v, analyzer, k[-2:])
+        else:
+            analysis = analyze_ner_spacy(v, k[-2:])
         print(f"  Results for {k}: {analysis}")
         per_word[k] = analysis/wordcount[i]
         i += 1
@@ -114,7 +129,10 @@ def do_analysis_presidio(d: dict, wordcount: list):
 
     x_axis = [k for k in d.keys()]
     y_axis = [v for v in per_word.values()]
-    norm = Normalize(vmin=0, vmax=0.025)
+    if tagger == "Presidio":
+        norm = Normalize(vmin=0, vmax=0.025)
+    else:
+        norm = Normalize(vmin=0.012, vmax=0.07)
     colors = [plt.cm.Greys(norm(c)) for c in y_axis]
     sns.barplot(x=x_axis, y=y_axis, palette=colors)
     plt.title("Percentage of words with a NER-tag")
@@ -122,7 +140,7 @@ def do_analysis_presidio(d: dict, wordcount: list):
     plt.ylabel("% of words")
     plt.tight_layout()
     # plt.show()
-    plt.savefig("../figures/ner_per_word.pdf")
+    plt.savefig(f"../figures/ner_per_word_{tagger}.pdf")
 
 
 def main():
@@ -130,7 +148,8 @@ def main():
     # check_languages(EMEA_en, EMEA_de, GNOME_en, GNOME_de, JRC_en, JRC_de)
     # check_sentence_length(d)
     wordcount = make_wordcount(d)
-    do_analysis_presidio(d, wordcount)
+    # do_analysis_presidio(d, wordcount)
+    do_analysis(d, wordcount, "Spacy")
 
 
 if __name__ == "__main__":
