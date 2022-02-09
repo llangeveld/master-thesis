@@ -30,7 +30,8 @@ def get_all_texts(domain: str, language: str):
 def load_full_files():
     """
     Loads the six full data files, and returns them as lists.
-    :return: The six full data files (as lists)
+    :return: A dictionary with the six files
+            (each file being a list of sentences).
     """
     d = {}
     for domain in ["EMEA", "GNOME", "JRC"]:
