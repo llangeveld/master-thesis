@@ -1,8 +1,11 @@
 import langid
 import matplotlib.pyplot as plt
+import seaborn as sns
 import matplotlib as mp
+from matplotlib.colors import Normalize
 from utils import load_full_files, create_presidio_engine
 from sacremoses import MosesTokenizer
+import pandas as pd
 
 
 plt.rcParams.update({'font.size': 14})
@@ -49,45 +52,39 @@ def check_languages(d):
         print(f"  Results for {k}: {v}")
 
 
-def s_length_analysis(text: list, language: str) -> dict:
+def sl_analysis(s: str, language: str) -> int:
     if language == "en":
         mt = mt_en
     else:
         mt = mt_de
-    lengths = []
-    l = 0
-    for s in text:
-        s = s.rstrip("\n")
-        tok = mt.tokenize(s)
-        lengths.append(len(tok))
-        l += len(tok)
+    tok = mt.tokenize(s.rstrip("\n"))
+    return len(tok)
 
-    d = {"avg": l/len(text), "min": min(lengths), "max": max(lengths)}
-    return d
+
+def sl_dataframe(d: dict):
+    lengths = []
+    for k, v in d.items():
+        for s in v:
+            s_length = sl_analysis(s, k[-2:])
+            lengths.append([k, s_length])
+
+    df = pd.DataFrame(lengths, columns=["Text", "Length"])
+    return df
 
 
 def check_sentence_length(d: dict):
     print("Checking sentence length...")
 
-    lengths = {}
-    for k, v in d.items():
-        lengths[k] = s_length_analysis(v, k[-2:])
-
-    data_normalizer = mp.colors.Normalize()
-    color_map = mp.colors.LinearSegmentedColormap.from_list("grey",
-                                                            ["lightgrey",
-                                                             "dimgrey"])
-
-    x_axis = [k for k in d.keys()]
-    plt.bar(x_axis, lengths, align='center',
-            color=color_map(data_normalizer(lengths)))
-    plt.title("Sentence length per domain and language")
+    df = sl_dataframe(d)
+    norm = Normalize(vmin=0, vmax=100)
+    colors = [plt.cm.Greys(norm(c)) for c in df["Length"]]
+    sns.set_style("whitegrid")
+    sns.boxplot(x=df["Text"], y=df["Length"],
+                palette=colors, showfliers=False)
     plt.xticks(rotation=45)
-    plt.ylabel("Avg. sentence length in words")
+    plt.xlabel(None)
     plt.tight_layout()
-    plt.savefig("lengths.pdf")
-
-    return lengths
+    plt.savefig("../figures/lengths_boxplot.pdf")
 
 
 def analyze_ner(text, analyzer, language):
@@ -141,10 +138,9 @@ def do_analysis(d: dict, wordcount: list):
 def main():
     d = load_full_files()
     # check_languages(EMEA_en, EMEA_de, GNOME_en, GNOME_de, JRC_en, JRC_de)
-    wordcount = make_wordcount(d)
-    # lengths = check_sentence_length(EMEA_en, EMEA_de, GNOME_en,
-                                    # GNOME_de, JRC_en, JRC_de)
-    do_analysis(d, wordcount)
+    check_sentence_length(d)
+    # wordcount = make_wordcount(d)
+    # do_analysis(d, wordcount)
 
 
 if __name__ == "__main__":
