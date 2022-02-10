@@ -1,53 +1,51 @@
 import spacy
-from utils import get_all_texts, remove_wrong_language
+from utils import get_all_texts
+from sacremoses import MosesTokenizer, MosesDetokenizer
+
 
 print("Loading language models...")
 nlp_en = spacy.load("en_core_web_lg")
 nlp_de = spacy.load("de_core_news_lg")
+replace_all = ["EVENT", "FAC", "GPE", "LANGUAGE", "LOC", "NORP", "ORG",
+               "PERSON", "PRODUCT", "WORK_OF_ART"]
+mt_en = MosesTokenizer('en')
+mt_de = MosesTokenizer('de')
+md_en = MosesDetokenizer('en')
+md_de = MosesDetokenizer('de')
 
-def make_string(text: list):
-    string = ""
-    for s in text:
-        s = s.strip() + " "
-        string = string + s
 
-    return string
-
-def do_analysis(domain: str):
+def do_analysis(domain: str, language: str):
     print("Loading files...")
-    train_en, test_en, valid_en = get_all_texts(domain, "en")
-    train_de, test_de, valid_de = get_all_texts(domain, "de")
+    d = {}
+    d["train"], d["test"], d["valid"] = get_all_texts(domain, language)
 
-    print("Removing wrong languages...")
-    d = dict()
-    d["train_en"], d["train_de"] = remove_wrong_language(train_en, train_de)
-    d["test_en"], d["test_de"] = remove_wrong_language(test_en, test_de)
-    d["valid_en"], d["valid_de"] = remove_wrong_language(valid_en, valid_de)
+    nlp = nlp_en if language == "en" else nlp_de
+    mt = mt_en if language == "en" else mt_de
+    md = md_en if language == "en" else md_de
 
-    with open(f'out-{domain}.txt', 'w') as f:
-        for phase in ["valid"]:
-            for lang in ["en", "de"]:
-                print(f"Result for {domain} - {phase} - {lang}", file=f)
-                text = d[f"{phase}_{lang}"]
-                nlp = nlp_en if lang == "en" else nlp_de
-                for s in text:
-                    doc = nlp(s.strip())
-                    s_new = s
-                    print(s, file=f)
-                    for ent in doc.ents:
-                        placeholder = "X" * (ent.end_char-ent.start_char)
-                        s_new = s_new[:ent.start_char] + placeholder + s_new[ent.end_char:]
-                        print(ent.label_, file=f)
-                    print(s_new, file=f)
-                    print("---------------", file=f)
-            print("\n\n-------------------------------------------------\n\n", file=f)
-                    #for ent in doc.ents:
-                    #    print(f"{ent.text} | {ent.label_}")
+    for phase in ["valid"]:
+        print(f"Result for {domain} - {phase} - {language}")
+
+        for s in d[f"{phase}"]:
+            toks = mt.tokenize(s)
+            detoks = md.detokenize(toks)
+            doc = nlp(detoks.strip())
+            len_diff = 0
+            s_new = detoks
+            for ent in doc.ents:
+                start = ent.start_char + len_diff
+                s_new = s_new[:start] + s_new[start:].replace(ent.text,
+                                                      f"<{ent.label_}>", 1)
+                len_diff += len(ent.label_) + 2 - len(ent.text)
+            print(detoks)
+            print(s_new + "\n")
 
 
 def main():
     for domain in ["EMEA", "GNOME", "JRC"]:
-        do_analysis(domain)
+        for language in ["en", "de"]:
+            do_analysis(domain, language)
+
 
 if __name__ == "__main__":
     main()
