@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import spacy
 from matplotlib.colors import Normalize
-from utils import load_full_files, create_presidio_engine
+from utils import load_full_files
+from anonymize import create_presidio_analyzer
 from sacremoses import MosesTokenizer
 import pandas as pd
 
@@ -109,7 +110,7 @@ def analyze_ner_spacy(text: list, language: str) -> int:
 
 def do_analysis(d: dict, wordcount: list, tagger="Presidio"):
     if tagger == "Presidio":
-        analyzer = create_presidio_engine()
+        analyzer = create_presidio_analyzer()
 
     print("Doing NER-count analysis...")
     i = 0

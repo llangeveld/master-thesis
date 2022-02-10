@@ -1,10 +1,10 @@
 from thefuzz import process
-from utils import create_presidio_engine, load_full_files
-from presidio_anonymizer import AnonymizerEngine
+from utils import load_full_files
+from anonymize import create_presidio_analyzer, create_presidio_anonymizer
 
+engine = create_presidio_analyzer()
+anonymizer = create_presidio_anonymizer()
 
-engine = create_presidio_engine()
-anonymizer = AnonymizerEngine()
 
 def do_analysis(text: list, language: str):
     found = 0

@@ -1,24 +1,17 @@
 import langid
-from presidio_analyzer.nlp_engine import NlpEngineProvider
-from presidio_analyzer import AnalyzerEngine
 
 
 def get_all_texts(domain: str, language: str):
     """
     Finds the three texts (train, test, valid) for the domain and language
     you specify.
-    :param domain: The domain for which you want the files (EMEA, GNOME, JRC)
-    :type str
-    :param language: The language for which you want the files (en, de)
-    :type str
-    :return: Three lists: train, test, and valid
     """
     train = open(f"/home/lonneke/thesis/local/data/"
-                 f"corrected_data/{domain}/train.{language}")
+                 f"tokenized/{domain}/train.{language}")
     test = open(f"/home/lonneke/thesis/local/data/"
-                f"corrected_data/{domain}/test.{language}")
+                f"tokenized/{domain}/test.{language}")
     valid = open(f"/home/lonneke/thesis/local/data/"
-                 f"corrected_data/{domain}/valid.{language}")
+                 f"tokenized/{domain}/valid.{language}")
 
     train_l = [s for s in train]
     test_l = [s for s in test]
@@ -54,24 +47,3 @@ def remove_wrong_language(text_en: list, text_de: list):
             new_de.append(de)
 
     return new_en, new_de
-
-
-def create_presidio_engine():
-    print("Building engine...")
-    # Create configuration containing engine name and models
-    configuration = {
-        "nlp_engine_name": "spacy",
-        "models": [{"lang_code": "de", "model_name": "de_core_news_lg"},
-                    {"lang_code": "en", "model_name": "en_core_web_lg"}],
-    }
-    # Create NLP engine based on configuration
-    provider = NlpEngineProvider(nlp_configuration=configuration)
-    nlp_engine= provider.create_engine()
-
-    # Pass the created NLP engine and supported_languages to the AnalyzerEngine
-    analyzer = AnalyzerEngine(
-        nlp_engine=nlp_engine,
-        supported_languages=["en", "de"]
-    )
-
-    return analyzer
