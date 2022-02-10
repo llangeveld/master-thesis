@@ -5,8 +5,6 @@ import spacy
 
 nlp_en = spacy.load("en_core_web_lg")
 nlp_de = spacy.load("de_core_news_lg")
-replace_all = ["EVENT", "FAC", "GPE", "LANGUAGE", "LOC", "NORP", "ORG",
-               "PERSON", "PRODUCT", "WORK_OF_ART"]
 
 
 def create_presidio_analyzer():

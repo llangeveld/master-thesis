@@ -7,11 +7,11 @@ def get_all_texts(domain: str, language: str):
     you specify.
     """
     train = open(f"/home/lonneke/thesis/local/data/"
-                 f"tokenized/{domain}/train.{language}")
+                 f"retokenized/{domain}/train.{language}")
     test = open(f"/home/lonneke/thesis/local/data/"
-                f"tokenized/{domain}/test.{language}")
+                f"retokenized/{domain}/test.{language}")
     valid = open(f"/home/lonneke/thesis/local/data/"
-                 f"tokenized/{domain}/valid.{language}")
+                 f"retokenized/{domain}/valid.{language}")
 
     train_l = [s for s in train]
     test_l = [s for s in test]
