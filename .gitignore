@@ -230,3 +230,5 @@ fabric.properties
 /data/opus-test/emea.out
 /data/opus-test/gnome.out
 /data/opus-test/jrc.out
+/data/opus/test/
+/data/opus/json/

@@ -1,5 +1,11 @@
 import langid
+import json
 
+def get_json_files(domain: str):
+    f = open(f"/home/lonneke/thesis/local/data/opus/json/{domain}.json")
+    data = json.load(f)
+
+    return data
 
 def get_all_texts(domain: str, language: str):
     """
