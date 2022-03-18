@@ -231,4 +231,6 @@ fabric.properties
 /data/opus-test/gnome.out
 /data/opus-test/jrc.out
 /data/opus/test/
-/data/opus/json/
+/data/opus/json/EMEA.json
+/data/opus/json/GNOME.json
+/data/opus/json/JRC.json
