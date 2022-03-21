@@ -4,10 +4,16 @@ import pandas as pd
 from nltk.corpus import wordnet as wn
 import random
 
-MAX_DOCS = 10
-NGRAM_RANGE = (2,2)
+MAX_DOCS = 2
+NGRAM_RANGE = (2, 2)
+
 
 def make_language_files(domain: str):
+    """
+    Pulls up JSON-docs.
+    :param domain: Domain whose documents are returned
+    :return: list, list
+    """
     data = get_json_files(domain)
     en_docs = []
     de_docs = []
@@ -20,7 +26,13 @@ def make_language_files(domain: str):
     return en_docs, de_docs
 
 
-def get_results(docs: list, language: str):
+def get_results(docs, language: str) -> list:
+    """
+    Returns list of TF-IDF results for documents.
+    :param docs: list of documents to be calculated
+    :param language: language in which the documents are written
+    :return: list of results: doc-num, words, tf-idf score.
+    """
     if language == "en":
         tfidf = TfidfVectorizer(ngram_range=NGRAM_RANGE, stop_words='english')
     else:
@@ -37,44 +49,84 @@ def get_results(docs: list, language: str):
 
 
 def make_dataframe(results):
+    """
+    Builds Pandas dataframe from results, increases legibility
+    :param results: list of results
+    :return: pandas dataframe
+    """
     df = pd.DataFrame(results, columns=["Doc", "Word(s)", "TF-IDF"])
     df.sort_values(by=["Doc", "TF-IDF"], inplace=True, ascending=[True, False])
 
     return df
 
 
-def change_word(df, docs):
-    for i in range(5):
-        doc, words, tfidf = df.iloc[i]
-        text = docs[i]
-        replace_string = ""
-        for word in words.split(" "):
+def change_word(words: list, text: str) -> str:
+    """
+    Changes list of words in the text to new texts
+    :param words: List of words/phrases to be replaced
+    :param text: Document in which words need to be replaced
+    :return: Document with replaced words
+    """
+    new_text = text
+    for word_set in words:
+        words_list = word_set.split(" ")
+        replace_strings = []
+        for idx, word in enumerate(words_list):
             syns = []
             for syn in wn.synsets(word):
                 for i in syn.lemmas():
                     if str(i.name()) != word:
                         syns.append(i.name())
             if syns:
-                replace_string = replace_string + " " + syns[random.randrange(0, len(syns))]
+                replace_strings.append(syns)
             else:
-                replace_string = replace_string + " " + word
+                replace_strings.append(word)
 
-        print(text.replace(words, f"\n\n{replace_string}\n\n"))
+        for j in range(text.count(word_set)):
+            replace_string = ""
+            for i in range(len(words_list)):
+                replace_string += str(random.choice(replace_strings[i]))
+                replace_string += " "
+            new_text = new_text.replace(word_set, replace_string.rstrip(), 1)
 
-def show_results(df):
+    return new_text
+
+
+def show_results(df, df2):
+    """
+    Shows the top 5 TF-IDF scores from two different dataframes.
+    :param df: Pandas dataframe
+    :param df2: Pandas dataframe
+    :return: None
+    """
     docs = set(df["Doc"])
     for doc in docs:
-        df2 = df[df["Doc"] == doc]
-        print(df2.head())
+        new_df1 = df[df["Doc"] == doc]
+        new_df2 = df2[df2["Doc"] == doc]
+        print(new_df1.head())
+        print(new_df2.head())
+        print("----------------------------------------------")
+
 
 def main():
     for domain in ["EMEA", "GNOME", "JRC"]:
         d = {}
         d["en"], d["de"] = make_language_files(domain)
         for language in ["en"]:
-            results = get_results(d[f"{language}"], language)
+            docs = d[f"{language}"]
+            results = get_results(docs, language)
             df = make_dataframe(results)
-            change_word(df, d[f"{language}"])
+            new_texts = []
+            for i in range(len(docs)):
+                words = df[df["Doc"] == i]["Word(s)"].tolist()[:5]
+                new_texts.append(change_word(words, docs[i]))
+
+            print(len(docs))
+            print(len(new_texts))
+            new_results = get_results(new_texts, language)
+            new_df = make_dataframe(new_results)
+            show_results(df, new_df)
+
 
 if __name__ == "__main__":
     main()
