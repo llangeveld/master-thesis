@@ -20,8 +20,8 @@ def make_language_files(domain: str):
     for doc, texts in data.items():
         if int(doc) > MAX_DOCS:
             break
-        en_docs.append(" ".join(texts["en"]))
-        de_docs.append(" ".join(texts["de"]))
+        en_docs.append(texts["en"])
+        de_docs.append(texts["de"])
 
     return en_docs, de_docs
 
@@ -37,8 +37,8 @@ def get_results(docs, language: str) -> list:
         tfidf = TfidfVectorizer(ngram_range=NGRAM_RANGE, stop_words='english')
     else:
         tfidf = TfidfVectorizer(ngram_range=NGRAM_RANGE)
-
-    response = tfidf.fit_transform(docs)
+    texts = [" ".join(doc) for doc in docs]
+    response = tfidf.fit_transform(texts)
     terms = tfidf.get_feature_names()
 
     results = []
@@ -60,7 +60,7 @@ def make_dataframe(results):
     return df
 
 
-def change_word(words: list, text: str) -> str:
+def change_word(words: list, text: str) -> list:
     """
     Changes list of words in the text to new texts
     :param words: List of words/phrases to be replaced
@@ -82,12 +82,16 @@ def change_word(words: list, text: str) -> str:
             else:
                 replace_strings.append(word)
 
-        for j in range(text.count(word_set)):
-            replace_string = ""
-            for i in range(len(words_list)):
-                replace_string += str(random.choice(replace_strings[i]))
-                replace_string += " "
-            new_text = new_text.replace(word_set, replace_string.rstrip(), 1)
+
+        for idx, sentence in enumerate(new_text):
+            new_sentence = sentence
+            for j in range(sentence.count(word_set)):
+                replace_string = ""
+                for i in range(len(words_list)):
+                    replace_string += str(random.choice(replace_strings[i]))
+                    replace_string += " "
+                new_sentence = new_sentence.replace(word_set, replace_string.rstrip(), 1)
+            new_text[idx] = new_sentence
 
     return new_text
 
@@ -121,8 +125,6 @@ def main():
                 words = df[df["Doc"] == i]["Word(s)"].tolist()[:5]
                 new_texts.append(change_word(words, docs[i]))
 
-            print(len(docs))
-            print(len(new_texts))
             new_results = get_results(new_texts, language)
             new_df = make_dataframe(new_results)
             show_results(df, new_df)
