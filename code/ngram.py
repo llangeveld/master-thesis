@@ -112,22 +112,17 @@ def show_results(df, df2):
         print("----------------------------------------------")
 
 
-def main():
-    for domain in ["EMEA", "GNOME", "JRC"]:
-        d = {}
-        d["en"], d["de"] = make_language_files(domain)
-        for language in ["en"]:
-            docs = d[f"{language}"]
-            results = get_results(docs, language)
-            df = make_dataframe(results)
-            new_texts = []
-            for i in range(len(docs)):
-                words = df[df["Doc"] == i]["Word(s)"].tolist()[:5]
-                new_texts.append(change_word(words, docs[i]))
+def calculate_tfidf(docs: list, language: str):
+    results = get_results(docs, language)
+    df = make_dataframe(results)
+    new_texts = []
+    for i in range(len(docs)):
+        words = df[df["Doc"] == i]["Word(s)"].tolist()[:5]
+        new_texts.append(change_word(words, docs[i]))
 
-            new_results = get_results(new_texts, language)
-            new_df = make_dataframe(new_results)
-            show_results(df, new_df)
+    new_results = get_results(new_texts, language)
+    new_df = make_dataframe(new_results)
+    show_results(df, new_df)
 
 
 if __name__ == "__main__":
