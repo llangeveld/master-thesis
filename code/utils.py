@@ -21,7 +21,7 @@ def make_language_files(domain: str, max_docs="max"):
     de_docs = []
     for doc, texts in data.items():
         if isinstance(max_docs, int):
-            if int(doc) > max_docs:
+            if int(doc) = max_docs:
                 break
         en_docs.append(texts["en"])
         de_docs.append(texts["de"])

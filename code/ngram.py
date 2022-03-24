@@ -91,7 +91,7 @@ def show_results(df, df2):
         print("----------------------------------------------")
 
 
-def calculate_tfidf(docs: list, language: str):
+def calculate_tfidf(docs: list, language: str) -> list:
     results = get_results(docs, language)
     df = make_dataframe(results)
     new_texts = []
@@ -102,3 +102,4 @@ def calculate_tfidf(docs: list, language: str):
     new_results = get_results(new_texts, language)
     new_df = make_dataframe(new_results)
     show_results(df, new_df)
+    return new_texts
