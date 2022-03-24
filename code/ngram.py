@@ -1,29 +1,9 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
-from utils import get_json_files
 import pandas as pd
 from nltk.corpus import wordnet as wn
 import random
 
-MAX_DOCS = 2
 NGRAM_RANGE = (2, 2)
-
-
-def make_language_files(domain: str):
-    """
-    Pulls up JSON-docs.
-    :param domain: Domain whose documents are returned
-    :return: list, list
-    """
-    data = get_json_files(domain)
-    en_docs = []
-    de_docs = []
-    for doc, texts in data.items():
-        if int(doc) > MAX_DOCS:
-            break
-        en_docs.append(texts["en"])
-        de_docs.append(texts["de"])
-
-    return en_docs, de_docs
 
 
 def get_results(docs, language: str) -> list:
@@ -60,7 +40,7 @@ def make_dataframe(results):
     return df
 
 
-def change_word(words: list, text: str) -> list:
+def change_word(words: list, text: list) -> list:
     """
     Changes list of words in the text to new texts
     :param words: List of words/phrases to be replaced
@@ -81,7 +61,6 @@ def change_word(words: list, text: str) -> list:
                 replace_strings.append(syns)
             else:
                 replace_strings.append(word)
-
 
         for idx, sentence in enumerate(new_text):
             new_sentence = sentence
@@ -123,7 +102,3 @@ def calculate_tfidf(docs: list, language: str):
     new_results = get_results(new_texts, language)
     new_df = make_dataframe(new_results)
     show_results(df, new_df)
-
-
-if __name__ == "__main__":
-    main()

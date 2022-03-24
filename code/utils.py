@@ -1,11 +1,33 @@
 import langid
 import json
 
+
 def get_json_files(domain: str):
     f = open(f"/home/lonneke/thesis/local/data/opus/json/{domain}.json")
     data = json.load(f)
 
     return data
+
+
+def make_language_files(domain: str, max_docs="max"):
+    """
+    Pulls up JSON-docs.
+    :param domain: Domain whose documents are returned
+    :param max_docs: Number of documents to be taken into account, int or "max"
+    :return: list, list
+    """
+    data = get_json_files(domain)
+    en_docs = []
+    de_docs = []
+    for doc, texts in data.items():
+        if isinstance(max_docs, int):
+            if int(doc) > max_docs:
+                break
+        en_docs.append(texts["en"])
+        de_docs.append(texts["de"])
+
+    return en_docs, de_docs
+
 
 def get_all_texts(domain: str, language: str):
     """
