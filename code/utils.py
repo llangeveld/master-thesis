@@ -2,7 +2,13 @@ import langid
 import json
 
 
-def get_json_files(domain: str):
+def get_json_files(domain: str) -> dict:
+    """
+    Pulls up JSON-files for the right domain
+    :param domain: EMEA, GNOME, or JRC
+    :return: Dictionary: {doc: {"en": [list of sentences],
+                                "de": [list of sentences]}}
+    """
     f = open(f"/home/lonneke/thesis/local/data/opus/json/{domain}.json")
     data = json.load(f)
 
@@ -14,14 +20,15 @@ def make_language_files(domain: str, max_docs="max"):
     Pulls up JSON-docs.
     :param domain: Domain whose documents are returned
     :param max_docs: Number of documents to be taken into account, int or "max"
-    :return: list, list
+    :return: List of English sentences, list of German sentences
     """
     data = get_json_files(domain)
     en_docs = []
     de_docs = []
     for doc, texts in data.items():
+        # If max_docs is an integer, pull up that many docs
         if isinstance(max_docs, int):
-            if int(doc) = max_docs:
+            if int(doc) == max_docs:
                 break
         en_docs.append(texts["en"])
         de_docs.append(texts["de"])
@@ -31,8 +38,10 @@ def make_language_files(domain: str, max_docs="max"):
 
 def get_all_texts(domain: str, language: str):
     """
-    Finds the three texts (train, test, valid) for the domain and language
-    you specify.
+    Finds the three texts for the domain and language specified
+    :param domain: EMEA, GNOME, or JRC
+    :param language: en or de
+    :return: three lists of sentences (train, test, valid)
     """
     train = open(f"/home/lonneke/thesis/local/data/"
                  f"retokenized/{domain}/train.{language}")
@@ -64,6 +73,13 @@ def load_full_files():
 
 
 def remove_wrong_language(text_en: list, text_de: list):
+    """
+    Removes sentence pairs where one or both of the sentences are not the
+    correct language or empty.
+    :param text_en: English text (list of strings)
+    :param text_de: German text (list of strings)
+    :return: List of new English sentences and list of new German sentences.
+    """
     new_en, new_de = [], []
     for en, de in zip(text_en, text_de):
         if not en or not de:
