@@ -1,12 +1,13 @@
 from sacrebleu import BLEU
 
+bleu = BLEU(effective_order=True)
 
-def do_analysis(text: list, anon_text: list, bleu) -> int:
+
+def do_analysis(text: list, anon_text: list) -> int:
     """
     Find the number of sentences that were not properly anonymized
     :param text: List of unanonymized sentences
     :param anon_text: Parallel list of anonymized sentences
-    :param bleu: BLEU-object
     :return: Number of sentences that were not properly anonymized (int)
     """
     found = 0
@@ -33,7 +34,6 @@ def evaluate_bleu(text: list, anon_text: list):
     :param anon_text: Parallel list of anonymized sentences
     :return: None
     """
-    bleu = BLEU(effective_order=True)
-    f = do_analysis(text, anon_text, bleu)
+    f = do_analysis(text, anon_text)
     ratio = f/len(text)
     print(f"BLEU-results: {ratio}")

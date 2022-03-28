@@ -1,6 +1,7 @@
 import json
 from utils import remove_wrong_language
 
+
 def get_domain_dict(text):
     doc_num = 0
     en = []
