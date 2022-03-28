@@ -1,4 +1,5 @@
 import json
+from utils import remove_wrong_language
 
 def get_domain_dict(text):
     doc_num = 0
@@ -31,6 +32,12 @@ def main():
         f = open(f"../data/opus/test/{domain}.out")
         text = [s for s in f]
         docs = get_domain_dict(text)
+        docs_corrected = {}
+        for i in range(len(docs)):
+            doc = docs[str(i)]
+            en, de = remove_wrong_language(doc["en"], doc["de"])
+            docs_corrected[i] = {"en": en, "de": de}
+            print(f"Corrected {domain}-doc {i}")
         with open(f"../data/opus/json/{domain}.json", "w") as outfile:
             json.dump(docs, outfile, indent=2)
 
