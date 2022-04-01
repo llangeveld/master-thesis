@@ -1,6 +1,9 @@
 from sacrebleu import BLEU
+from sentence_transformers import SentenceTransformer, util
+import numpy as np
 
 bleu = BLEU(effective_order=True)
+model = SentenceTransformer('distiluse-base-multilingual-cased-v1')
 
 
 def do_analysis(text: list, anon_text: list) -> int:
@@ -35,5 +38,25 @@ def evaluate_bleu(text: list, anon_text: list):
     :return: None
     """
     f = do_analysis(text, anon_text)
-    ratio = f/len(text)
+    ratio = f / len(text)
     print(f"BLEU-results: {ratio}")
+    return 1 - ratio
+
+
+def evaluate_semsim(text: list, anon_text: list):
+    sim_scores = []
+    for before, after in zip(text, anon_text):
+        embed_before = model.encode(before, convert_to_tensor=True)
+        embed_after = model.encode(after, convert_to_tensor=True)
+        cosine_score = util.pytorch_cos_sim(embed_before, embed_after)
+        sim_scores.append(cosine_score.item())
+    score = sum(sim_scores) / len(text)
+    return score
+
+
+def evaluate_fscore(text: list, anon_text: list):
+    bleu_score = evaluate_bleu(text, anon_text)
+    semsim_score = evaluate_semsim(text, anon_text)
+    # f1 = 2 * ((bleu_score * semsim_score) / (bleu_score + semsim_score))
+    avg = (bleu_score+semsim_score)/2
+    print(f"F1-score: {avg}")
