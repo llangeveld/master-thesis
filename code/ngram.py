@@ -47,7 +47,12 @@ def make_dataframe(results):
     return df
 
 
-def get_replace_strings_skl(words: list) -> list:
+def get_replace_strings_wn(words: list) -> list:
+    """
+    Finds replacement strings using WordNet (only available for English)
+    :param words: list of words needing to be replaced
+    :return: a list of lists of strings with replacement words per word
+    """
     replace_strings = []
     for word in words:
         syns = []
@@ -66,6 +71,13 @@ def get_replace_strings_skl(words: list) -> list:
 
 
 def most_similar_spacy(word, language, n=5):
+    """
+    Finds the n most similar words to input word in the given language
+    :param word: Word that will get most similar words as output
+    :param language: en or de
+    :param n: Number of most similar words
+    :return: list of n most similar words to input word
+    """
     print(word)
     if language == "en":
         sp = nlp_en
@@ -90,6 +102,12 @@ def most_similar_spacy(word, language, n=5):
 
 
 def get_replace_strings_spacy(words: list, language: str) -> list:
+    """
+    Finds replacement strings using SpaCy
+    :param words: list of words in need of replacement
+    :param language: en or de
+    :return: a list of lists of strings with replacement words per word
+    """
     replace_strings = []
     for word in words:
         syns = [syn for syn in most_similar_spacy(word, language)]
@@ -98,19 +116,27 @@ def get_replace_strings_spacy(words: list, language: str) -> list:
 
 
 def change_word(words: list, text: list, language: str,
-                method="sklearn") -> list:
+                method="wordnet") -> list:
+    """
+    Replaces given words by random synonyms in a given text.
+    :param words: Words that need replacing
+    :param text: Text in which words need to be replaced
+    :param language: en or de
+    :param method: wordnet or spacy
+    :return: List of sentences wherein the words have been replaced
+    """
     new_text = text
     for word_set in words:
         words_list = word_set.split(" ")
-        if method == "sklearn" and language == "en":
-            replace_strings = get_replace_strings_skl(words_list)
+        if method == "wordnet" and language == "en":
+            replace_strings = get_replace_strings_wn(words_list)
         elif method == "spacy":
             replace_strings = get_replace_strings_spacy(words_list, language)
-        elif method == "sklearn" and language != "en":
-            raise ValueError("If method is sklearn, language must be English")
+        elif method == "wordnet" and language != "en":
+            raise ValueError("If method is wordnet, language must be English")
         else:
-            raise ValueError("Method must be either sklearn or spacy"
-                             " (default = sklearn)")
+            raise ValueError("Method must be either wordnet or spacy"
+                             " (default = wordnet)")
         # Replacing old words by new words
         for idx, sentence in enumerate(new_text):
             new_sentence = sentence
@@ -144,6 +170,14 @@ def show_results(df, df2):
 
 
 def calculate_tfidf(docs: list, language: str, method: str) -> list:
+    """
+    Calculates TF-IDF score for a "before"-document and the document in which
+    the most common n-grams have been replaced.
+    :param docs: list of documents (document = list of strings)
+    :param language: en or de
+    :param method: wordnet or spacy
+    :return: List of documents in which common n-grams have been replaced
+    """
     # Calculate TF-IDF-scores for original texts
     results = get_results(docs, language)
     df = make_dataframe(results)
