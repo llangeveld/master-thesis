@@ -27,7 +27,6 @@ def get_domain_dict(text):
     return docs
 
 
-
 def main():
     for domain in ["EMEA", "GNOME", "JRC"]:
         f = open(f"../data/opus/test/{domain}.out")
@@ -41,6 +40,7 @@ def main():
             print(f"Corrected {domain}-doc {i}")
         with open(f"../data/opus/json/{domain}.json", "w") as outfile:
             json.dump(docs, outfile, indent=2)
+
 
 if __name__ == "__main__":
     main()

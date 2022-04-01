@@ -1,9 +1,8 @@
 from sacrebleu import BLEU
 from sentence_transformers import SentenceTransformer, util
-import numpy as np
 
 bleu = BLEU(effective_order=True)
-model = SentenceTransformer('distiluse-base-multilingual-cased-v1')
+model = SentenceTransformer("distiluse-base-multilingual-cased-v1")
 
 
 def do_analysis(text: list, anon_text: list) -> int:
