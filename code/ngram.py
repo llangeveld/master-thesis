@@ -78,7 +78,6 @@ def most_similar_spacy(word, language, n=5):
     :param n: Number of most similar words
     :return: list of n most similar words to input word
     """
-    print(word)
     if language == "en":
         sp = nlp_en
     elif language == "de":
@@ -169,10 +168,12 @@ def show_results(df, df2):
         print("----------------------------------------------")
 
 
-def calculate_tfidf(docs: list, language: str, method: str) -> list:
+def calculate_tfidf(docs: list, language: str, method: str,
+                    show_tfidf=False) -> list:
     """
     Calculates TF-IDF score for a "before"-document and the document in which
     the most common n-grams have been replaced.
+    :param show_tfidf: Whether or not to show table with TF-IDF-scores
     :param docs: list of documents (document = list of strings)
     :param language: en or de
     :param method: wordnet or spacy
@@ -189,7 +190,8 @@ def calculate_tfidf(docs: list, language: str, method: str) -> list:
     # Calculate TF-IDF-scores for new texts
     new_results = get_results(new_texts, language)
     new_df = make_dataframe(new_results)
-    # Show changed TF-IDF-scores
-    show_results(df, new_df)
+    if show_tfidf:
+        # Show changed TF-IDF-scores
+        show_results(df, new_df)
 
     return new_texts
