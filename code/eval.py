@@ -35,6 +35,13 @@ def evaluate_bleu(text: list, anon_text: list) -> float:
 
 
 def evaluate_semsim(text: list, anon_text: list) -> float:
+    """
+    Returns average cosine (semantic) similarity of all original-anonymized
+    sentence pairs.
+    :param text: Original text (list of strings)
+    :param anon_text: Anonymized text (list of strings)
+    :return: Cosine similarity score
+    """
     sim_scores = []
     for before, after in zip(text, anon_text):
         embed_before = model.encode(before, convert_to_tensor=True)
@@ -46,6 +53,12 @@ def evaluate_semsim(text: list, anon_text: list) -> float:
 
 
 def evaluate_fscore(text: list, anon_text: list) -> None:
+    """
+    Calculates (harmonic) mean between BLEU- and semantic similarity scores
+    :param text: Original text
+    :param anon_text: Anonymized text
+    :return: Nothing
+    """
     bleu_score = evaluate_bleu(text, anon_text)
     semsim_score = evaluate_semsim(text, anon_text)
     # f1 = 2 * ((bleu_score * semsim_score) / (bleu_score + semsim_score))
