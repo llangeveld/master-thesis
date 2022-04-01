@@ -1,10 +1,13 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
+import numpy as np
 from nltk.corpus import wordnet as wn
-import fasttext
 import random
+import spacy
 
 NGRAM_RANGE = (2, 2)
+nlp_en = spacy.load("en_core_web_lg")
+nlp_de = spacy.load("de_core_news_lg")
 
 
 def get_results(docs, language: str) -> list:
@@ -62,19 +65,35 @@ def get_replace_strings_skl(words: list) -> list:
     return replace_strings
 
 
-def get_replace_strings_ft(words: list, language: str) -> list:
+def most_similar_spacy(word, language, n=5):
+    print(word)
     if language == "en":
-        ft = fasttext.load_model('../data/fasttext/cc.en.300.bin')
+        sp = nlp_en
     elif language == "de":
-        ft = fasttext.load_model('../data/fasttext/cc.de.300.bin')
+        sp = nlp_de
     else:
         raise ValueError("Argument 'language' must be 'en' or 'de'.")
+    word = sp.vocab[str(word)]
+    queries = [
+        w for w in word.vocab
+        if w.is_lower == word.is_lower and w.prob >= -30 and np.count_nonzero(w.vector)
+    ]
+    by_similarity = sorted(queries, key=lambda w: word.similarity(w), reverse=True)
+    values = [
+        w.lower_ for w in by_similarity[:n+1]
+        if w.lower_ != word.lower_
+    ]
+    if values:
+        return values
+    else:
+        return [word.lower_]
 
+
+def get_replace_strings_spacy(words: list, language: str) -> list:
     replace_strings = []
     for word in words:
-        syns = [syn for _, syn in ft.get_nearest_neighbors(word, k=5)]
+        syns = [syn for syn in most_similar_spacy(word, language)]
         replace_strings.append(syns)
-
     return replace_strings
 
 
@@ -85,13 +104,13 @@ def change_word(words: list, text: list, language: str,
         words_list = word_set.split(" ")
         if method == "sklearn" and language == "en":
             replace_strings = get_replace_strings_skl(words_list)
-        elif method == "fasttext":
-            replace_strings = get_replace_strings_ft(words_list, language)
+        elif method == "spacy":
+            replace_strings = get_replace_strings_spacy(words_list, language)
         elif method == "sklearn" and language != "en":
             raise ValueError("If method is sklearn, language must be English")
         else:
-            raise ValueError("Method must be either sklearn or fasttext"
-                             " (default = sklearn")
+            raise ValueError("Method must be either sklearn or spacy"
+                             " (default = sklearn)")
         # Replacing old words by new words
         for idx, sentence in enumerate(new_text):
             new_sentence = sentence
@@ -124,7 +143,7 @@ def show_results(df, df2):
         print("----------------------------------------------")
 
 
-def calculate_tfidf(docs: list, language: str) -> list:
+def calculate_tfidf(docs: list, language: str, method: str) -> list:
     # Calculate TF-IDF-scores for original texts
     results = get_results(docs, language)
     df = make_dataframe(results)
@@ -132,7 +151,7 @@ def calculate_tfidf(docs: list, language: str) -> list:
     # Change words in documents
     for i in range(len(docs)):
         words = df[df["Doc"] == i]["Word(s)"].tolist()[:5]
-        new_texts.append(change_word(words, docs[i], language))
+        new_texts.append(change_word(words, docs[i], language, method))
     # Calculate TF-IDF-scores for new texts
     new_results = get_results(new_texts, language)
     new_df = make_dataframe(new_results)
