@@ -287,3 +287,20 @@ def calculate_tfidf(docs: list, language: str, method: str,
         show_results(df, new_df)
 
     return new_texts
+
+
+def ner_tfidf(docs: list, language: str, tfidf_method="spacy",
+              ner_method="spacy"):
+    """
+    Combined NER & TF-IDF-anonymization.
+    :param docs: List of documents to be anonymized
+    :param language: Language (de or en)
+    :param tfidf_method: spacy or wordnet
+    :param ner_method: spacy or presidio
+    :return: List of anonymized documents
+    """
+    after_tfidf = calculate_tfidf(docs, language, tfidf_method)
+    after_spacy = [anonymize_text_ner(doc, language, ner_method)
+                   for doc in after_tfidf]
+
+    return after_spacy
