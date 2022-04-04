@@ -79,7 +79,7 @@ def remove_wrong_language(text_en: list, text_de: list):
     """
     new_en, new_de = [], []
     for en, de in zip(text_en, text_de):
-        if not en or not de:
+        if str(en).strip() == "" or str(de).strip() == "":
             continue
         en_lang, _ = langid.classify(en)
         de_lang, _ = langid.classify(de)
