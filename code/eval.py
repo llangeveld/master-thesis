@@ -29,8 +29,7 @@ def evaluate_bleu(text: list, anon_text: list) -> float:
                 max_idx = i
         if text[max_idx] == text[idx]:
             found += 1
-
-    ratio = found / (len(text) - empty)
+    ratio = found / (len(text) - (empty/len(text)))
     return 1 - ratio
 
 
@@ -61,8 +60,7 @@ def evaluate_fscore(text: list, anon_text: list) -> None:
     """
     bleu_score = evaluate_bleu(text, anon_text)
     semsim_score = evaluate_semsim(text, anon_text)
-    # f1 = 2 * ((bleu_score * semsim_score) / (bleu_score + semsim_score))
-    avg = (bleu_score+semsim_score)/2
+    f1 = 2 * ((bleu_score * semsim_score) / (bleu_score + semsim_score))
     print(f"BLEU-score: {bleu_score}\n"
           f"Semantic score: {semsim_score}\n"
-          f"F1-score: {avg}")
+          f"F1-score: {f1}")
