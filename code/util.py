@@ -22,6 +22,8 @@ def make_language_files(domain: str, max_docs="max"):
     :param max_docs: Number of documents to be taken into account, int or "max"
     :return: List of English sentences, list of German sentences
     """
+    if type(max_docs) != int and max_docs != "max":
+        raise ValueError("max_docs should be either an integer or 'max'.")
     data = get_json_files(domain)
     en_docs = []
     de_docs = []

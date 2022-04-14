@@ -5,13 +5,13 @@ from eval import evaluate_fscore
 
 def main():
     for domain in ["EMEA", "GNOME", "JRC"]:
-        d = {}
-        d["en"], d["de"] = make_language_files(domain, max_docs=3)
+        d = {"en": (make_language_files(domain, max_docs=3))[0],
+             "de": (make_language_files(domain, max_docs=3))[1]}
+        d["en_new"] = ner_tfidf(d["en"], "en")
+        d["de_new"] = ner_tfidf(d["de"], "de")
         for language in ["en", "de"]:
-            docs = d[f"{language}"]
-            new_docs = ner_tfidf(docs, language)
             i = 0
-            for doc, new_doc in zip(docs, new_docs):
+            for doc, new_doc in zip(d[f"{language}"], d[f"{language}_new"]):
                 print(f"Working on doc {i} in {domain}-{language}")
                 evaluate_fscore(doc, new_doc)
                 print()
