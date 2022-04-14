@@ -13,23 +13,19 @@ def evaluate_bleu(text: list, anon_text: list) -> float:
     :return: Number of sentences that were not properly anonymized (int)
     """
     found = 0
-    empty = 0
     # Go over every sentence in the anonymized text
     for idx, sentence in enumerate(anon_text):
         max_idx = 0
         max_score = 0
         # Go over every sentence in the regular text
         for i, s in enumerate(text):
-            if not s:
-                empty += 1
-                continue
             score = bleu.sentence_score(sentence, [s]).score
             if score > max_score:
                 max_score = score
                 max_idx = i
         if text[max_idx] == text[idx]:
             found += 1
-    ratio = found / (len(text) - (empty/len(text)))
+    ratio = found / len(text)
     return 1 - ratio
 
 
