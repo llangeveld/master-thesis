@@ -5,6 +5,17 @@ bleu = BLEU(effective_order=True)
 model = SentenceTransformer("distiluse-base-multilingual-cased-v1")
 
 
+def calculate_bleu(hyps: list, refs: list) -> float:
+    """
+    Calculates corpus BLEU for translated text
+    :param hyps: List of translations made by machine
+    :param refs: List of the original sentences
+    :return: BLEU-score (float)
+    """
+    result = bleu.corpus_score(hyps, [refs])
+    return result.score
+
+
 def evaluate_bleu(text: list, anon_text: list) -> float:
     """
     Returns the ratio of sentences that were properly anonymized
