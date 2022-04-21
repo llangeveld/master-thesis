@@ -1,16 +1,19 @@
 import torch
+import sacremoses
+# Note: This import doesn't seem to do anything, but the program WILL NOT
+# work without it. Do NOT remove this import.
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 # English to German model
-en2de = torch.load('/data/s3225143/wmt19.en-de.joined-dict.ensemble.tar.gz',
-                   checkpoint_file='model1.pt:model2.pt:model3.pt:model4.pt',
-                   tokenizer='moses', bpe='fastbpe').to(device)
+en2de = torch.hub.load('pytorch/fairseq', 'transformer.wmt19.en-de',
+                       checkpoint_file='model1.pt:model2.pt:model3.pt:model4.pt',
+                       tokenizer='moses', bpe='fastbpe', verbose=False).to(device)
 
 # German to English model
-de2en = torch.load('/data/s3225143/wmt19.de-en.joined-dict.ensemble.tar.gz',
-                   checkpoint_file='model1.pt:model2.pt:model3.pt:model4.pt',
-                   tokenizer='moses', bpe='fastbpe').to(device)
+de2en = torch.hub.load('pytorch/fairseq', 'transformer.wmt19.de-en',
+                       checkpoint_file='model1.pt:model2.pt:model3.pt:model4.pt',
+                       tokenizer='moses', bpe='fastbpe', verbose=False).to(device)
 
 
 def translate_en2de(text: list) -> list:
@@ -20,24 +23,18 @@ def translate_en2de(text: list) -> list:
     :return: List of translated sentences
     """
     translated_text = []
-    i = 0
     for sentence in text:
         translated_text.append(en2de.translate(sentence))
-        if i % 100 == 0:
-            print(f"\tTranslated up to sentence {i/100}")
     return translated_text
 
 
-def translatede2en(text: list):
+def translate_de2en(text: list):
     """
     Translates German text into English text
     :param text: List of sentences
     :return: List of translated sentences
     """
     translated_text = []
-    i = 0
     for sentence in text:
         translated_text.append(de2en.translate(sentence))
-        if i % 100 == 0:
-            print(f"\tTranslated up to sentence {i/100}")
     return translated_text

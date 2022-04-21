@@ -1,7 +1,11 @@
+#!bin/env python
 from util import make_language_files, get_all_texts
 from anonymize import ner_tfidf
 from eval import evaluate_fscore, calculate_bleu
 import translate
+import sacremoses
+# Note: This import doesn't seem to do anything, but the program WILL NOT
+# work without it. Do NOT remove this import.
 
 anon = False
 transl = True
@@ -30,9 +34,9 @@ def translation_pipeline(domain: str):
     print("Translation files loaded.")
 
     print("Translating English to German...")
-    en2de = translate.en2de(d["test_en"])
+    en2de = translate.translate_en2de(d["test_en"])
     print("Translating German to English...")
-    de2en = translate.de2en(d["test_de"])
+    de2en = translate.translate_de2en(d["test_de"])
 
     print("Calculating English BLEU...")
     en2de_bleu = calculate_bleu(en2de, d["test_de"])
