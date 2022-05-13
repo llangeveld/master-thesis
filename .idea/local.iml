@@ -4,6 +4,10 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/code/old_code" />
       <excludeFolder url="file://$MODULE_DIR$/data/opus/test" />
+      <excludeFolder url="file://$MODULE_DIR$/data/anonymized" />
+      <excludeFolder url="file://$MODULE_DIR$/data/bpe_codes" />
+      <excludeFolder url="file://$MODULE_DIR$/data/opus" />
+      <excludeFolder url="file://$MODULE_DIR$/data/soyo" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
