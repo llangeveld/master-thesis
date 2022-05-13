@@ -218,19 +218,4 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
-/data/opus-test/EMEA_latest_xml_de.zip
-/data/opus-test/EMEA_latest_xml_de-en.xml.gz
-/data/opus-test/EMEA_latest_xml_en.zip
-/data/opus-test/GNOME_latest_xml_de.zip
-/data/opus-test/GNOME_latest_xml_de-en.xml.gz
-/data/opus-test/GNOME_latest_xml_en.zip
-/data/opus-test/JRC-Acquis_latest_xml_de.zip
-/data/opus-test/JRC-Acquis_latest_xml_de-en.xml.gz
-/data/opus-test/JRC-Acquis_latest_xml_en.zip
-/data/opus-test/emea.out
-/data/opus-test/gnome.out
-/data/opus-test/jrc.out
-/data/opus/test/
-/data/opus/json/EMEA.json
-/data/opus/json/GNOME.json
-/data/opus/json/JRC.json
+/data/
