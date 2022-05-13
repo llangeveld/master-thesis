@@ -31,12 +31,14 @@ def translation_pipeline(domain: str):
     for language in ["en", "de"]:
         d[f"train_{language}"], d[f"test_{language}"], d[f"valid_{language}"] = get_all_texts(
             domain, language)
-    print("Translation files loaded.")
+    print("Done.")
 
-    print("Translating English to German...")
+    print("Translating English to German...", end="")
     en2de = translate.translate_en2de(d["test_en"])
-    print("Translating German to English...")
+    print("Done.")
+    print("Translating German to English...", end="")
     de2en = translate.translate_de2en(d["test_de"])
+    print("Done.")
 
     print("Calculating English BLEU...")
     en2de_bleu = calculate_bleu(en2de, d["test_de"])
