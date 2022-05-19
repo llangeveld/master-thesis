@@ -9,7 +9,7 @@ def get_json_files(domain: str) -> dict:
     :return: Dictionary: {doc: {"en": [list of sentences],
                                 "de": [list of sentences]}}
     """
-    f = open(f"../data/opus/json/{domain}.json")
+    f = open(f"../data/2_opus/json/{domain}.json")
     data = json.load(f)
 
     return data
@@ -45,9 +45,9 @@ def get_all_texts(domain: str, language: str):
     :param language: en or de
     :return: three lists of sentences (train, test, valid)
     """
-    train = open(f"../data/retokenized/{domain}/train.{language}")
-    test = open(f"../data/retokenized/{domain}/test.{language}")
-    valid = open(f"../data/retokenized/{domain}/valid.{language}")
+    train = open(f"../data/1_main_data/{domain}/train.{language}")
+    test = open(f"../data/1_main_data/{domain}/test.{language}")
+    valid = open(f"../data/1_main_data/{domain}/valid.{language}")
 
     train_l = [s for s in train]
     test_l = [s for s in test]
