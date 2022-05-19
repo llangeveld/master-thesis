@@ -8,6 +8,11 @@
       <excludeFolder url="file://$MODULE_DIR$/data/bpe_codes" />
       <excludeFolder url="file://$MODULE_DIR$/data/opus" />
       <excludeFolder url="file://$MODULE_DIR$/data/soyo" />
+      <excludeFolder url="file://$MODULE_DIR$/data/0_old_data" />
+      <excludeFolder url="file://$MODULE_DIR$/data/1_main_data" />
+      <excludeFolder url="file://$MODULE_DIR$/data/2_opus" />
+      <excludeFolder url="file://$MODULE_DIR$/data/3_anonymized" />
+      <excludeFolder url="file://$MODULE_DIR$/data/fairseq" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
