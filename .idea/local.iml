@@ -13,6 +13,9 @@
       <excludeFolder url="file://$MODULE_DIR$/data/2_opus" />
       <excludeFolder url="file://$MODULE_DIR$/data/3_anonymized" />
       <excludeFolder url="file://$MODULE_DIR$/data/fairseq" />
+      <excludeFolder url="file://$MODULE_DIR$/data/fast_align/build" />
+      <excludeFolder url="file://$MODULE_DIR$/data/4_translation" />
+      <excludeFolder url="file://$MODULE_DIR$/data/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
