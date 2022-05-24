@@ -1,6 +1,6 @@
 #!/bin/bash
-TEXT=/data/s3225143/data/4_translation
-DEST=/data/s3225143/data/4_translation/processed
+TEXT=/data/s3225143/data/4_translation/test
+DEST=/data/s3225143/data/4_translation/test/processed
 
 # EMEA
 fairseq-preprocess --source-lang de --target-lang en \
