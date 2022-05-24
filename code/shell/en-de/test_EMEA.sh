@@ -10,7 +10,7 @@ CUDA_VISIBLE_DEVICES=0 fairseq-train $DATA_EMEA \
   --keep-best-checkpoints 1 --save-interval 100  \
   --keep-interval-updates 1  --keep-last-epochs 1 \
    -keep-best-checkpoints 1   --save-interval-updates 5000 \
-   --no-epoch-checkpoints \
+  --no-epoch-checkpoints \
   --fp16 \
   --no-progress-bar --log-format json --log-interval 100 \
   --finetune-from-model $PRETRAINED --task translation \
