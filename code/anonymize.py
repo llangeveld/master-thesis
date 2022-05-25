@@ -1,5 +1,5 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
-from util import get_all_texts
+from util import get_all_texts, postprocess_alignment_file
 import pandas as pd
 import numpy as np
 import random
@@ -13,12 +13,12 @@ nlp_de = spacy.load("de_core_news_lg")
 
 
 class NER:
-    def __init__(self, src_text, src_lan):
+    def __init__(self, src_text, trg_text, src_lan, align):
         self.src = src_text
-        # self.trg = trg_text
+        self.trg = trg_text
         self.src_lan = src_lan
         self.trg_lan = "en" if self.src_lan == "de" else "de"
-        # self.align = align
+        self.align = align
 
     def anonymize(self) -> list:
         """
@@ -29,7 +29,7 @@ class NER:
         nlp = nlp_en if self.src_lan == "en" else nlp_de
         # Anonymize text sentence by sentence
         anonymized_text = []
-        for s in self.src:
+        for idx, s in enumerate(self.src):
             doc = nlp(s)
             s_list = s.split()
             s_startchars = []
@@ -37,12 +37,14 @@ class NER:
             for i in range(len(s_list)-1):
                 s_startchars.append(c)
                 c += len(s_list[i]) + 1
-            s_new = s_list
+            s_new = s_list.copy()
+            indices = []
             for ent in doc.ents:
                 i = s_startchars.index(ent.start_char)
                 i_start = i
                 ent_list = ent.text.split()
                 for _ in ent_list:
+                    indices.append(i)
                     if i == i_start:
                         s_new[i] = f"<{ent.label_}>"
                     else:
@@ -225,6 +227,7 @@ def separate_into_documents(text: list, domain: str) -> list:
 def main():
     for domain in ["EMEA", "GNOME", "JRC"]:
         d = {}
+        d_alignments = postprocess_alignment_file(domain)
         for language in ["en", "de"]:
             text, _, _ = get_all_texts(domain, language)
             docs = separate_into_documents(text, domain)

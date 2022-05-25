@@ -90,3 +90,23 @@ def remove_wrong_language(text_en: list, text_de: list):
             new_de.append(de)
 
     return new_en, new_de
+
+
+def postprocess_alignment_file(domain: str) -> dict:
+    """
+    Postprocesses alignment files for language pairs within a domain.
+    :param domain: Self-explanatory
+    :return: A dictionary with, for each language pair, a list of tuples with
+    the alignments made by fastalign.
+    """
+    d_alignments = {"en-de": [], "de-en": []}
+    for language_pair in ["en-de", "de-en"]:
+        alignment = open(f"../data/3_anonymized/fastalign/{domain}_train.{language_pair}.align")
+        for s in alignment:
+            new_s = []
+            l = s.split()
+            for pair in l:
+                new_pair = [int(x) for x in pair.split("-")]
+                new_s.append(tuple(new_pair))
+            d_alignments[f"{language_pair}"].append(new_s)
+    return d_alignments
