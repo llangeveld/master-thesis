@@ -1,5 +1,4 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
-from nltk.corpus import wordnet as wn
 import pandas as pd
 import numpy as np
 import random
@@ -37,7 +36,7 @@ def anonymize_text_ner(text: list, language: str) -> list:
     return anonymized_text
 
 
-def get_results(docs, language: str) -> list:
+def get_tfidf_results(docs, language: str) -> list:
     """
     Returns list of TF-IDF results for documents.
     :param docs: list of documents to be calculated
@@ -74,30 +73,7 @@ def make_dataframe(results):
     return df
 
 
-def get_replace_strings_wn(words: list) -> list:
-    """
-    Finds replacement strings using WordNet (only available for English)
-    :param words: list of words needing to be replaced
-    :return: a list of lists of strings with replacement words per word
-    """
-    replace_strings = []
-    for word in words:
-        syns = []
-        # Find synonyms for word
-        for syn in wn.synsets(word):
-            for i in syn.lemmas():
-                if str(i.name()) != word:
-                    syns.append(i.name())
-        # Build possible replacement list
-        if syns:
-            replace_strings.append(syns)
-        else:
-            replace_strings.append(word)
-
-    return replace_strings
-
-
-def most_similar_spacy(word, language, n=5):
+def most_similar_words(word, language, n=5):
     """
     Finds the n most similar words to input word in the given language
     :param word: Word that will get most similar words as output
@@ -127,7 +103,7 @@ def most_similar_spacy(word, language, n=5):
         return [word.lower_]
 
 
-def get_replace_strings_spacy(words: list, language: str) -> list:
+def get_replace_strings(words: list, language: str) -> list:
     """
     Finds replacement strings using SpaCy
     :param words: list of words in need of replacement
@@ -136,33 +112,23 @@ def get_replace_strings_spacy(words: list, language: str) -> list:
     """
     replace_strings = []
     for word in words:
-        syns = [syn for syn in most_similar_spacy(word, language)]
+        syns = [syn for syn in most_similar_words(word, language)]
         replace_strings.append(syns)
     return replace_strings
 
 
-def change_word(words: list, text: list, language: str,
-                method="wordnet") -> list:
+def change_word(words: list, text: list, language: str) -> list:
     """
     Replaces given words by random synonyms in a given text.
     :param words: Words that need replacing
     :param text: Text in which words need to be replaced
     :param language: en or de
-    :param method: wordnet or spacy
     :return: List of sentences wherein the words have been replaced
     """
     new_text = text
     for word_set in words:
         words_list = word_set.split(" ")
-        if method == "wordnet" and language == "en":
-            replace_strings = get_replace_strings_wn(words_list)
-        elif method == "spacy":
-            replace_strings = get_replace_strings_spacy(words_list, language)
-        elif method == "wordnet" and language != "en":
-            raise ValueError("If method is wordnet, language must be English")
-        else:
-            raise ValueError("Method must be either wordnet or spacy"
-                             " (default = wordnet)")
+        replace_strings = get_replace_strings(words_list, language)
         # Replacing old words by new words
         for idx, sentence in enumerate(new_text):
             new_sentence = sentence
@@ -195,27 +161,25 @@ def show_results(df, df2):
         print("----------------------------------------------")
 
 
-def calculate_tfidf(docs: list, language: str, method: str,
-                    show_tfidf=False) -> list:
+def calculate_tfidf(docs: list, language: str, show_tfidf=False) -> list:
     """
     Calculates TF-IDF score for a "before"-document and the document in which
     the most common n-grams have been replaced.
     :param show_tfidf: Whether or not to show table with TF-IDF-scores
     :param docs: list of documents (document = list of strings)
     :param language: en or de
-    :param method: wordnet or spacy
     :return: List of documents in which common n-grams have been replaced
     """
     # Calculate TF-IDF-scores for original texts
-    results = get_results(docs, language)
+    results = get_tfidf_results(docs, language)
     df = make_dataframe(results)
     new_texts = []
     # Change words in documents
     for i in range(len(docs)):
         words = df[df["Doc"] == i]["Word(s)"].tolist()[:5]
-        new_texts.append(change_word(words, docs[i], language, method))
+        new_texts.append(change_word(words, docs[i], language))
     # Calculate TF-IDF-scores for new texts
-    new_results = get_results(new_texts, language)
+    new_results = get_tfidf_results(new_texts, language)
     new_df = make_dataframe(new_results)
     if show_tfidf:
         # Show changed TF-IDF-scores
@@ -224,16 +188,14 @@ def calculate_tfidf(docs: list, language: str, method: str,
     return new_texts
 
 
-def ner_tfidf(docs: list, language: str, tfidf_method="spacy"):
+def ner_tfidf(docs: list, language: str):
     """
     Combined NER & TF-IDF-anonymization.
     :param docs: List of documents to be anonymized
     :param language: Language (de or en)
-    :param tfidf_method: spacy or wordnet
     :return: List of anonymized documents
     """
-    after_tfidf = calculate_tfidf(docs, language, tfidf_method)
-    after_spacy = [anonymize_text_ner(doc, language)
-                   for doc in after_tfidf]
+    after_tfidf = calculate_tfidf(docs, language)
+    after_spacy = [anonymize_text_ner(doc, language) for doc in after_tfidf]
 
     return after_spacy
