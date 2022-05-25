@@ -193,22 +193,16 @@ def separate_into_documents(text: list, domain: str) -> list:
     per document for a certain domain.
     :param text: Text to be separated into documents
     :param domain: Domain (needed for avg. number of sentences)
-    :return:
+    :return: List of lists with documents
     """
     doc_lens = {"EMEA": 152, "GNOME": 166, "JRC": 29}
     docs = []
     i = 0
-    new_doc = []
-    max_doc_len = doc_lens[domain]
-    for sentence in text:
-        if i <= max_doc_len:
-            new_doc.append(sentence)
-            i += 1
-        else:
-            docs.append(new_doc)
-            new_doc = []
-            i = 0
-    docs.append(new_doc)
+    doc_len = doc_lens[domain]
+    while i + doc_len < len(text):
+        docs.append(text[i:i+doc_len])
+        i = i + doc_len
+    docs.append(text[i:])
 
     return docs
 
