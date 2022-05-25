@@ -13,30 +13,42 @@ nlp_de = spacy.load("de_core_news_lg")
 
 
 class NER:
-    def __init__(self, text, language):
-        self.text = text
-        self.language = language
+    def __init__(self, src_text, src_lan):
+        self.src = src_text
+        # self.trg = trg_text
+        self.src_lan = src_lan
+        self.trg_lan = "en" if self.src_lan == "de" else "de"
+        # self.align = align
 
     def anonymize(self) -> list:
         """
-            Anonymizes text using the SpaCy NER-tagger.
-            :return: List of anonymized sentences
-            """
+        Anonymizes text using the SpaCy NER-tagger.
+        :return: List of anonymized sentences
+        """
         # Create NLP-engine for the right language
-        nlp = nlp_en if self.language == "en" else nlp_de
+        nlp = nlp_en if self.src_lan == "en" else nlp_de
         # Anonymize text sentence by sentence
         anonymized_text = []
-        for s in self.text:
+        for s in self.src:
             doc = nlp(s)
-            len_diff = 0  # Length difference to calculate string replacement starting point
-            s_new = s
+            s_list = s.split()
+            s_startchars = []
+            c = 0
+            for i in range(len(s_list)-1):
+                s_startchars.append(c)
+                c += len(s_list[i]) + 1
+            s_new = s_list
             for ent in doc.ents:
-                start = ent.start_char + len_diff
-                # Update string based on starting point
-                s_new = s_new[:start] + s_new[start:].replace(ent.text,
-                                                              f"<{ent.label_}>", 1)
-                # Calculate new starting point in string
-                len_diff += len(ent.label_) + 2 - len(ent.text)
+                i = s_startchars.index(ent.start_char)
+                i_start = i
+                ent_list = ent.text.split()
+                for _ in ent_list:
+                    if i == i_start:
+                        s_new[i] = f"<{ent.label_}>"
+                    else:
+                        s_new[i] = ""
+                    i += 1
+
             anonymized_text.append(s_new)
 
         return anonymized_text
@@ -212,12 +224,9 @@ def separate_into_documents(text: list, domain: str) -> list:
 
 def main():
     for domain in ["EMEA", "GNOME", "JRC"]:
-        if qualitative:
-            d = {"en": {}, "de": {}}
+        d = {}
         for language in ["en", "de"]:
             text, _, _ = get_all_texts(domain, language)
-            if qualitative:
-                d[f"{language}"]["original"] = text
             docs = separate_into_documents(text, domain)
             tfidf_anonymizer = TFIDF(docs, language)
             anonymized_tfidf = tfidf_anonymizer.anonymize()
