@@ -6,6 +6,8 @@ import random
 import spacy
 
 NGRAM_RANGE = (2, 2)
+full = True
+qualitative = False
 nlp_en = spacy.load("en_core_web_lg")
 nlp_de = spacy.load("de_core_news_lg")
 
@@ -171,13 +173,14 @@ class TFIDF:
         """
         # Calculate TF-IDF-scores for original texts
         results = self.calculate_tfidf(self.docs)
-        print("...Done for before anonymization")
         df = self.make_dataframe(results)
         new_texts = []
         # Change words in documents
         for i in range(len(self.docs)):
             words = df[df["Doc"] == i]["Word(s)"].tolist()[:5]
-            new_texts.append(self.change_word(words, self.docs[i]))
+            new_text = self.change_word(words, self.docs[i])
+            new_texts.append(new_text)
+
         if show_tfidf:
             # Show changed TF-IDF-scores
             new_results = self.calculate_tfidf(new_texts)
@@ -209,23 +212,39 @@ def separate_into_documents(text: list, domain: str) -> list:
 
 def main():
     for domain in ["EMEA", "GNOME", "JRC"]:
+        if qualitative:
+            d = {"en": {}, "de": {}}
         for language in ["en", "de"]:
-            print("Loading data...")
             text, _, _ = get_all_texts(domain, language)
-            print("Separating into documents...")
+            if qualitative:
+                d[f"{language}"]["original"] = text
             docs = separate_into_documents(text, domain)
-            print("Calculating TFIDF...")
             tfidf_anonymizer = TFIDF(docs, language)
             anonymized_tfidf = tfidf_anonymizer.anonymize()
-            print("Flattening texts...")
             flat_text = [sentence for doc in anonymized_tfidf for sentence in doc]
-            print("Anonymizing NER...")
-            ner_anonymizer = NER(flat_text, language)
-            anonymized_ner = ner_anonymizer.anonymize()
-            print("Done. Saving documents.")
-            with open(f"../data/3_anonymized/full/{domain}.{language}", "w") as f:
-                for sentence in anonymized_ner:
-                    f.write(sentence)
+            if qualitative:
+                d[f"{language}"]["anonymized"] = flat_text
+            if full:
+                ner_anonymizer = NER(flat_text, language)
+                anonymized_ner = ner_anonymizer.anonymize()
+                final_text = []
+                for s in anonymized_ner:
+                    x = s.strip() + "\n"
+                    final_text.append(x)
+                with open(f"../data/3_anonymized/full/{domain}.{language}", "w") as f:
+                    f.writelines(final_text)
+
+        if qualitative:
+            print("Writing to documents...")
+            original = d["de"]["original"]
+            anon_de = d["de"]["anonymized"]
+            anon_en = d["en"]["anonymized"]
+            with open(f"../data/3_anonymized/quali/{domain}.out", "w") as f:
+                for i in range(len(original)-1):
+                    if original[i] != anon_de[i]:
+                        f.write(f"German original: {original[i]}")
+                        f.write(f"German anonymized: {anon_de[i]}")
+                        f.write(f"English anonymized: {anon_en[i]}\n")
 
 
 if __name__ == "__main__":
