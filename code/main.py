@@ -1,38 +1,13 @@
 #!bin/env python
-from util import make_language_files, get_all_texts
-from anonymize import ner_tfidf
-from eval import evaluate_fscore, calculate_bleu
+from util import get_all_texts
+from eval import calculate_bleu
 import translate
 import sacremoses
 # Note: This import doesn't seem to do anything, but the program WILL NOT
 # work without it. Do NOT remove this import.
 
-anon = False
-transl = True
 
-
-def anonymization_pipeline(domain: str):
-    d = {"en": (make_language_files(domain, max_docs=3))[0],
-         "de": (make_language_files(domain, max_docs=3))[1]}
-    d["en_new"] = ner_tfidf(d["en"], "en")
-    d["de_new"] = ner_tfidf(d["de"], "de")
-    for language in ["en", "de"]:
-        i = 0
-        for doc, new_doc in zip(d[f"{language}"], d[f"{language}_new"]):
-            print(f"Working on doc {i} in {domain}-{language}")
-            evaluate_fscore(doc, new_doc)
-            print()
-            i += 1
-
-
-def translation_pipeline(domain: str):
-    d = {}
-    print("Loading translation files...", end="")
-    for language in ["en", "de"]:
-        d[f"train_{language}"], d[f"test_{language}"], d[f"valid_{language}"] = get_all_texts(
-            domain, language)
-    print("Done.")
-
+def translation_pipeline(d: dict):
     print("Translating English to German...", end="")
     en2de = translate.translate_en2de(d["test_en"])
     print("Done.")
@@ -50,10 +25,11 @@ def translation_pipeline(domain: str):
 
 def main():
     for domain in ["EMEA", "GNOME", "JRC"]:
-        if anon:
-            anonymization_pipeline(domain)
-        if transl:
-            translation_pipeline(domain)
+        d = {}
+        for language in ["en", "de"]:
+            d[f"train_{language}"], d[f"test_{language}"], d[f"valid_{language}"] = get_all_texts(
+                domain, language)
+        translation_pipeline(d)
 
 
 if __name__ == "__main__":
