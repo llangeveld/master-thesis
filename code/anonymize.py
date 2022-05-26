@@ -6,7 +6,8 @@ import random
 import spacy
 
 NGRAM_RANGE = (2, 2)
-full = True
+tf = False
+do_ner = True
 qualitative = False
 nlp_en = spacy.load("en_core_web_lg")
 nlp_de = spacy.load("de_core_news_lg")
@@ -14,11 +15,28 @@ nlp_de = spacy.load("de_core_news_lg")
 
 class NER:
     def __init__(self, src_text, trg_text, src_lan, align):
-        self.src = src_text
-        self.trg = trg_text
+        self.src_text = src_text
+        self.trg_text = trg_text
         self.src_lan = src_lan
         self.trg_lan = "en" if self.src_lan == "de" else "de"
         self.align = align
+
+    def replace_in_trg(self, idx: int, indices: list, ent_label: str):
+        alignment = self.align[idx]
+        replace_idxs = []
+        for i in indices:
+            replace_idxs.append([a[1] for a in alignment if a[0] == i])
+        flat_replace = [i for x in replace_idxs for i in x]
+        i_start = flat_replace[0]
+        sentence = self.trg_text[idx]
+        s_new = sentence.split()
+        for i in flat_replace:
+            if i == i_start:
+                s_new[i] = f"<{ent_label}>"
+            else:
+                s_new[i] = ""
+        s_string = " ".join([w for w in s_new if w != ""])
+        return s_string
 
     def anonymize(self) -> list:
         """
@@ -28,11 +46,13 @@ class NER:
         # Create NLP-engine for the right language
         nlp = nlp_en if self.src_lan == "en" else nlp_de
         # Anonymize text sentence by sentence
-        anonymized_text = []
-        for idx, s in enumerate(self.src):
+        anonymized_text_src = []
+        anonymized_text_trg = []
+        for idx, s in enumerate(self.src_text):
             doc = nlp(s)
             s_list = s.split()
             s_startchars = []
+            new_trg = self.trg_text[idx]
             c = 0
             for i in range(len(s_list)-1):
                 s_startchars.append(c)
@@ -50,10 +70,11 @@ class NER:
                     else:
                         s_new[i] = ""
                     i += 1
-
-            anonymized_text.append(s_new)
-
-        return anonymized_text
+                new_trg = self.replace_in_trg(idx, indices, ent.label_)
+            s_string = " ".join([w for w in s_new if w != ""])
+            anonymized_text_src.append(s_string)
+            anonymized_text_trg.append(new_trg)
+        return anonymized_text_src
 
 
 class TFIDF:
@@ -227,24 +248,29 @@ def separate_into_documents(text: list, domain: str) -> list:
 def main():
     for domain in ["EMEA", "GNOME", "JRC"]:
         d = {}
-        d_alignments = postprocess_alignment_file(domain)
+
         for language in ["en", "de"]:
-            text, _, _ = get_all_texts(domain, language)
-            docs = separate_into_documents(text, domain)
+            d[f"{language}"], _, _ = get_all_texts(domain, language)
+        d_alignments = postprocess_alignment_file(domain)
+        d_docs = {"en": separate_into_documents(d["en"], domain),
+                  "de": separate_into_documents(d["de"], domain)}
+        for src, trg in [("en", "de"), ("de", "en")]:
+            pass
+        if tf:
             tfidf_anonymizer = TFIDF(docs, language)
             anonymized_tfidf = tfidf_anonymizer.anonymize()
             flat_text = [sentence for doc in anonymized_tfidf for sentence in doc]
-            if qualitative:
-                d[f"{language}"]["anonymized"] = flat_text
-            if full:
-                ner_anonymizer = NER(flat_text, language)
-                anonymized_ner = ner_anonymizer.anonymize()
-                final_text = []
-                for s in anonymized_ner:
-                    x = s.strip() + "\n"
-                    final_text.append(x)
-                with open(f"../data/3_anonymized/full/{domain}.{language}", "w") as f:
-                    f.writelines(final_text)
+        if qualitative:
+            d[f"{language}"]["anonymized"] = flat_text
+        if do_ner:
+            ner_anonymizer = NER(d["en"], d["de"], "en", d_alignments["en-de"])
+            anonymized_ner = ner_anonymizer.anonymize()
+            final_text = []
+            for s in anonymized_ner:
+                x = s.strip() + "\n"
+                final_text.append(x)
+            with open(f"../data/3_anonymized/full/{domain}.{language}", "w") as f:
+                f.writelines(final_text)
 
         if qualitative:
             print("Writing to documents...")
