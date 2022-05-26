@@ -117,16 +117,16 @@ class TFIDF:
 
         return df
 
-    def find_most_similar_words(self, word, n=5):
+    def find_most_similar_words(self, word, n=4):
         """
         Finds the n most similar words to input word in the given language
         :param word: Word that will get most similar words as output
         :param n: Number of most similar words
         :return: list of n most similar words to input word
         """
-        if self.language == "en":
+        if self.src_lan == "en":
             sp = nlp_en
-        elif self.language == "de":
+        elif self.src_lan == "de":
             sp = nlp_de
         else:
             raise ValueError("Argument 'language' must be 'en' or 'de'.")
@@ -154,6 +154,7 @@ class TFIDF:
         replace_strings = []
         for word in words:
             syns = [syn for syn in self.find_most_similar_words(word)]
+            syns.append(word)
             replace_strings.append(syns)
         return replace_strings
 
