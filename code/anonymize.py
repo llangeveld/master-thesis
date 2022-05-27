@@ -23,14 +23,11 @@ class NER:
 
     def replace_in_trg(self, idx: int, indices: list, ent_label: str):
         alignment = self.align[idx]
-        replace_idxs = []
-        for i in indices:
-            replace_idxs.append([a[1] for a in alignment if a[0] == i])
-        flat_replace = [i for x in replace_idxs for i in x]
-        i_start = flat_replace[0]
+        replace_ids = find_replace_idx(alignment, indices, flat=True)
+        i_start = replace_ids[0]
         sentence = self.trg_text[idx]
         s_new = sentence.split()
-        for i in flat_replace:
+        for i in replace_ids:
             if i == i_start:
                 s_new[i] = f"<{ent_label}>"
             else:
@@ -54,7 +51,7 @@ class NER:
             s_startchars = []
             new_trg = self.trg_text[idx]
             c = 0
-            for i in range(len(s_list)-1):
+            for i in range(len(s_list) - 1):
                 s_startchars.append(c)
                 c += len(s_list[i]) + 1
             s_new = s_list.copy()
@@ -224,6 +221,23 @@ class TFIDF:
             self.show_results(df, new_df)
 
         return new_texts
+
+
+def find_replace_idx(alignment: list, indices: list, flat=False):
+    replace_ids = []
+    for i in indices:
+        replace_ids.append([a[1] for a in alignment if a[0] == i])
+    if flat:
+        flat_replace = [i for x in replace_ids for i in x]
+        return flat_replace
+    return replace_ids
+
+
+def divide_into_chunks(lst: list, n: int):
+    chunked = []
+    for i in range(len(lst), n):
+        chunked.append(lst[i:i + n])
+    return chunked
 
 
 def separate_into_documents(text: list, domain: str) -> list:
