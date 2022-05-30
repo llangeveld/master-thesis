@@ -6,8 +6,7 @@ import random
 import spacy
 
 NGRAM_RANGE = (2, 2)
-tf = False
-do_ner = True
+do_ner = False
 qualitative = False
 nlp_en = spacy.load("en_core_web_lg")
 nlp_de = spacy.load("de_core_news_lg")
@@ -35,7 +34,7 @@ class NER:
         s_string = " ".join([w for w in s_new if w != ""])
         return s_string
 
-    def anonymize(self) -> list:
+    def anonymize(self) -> tuple:
         """
         Anonymizes text using the SpaCy NER-tagger.
         :return: List of anonymized sentences
@@ -71,13 +70,19 @@ class NER:
             s_string = " ".join([w for w in s_new if w != ""])
             anonymized_text_src.append(s_string)
             anonymized_text_trg.append(new_trg)
-        return anonymized_text_src
+
+        return anonymized_text_src, anonymized_text_trg
 
 
 class TFIDF:
-    def __init__(self, docs, language):
-        self.docs = docs
-        self.language = language
+    def __init__(self, src_text, trg_text, src_lan, align, domain):
+        self.src_text = src_text
+        self.trg_text = trg_text
+        self.src_lan = src_lan
+        self.trg_lan = "en" if self.src_lan == "de" else "de"
+        self.align = align
+        self.src_docs = separate_into_documents(self.src_text, domain)
+        self.trg_docs = separate_into_documents(self.trg_text, domain)
 
     def calculate_tfidf(self, docs: list) -> list:
         """
@@ -86,7 +91,7 @@ class TFIDF:
         :return: list of results: doc-num, words, tf-idf score.
         """
         # Calculate TF-IDF
-        if self.language == "en":
+        if self.src_lan == "en":
             tfidf = TfidfVectorizer(ngram_range=NGRAM_RANGE, stop_words='english')
         else:
             tfidf = TfidfVectorizer(ngram_range=NGRAM_RANGE)
@@ -114,16 +119,17 @@ class TFIDF:
 
         return df
 
-    def find_most_similar_words(self, word, n=4):
+    def find_most_similar_words(self, word, language, n=4):
         """
         Finds the n most similar words to input word in the given language
+        :param language: Language for which to find most similar words
         :param word: Word that will get most similar words as output
         :param n: Number of most similar words
         :return: list of n most similar words to input word
         """
-        if self.src_lan == "en":
+        if language == "en":
             sp = nlp_en
-        elif self.src_lan == "de":
+        elif language == "de":
             sp = nlp_de
         else:
             raise ValueError("Argument 'language' must be 'en' or 'de'.")
@@ -142,44 +148,70 @@ class TFIDF:
         else:
             return [word.lower_]
 
-    def get_replace_strings(self, words: list) -> list:
+    def get_replace_strings(self, words: list, lan: str) -> list:
         """
         Finds replacement strings using SpaCy
+        :param lan: Language
         :param words: list of words in need of replacement
         :return: a list of lists of strings with replacement words per word
         """
         replace_strings = []
         for word in words:
-            syns = [syn for syn in self.find_most_similar_words(word)]
+            syns = [syn for syn in self.find_most_similar_words(word, lan)]
             syns.append(word)
             replace_strings.append(syns)
         return replace_strings
 
-    def change_word(self, words: list, text: list) -> list:
+    def change_word(self, words: list, text: list, text_trg: list, alignment: list) -> tuple[list, list]:
         """
         Replaces given words by random synonyms in a given text.
+        :param text_trg: Target text
         :param words: Words that need replacing
         :param text: Text in which words need to be replaced
         :return: List of sentences wherein the words have been replaced
         """
-        new_text = text
+        # n_text = text.copy()
+        n_text = []
+        new_text_trg = []
         for word_set in words:
-            words_list = word_set.split(" ")
-            replace_strings = self.get_replace_strings(words_list)
-            # Replacing old words by new words
-            for idx, sentence in enumerate(new_text):
-                new_sentence = sentence
-                for j in range(sentence.count(word_set)):
-                    replace_string = ""
-                    # Build replacement string
-                    for i in range(len(words_list)):
-                        replace_string += str(random.choice(replace_strings[i]))
-                        replace_string += " "
-                    new_sentence = new_sentence.replace(word_set, replace_string.rstrip(), 1)
-                # Replacing old sentence by new sentence
-                new_text[idx] = new_sentence
+            words_list = word_set.split()
+            replace_strings = self.get_replace_strings(words_list, self.src_lan)
+            for idx, sentence in enumerate(text):
+                s_list = sentence.split()
+                new_sentence_src = s_list.copy()
+                new_sentence_trg = text_trg[idx].split()
+                indices = []
+                for i, w in enumerate(s_list):
+                    if w in words_list:
+                        indices.append(i)
+                if indices:
+                    indices_divided = divide_into_chunks(indices, len(words_list))
+                    if isinstance(indices_divided[0], int):
+                        for j, ix in enumerate(indices_divided):
+                            new_sentence_src[ix] = str(random.choice(replace_strings[j]))
+                    else:
+                        for w_set in indices_divided:
+                            for j, ix in enumerate(w_set):
+                                new_sentence_src[ix] = str(random.choice(replace_strings[j]))
+                    s_align = alignment[idx]
+                    replace_ids = find_replace_idx(s_align, indices)
+                    trg_sentence = text_trg[idx]
+                    trg_sentence_lst = trg_sentence.split()
+                    replace_words = []
+                    for i in flatten_list(replace_ids):
+                        replace_words.append(trg_sentence_lst[i])
+                    replace_words = [trg_sentence_lst[i] for i in flatten_list(replace_ids)]
+                    replace_strings_trg = self.get_replace_strings(replace_words, self.trg_lan)
+                    for w_set in replace_ids:
+                        for j, ix in enumerate(w_set):
+                            new_sentence_trg[ix] = str(random.choice(replace_strings_trg[j]))
+                    n_text.append(" ".join(new_sentence_src))
+                    new_text_trg.append(" ".join(new_sentence_trg))
+                else:
+                    n_text.append(sentence)
+                    new_text_trg.append(text_trg[idx])
 
-        return new_text
+        return n_text, new_text_trg
 
     @staticmethod
     def show_results(df, df2):
@@ -197,7 +229,7 @@ class TFIDF:
             print(new_df2.head())
             print("----------------------------------------------")
 
-    def anonymize(self, show_tfidf=False) -> list:
+    def anonymize(self, show_tfidf=False) -> tuple:
         """
         Calculates TF-IDF score for a "before"-document and the document in which
         the most common n-grams have been replaced.
@@ -205,14 +237,18 @@ class TFIDF:
         :return: List of documents in which common n-grams have been replaced
         """
         # Calculate TF-IDF-scores for original texts
-        results = self.calculate_tfidf(self.docs)
+        results = self.calculate_tfidf(self.src_docs)
         df = self.make_dataframe(results)
         new_texts = []
+        new_texts_trg = []
         # Change words in documents
-        for i in range(len(self.docs)):
+        for i in range(len(self.src_docs)):
             words = df[df["Doc"] == i]["Word(s)"].tolist()[:5]
-            new_text = self.change_word(words, self.docs[i])
-            new_texts.append(new_text)
+            new_text_src, new_text_trg = self.change_word(words, self.src_docs[i],
+                                                          self.trg_docs[i],
+                                                          self.align[i])
+            new_texts.append(new_text_src)
+            new_texts_trg.append(new_text_trg)
 
         if show_tfidf:
             # Show changed TF-IDF-scores
@@ -220,7 +256,11 @@ class TFIDF:
             new_df = self.make_dataframe(new_results)
             self.show_results(df, new_df)
 
-        return new_texts
+        return new_texts, new_texts_trg
+
+
+def flatten_list(lst: list) -> list:
+    return [i for x in lst for i in x]
 
 
 def find_replace_idx(alignment: list, indices: list, flat=False):
@@ -228,14 +268,15 @@ def find_replace_idx(alignment: list, indices: list, flat=False):
     for i in indices:
         replace_ids.append([a[1] for a in alignment if a[0] == i])
     if flat:
-        flat_replace = [i for x in replace_ids for i in x]
-        return flat_replace
+        return flatten_list(replace_ids)
     return replace_ids
 
 
 def divide_into_chunks(lst: list, n: int):
+    if len(lst) <= n:
+        return lst
     chunked = []
-    for i in range(len(lst), n):
+    for i in range(0, len(lst), n):
         chunked.append(lst[i:i + n])
     return chunked
 
@@ -253,7 +294,7 @@ def separate_into_documents(text: list, domain: str) -> list:
     i = 0
     doc_len = doc_lens[domain]
     while i + doc_len < len(text):
-        docs.append(text[i:i+doc_len])
+        docs.append(text[i:i + doc_len])
         i = i + doc_len
     docs.append(text[i:])
 
@@ -263,41 +304,42 @@ def separate_into_documents(text: list, domain: str) -> list:
 def main():
     for domain in ["EMEA", "GNOME", "JRC"]:
         d = {}
-
         for language in ["en", "de"]:
             d[f"{language}"], _, _ = get_all_texts(domain, language)
         d_alignments = postprocess_alignment_file(domain)
-        d_docs = {"en": separate_into_documents(d["en"], domain),
-                  "de": separate_into_documents(d["de"], domain)}
+        d_alignments_docs = {"en-de": separate_into_documents(d_alignments["en-de"], domain),
+                             "de-en": separate_into_documents(d_alignments["de-en"], domain)}
         for src, trg in [("en", "de"), ("de", "en")]:
-            pass
-        if tf:
-            tfidf_anonymizer = TFIDF(docs, language)
-            anonymized_tfidf = tfidf_anonymizer.anonymize()
-            flat_text = [sentence for doc in anonymized_tfidf for sentence in doc]
-        if qualitative:
-            d[f"{language}"]["anonymized"] = flat_text
-        if do_ner:
-            ner_anonymizer = NER(d["en"], d["de"], "en", d_alignments["en-de"])
-            anonymized_ner = ner_anonymizer.anonymize()
-            final_text = []
-            for s in anonymized_ner:
-                x = s.strip() + "\n"
-                final_text.append(x)
-            with open(f"../data/3_anonymized/full/{domain}.{language}", "w") as f:
-                f.writelines(final_text)
+            d_tfidf = {}
+            d_ner = {}
+            tfidf_anonymizer = TFIDF(d[f"{src}"], d[f"{trg}"], src,
+                                     d_alignments_docs[f"{src}-{trg}"], domain)
+            docs_src, docs_trg = tfidf_anonymizer.anonymize()
+            d_tfidf[f"{src}"] = flatten_list(docs_src)
+            d_tfidf[f"{trg}"] = flatten_list(docs_trg)
+            if do_ner:
+                ner_anonymizer = NER(d_tfidf[f"{src}"], d_tfidf[f"{trg}"],
+                                     src, d_alignments[f"{src}-{trg}"])
+                d_ner[f"{src}"], d_ner[f"{trg}"] = ner_anonymizer.anonymize()
+                for lan in [src, trg]:
+                    final_text = []
+                    for s in d_ner[f"{lan}"]:
+                        x = s.strip() + "\n"
+                        final_text.append(x)
+                    with open(f"../data/3_anonymized/full/{domain}.{src}-{trg}.{lan}", "w") as f:
+                        f.writelines(final_text)
 
-        if qualitative:
-            print("Writing to documents...")
-            original = d["de"]["original"]
-            anon_de = d["de"]["anonymized"]
-            anon_en = d["en"]["anonymized"]
-            with open(f"../data/3_anonymized/quali/{domain}.out", "w") as f:
-                for i in range(len(original)-1):
-                    if original[i] != anon_de[i]:
-                        f.write(f"German original: {original[i]}")
-                        f.write(f"German anonymized: {anon_de[i]}")
-                        f.write(f"English anonymized: {anon_en[i]}\n")
+            if qualitative and src == "en":
+                print("Writing to documents...")
+                original = d["de"]
+                anon_de = d_tfidf["de"]
+                anon_en = d_tfidf["en"]
+                with open(f"../data/3_anonymized/quali/{domain}.out", "w") as f:
+                    for i in range(len(original) - 1):
+                        if original[i] != anon_de[i]:
+                            f.write(f"German original: {original[i]}")
+                            f.write(f"German anonymized: {anon_de[i]}")
+                            f.write(f"English anonymized: {anon_en[i]}\n")
 
 
 if __name__ == "__main__":
