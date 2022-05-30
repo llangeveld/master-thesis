@@ -20,11 +20,19 @@ class NER:
         self.trg_lan = "en" if self.src_lan == "de" else "de"
         self.align = align
 
-    def replace_in_trg(self, idx: int, indices: list, ent_label: str):
+    def replace_in_trg(self, idx: int, indices: list, ent_label: str) -> str:
+        """
+        Replace words in target sentence.
+        :param idx: Target sentence index (to get right sentence)
+        :param indices: List of indices that need to be replaced
+        :param ent_label: Entity label with which to replace text
+        :return: New sentence with entity replaced (str)
+        """
+        # Find the corresponding words in target text
         alignment = self.align[idx]
         replace_ids = find_replace_idx(alignment, indices, flat=True)
-        i_start = replace_ids[0]
         sentence = self.trg_text[idx]
+        # Replace entity label
         s_new = sentence.split()
         for i in replace_ids:
             if i == i_start:
@@ -47,18 +55,21 @@ class NER:
         for idx, s in enumerate(self.src_text):
             doc = nlp(s)
             s_list = s.split()
+            # Find words in list based on starting characters of words in str
             s_startchars = []
             new_trg = self.trg_text[idx]
             c = 0
             for i in range(len(s_list) - 1):
                 s_startchars.append(c)
                 c += len(s_list[i]) + 1
+            # Replace words in source & target sentence
             s_new = s_list.copy()
             indices = []
             for ent in doc.ents:
                 i = s_startchars.index(ent.start_char)
                 i_start = i
                 ent_list = ent.text.split()
+                # Replace words + find indices for target words
                 for _ in ent_list:
                     indices.append(i)
                     if i == i_start:
@@ -66,7 +77,11 @@ class NER:
                     else:
                         s_new[i] = ""
                     i += 1
-                new_trg = self.replace_in_trg(idx, indices, ent.label_)
+                # Replace words in target sentence
+                if indices:
+                    new_trg = self.replace_in_trg(idx, indices, ent.label_)
+                else:
+                    new_trg = self.trg_text[idx]
             s_string = " ".join([w for w in s_new if w != ""])
             anonymized_text_src.append(s_string)
             anonymized_text_trg.append(new_trg)
@@ -119,7 +134,8 @@ class TFIDF:
 
         return df
 
-    def find_most_similar_words(self, word, language, n=4):
+    @staticmethod
+    def find_most_similar_words(word, language, n=4):
         """
         Finds the n most similar words to input word in the given language
         :param language: Language for which to find most similar words
@@ -127,25 +143,29 @@ class TFIDF:
         :param n: Number of most similar words
         :return: list of n most similar words to input word
         """
+        # Find correct NLP engine
         if language == "en":
             sp = nlp_en
         elif language == "de":
             sp = nlp_de
         else:
             raise ValueError("Argument 'language' must be 'en' or 'de'.")
-        word = sp.vocab[str(word)]
+        word = sp.vocab[str(word)]  # Convert word to word vector
+        # Find words similar to input word
         queries = [
             w for w in word.vocab
             if w.is_lower == word.is_lower and w.prob >= -30 and np.count_nonzero(w.vector)
         ]
+        # Sort by how much alike the words are
         by_similarity = sorted(queries, key=lambda w: word.similarity(w), reverse=True)
+        # Make human-readable list
         values = [
             w.lower_ for w in by_similarity[:n + 1]
             if w.lower_ != word.lower_
         ]
         if values:
             return values
-        else:
+        else:  # If there are no similar words
             return [word.lower_]
 
     def get_replace_strings(self, words: list, lan: str) -> list:
@@ -162,29 +182,35 @@ class TFIDF:
             replace_strings.append(syns)
         return replace_strings
 
-    def change_word(self, words: list, text: list, text_trg: list, alignment: list) -> tuple[list, list]:
+    def change_word(self, words: list, text: list, text_trg: list,
+                    alignment: list) -> tuple[list, list]:
         """
         Replaces given words by random synonyms in a given text.
-        :param text_trg: Target text
+        :param alignment: Alignment files for document
+        :param text_trg: Document in target language
         :param words: Words that need replacing
-        :param text: Text in which words need to be replaced
+        :param text: Document in source language
         :return: List of sentences wherein the words have been replaced
         """
-        # n_text = text.copy()
-        n_text = []
-        new_text_trg = []
+        n_text = text.copy()
+        new_text_trg = text_trg.copy()
+        # Go over word sets
         for word_set in words:
             words_list = word_set.split()
+            # Find replace strings in source language
             replace_strings = self.get_replace_strings(words_list, self.src_lan)
-            for idx, sentence in enumerate(text):
+            # Go over every sentence in the text
+            for idx, sentence in enumerate(n_text):
                 s_list = sentence.split()
                 new_sentence_src = s_list.copy()
                 new_sentence_trg = text_trg[idx].split()
                 indices = []
+                # Find indices for words to replace
                 for i, w in enumerate(s_list):
                     if w in words_list:
                         indices.append(i)
                 if indices:
+                    # Replace words in source text
                     indices_divided = divide_into_chunks(indices, len(words_list))
                     if isinstance(indices_divided[0], int):
                         for j, ix in enumerate(indices_divided):
@@ -193,6 +219,7 @@ class TFIDF:
                         for w_set in indices_divided:
                             for j, ix in enumerate(w_set):
                                 new_sentence_src[ix] = str(random.choice(replace_strings[j]))
+                    # Replace words in target text
                     s_align = alignment[idx]
                     replace_ids = find_replace_idx(s_align, indices)
                     trg_sentence = text_trg[idx]
@@ -205,11 +232,10 @@ class TFIDF:
                     for w_set in replace_ids:
                         for j, ix in enumerate(w_set):
                             new_sentence_trg[ix] = str(random.choice(replace_strings_trg[j]))
-                    n_text.append(" ".join(new_sentence_src))
-                    new_text_trg.append(" ".join(new_sentence_trg))
-                else:
-                    n_text.append(sentence)
-                    new_text_trg.append(text_trg[idx])
+
+                    # Add to texts
+                    n_text[idx] = " ".join(new_sentence_src)
+                    new_text_trg[idx] = " ".join(new_sentence_trg)
 
         return n_text, new_text_trg
 
@@ -238,6 +264,7 @@ class TFIDF:
         """
         # Calculate TF-IDF-scores for original texts
         results = self.calculate_tfidf(self.src_docs)
+        print("\tCalculated TFIDF. Replacing words.")
         df = self.make_dataframe(results)
         new_texts = []
         new_texts_trg = []
@@ -260,10 +287,18 @@ class TFIDF:
 
 
 def flatten_list(lst: list) -> list:
+    """Flattens 2D-list to 1D-list"""
     return [i for x in lst for i in x]
 
 
-def find_replace_idx(alignment: list, indices: list, flat=False):
+def find_replace_idx(alignment: list, indices: list, flat=False) -> list:
+    """
+    Finds replacement indices given an alignment file
+    :param alignment: Alignment list of sentence
+    :param indices: List of indices in source language that are replaced
+    :param flat: If a flat list needs to be returned
+    :return: List of indices to replace in target text
+    """
     replace_ids = []
     for i in indices:
         replace_ids.append([a[1] for a in alignment if a[0] == i])
@@ -303,18 +338,21 @@ def separate_into_documents(text: list, domain: str) -> list:
 
 def main():
     for domain in ["EMEA", "GNOME", "JRC"]:
+        print(f"Working on {domain}...")
         d = {}
         for language in ["en", "de"]:
             d[f"{language}"], _, _ = get_all_texts(domain, language)
         d_alignments = postprocess_alignment_file(domain)
         d_alignments_docs = {"en-de": separate_into_documents(d_alignments["en-de"], domain),
                              "de-en": separate_into_documents(d_alignments["de-en"], domain)}
+        print(f"\tProcessed files. Starting anonymization on TFIDF.")
         for src, trg in [("en", "de"), ("de", "en")]:
             d_tfidf = {}
             d_ner = {}
             tfidf_anonymizer = TFIDF(d[f"{src}"], d[f"{trg}"], src,
                                      d_alignments_docs[f"{src}-{trg}"], domain)
             docs_src, docs_trg = tfidf_anonymizer.anonymize()
+            print("\tReplaced words. Start working on NER.")
             d_tfidf[f"{src}"] = flatten_list(docs_src)
             d_tfidf[f"{trg}"] = flatten_list(docs_trg)
             if do_ner:
@@ -330,7 +368,7 @@ def main():
                         f.writelines(final_text)
 
             if qualitative and src == "en":
-                print("Writing to documents...")
+                print("\tWriting to documents for qualitative analysis.")
                 original = d["de"]
                 anon_de = d_tfidf["de"]
                 anon_en = d_tfidf["en"]
