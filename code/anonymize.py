@@ -6,8 +6,8 @@ import random
 import spacy
 
 NGRAM_RANGE = (2, 2)
-do_ner = False
-qualitative = False
+do_ner = True
+qualitative = True
 nlp_en = spacy.load("en_core_web_lg")
 nlp_de = spacy.load("de_core_news_lg")
 
@@ -34,12 +34,17 @@ class NER:
         sentence = self.trg_text[idx]
         # Replace entity label
         s_new = sentence.split()
-        for i in replace_ids:
-            if i == i_start:
-                s_new[i] = f"<{ent_label}>"
-            else:
-                s_new[i] = ""
-        s_string = " ".join([w for w in s_new if w != ""])
+        if replace_ids:
+            i_start = replace_ids[0]
+            for i in replace_ids:
+                # Only replace first word
+                if i == i_start:
+                    s_new[i] = f"<{ent_label}>"
+                else:
+                    s_new[i] = ""
+            s_string = " ".join([w for w in s_new if w != ""])
+        else:
+            s_string = sentence
         return s_string
 
     def anonymize(self) -> tuple:
@@ -57,26 +62,29 @@ class NER:
             s_list = s.split()
             # Find words in list based on starting characters of words in str
             s_startchars = []
-            new_trg = self.trg_text[idx]
             c = 0
-            for i in range(len(s_list) - 1):
+            for i in range(len(s_list)):
                 s_startchars.append(c)
                 c += len(s_list[i]) + 1
             # Replace words in source & target sentence
             s_new = s_list.copy()
+            new_trg = self.trg_text[idx]
             indices = []
             for ent in doc.ents:
-                i = s_startchars.index(ent.start_char)
-                i_start = i
-                ent_list = ent.text.split()
-                # Replace words + find indices for target words
-                for _ in ent_list:
-                    indices.append(i)
-                    if i == i_start:
-                        s_new[i] = f"<{ent.label_}>"
-                    else:
-                        s_new[i] = ""
-                    i += 1
+                try:  # Differences in tokenization
+                    i = s_startchars.index(ent.start_char)
+                    i_start = i
+                    ent_list = ent.text.split()
+                    # Replace words + find indices for target words
+                    for _ in ent_list:
+                        indices.append(i)
+                        if i == i_start:
+                            s_new[i] = f"<{ent.label_}>"
+                        else:
+                            s_new[i] = ""
+                        i += 1
+                except ValueError:
+                    break
                 # Replace words in target sentence
                 if indices:
                     new_trg = self.replace_in_trg(idx, indices, ent.label_)
@@ -347,6 +355,7 @@ def main():
                              "de-en": separate_into_documents(d_alignments["de-en"], domain)}
         print(f"\tProcessed files. Starting anonymization on TFIDF.")
         for src, trg in [("en", "de"), ("de", "en")]:
+            print(f"\tStarting first language pair.")
             d_tfidf = {}
             d_ner = {}
             tfidf_anonymizer = TFIDF(d[f"{src}"], d[f"{trg}"], src,
@@ -359,6 +368,7 @@ def main():
                 ner_anonymizer = NER(d_tfidf[f"{src}"], d_tfidf[f"{trg}"],
                                      src, d_alignments[f"{src}-{trg}"])
                 d_ner[f"{src}"], d_ner[f"{trg}"] = ner_anonymizer.anonymize()
+                print("\tAnonymized NER. Writing to files.")
                 for lan in [src, trg]:
                     final_text = []
                     for s in d_ner[f"{lan}"]:
@@ -375,9 +385,9 @@ def main():
                 with open(f"../data/3_anonymized/quali/{domain}.out", "w") as f:
                     for i in range(len(original) - 1):
                         if original[i] != anon_de[i]:
-                            f.write(f"German original: {original[i]}")
-                            f.write(f"German anonymized: {anon_de[i]}")
-                            f.write(f"English anonymized: {anon_en[i]}\n")
+                            print(f"German original: {original[i].strip()}", file=f)
+                            print(f"German anonymized: {anon_de[i].strip()}", file=f)
+                            print(f"English anonymized: {anon_en[i].strip()}\n", file=f)
 
 
 if __name__ == "__main__":
