@@ -1,9 +1,10 @@
 #!/bin/bash
-#SBATCH --time=00:05:00
-#SBATCH --partition=gpushort
-#SBATCH --output=de-en_test.out
+#SBATCH --time=01:00:00
+#SBATCH --partition=gpu
+#SBATCH --output=GNOME.out
 #SBATCH --mem=64GB
 #SBATCH --gres=gpu:1
+#SBATCH --job-name=GNOME-en-de
 
 # Get the resources needed
 echo "Loading module..."
@@ -19,6 +20,6 @@ export TRANSFORMERS_CACHE=/data/s3225143/cache
 export TORCH_HOME=/data/s3225143/cache
 
 echo "Starting program..."
-bash train_EMEA.sh
+bash GNOME.sh
 
 deactivate

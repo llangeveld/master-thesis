@@ -1,9 +1,10 @@
 #!/bin/bash
-#SBATCH --time=1-00:00:00
+#SBATCH --time=01:00:00
 #SBATCH --partition=gpu
-#SBATCH --output=training2.out
+#SBATCH --output=JRC.out
 #SBATCH --mem=64GB
 #SBATCH --gres=gpu:1
+#SBATCH --job-name=JRC-de-en
 
 # Get the resources needed
 echo "Loading module..."
@@ -19,6 +20,6 @@ export TRANSFORMERS_CACHE=/data/s3225143/cache
 export TORCH_HOME=/data/s3225143/cache
 
 echo "Starting program..."
-bash train2.sh
+bash JRC.sh
 
 deactivate
