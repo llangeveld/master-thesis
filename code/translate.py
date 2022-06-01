@@ -1,5 +1,7 @@
 import torch
 import sacremoses
+# NOTE: This may seem like an unused statement, but it won't work without it.
+# Do NOT remove the import-statement!
 from util import get_all_texts
 from sacrebleu import BLEU
 
@@ -24,10 +26,15 @@ def main():
         for language in ["en", "de"]:
             _, d_og[f"{language}"], _ = get_all_texts(domain, language)
         for src, trg in [("en", "de"), ("de", "en")]:
-            model = torch.load(f"/data/s3225143/models/finetune/"
-                               f"{src}-{trg}/{domain}/checkpoint_best.pt")
+            model = torch.hub.load(f"/data/s3225143/models/finetune/"
+                                   f"{src}-{trg}/{domain}/", "checkpoint_best.pt",
+                                   source="local")
             translated_text = []
             for sentence in d_og[f"{src}"]:
                 translated_text.append(model.translate(sentence))
             score = calculate_bleu(translated_text, d_og[f"{trg}"])
             print(f"Score for {domain}-{src}-{trg}: {score}")
+
+
+if __name__ == "__main__":
+    main()
