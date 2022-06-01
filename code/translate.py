@@ -1,38 +1,33 @@
 import torch
 import sacremoses
+from util import get_all_texts
+from sacrebleu import BLEU
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
-# English to German model
-en2de = torch.hub.load('pytorch/fairseq', 'transformer.wmt19.en-de',
-                       checkpoint_file='model1.pt:model2.pt:model3.pt:model4.pt',
-                       tokenizer='moses', bpe='fastbpe').to(device)
-
-# German to English model
-de2en = torch.hub.load('pytorch/fairseq', 'transformer.wmt19.de-en',
-                       checkpoint_file='model1.pt:model2.pt:model3.pt:model4.pt',
-                       tokenizer='moses', bpe='fastbpe').to(device)
+bleu = BLEU(effective_order=True)
 
 
-def translate_en2de(text: list) -> list:
+def calculate_bleu(hyps: list, refs: list) -> float:
     """
-    Translates English text into German text
-    :param text: List of sentences
-    :return: List of translated sentences
+    Calculates corpus BLEU for translated text
+    :param hyps: List of translations made by machine
+    :param refs: List of the original sentences
+    :return: BLEU-score (float)
     """
-    translated_text = []
-    for sentence in text:
-        translated_text.append(en2de.translate(sentence))
-    return translated_text
+    result = bleu.corpus_score(hyps, [refs])
+    return result.score
 
 
-def translate_de2en(text: list):
-    """
-    Translates German text into English text
-    :param text: List of sentences
-    :return: List of translated sentences
-    """
-    translated_text = []
-    for sentence in text:
-        translated_text.append(de2en.translate(sentence))
-    return translated_text
+def main():
+    for domain in ["EMEA", "GNOME", "JRC"]:
+        d_og = {}
+        print(f"Working on {domain}...")
+        for language in ["en", "de"]:
+            _, d_og[f"{language}"], _ = get_all_texts(domain, language)
+        for src, trg in [("en", "de"), ("de", "en")]:
+            model = torch.load(f"/data/s3225143/models/finetune/"
+                               f"{src}-{trg}/{domain}/checkpoint_best.pt")
+            translated_text = []
+            for sentence in d_og[f"{src}"]:
+                translated_text.append(model.translate(sentence))
+            score = calculate_bleu(translated_text, d_og[f"{trg}"])
+            print(f"Score for {domain}-{src}-{trg}: {score}")
