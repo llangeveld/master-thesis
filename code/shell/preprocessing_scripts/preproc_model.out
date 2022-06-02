@@ -1,0 +1,196 @@
+Loading module...
+Starting program...
+/data/s3225143/.envs/thesis/lib/python3.8/site-packages/setuptools/distutils_patch.py:25: UserWarning: Distutils was imported before Setuptools. This usage is discouraged and may exhibit undesirable behaviors or errors. Please use Setuptools' objects directly or at least import Setuptools first.
+  warnings.warn(
+2022-05-23 11:55:05 | INFO | fairseq_cli.preprocess | Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='/data/s3225143/data/4_translation/test/processed/EMEA.de-en', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, simul_type=None, source_lang='de', srcdict=None, suppress_crashes=False, target_lang='en', task='translation', tensorboard_logdir=None, testpref='/data/s3225143/data/4_translation/test/EMEA/test.bpe', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='/data/s3225143/data/4_translation/test/EMEA/train.bpe', use_plasma_view=False, user_dir=None, validpref='/data/s3225143/data/4_translation/test/EMEA/valid.bpe', wandb_project=None, workers=1)
+2022-05-23 11:55:06 | INFO | fairseq_cli.preprocess | [de] Dictionary: 5992 types
+2022-05-23 11:55:08 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/EMEA/train.bpe.de: 9240 sents, 352309 tokens, 0.0% replaced (by <unk>)
+2022-05-23 11:55:08 | INFO | fairseq_cli.preprocess | [de] Dictionary: 5992 types
+2022-05-23 11:55:08 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/EMEA/valid.bpe.de: 132 sents, 4225 tokens, 0.308% replaced (by <unk>)
+2022-05-23 11:55:08 | INFO | fairseq_cli.preprocess | [de] Dictionary: 5992 types
+2022-05-23 11:55:08 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/EMEA/test.bpe.de: 1769 sents, 62757 tokens, 4.28% replaced (by <unk>)
+2022-05-23 11:55:08 | INFO | fairseq_cli.preprocess | [en] Dictionary: 4600 types
+2022-05-23 11:55:10 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/EMEA/train.bpe.en: 9240 sents, 314521 tokens, 0.0% replaced (by <unk>)
+2022-05-23 11:55:10 | INFO | fairseq_cli.preprocess | [en] Dictionary: 4600 types
+2022-05-23 11:55:10 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/EMEA/valid.bpe.en: 132 sents, 3644 tokens, 0.412% replaced (by <unk>)
+2022-05-23 11:55:10 | INFO | fairseq_cli.preprocess | [en] Dictionary: 4600 types
+2022-05-23 11:55:10 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/EMEA/test.bpe.en: 1769 sents, 57746 tokens, 3.51% replaced (by <unk>)
+2022-05-23 11:55:10 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to /data/s3225143/data/4_translation/test/processed/EMEA.de-en
+/data/s3225143/.envs/thesis/lib/python3.8/site-packages/setuptools/distutils_patch.py:25: UserWarning: Distutils was imported before Setuptools. This usage is discouraged and may exhibit undesirable behaviors or errors. Please use Setuptools' objects directly or at least import Setuptools first.
+  warnings.warn(
+2022-05-23 11:55:13 | INFO | fairseq_cli.preprocess | Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='/data/s3225143/data/4_translation/test/processed/EMEA.en-de', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, simul_type=None, source_lang='en', srcdict=None, suppress_crashes=False, target_lang='de', task='translation', tensorboard_logdir=None, testpref='/data/s3225143/data/4_translation/test/EMEA/test.bpe', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='/data/s3225143/data/4_translation/test/EMEA/train.bpe', use_plasma_view=False, user_dir=None, validpref='/data/s3225143/data/4_translation/test/EMEA/valid.bpe', wandb_project=None, workers=1)
+2022-05-23 11:55:14 | INFO | fairseq_cli.preprocess | [en] Dictionary: 4600 types
+2022-05-23 11:55:16 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/EMEA/train.bpe.en: 9240 sents, 314521 tokens, 0.0% replaced (by <unk>)
+2022-05-23 11:55:16 | INFO | fairseq_cli.preprocess | [en] Dictionary: 4600 types
+2022-05-23 11:55:16 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/EMEA/valid.bpe.en: 132 sents, 3644 tokens, 0.412% replaced (by <unk>)
+2022-05-23 11:55:16 | INFO | fairseq_cli.preprocess | [en] Dictionary: 4600 types
+2022-05-23 11:55:16 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/EMEA/test.bpe.en: 1769 sents, 57746 tokens, 3.51% replaced (by <unk>)
+2022-05-23 11:55:16 | INFO | fairseq_cli.preprocess | [de] Dictionary: 5992 types
+2022-05-23 11:55:18 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/EMEA/train.bpe.de: 9240 sents, 352309 tokens, 0.0% replaced (by <unk>)
+2022-05-23 11:55:18 | INFO | fairseq_cli.preprocess | [de] Dictionary: 5992 types
+2022-05-23 11:55:18 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/EMEA/valid.bpe.de: 132 sents, 4225 tokens, 0.308% replaced (by <unk>)
+2022-05-23 11:55:18 | INFO | fairseq_cli.preprocess | [de] Dictionary: 5992 types
+2022-05-23 11:55:18 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/EMEA/test.bpe.de: 1769 sents, 62757 tokens, 4.28% replaced (by <unk>)
+2022-05-23 11:55:18 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to /data/s3225143/data/4_translation/test/processed/EMEA.en-de
+/data/s3225143/.envs/thesis/lib/python3.8/site-packages/setuptools/distutils_patch.py:25: UserWarning: Distutils was imported before Setuptools. This usage is discouraged and may exhibit undesirable behaviors or errors. Please use Setuptools' objects directly or at least import Setuptools first.
+  warnings.warn(
+2022-05-23 11:55:21 | INFO | fairseq_cli.preprocess | Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='/data/s3225143/data/4_translation/test/processed/JRC.de-en', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, simul_type=None, source_lang='de', srcdict=None, suppress_crashes=False, target_lang='en', task='translation', tensorboard_logdir=None, testpref='/data/s3225143/data/4_translation/test/JRC/test.bpe', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='/data/s3225143/data/4_translation/test/JRC/train.bpe', use_plasma_view=False, user_dir=None, validpref='/data/s3225143/data/4_translation/test/JRC/valid.bpe', wandb_project=None, workers=1)
+2022-05-23 11:55:22 | INFO | fairseq_cli.preprocess | [de] Dictionary: 8768 types
+2022-05-23 11:55:24 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/JRC/train.bpe.de: 7354 sents, 286247 tokens, 0.0% replaced (by <unk>)
+2022-05-23 11:55:24 | INFO | fairseq_cli.preprocess | [de] Dictionary: 8768 types
+2022-05-23 11:55:24 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/JRC/valid.bpe.de: 131 sents, 5134 tokens, 2.14% replaced (by <unk>)
+2022-05-23 11:55:24 | INFO | fairseq_cli.preprocess | [de] Dictionary: 8768 types
+2022-05-23 11:55:24 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/JRC/test.bpe.de: 1425 sents, 52066 tokens, 2.77% replaced (by <unk>)
+2022-05-23 11:55:24 | INFO | fairseq_cli.preprocess | [en] Dictionary: 8248 types
+2022-05-23 11:55:25 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/JRC/train.bpe.en: 7354 sents, 290221 tokens, 0.0% replaced (by <unk>)
+2022-05-23 11:55:25 | INFO | fairseq_cli.preprocess | [en] Dictionary: 8248 types
+2022-05-23 11:55:25 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/JRC/valid.bpe.en: 131 sents, 4969 tokens, 1.73% replaced (by <unk>)
+2022-05-23 11:55:25 | INFO | fairseq_cli.preprocess | [en] Dictionary: 8248 types
+2022-05-23 11:55:26 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/JRC/test.bpe.en: 1425 sents, 55241 tokens, 3.27% replaced (by <unk>)
+2022-05-23 11:55:26 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to /data/s3225143/data/4_translation/test/processed/JRC.de-en
+/data/s3225143/.envs/thesis/lib/python3.8/site-packages/setuptools/distutils_patch.py:25: UserWarning: Distutils was imported before Setuptools. This usage is discouraged and may exhibit undesirable behaviors or errors. Please use Setuptools' objects directly or at least import Setuptools first.
+  warnings.warn(
+2022-05-23 11:55:29 | INFO | fairseq_cli.preprocess | Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='/data/s3225143/data/4_translation/test/processed/JRC.en-de', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, simul_type=None, source_lang='en', srcdict=None, suppress_crashes=False, target_lang='de', task='translation', tensorboard_logdir=None, testpref='/data/s3225143/data/4_translation/test/JRC/test.bpe', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='/data/s3225143/data/4_translation/test/JRC/train.bpe', use_plasma_view=False, user_dir=None, validpref='/data/s3225143/data/4_translation/test/JRC/valid.bpe', wandb_project=None, workers=1)
+2022-05-23 11:55:30 | INFO | fairseq_cli.preprocess | [en] Dictionary: 8248 types
+2022-05-23 11:55:31 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/JRC/train.bpe.en: 7354 sents, 290221 tokens, 0.0% replaced (by <unk>)
+2022-05-23 11:55:31 | INFO | fairseq_cli.preprocess | [en] Dictionary: 8248 types
+2022-05-23 11:55:31 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/JRC/valid.bpe.en: 131 sents, 4969 tokens, 1.73% replaced (by <unk>)
+2022-05-23 11:55:31 | INFO | fairseq_cli.preprocess | [en] Dictionary: 8248 types
+2022-05-23 11:55:32 | INFO | fairseq_cli.preprocess | [en] /data/s3225143/data/4_translation/test/JRC/test.bpe.en: 1425 sents, 55241 tokens, 3.27% replaced (by <unk>)
+2022-05-23 11:55:32 | INFO | fairseq_cli.preprocess | [de] Dictionary: 8768 types
+2022-05-23 11:55:33 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/JRC/train.bpe.de: 7354 sents, 286247 tokens, 0.0% replaced (by <unk>)
+2022-05-23 11:55:33 | INFO | fairseq_cli.preprocess | [de] Dictionary: 8768 types
+2022-05-23 11:55:33 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/JRC/valid.bpe.de: 131 sents, 5134 tokens, 2.14% replaced (by <unk>)
+2022-05-23 11:55:33 | INFO | fairseq_cli.preprocess | [de] Dictionary: 8768 types
+2022-05-23 11:55:33 | INFO | fairseq_cli.preprocess | [de] /data/s3225143/data/4_translation/test/JRC/test.bpe.de: 1425 sents, 52066 tokens, 2.77% replaced (by <unk>)
+2022-05-23 11:55:33 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to /data/s3225143/data/4_translation/test/processed/JRC.en-de
+/data/s3225143/.envs/thesis/lib/python3.8/site-packages/setuptools/distutils_patch.py:25: UserWarning: Distutils was imported before Setuptools. This usage is discouraged and may exhibit undesirable behaviors or errors. Please use Setuptools' objects directly or at least import Setuptools first.
+  warnings.warn(
+usage: fairseq-preprocess [-h] [--no-progress-bar]
+                          [--log-interval LOG_INTERVAL]
+                          [--log-format {json,none,simple,tqdm}]
+                          [--log-file LOG_FILE] [--aim-repo AIM_REPO]
+                          [--aim-run-hash AIM_RUN_HASH]
+                          [--tensorboard-logdir TENSORBOARD_LOGDIR]
+                          [--wandb-project WANDB_PROJECT] [--azureml-logging]
+                          [--seed SEED] [--cpu] [--tpu] [--bf16]
+                          [--memory-efficient-bf16] [--fp16]
+                          [--memory-efficient-fp16] [--fp16-no-flatten-grads]
+                          [--fp16-init-scale FP16_INIT_SCALE]
+                          [--fp16-scale-window FP16_SCALE_WINDOW]
+                          [--fp16-scale-tolerance FP16_SCALE_TOLERANCE]
+                          [--on-cpu-convert-precision]
+                          [--min-loss-scale MIN_LOSS_SCALE]
+                          [--threshold-loss-scale THRESHOLD_LOSS_SCALE]
+                          [--amp] [--amp-batch-retries AMP_BATCH_RETRIES]
+                          [--amp-init-scale AMP_INIT_SCALE]
+                          [--amp-scale-window AMP_SCALE_WINDOW]
+                          [--user-dir USER_DIR]
+                          [--empty-cache-freq EMPTY_CACHE_FREQ]
+                          [--all-gather-list-size ALL_GATHER_LIST_SIZE]
+                          [--model-parallel-size MODEL_PARALLEL_SIZE]
+                          [--quantization-config-path QUANTIZATION_CONFIG_PATH]
+                          [--profile] [--reset-logging] [--suppress-crashes]
+                          [--use-plasma-view] [--plasma-path PLASMA_PATH]
+                          [--criterion {adaptive_loss,composite_loss,cross_entropy,ctc,fastspeech2,hubert,label_smoothed_cross_entropy,latency_augmented_label_smoothed_cross_entropy,label_smoothed_cross_entropy_with_alignment,label_smoothed_cross_entropy_with_ctc,legacy_masked_lm_loss,masked_lm,model,nat_loss,sentence_prediction,sentence_prediction_adapters,sentence_ranking,tacotron2,speech_to_unit,speech_to_spectrogram,speech_unit_lm_criterion,wav2vec,vocab_parallel_cross_entropy}]
+                          [--tokenizer {moses,nltk,space}]
+                          [--bpe {byte_bpe,bytes,characters,fastbpe,gpt2,bert,hf_byte_bpe,sentencepiece,subword_nmt}]
+                          [--optimizer {adadelta,adafactor,adagrad,adam,adamax,composite,cpu_adam,lamb,nag,sgd}]
+                          [--lr-scheduler {cosine,fixed,inverse_sqrt,manual,pass_through,polynomial_decay,reduce_lr_on_plateau,step,tri_stage,triangular}]
+                          [--simul-type {hard_aligned,infinite_lookback,waitk,chunkwise,waitk_fixed_pre_decision,hard_aligned_fixed_pre_decision,infinite_lookback_fixed_pre_decision}]
+                          [--scoring {bert_score,sacrebleu,bleu,chrf,meteor,wer}]
+                          [--task TASK] [-s SRC] [-t TARGET] [--trainpref FP]
+                          [--validpref FP] [--testpref FP] [--align-suffix FP]
+                          [--destdir DIR] [--thresholdtgt N]
+                          [--thresholdsrc N] [--tgtdict FP] [--srcdict FP]
+                          [--nwordstgt N] [--nwordssrc N] [--alignfile ALIGN]
+                          [--dataset-impl FORMAT] [--joined-dictionary]
+                          [--only-source] [--padding-factor N] [--workers N]
+                          [--dict-only]
+fairseq-preprocess: error: unrecognized arguments: /data/s3225143/data/4_translation/test/GNOME/valid.bpe
+/data/s3225143/.envs/thesis/lib/python3.8/site-packages/setuptools/distutils_patch.py:25: UserWarning: Distutils was imported before Setuptools. This usage is discouraged and may exhibit undesirable behaviors or errors. Please use Setuptools' objects directly or at least import Setuptools first.
+  warnings.warn(
+usage: fairseq-preprocess [-h] [--no-progress-bar]
+                          [--log-interval LOG_INTERVAL]
+                          [--log-format {json,none,simple,tqdm}]
+                          [--log-file LOG_FILE] [--aim-repo AIM_REPO]
+                          [--aim-run-hash AIM_RUN_HASH]
+                          [--tensorboard-logdir TENSORBOARD_LOGDIR]
+                          [--wandb-project WANDB_PROJECT] [--azureml-logging]
+                          [--seed SEED] [--cpu] [--tpu] [--bf16]
+                          [--memory-efficient-bf16] [--fp16]
+                          [--memory-efficient-fp16] [--fp16-no-flatten-grads]
+                          [--fp16-init-scale FP16_INIT_SCALE]
+                          [--fp16-scale-window FP16_SCALE_WINDOW]
+                          [--fp16-scale-tolerance FP16_SCALE_TOLERANCE]
+                          [--on-cpu-convert-precision]
+                          [--min-loss-scale MIN_LOSS_SCALE]
+                          [--threshold-loss-scale THRESHOLD_LOSS_SCALE]
+                          [--amp] [--amp-batch-retries AMP_BATCH_RETRIES]
+                          [--amp-init-scale AMP_INIT_SCALE]
+                          [--amp-scale-window AMP_SCALE_WINDOW]
+                          [--user-dir USER_DIR]
+                          [--empty-cache-freq EMPTY_CACHE_FREQ]
+                          [--all-gather-list-size ALL_GATHER_LIST_SIZE]
+                          [--model-parallel-size MODEL_PARALLEL_SIZE]
+                          [--quantization-config-path QUANTIZATION_CONFIG_PATH]
+                          [--profile] [--reset-logging] [--suppress-crashes]
+                          [--use-plasma-view] [--plasma-path PLASMA_PATH]
+                          [--criterion {adaptive_loss,composite_loss,cross_entropy,ctc,fastspeech2,hubert,label_smoothed_cross_entropy,latency_augmented_label_smoothed_cross_entropy,label_smoothed_cross_entropy_with_alignment,label_smoothed_cross_entropy_with_ctc,legacy_masked_lm_loss,masked_lm,model,nat_loss,sentence_prediction,sentence_prediction_adapters,sentence_ranking,tacotron2,speech_to_unit,speech_to_spectrogram,speech_unit_lm_criterion,wav2vec,vocab_parallel_cross_entropy}]
+                          [--tokenizer {moses,nltk,space}]
+                          [--bpe {byte_bpe,bytes,characters,fastbpe,gpt2,bert,hf_byte_bpe,sentencepiece,subword_nmt}]
+                          [--optimizer {adadelta,adafactor,adagrad,adam,adamax,composite,cpu_adam,lamb,nag,sgd}]
+                          [--lr-scheduler {cosine,fixed,inverse_sqrt,manual,pass_through,polynomial_decay,reduce_lr_on_plateau,step,tri_stage,triangular}]
+                          [--simul-type {hard_aligned,infinite_lookback,waitk,chunkwise,waitk_fixed_pre_decision,hard_aligned_fixed_pre_decision,infinite_lookback_fixed_pre_decision}]
+                          [--scoring {bert_score,sacrebleu,bleu,chrf,meteor,wer}]
+                          [--task TASK] [-s SRC] [-t TARGET] [--trainpref FP]
+                          [--validpref FP] [--testpref FP] [--align-suffix FP]
+                          [--destdir DIR] [--thresholdtgt N]
+                          [--thresholdsrc N] [--tgtdict FP] [--srcdict FP]
+                          [--nwordstgt N] [--nwordssrc N] [--alignfile ALIGN]
+                          [--dataset-impl FORMAT] [--joined-dictionary]
+                          [--only-source] [--padding-factor N] [--workers N]
+                          [--dict-only]
+fairseq-preprocess: error: unrecognized arguments: /data/s3225143/data/4_translation/test/GNOME/valid.bpe
+
+
+###############################################################################
+Peregrine Cluster
+Job 24244868 for user 's3225143'
+Finished at: Mon May 23 11:55:40 CEST 2022
+
+Job details:
+============
+
+Job ID              : 24244868
+Name                : preproc_job.sh
+User                : s3225143
+Partition           : short
+Nodes               : pg-node005
+Number of Nodes     : 1
+Cores               : 1
+Number of Tasks     : 1
+State               : COMPLETED
+Submit              : 2022-05-23T11:54:31
+Start               : 2022-05-23T11:54:31
+End                 : 2022-05-23T11:55:40
+Reserved walltime   : 00:30:00
+Used walltime       : 00:01:09
+Used CPU time       : 00:00:38 (efficiency: 55.84%)
+% User (Computation): 87.35%
+% System (I/O)      : 12.65%
+Mem reserved        : 64G
+Max Mem (Node/step) : 157.18M (pg-node005, per node)
+Full Max Mem usage  : 157.18M
+Total Disk Read     : 3.45M
+Total Disk Write    : 163.97K
+
+
+Acknowledgements:
+=================
+
+Please see this page for information about acknowledging Peregrine in your publications:
+
+https://wiki.hpc.rug.nl/peregrine/introduction/scientific_output
+
+################################################################################

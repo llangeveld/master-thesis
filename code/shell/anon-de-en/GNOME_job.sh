@@ -1,14 +1,16 @@
 #!/bin/bash
-#SBATCH --time=01:00:00
-#SBATCH --partition=gpushort
-#SBATCH --output=preprocess_model.out
+#SBATCH --time=00:45:00
+#SBATCH --partition=gpu
+#SBATCH --output=GNOME.out
 #SBATCH --mem=64GB
 #SBATCH --gres=gpu:1
+#SBATCH --job-name=GNOME-anon-de-en
 
 # Get the resources needed
 echo "Loading module..."
 module purge
 module load PyTorch/1.10.0-fosscuda-2020b 
+module rm SciPy-bundle/2020.11-fosscuda-2020b
 
 source /data/s3225143/.envs/thesis/bin/activate
 
@@ -18,6 +20,6 @@ export TRANSFORMERS_CACHE=/data/s3225143/cache
 export TORCH_HOME=/data/s3225143/cache
 
 echo "Starting program..."
-bash preprocess_model.sh
+bash GNOME.sh
 
 deactivate
