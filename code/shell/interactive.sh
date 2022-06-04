@@ -1,12 +1,10 @@
 #!/bin/bash
 START=/data/s3225143
-DATA=$START/data/1_main_data/EMEA/test.en
-DATA_TRG=$START/data/1_main_data/EMEA/test.de
-MODEL_DIR=$START/models/finetune/en-de/EMEA/
+DATA=$START/data/4_translation/processed/EMEA.en-de
+MODEL_DIR=$START/models/finetune/en-de/EMEA/checkpoint_best.pt
 
-fairseq-interactive \
-  --path $MODEL_DIR/checkpoint_best.pt $MODEL_DIR \
+CUDA_VISIBLE_DEVICES=0 fairseq-generate $DATA \
+  --path $MODEL_DIR \
   --source-lang en --target-lang de \
-  --tokenizer moses \
-  --input "$DATA" \
-  --beam-size 1
+  --tokenizer moses --remove-bpe \
+  --sacrebleu | grep -P "D-[0-9]+" > translations.out
