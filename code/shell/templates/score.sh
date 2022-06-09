@@ -1,7 +1,7 @@
 #!/bin/bash
 START=/data/s3225143/data/bpe_test/EMEA
 DATA=$START/EMEA.en-de
-MODEL_DIR=$START/models-large/checkpoint_best.pt
+MODEL_DIR=$START/models/checkpoint_best.pt
 
 # Generate translations
 fairseq-generate $DATA \
