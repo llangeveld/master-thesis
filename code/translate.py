@@ -6,6 +6,12 @@ from util import get_all_texts
 from sacrebleu import BLEU
 
 bleu = BLEU(effective_order=True)
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+# English to German model
+en2de = torch.hub.load('pytorch/fairseq', 'transformer.wmt19.en-de',
+                       checkpoint_file='model1.pt:model2.pt:model3.pt:model4.pt',
+                       tokenizer='moses', bpe='fastbpe').to(device)
 
 
 def calculate_bleu(hyps: list, refs: list) -> float:
@@ -24,14 +30,11 @@ def main():
         d_og = {}
         print(f"Working on {domain}...")
         for language in ["en", "de"]:
-            _, d_og[f"{language}"], _ = get_all_texts(domain, language)
-        for src, trg in [("en", "de"), ("de", "en")]:
-            model = torch.hub.load(f"/data/s3225143/models/finetune/"
-                                   f"{src}-{trg}/{domain}/", "checkpoint_best.pt",
-                                   source="local")
+            d_og[f"{language}"] = open(f"/data/s3225143/tests/wmt/{language}.txt", "r").read()
+        for src, trg in [("en", "de")]:
             translated_text = []
             for sentence in d_og[f"{src}"]:
-                translated_text.append(model.translate(sentence))
+                translated_text.append(en2de.translate(sentence))
             score = calculate_bleu(translated_text, d_og[f"{trg}"])
             print(f"Score for {domain}-{src}-{trg}: {score}")
 
