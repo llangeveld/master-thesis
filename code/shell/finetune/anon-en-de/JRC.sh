@@ -22,7 +22,7 @@ CUDA_VISIBLE_DEVICES=0 fairseq-train $DATA \
   --eval-bleu-remove-bpe \
   --best-checkpoint-metric bleu --maximize-best-checkpoint-metric \
   --ddp-backend c10d --max-tokens 4096 --max-tokens-valid 4096 --update-epoch-batch-itr True \
-  --max-epoch 20 --update-freq 1 \
+  --max-epoch 18 --update-freq 1 \
   --criterion label_smoothed_cross_entropy --label-smoothing 0.1 --ignore-prefix-size 0 \
   --optimizer adam --adam-betas '(0.9, 0.98)' --adam-eps 1e-08 --relu-dropout 0.0 --dropout 0.2 \
   --weight-decay 0.0001 --attention-dropout 0.01 \

@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --time=00:45:00
+#SBATCH --time=00:30:00
 #SBATCH --partition=gpu
 #SBATCH --output=JRC.out
 #SBATCH --mem=64GB
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:v100:1
 #SBATCH --job-name=JRC-anon-de-en
 
 # Get the resources needed

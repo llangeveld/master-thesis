@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --time=01:00:00
+#SBATCH --time=00:30:00
 #SBATCH --partition=gpu
 #SBATCH --output=GNOME.out
 #SBATCH --mem=64GB
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:v100:1
 #SBATCH --job-name=GNOME-en-de
 
 # Get the resources needed
