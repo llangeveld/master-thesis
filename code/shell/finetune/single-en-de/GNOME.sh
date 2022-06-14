@@ -1,6 +1,6 @@
 #!/bin/bash
 START=/data/s3225143
-DATA=$START/data/4_translation/single-processed/EMEA.en-de/
+DATA=$START/data/4_translation/single-processed/GNOME.en-de/
 MODELS=$START/models
 THISMODEL=$MODELS/single-en-de
 PRETRAINED=$THISMODEL/model.pt
