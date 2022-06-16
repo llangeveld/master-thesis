@@ -7,7 +7,6 @@ import spacy
 
 NGRAM_RANGE = (2, 2)
 do_ner = True
-qualitative = True
 nlp_en = spacy.load("en_core_web_lg")
 nlp_de = spacy.load("de_core_news_lg")
 
@@ -376,18 +375,6 @@ def main():
                         final_text.append(x)
                     with open(f"../data/3_anonymized/full/{domain}.{src}-{trg}.{lan}", "w") as f:
                         f.writelines(final_text)
-
-            if qualitative and src == "en":
-                print("\tWriting to documents for qualitative analysis.")
-                original = d["de"]
-                anon_de = d_tfidf["de"]
-                anon_en = d_tfidf["en"]
-                with open(f"../data/3_anonymized/quali/{domain}.out", "w") as f:
-                    for i in range(len(original) - 1):
-                        if original[i] != anon_de[i]:
-                            print(f"German original: {original[i].strip()}", file=f)
-                            print(f"German anonymized: {anon_de[i].strip()}", file=f)
-                            print(f"English anonymized: {anon_en[i].strip()}\n", file=f)
 
 
 if __name__ == "__main__":
