@@ -1,11 +1,11 @@
 #!/bin/bash
 START=/data/s3225143
-DATA=$START/data/4_translation/single-processed/JRC.de-en/
+DATA=$START/data/3_anonymized/processed/JRC.en-de/
 MODELS=$START/models
-THISMODEL=$MODELS/single-de-en
-PRETRAINED=$THISMODEL/model.pt
+THISMODEL=$MODELS/wmt19.en-de.joined-dict.ensemble
+PRETRAINED=$THISMODEL/model1.pt
 BPECODES=$THISMODEL/bpecodes
-SAVE=$MODELS/finetune-single/de-en/JRC/
+SAVE=$MODELS/finetune-anon/en-de/JRC/
 
 CUDA_VISIBLE_DEVICES=0 fairseq-train $DATA \
   --keep-best-checkpoints 1 --save-interval 100  \
@@ -15,7 +15,7 @@ CUDA_VISIBLE_DEVICES=0 fairseq-train $DATA \
   --no-save-optimizer-state \
   --no-progress-bar --log-format json --log-interval 100 --log-file $SAVE/log.out\
   --finetune-from-model $PRETRAINED --task translation \
-  --arch transformer_wmt_en_de_big --source-lang de --target-lang en \
+  --arch transformer_wmt_en_de_big --source-lang en --target-lang de \
   --save-dir $SAVE \
   --eval-bleu \
   --eval-bleu-detok moses \

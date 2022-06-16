@@ -1,11 +1,11 @@
 #!/bin/bash
 START=/data/s3225143
-DATA=$START/data/4_translation/processed/GNOME.en-de/
+DATA=$START/data/4_translation/single-processed/GNOME.en-de/
 MODELS=$START/models
-THISMODEL=$MODELS/wmt19.en-de.joined-dict.ensemble
-PRETRAINED=$THISMODEL/model1.pt
+THISMODEL=$MODELS/single-en-de
+PRETRAINED=$THISMODEL/model.pt
 BPECODES=$THISMODEL/bpecodes
-SAVE=$MODELS/finetune/en-de/GNOME/
+SAVE=$MODELS/finetune-single/en-de/GNOME/
 
 CUDA_VISIBLE_DEVICES=0 fairseq-train $DATA \
   --keep-best-checkpoints 1 --save-interval 100  \

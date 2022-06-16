@@ -4,7 +4,7 @@
 #SBATCH --output=EMEA.out
 #SBATCH --mem=64GB
 #SBATCH --gres=gpu:v100:1
-#SBATCH --job-name=EMEA-en-de
+#SBATCH --job-name=EMEA-de-en
 
 # Get the resources needed
 echo "Loading module..."

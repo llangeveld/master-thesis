@@ -2,17 +2,17 @@
 
 DATA="/data/s3225143/data/1_main_data/tokenized"
 DATA_TRAIN="/data/s3225143/data/3_anonymized/tokenized"
-CODES="/data/s3225143/models/wmt19.en-de.joined-dict.ensemble/bpecodes"
-DICT="/data/s3225143/models/wmt19.en-de.joined-dict.ensemble"
-OUTPATH="/data/s3225143/data/3_anonymized/bpe/en-de"
-DEST=/data/s3225143/data/3_anonymized/processed
+CODES="/data/s3225143/models/single-en-de/bpecodes"
+DICT="/data/s3225143/models/single-en-de/"
+OUTPATH="/data/s3225143/data/3_anonymized/bpe-single/en-de"
+DEST=/data/s3225143/data/3_anonymized/processed-single
 
 cd /data/s3225143/data/fastBPE
 
 ./fast applybpe "$OUTPATH/EMEA/train.bpe.de" "$DATA_TRAIN/EMEA.en-de.de" $CODES "$DICT/dict.de.txt"
 ./fast applybpe "$OUTPATH/EMEA/train.bpe.en" "$DATA_TRAIN/EMEA.en-de.en" $CODES "$DICT/dict.en.txt"
 ./fast applybpe "$OUTPATH/JRC/train.bpe.de" "$DATA_TRAIN/JRC.en-de.de" $CODES "$DICT/dict.de.txt"
-./fast applybpe "$OUTPATH/JRC/train.bpe.en" "$DATA_TRAIN/JRC.en-de.en" $CODES "$DICT/JRC/dict.en.txt"
+./fast applybpe "$OUTPATH/JRC/train.bpe.en" "$DATA_TRAIN/JRC.en-de.en" $CODES "$DICT/dict.en.txt"
 ./fast applybpe "$OUTPATH/GNOME/train.bpe.de" "$DATA_TRAIN/GNOME.en-de.de" $CODES "$DICT/dict.en.txt"
 ./fast applybpe "$OUTPATH/GNOME/train.bpe.en" "$DATA_TRAIN/GNOME.en-de.en" $CODES "$DICT/dict.en.txt"
 
