@@ -6,7 +6,8 @@ import random
 import spacy
 
 NGRAM_RANGE = (2, 2)
-do_ner = True
+DO_NER = True
+DO_TFIDF = True
 nlp_en = spacy.load("en_core_web_lg")
 nlp_de = spacy.load("de_core_news_lg")
 
@@ -357,15 +358,20 @@ def main():
             print(f"\tStarting first language pair.")
             d_tfidf = {}
             d_ner = {}
-            tfidf_anonymizer = TFIDF(d[f"{src}"], d[f"{trg}"], src,
-                                     d_alignments_docs[f"{src}-{trg}"], domain)
-            docs_src, docs_trg = tfidf_anonymizer.anonymize()
-            print("\tReplaced words. Start working on NER.")
-            d_tfidf[f"{src}"] = flatten_list(docs_src)
-            d_tfidf[f"{trg}"] = flatten_list(docs_trg)
-            if do_ner:
-                ner_anonymizer = NER(d_tfidf[f"{src}"], d_tfidf[f"{trg}"],
+            if DO_TFIDF:
+                tfidf_anonymizer = TFIDF(d[f"{src}"], d[f"{trg}"], src,
+                                         d_alignments_docs[f"{src}-{trg}"], domain)
+                docs_src, docs_trg = tfidf_anonymizer.anonymize()
+                print("\tReplaced words. Start working on NER.")
+                d_tfidf[f"{src}"] = flatten_list(docs_src)
+                d_tfidf[f"{trg}"] = flatten_list(docs_trg)
+            if DO_NER:
+                if DO_TFIDF:
+                    ner_anonymizer = NER(d_tfidf[f"{src}"], d_tfidf[f"{trg}"],
                                      src, d_alignments[f"{src}-{trg}"])
+                else:
+                    ner_anonymizer = NER(d[f"{src}"], d[f"{trg}"], src,
+                                         d_alignments_docs[f"{src}-{trg}"])
                 d_ner[f"{src}"], d_ner[f"{trg}"] = ner_anonymizer.anonymize()
                 print("\tAnonymized NER. Writing to files.")
                 for lan in [src, trg]:
@@ -373,8 +379,15 @@ def main():
                     for s in d_ner[f"{lan}"]:
                         x = s.strip() + "\n"
                         final_text.append(x)
-                    with open(f"../data/3_anonymized/full/{domain}.{src}-{trg}.{lan}", "w") as f:
-                        f.writelines(final_text)
+                    if DO_NER and DO_TFIDF:
+                        with open(f"../data/3_anonymized/full/{domain}.{src}-{trg}.{lan}", "w") as f:
+                            f.writelines(final_text)
+                    elif DO_NER:
+                        with open(f"../data/3_anonymized/ner/{domain}.{src}-{trg}.{lan}", "w") as f:
+                            f.writelines(final_text)
+                    elif DO_TFIDF:
+                        with open(f"../data/3_anonymized/tfidf/{domain}.{src}-{trg}.{lan}", "w") as f:
+                            f. writelines(final_text)
 
 
 if __name__ == "__main__":
