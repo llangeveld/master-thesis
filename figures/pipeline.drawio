@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-22T10:35:21.351Z" agent="5.0 (X11)" etag="-4dqgdZi69vKLFNEjK0X" version="20.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-22T10:38:00.201Z" agent="5.0 (X11)" etag="Wf4pINzRWSBWXHy46xP9" version="20.0.1" type="github">
   <diagram id="n7pWnNLzQu125WNxUsfb" name="Page-1">
     <mxGraphModel dx="1422" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="ArkRxxknJ-61JY3mtVf2-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;dashed=1;" edge="1" parent="1" source="ArkRxxknJ-61JY3mtVf2-1" target="ArkRxxknJ-61JY3mtVf2-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ArkRxxknJ-61JY3mtVf2-1" value="Anonymize (if needed)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+        <mxCell id="ArkRxxknJ-61JY3mtVf2-1" value="Anonymize through NER" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="50" y="50" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="ArkRxxknJ-61JY3mtVf2-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;" edge="1" parent="1" source="ArkRxxknJ-61JY3mtVf2-4" target="ArkRxxknJ-61JY3mtVf2-5">
@@ -42,6 +42,12 @@
         </mxCell>
         <mxCell id="ArkRxxknJ-61JY3mtVf2-9" value="Score translations" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="210" y="400" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ArkRxxknJ-61JY3mtVf2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;fontFamily=Helvetica;" edge="1" parent="1" source="ArkRxxknJ-61JY3mtVf2-16" target="ArkRxxknJ-61JY3mtVf2-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ArkRxxknJ-61JY3mtVf2-16" value="Anonymize through TF-IDF" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="120" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
