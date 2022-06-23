@@ -1,19 +1,20 @@
 #!/bin/bash
 
 DATA="/data/s3225143/data/1_main_data/tokenized"
-CODES="/data/s3225143/models/single-en-de/bpecodes"
-DICT="/data/s3225143/models/single-en-de/"
-OUTPATH="/data/s3225143/data/4_translation/bpe/en-de"
-DEST=/data/s3225143/data/4_translation/processed
+DATA_TRAIN="/data/s3225143/data/3_anonymized/ner"
+CODES="/data/s3225143/models/single-de-en/bpecodes"
+DICT="/data/s3225143/models/single-de-en/"
+OUTPATH="/data/s3225143/data/4_translation/bpe-ner/de-en"
+DEST=/data/s3225143/data/4_translation/processed-ner
 
 cd /data/s3225143/data/fastBPE
 
-./fast applybpe "$OUTPATH/EMEA/train.bpe.de" "$DATA/EMEA/train.de" $CODES "$DICT/dict.de.txt"
-./fast applybpe "$OUTPATH/EMEA/train.bpe.en" "$DATA/EMEA/train.en" $CODES "$DICT/dict.en.txt"
-./fast applybpe "$OUTPATH/JRC/train.bpe.de" "$DATA/JRC/train.de" $CODES "$DICT/dict.de.txt"
-./fast applybpe "$OUTPATH/JRC/train.bpe.en" "$DATA/JRC/train.en" $CODES "$DICT/dict.en.txt"
-./fast applybpe "$OUTPATH/GNOME/train.bpe.de" "$DATA/GNOME/train.de" $CODES "$DICT/dict.en.txt"
-./fast applybpe "$OUTPATH/GNOME/train.bpe.en" "$DATA/GNOME/train.en" $CODES "$DICT/dict.en.txt"
+./fast applybpe "$OUTPATH/EMEA/train.bpe.de" "$DATA_TRAIN/EMEA.de-en.de" $CODES "$DICT/dict.de.txt"
+./fast applybpe "$OUTPATH/EMEA/train.bpe.en" "$DATA_TRAIN/EMEA.de-en.en" $CODES "$DICT/dict.en.txt"
+./fast applybpe "$OUTPATH/JRC/train.bpe.de" "$DATA_TRAIN/JRC.de-en.de" $CODES "$DICT/dict.de.txt"
+./fast applybpe "$OUTPATH/JRC/train.bpe.en" "$DATA_TRAIN/JRC.de-en.en" $CODES "$DICT/dict.en.txt"
+./fast applybpe "$OUTPATH/GNOME/train.bpe.de" "$DATA_TRAIN/GNOME.de-en.de" $CODES "$DICT/dict.en.txt"
+./fast applybpe "$OUTPATH/GNOME/train.bpe.en" "$DATA_TRAIN/GNOME.de-en.en" $CODES "$DICT/dict.en.txt"
 
 ./fast applybpe "$OUTPATH/EMEA/valid.bpe.de" "$DATA/EMEA/valid.de" $CODES "$DICT/dict.de.txt"
 ./fast applybpe "$OUTPATH/EMEA/valid.bpe.en" "$DATA/EMEA/valid.en" $CODES "$DICT/dict.en.txt"
@@ -30,19 +31,19 @@ cd /data/s3225143/data/fastBPE
 ./fast applybpe "$OUTPATH/GNOME/test.bpe.en" "$DATA/GNOME/test.en" $CODES "$DICT/dict.en.txt"
 
 # EMEA
-fairseq-preprocess --source-lang en --target-lang de \
+fairseq-preprocess --source-lang de --target-lang en \
   --trainpref $OUTPATH/EMEA/train.bpe --validpref $OUTPATH/EMEA/valid.bpe --testpref $OUTPATH/EMEA/test.bpe \
-  --destdir $DEST/EMEA.en-de --tgtdict $DICT/dict.de.txt --srcdict $DICT/dict.en.txt \
+  --destdir $DEST/EMEA.de-en --tgtdict $DICT/dict.de.txt --srcdict $DICT/dict.en.txt \
   --tokenizer moses --bpe fastbpe
 
 # JRC
-fairseq-preprocess --source-lang en --target-lang de \
+fairseq-preprocess --source-lang de --target-lang en \
   --trainpref $OUTPATH/JRC/train.bpe --validpref $OUTPATH/JRC/valid.bpe --testpref $OUTPATH/JRC/test.bpe \
-  --destdir $DEST/JRC.en-de --tgtdict $DICT/dict.de.txt --srcdict $DICT/dict.en.txt \
+  --destdir $DEST/JRC.de-en --tgtdict $DICT/dict.de.txt --srcdict $DICT/dict.en.txt \
   --tokenizer moses --bpe fastbpe
 
 # GNOME
-fairseq-preprocess --source-lang en --target-lang de \
+fairseq-preprocess --source-lang de --target-lang en \
   --trainpref $OUTPATH/GNOME/train.bpe --validpref $OUTPATH/GNOME/valid.bpe --testpref $OUTPATH/GNOME/test.bpe \
-  --destdir $DEST/GNOME.en-de --tgtdict $DICT/dict.de.txt --srcdict $DICT/dict.en.txt \
+  --destdir $DEST/GNOME.de-en --tgtdict $DICT/dict.de.txt --srcdict $DICT/dict.en.txt \
   --tokenizer moses --bpe fastbpe

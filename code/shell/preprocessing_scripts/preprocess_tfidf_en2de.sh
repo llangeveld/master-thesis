@@ -1,19 +1,20 @@
 #!/bin/bash
 
 DATA="/data/s3225143/data/1_main_data/tokenized"
+DATA_TRAIN="/data/s3225143/data/3_anonymized/tfidf"
 CODES="/data/s3225143/models/single-en-de/bpecodes"
 DICT="/data/s3225143/models/single-en-de/"
-OUTPATH="/data/s3225143/data/4_translation/bpe/en-de"
-DEST=/data/s3225143/data/4_translation/processed
+OUTPATH="/data/s3225143/data/4_translation/bpe-tfidf/en-de"
+DEST=/data/s3225143/data/4_translation/processed-tfidf
 
 cd /data/s3225143/data/fastBPE
 
-./fast applybpe "$OUTPATH/EMEA/train.bpe.de" "$DATA/EMEA/train.de" $CODES "$DICT/dict.de.txt"
-./fast applybpe "$OUTPATH/EMEA/train.bpe.en" "$DATA/EMEA/train.en" $CODES "$DICT/dict.en.txt"
-./fast applybpe "$OUTPATH/JRC/train.bpe.de" "$DATA/JRC/train.de" $CODES "$DICT/dict.de.txt"
-./fast applybpe "$OUTPATH/JRC/train.bpe.en" "$DATA/JRC/train.en" $CODES "$DICT/dict.en.txt"
-./fast applybpe "$OUTPATH/GNOME/train.bpe.de" "$DATA/GNOME/train.de" $CODES "$DICT/dict.en.txt"
-./fast applybpe "$OUTPATH/GNOME/train.bpe.en" "$DATA/GNOME/train.en" $CODES "$DICT/dict.en.txt"
+./fast applybpe "$OUTPATH/EMEA/train.bpe.de" "$DATA_TRAIN/EMEA.en-de.de" $CODES "$DICT/dict.de.txt"
+./fast applybpe "$OUTPATH/EMEA/train.bpe.en" "$DATA_TRAIN/EMEA.en-de.en" $CODES "$DICT/dict.en.txt"
+./fast applybpe "$OUTPATH/JRC/train.bpe.de" "$DATA_TRAIN/JRC.en-de.de" $CODES "$DICT/dict.de.txt"
+./fast applybpe "$OUTPATH/JRC/train.bpe.en" "$DATA_TRAIN/JRC.en-de.en" $CODES "$DICT/dict.en.txt"
+./fast applybpe "$OUTPATH/GNOME/train.bpe.de" "$DATA_TRAIN/GNOME.en-de.de" $CODES "$DICT/dict.en.txt"
+./fast applybpe "$OUTPATH/GNOME/train.bpe.en" "$DATA_TRAIN/GNOME.en-de.en" $CODES "$DICT/dict.en.txt"
 
 ./fast applybpe "$OUTPATH/EMEA/valid.bpe.de" "$DATA/EMEA/valid.de" $CODES "$DICT/dict.de.txt"
 ./fast applybpe "$OUTPATH/EMEA/valid.bpe.en" "$DATA/EMEA/valid.en" $CODES "$DICT/dict.en.txt"

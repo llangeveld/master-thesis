@@ -4,8 +4,8 @@ DATA="/data/s3225143/data/1_main_data/tokenized"
 DATA_TRAIN="/data/s3225143/data/3_anonymized/tokenized"
 CODES="/data/s3225143/models/single-de-en/bpecodes"
 DICT="/data/s3225143/models/single-de-en/"
-OUTPATH="/data/s3225143/data/3_anonymized/bpe-single/de-en"
-DEST=/data/s3225143/data/3_anonymized/processed-single
+OUTPATH="/data/s3225143/data/4_translation/bpe-anon/de-en"
+DEST=/data/s3225143/data/4_translation/processed-anon
 
 cd /data/s3225143/data/fastBPE
 

@@ -3,8 +3,8 @@
 DATA="/data/s3225143/data/1_main_data/tokenized"
 CODES="/data/s3225143/models/single-de-en/bpecodes"
 DICT="/data/s3225143/models/single-de-en/"
-OUTPATH="/data/s3225143/data/4_translation/single-bpe/de-en"
-DEST=/data/s3225143/data/4_translation/single-processed
+OUTPATH="/data/s3225143/data/4_translation/bpe/de-en"
+DEST=/data/s3225143/data/4_translation/processed
 
 cd /data/s3225143/data/fastBPE
 
