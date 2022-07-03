@@ -1,0 +1,156 @@
+Working on EMEA...
+	Processed files. Starting anonymization on TFIDF.
+	Starting first language pair.
+EVALUATION SCORE FOR full | EMEA | en-de | en:
+BLEU-score: 1.0
+Semantic score: 0.0031556811928749083
+F1-score: 0.00629150839104538
+EVALUATION SCORE FOR ner | EMEA | en-de | en:
+BLEU-score: 0.0
+Semantic score: 0.8562179563939571
+F1-score: 0.0
+EVALUATION SCORE FOR tfidf | EMEA | en-de | en:
+BLEU-score: 0.0
+Semantic score: 0.9834239867329597
+F1-score: 0.0
+EVALUATION SCORE FOR full | EMEA | en-de | de:
+BLEU-score: 1.0
+Semantic score: 0.003385767936706543
+F1-score: 0.006748686387427645
+EVALUATION SCORE FOR ner | EMEA | en-de | de:
+BLEU-score: 0.0
+Semantic score: 0.8670311212539673
+F1-score: 0.0
+EVALUATION SCORE FOR tfidf | EMEA | en-de | de:
+BLEU-score: 0.0
+Semantic score: 0.9878527677059173
+F1-score: 0.0
+	Starting first language pair.
+EVALUATION SCORE FOR full | EMEA | de-en | de:
+BLEU-score: 1.0
+Semantic score: 0.003552879989147186
+F1-score: 0.007080603444007074
+EVALUATION SCORE FOR ner | EMEA | de-en | de:
+BLEU-score: 0.0
+Semantic score: 0.924137009382248
+F1-score: 0.0
+EVALUATION SCORE FOR tfidf | EMEA | de-en | de:
+BLEU-score: 0.0
+Semantic score: 0.9868724045157432
+F1-score: 0.0
+EVALUATION SCORE FOR full | EMEA | de-en | en:
+BLEU-score: 1.0
+Semantic score: 0.0030790859460830687
+F1-score: 0.006139268556634176
+EVALUATION SCORE FOR ner | EMEA | de-en | en:
+BLEU-score: 0.0
+Semantic score: 0.9426280727982521
+F1-score: 0.0
+EVALUATION SCORE FOR tfidf | EMEA | de-en | en:
+BLEU-score: 0.0
+Semantic score: 0.9915794622898102
+F1-score: 0.0
+Working on GNOME...
+	Processed files. Starting anonymization on TFIDF.
+	Starting first language pair.
+EVALUATION SCORE FOR full | GNOME | en-de | en:
+BLEU-score: 1.0
+Semantic score: 0.002846251130104065
+F1-score: 0.00567634595412135
+EVALUATION SCORE FOR ner | GNOME | en-de | en:
+BLEU-score: 0.0050000000000000044
+Semantic score: 0.8884381520748138
+F1-score: 0.009944036417200364
+EVALUATION SCORE FOR tfidf | GNOME | en-de | en:
+BLEU-score: 0.0
+Semantic score: 0.9737693804502487
+F1-score: 0.0
+EVALUATION SCORE FOR full | GNOME | en-de | de:
+BLEU-score: 1.0
+Semantic score: 0.0038794538378715514
+F1-score: 0.007728923673136737
+EVALUATION SCORE FOR ner | GNOME | en-de | de:
+BLEU-score: 0.0
+Semantic score: 0.9218719412386417
+F1-score: 0.0
+EVALUATION SCORE FOR tfidf | GNOME | en-de | de:
+BLEU-score: 0.0
+Semantic score: 0.9731940326094627
+F1-score: 0.0
+	Starting first language pair.
+EVALUATION SCORE FOR full | GNOME | de-en | de:
+BLEU-score: 1.0
+Semantic score: 0.003765546977519989
+F1-score: 0.007502841652333224
+EVALUATION SCORE FOR ner | GNOME | de-en | de:
+BLEU-score: 0.0
+Semantic score: 0.9124464266002178
+F1-score: 0.0
+EVALUATION SCORE FOR tfidf | GNOME | de-en | de:
+BLEU-score: 0.0
+Semantic score: 0.9830603924393654
+F1-score: 0.0
+EVALUATION SCORE FOR full | GNOME | de-en | en:
+BLEU-score: 1.0
+Semantic score: 0.0033336228132247927
+F1-score: 0.0066450933915235925
+EVALUATION SCORE FOR ner | GNOME | de-en | en:
+BLEU-score: 0.010000000000000009
+Semantic score: 0.926915824636817
+F1-score: 0.01978653365143287
+EVALUATION SCORE FOR tfidf | GNOME | de-en | en:
+BLEU-score: 0.0
+Semantic score: 0.9933685195446015
+F1-score: 0.0
+Working on JRC...
+	Processed files. Starting anonymization on TFIDF.
+	Starting first language pair.
+EVALUATION SCORE FOR full | JRC | en-de | en:
+BLEU-score: 1.0
+Semantic score: 0.0019701799750328065
+F1-score: 0.003932611996660219
+EVALUATION SCORE FOR ner | JRC | en-de | en:
+BLEU-score: 0.025000000000000022
+Semantic score: 0.8244813799858093
+F1-score: 0.04852851395045193
+EVALUATION SCORE FOR tfidf | JRC | en-de | en:
+BLEU-score: 0.0
+Semantic score: 0.9748669931292534
+F1-score: 0.0
+EVALUATION SCORE FOR full | JRC | en-de | de:
+BLEU-score: 1.0
+Semantic score: 0.00238196924328804
+F1-score: 0.004752617896920515
+EVALUATION SCORE FOR ner | JRC | en-de | de:
+BLEU-score: 0.09499999999999997
+Semantic score: 0.8118579436093569
+F1-score: 0.17009611083279502
+EVALUATION SCORE FOR tfidf | JRC | en-de | de:
+BLEU-score: 0.0
+Semantic score: 0.9893581706285477
+F1-score: 0.0
+	Starting first language pair.
+EVALUATION SCORE FOR full | JRC | de-en | de:
+BLEU-score: 1.0
+Semantic score: 0.0026129594445228575
+F1-score: 0.005212299362199576
+EVALUATION SCORE FOR ner | JRC | de-en | de:
+BLEU-score: 0.030000000000000027
+Semantic score: 0.9005832222104072
+F1-score: 0.05806572915023717
+EVALUATION SCORE FOR tfidf | JRC | de-en | de:
+BLEU-score: 0.0050000000000000044
+Semantic score: 0.9674429246783256
+F1-score: 0.009948583100631297
+EVALUATION SCORE FOR full | JRC | de-en | en:
+BLEU-score: 1.0
+Semantic score: 0.0030917096138000488
+F1-score: 0.006164360814008495
+EVALUATION SCORE FOR ner | JRC | de-en | en:
+BLEU-score: 0.015000000000000013
+Semantic score: 0.9185228058695794
+F1-score: 0.029517955001023465
+EVALUATION SCORE FOR tfidf | JRC | de-en | en:
+BLEU-score: 0.0
+Semantic score: 0.9857370972633361
+F1-score: 0.0

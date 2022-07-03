@@ -1,0 +1,72 @@
+Working on EMEA...
+	Processed files. Starting anonymization on TFIDF.
+	Starting first language pair.
+EVALUATION SCORE FOR full | EMEA | en-de | en:
+Found 200 out of 200
+BLEU-score: 0.0
+Semantic score: 0.8437587802112102
+F1-score: 0.0
+EVALUATION SCORE FOR full | EMEA | en-de | de:
+Found 200 out of 200
+BLEU-score: 0.0
+Semantic score: 0.8562865313887597
+F1-score: 0.0
+	Starting first language pair.
+EVALUATION SCORE FOR full | EMEA | de-en | de:
+Found 200 out of 200
+BLEU-score: 0.0
+Semantic score: 0.9129998487234116
+F1-score: 0.0
+EVALUATION SCORE FOR full | EMEA | de-en | en:
+Found 200 out of 200
+BLEU-score: 0.0
+Semantic score: 0.9389804700016975
+F1-score: 0.0
+Working on GNOME...
+	Processed files. Starting anonymization on TFIDF.
+	Starting first language pair.
+EVALUATION SCORE FOR full | GNOME | en-de | en:
+Found 199 out of 200
+BLEU-score: 0.0050000000000000044
+Semantic score: 0.8534408114850521
+F1-score: 0.009941754866111858
+EVALUATION SCORE FOR full | GNOME | en-de | de:
+Found 200 out of 200
+BLEU-score: 0.0
+Semantic score: 0.890881359577179
+F1-score: 0.0
+	Starting first language pair.
+EVALUATION SCORE FOR full | GNOME | de-en | de:
+Found 200 out of 200
+BLEU-score: 0.0
+Semantic score: 0.8914116634428502
+F1-score: 0.0
+EVALUATION SCORE FOR full | GNOME | de-en | en:
+Found 198 out of 200
+BLEU-score: 0.010000000000000009
+Semantic score: 0.9231596496701241
+F1-score: 0.0197856744019411
+Working on JRC...
+	Processed files. Starting anonymization on TFIDF.
+	Starting first language pair.
+EVALUATION SCORE FOR full | JRC | en-de | en:
+Found 195 out of 200
+BLEU-score: 0.025000000000000022
+Semantic score: 0.8054787422716617
+F1-score: 0.04849484407441814
+EVALUATION SCORE FOR full | JRC | en-de | de:
+Found 181 out of 200
+BLEU-score: 0.09499999999999997
+Semantic score: 0.8056774400919676
+F1-score: 0.1699595291315868
+	Starting first language pair.
+EVALUATION SCORE FOR full | JRC | de-en | de:
+Found 193 out of 200
+BLEU-score: 0.03500000000000003
+Semantic score: 0.8678954044729471
+F1-score: 0.06728650739846206
+EVALUATION SCORE FOR full | JRC | de-en | en:
+Found 197 out of 200
+BLEU-score: 0.015000000000000013
+Semantic score: 0.9053659976273775
+F1-score: 0.02951106407542213
