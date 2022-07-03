@@ -1,15 +1,89 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from util import get_all_texts, postprocess_alignment_file
+from sacrebleu import BLEU
+from sentence_transformers import SentenceTransformer, util
+from sacremoses import MosesTokenizer
 import pandas as pd
 import numpy as np
 import random
 import spacy
 
 NGRAM_RANGE = (2, 2)
-DO_NER = True
-DO_TFIDF = True
+N_SENTS = 200
+DO_NER = False
+DO_TFIDF = False
+SAVE = False
+EVAL = True
 nlp_en = spacy.load("en_core_web_lg")
 nlp_de = spacy.load("de_core_news_lg")
+bleu = BLEU(effective_order=True)
+model = SentenceTransformer("distiluse-base-multilingual-cased-v1")
+mt_en = MosesTokenizer("en")
+mt_de = MosesTokenizer("de")
+
+
+class Evaluate:
+    def __init__(self, text, anon_text):
+        self.text = text
+        self.anon_text = anon_text
+
+    def evaluate_bleu(self):
+        """
+            Returns the ratio of sentences that were properly anonymized
+            :return: Number of sentences that were not properly anonymized (int)
+            """
+        found = 0
+        # Go over every sentence in the anonymized text
+        for idx, sentence in enumerate(self.anon_text):
+            max_idx = 0
+            max_score = 0
+            # Go over every sentence in the regular text
+            for i, s in enumerate(self.text):
+                score = bleu.sentence_score(sentence, [s]).score
+                if score > max_score:
+                    max_score = score
+                    max_idx = i
+            if self.text[max_idx] == self.text[idx]:
+                found += 1
+            #     print("FOUND!")
+            # print(f"Anonymized sentence: {sentence}")
+            # print(f"Regular sentence: {self.text[idx]}")
+            # print(f"Chosen sentence: {self.text[max_idx]}")
+            # print("----------------------------------")
+        ratio = found / len(self.text)
+        print(f"Found {found} out of {len(self.text)}")
+        return 1 - ratio
+
+    def evaluate_semsim(self) -> float:
+        """
+        Returns average cosine (semantic) similarity of all original-anonymized
+        sentence pairs.
+        :return: Cosine similarity score
+        """
+        sim_scores = []
+        for before, after in zip(self.text, self.anon_text):
+            embed_before = model.encode(before, convert_to_tensor=True)
+            embed_after = model.encode(after, convert_to_tensor=True)
+            cosine_score = util.pytorch_cos_sim(embed_before, embed_after)
+            sim_scores.append(cosine_score.item())
+            # print(f"Regular sentence: {before}")
+            # print(f"Anonymized sentence: {after}")
+            # print(f"Similarity score: {cosine_score.item()}")
+            # print("---------------------------------------")
+        score = sum(sim_scores) / len(self.text)
+        return score
+
+    def evaluate_fscore(self) -> None:
+        """
+        Calculates (harmonic) mean between BLEU- and semantic similarity scores
+        :return: Nothing
+        """
+        bleu_score = self.evaluate_bleu()
+        semsim_score = self.evaluate_semsim()
+        f1 = 2 * ((bleu_score * semsim_score) / (bleu_score + semsim_score))
+        print(f"BLEU-score: {bleu_score}\n"
+              f"Semantic score: {semsim_score}\n"
+              f"F1-score: {f1}")
 
 
 class NER:
@@ -33,7 +107,8 @@ class NER:
         replace_ids = find_replace_idx(alignment, indices, flat=True)
         sentence = self.trg_text[idx]
         # Replace entity label
-        s_new = sentence.split()
+        tok = mt_en if self.trg_lan == "en" else mt_de
+        s_new = tok.tokenize(sentence)
         if replace_ids:
             i_start = replace_ids[0]
             for i in replace_ids:
@@ -59,7 +134,8 @@ class NER:
         anonymized_text_trg = []
         for idx, s in enumerate(self.src_text):
             doc = nlp(s)
-            s_list = s.split()
+            tok = mt_en if self.src_lan == "en" else mt_de
+            s_list = tok.tokenize(s)
             # Find words in list based on starting characters of words in str
             s_startchars = []
             c = 0
@@ -336,6 +412,8 @@ def separate_into_documents(text: list, domain: str) -> list:
     docs = []
     i = 0
     doc_len = doc_lens[domain]
+    if doc_len >= len(text):
+        return [text]
     while i + doc_len < len(text):
         docs.append(text[i:i + doc_len])
         i = i + doc_len
@@ -368,15 +446,20 @@ def main():
             if DO_NER:
                 if DO_TFIDF:
                     ner_anonymizer = NER(d_tfidf[f"{src}"], d_tfidf[f"{trg}"],
-                                     src, d_alignments[f"{src}-{trg}"])
+                                         src, d_alignments[f"{src}-{trg}"])
                 else:
                     ner_anonymizer = NER(d[f"{src}"], d[f"{trg}"], src,
-                                         d_alignments_docs[f"{src}-{trg}"])
+                                         d_alignments[f"{src}-{trg}"])
                 d_ner[f"{src}"], d_ner[f"{trg}"] = ner_anonymizer.anonymize()
                 print("\tAnonymized NER. Writing to files.")
-                for lan in [src, trg]:
-                    final_text = []
-                    for s in d_ner[f"{lan}"]:
+            for lan in [src, trg]:
+                final_text = []
+                if DO_NER:
+                    text = d_ner[f"{lan}"]
+                elif DO_TFIDF:
+                    text = d_tfidf[f"{lan}"]
+                if SAVE:
+                    for s in text:
                         x = s.strip() + "\n"
                         final_text.append(x)
                     if DO_NER and DO_TFIDF:
@@ -388,6 +471,20 @@ def main():
                     elif DO_TFIDF:
                         with open(f"../data/3_anonymized/tfidf/{domain}.{src}-{trg}.{lan}", "w") as f:
                             f. writelines(final_text)
+                if EVAL:
+                    if not SAVE:
+                        # for type in ["full", "ner", "tfidf"]:
+                        for type in ["full"]:
+                            if type == "full":
+                                anon_f = open(f"../data/3_anonymized/tokenized/{domain}.{src}-{trg}.{lan}")
+                            else:
+                                anon_f = open(f"../data/3_anonymized/{type}/{domain}.{src}-{trg}.{lan}")
+                            anon_text = anon_f.readlines()
+                            reg_f = open(f"../data/1_main_data/tokenized/{domain}/train.{lan}")
+                            reg_text = reg_f.readlines()
+                            eval = Evaluate(reg_text[:N_SENTS], anon_text[:N_SENTS])
+                            print(f"EVALUATION SCORE FOR {type} | {domain} | {src}-{trg} | {lan}:")
+                            eval.evaluate_fscore()
 
 
 if __name__ == "__main__":
