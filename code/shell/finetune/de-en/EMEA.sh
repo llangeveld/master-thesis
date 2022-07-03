@@ -1,11 +1,11 @@
 #!/bin/bash
 START=/data/s3225143
-DATA=$START/data/4_translation/single-processed/EMEA.de-en/
+DATA=$START/data/4_translation/processed/EMEA.de-en/
 MODELS=$START/models
 THISMODEL=$MODELS/single-de-en
 PRETRAINED=$THISMODEL/model.pt
 BPECODES=$THISMODEL/bpecodes
-SAVE=$MODELS/finetune-single/de-en/EMEA/
+SAVE=$MODELS/finetune/de-en/EMEA/
 
 CUDA_VISIBLE_DEVICES=0 fairseq-train $DATA \
   --keep-best-checkpoints 1 --save-interval 100  \

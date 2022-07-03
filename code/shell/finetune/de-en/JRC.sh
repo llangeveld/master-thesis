@@ -1,11 +1,11 @@
 #!/bin/bash
 START=/data/s3225143
-DATA=$START/data/4_translation/single-processed/JRC.de-en/
+DATA=$START/data/4_translation/processed/JRC.de-en/
 MODELS=$START/models
 THISMODEL=$MODELS/single-de-en
 PRETRAINED=$THISMODEL/model.pt
 BPECODES=$THISMODEL/bpecodes
-SAVE=$MODELS/finetune-single/de-en/JRC/
+SAVE=$MODELS/finetune/de-en/JRC/
 
 CUDA_VISIBLE_DEVICES=0 fairseq-train $DATA \
   --keep-best-checkpoints 1 --save-interval 100  \

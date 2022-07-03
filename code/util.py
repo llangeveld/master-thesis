@@ -45,9 +45,9 @@ def get_all_texts(domain: str, language: str):
     :param language: en or de
     :return: three lists of sentences (train, test, valid)
     """
-    train = open(f"../data/1_main_data/{domain}/train.{language}")
-    test = open(f"../data/1_main_data/{domain}/test.{language}")
-    valid = open(f"../data/1_main_data/{domain}/valid.{language}")
+    train = open(f"../data/1_main_data/tokenized/{domain}/train.{language}")
+    test = open(f"../data/1_main_data/tokenized/{domain}/test.{language}")
+    valid = open(f"../data/1_main_data/tokenized/{domain}/valid.{language}")
 
     train_l = [s for s in train]
     test_l = [s for s in test]
@@ -102,7 +102,8 @@ def postprocess_alignment_file(domain: str) -> dict:
     d_alignments = {"en-de": [], "de-en": []}
     for language_pair in ["en-de", "de-en"]:
         alignment = open(f"../data/3_anonymized/fastalign/{domain}_train.{language_pair}.align")
-        for s in alignment:
+        alignments = [s for s in alignment]
+        for s in alignments:
             new_s = []
             l = s.split()
             for pair in l:
